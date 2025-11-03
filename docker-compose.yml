@@ -1,0 +1,86 @@
+services:
+  db:
+    image: mariadb:10.11.6
+    container_name: db
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${SECURE_DB_ROOT_PASSWORD:-${DB_ROOT_PASSWORD}}
+      MYSQL_DATABASE: ${SECURE_DB_NAME:-${DB_NAME}}
+      MYSQL_USER: ${SECURE_DB_USER:-${DB_USER}}
+      MYSQL_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
+    restart: unless-stopped
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    container_name: app
+    volumes:
+      - .:/var/www/html
+      - ./uploads_data:/var/www/html/web/app/uploads
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: ${SECURE_DB_NAME:-${DB_NAME}}
+      WORDPRESS_DB_USER: ${SECURE_DB_USER:-${DB_USER}}
+      WORDPRESS_DB_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
+      DB_HOST: ${SECURE_DB_HOST:-db}
+      DB_NAME: ${SECURE_DB_NAME:-${DB_NAME}}
+      DB_USER: ${SECURE_DB_USER:-${DB_USER}}
+      DB_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
+      WP_HOME: ${SECURE_WP_HOME:-${WP_HOME}}
+      WP_SITEURL: ${SECURE_WP_SITEURL:-${WP_SITEURL}}
+      WP_ENV: ${SECURE_WP_ENV:-production}
+      WP_PLUGIN_GF_KEY: ${SECURE_WP_PLUGIN_GF_KEY:-${WP_PLUGIN_GF_KEY}}
+      ACFE_PRO_KEY: ${SECURE_ACFE_PRO_KEY:-${ACFE_PRO_KEY}}
+      ACFE_PRO_URL: ${SECURE_ACFE_PRO_URL:-${ACFE_PRO_URL}}
+      PURGE_CSS: ${SECURE_PURGE_CSS:-${PURGE_CSS}}
+      CSS_URL: ${SECURE_CSS_URL:-${CSS_URL}}
+      MAILHOG_HOST: mailhog
+    depends_on:
+      - db
+      - mailhog
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2.7.6
+    container_name: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+    environment:
+      SITE_HOST: ${SECURE_SITE_HOST:-${SITE_HOST}}
+      ACME_EMAIL: ${SECURE_ACME_EMAIL:-${ACME_EMAIL}}
+    depends_on:
+      - app
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    container_name: phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: ${SECURE_DB_USER:-${DB_USER}}
+      PMA_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
+      PMA_AUTOLOGIN: 1
+      UPLOAD_LIMIT: 128M
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    container_name: mailhog
+    ports:
+      - "8025:8025"
+    restart: unless-stopped
+
+volumes:
+  db_data:
+  caddy_data:

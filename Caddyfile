@@ -1,0 +1,57 @@
+# Local development configuration
+localhost {
+reverse_proxy app:80
+
+encode gzip
+
+@wpadmin path_regexp ^/wp-admin/(.*)
+rewrite @wpadmin /wp/wp-admin/{http.regexp.1}
+
+@wpincludes path_regexp ^/wp-includes/(.*)
+rewrite @wpincludes /wp/wp-includes/{http.regexp.1}
+
+@wplogin path /wp-login.php
+rewrite @wplogin /wp/wp-login.php
+
+@xmlrpc path /xmlrpc.php
+rewrite @xmlrpc /wp/xmlrpc.php
+
+@wpsignup path /wp-signup.php
+rewrite @wpsignup /wp/wp-signup.php
+
+log {
+output file /var/log/caddy/access.log
+}
+}
+
+www.{$SITE_HOST} {
+redir https://{$SITE_HOST}{uri} permanent
+}
+
+# Staging configuration
+{$SITE_HOST} {
+reverse_proxy app:80
+
+encode gzip
+
+@wpadmin path_regexp ^/wp-admin/(.*)
+rewrite @wpadmin /wp/wp-admin/{http.regexp.1}
+
+@wpincludes path_regexp ^/wp-includes/(.*)
+rewrite @wpincludes /wp/wp-includes/{http.regexp.1}
+
+@wplogin path /wp-login.php
+rewrite @wplogin /wp/wp-login.php
+
+@xmlrpc path /xmlrpc.php
+rewrite @xmlrpc /wp/xmlrpc.php
+
+@wpsignup path /wp-signup.php
+rewrite @wpsignup /wp/wp-signup.php
+
+log {
+output file /var/log/caddy/access.log
+}
+
+tls {$ACME_EMAIL}
+}
