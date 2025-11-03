@@ -17,8 +17,7 @@ services:
       dockerfile: docker/Dockerfile
     # container_name: app
     volumes:
-      - .:/var/www/html
-      - ./uploads_data:/var/www/html/web/app/uploads
+      - ./wordpress:/var/www/html
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_NAME: ${SECURE_DB_NAME:-${DB_NAME}}
