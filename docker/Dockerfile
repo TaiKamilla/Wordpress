@@ -20,14 +20,6 @@ RUN git config --global --add safe.directory /var/www/html
 # Enable Apache rewrite (required for Bedrock)
 RUN a2enmod rewrite
 
-# Rename the docker-entrypoint.sh to prevent WordPress from copying core files
-# /usr/local/bin/docker-entrypoint.sh
-RUN mv /usr/local/bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh.bak
-
-# Copy custom entrypoint script
-COPY docker/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-# RUN chmod +x /usr/local/bin/docker-entrypoint.sh
-
 # Add custom Apache virtual host for Bedrock's /web root
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
 

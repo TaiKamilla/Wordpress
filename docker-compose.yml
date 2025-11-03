@@ -1,7 +1,7 @@
 services:
   db:
     image: mariadb:10.11.6
-    container_name: db
+    # container_name: db
     volumes:
       - db_data:/var/lib/mysql
     environment:
@@ -14,8 +14,8 @@ services:
   app:
     build:
       context: .
-      dockerfile: docker/app/Dockerfile
-    container_name: app
+      dockerfile: docker/Dockerfile
+    # container_name: app
     volumes:
       - .:/var/www/html
       - ./uploads_data:/var/www/html/web/app/uploads
@@ -28,14 +28,7 @@ services:
       DB_NAME: ${SECURE_DB_NAME:-${DB_NAME}}
       DB_USER: ${SECURE_DB_USER:-${DB_USER}}
       DB_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
-      WP_HOME: ${SECURE_WP_HOME:-${WP_HOME}}
-      WP_SITEURL: ${SECURE_WP_SITEURL:-${WP_SITEURL}}
       WP_ENV: ${SECURE_WP_ENV:-production}
-      WP_PLUGIN_GF_KEY: ${SECURE_WP_PLUGIN_GF_KEY:-${WP_PLUGIN_GF_KEY}}
-      ACFE_PRO_KEY: ${SECURE_ACFE_PRO_KEY:-${ACFE_PRO_KEY}}
-      ACFE_PRO_URL: ${SECURE_ACFE_PRO_URL:-${ACFE_PRO_URL}}
-      PURGE_CSS: ${SECURE_PURGE_CSS:-${PURGE_CSS}}
-      CSS_URL: ${SECURE_CSS_URL:-${CSS_URL}}
       MAILHOG_HOST: mailhog
     depends_on:
       - db
@@ -44,7 +37,7 @@ services:
 
   caddy:
     image: caddy:2.7.6
-    container_name: caddy
+    # container_name: caddy
     ports:
       - "80:80"
       - "443:443"
@@ -60,7 +53,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin:5.2.1
-    container_name: phpmyadmin
+    # container_name: phpmyadmin
     ports:
       - "8081:80"
     environment:
@@ -76,7 +69,7 @@ services:
 
   mailhog:
     image: mailhog/mailhog:v1.0.1
-    container_name: mailhog
+    # container_name: mailhog
     ports:
       - "8025:8025"
     restart: unless-stopped
