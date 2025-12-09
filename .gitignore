@@ -1,3 +1,6 @@
-wordpress
+wordpress/*
+!wordpress/.gitkeep
+uploads_data/*
+!uploads_data/.gitkeep
 
 .DS_Store
