@@ -1,4 +1,4 @@
-FROM wordpress:6.8.3-php8.4-apache
+FROM wordpress:6.9.0-php8.5-apache
 
 # Install dependencies needed for Composer
 RUN apt-get update && apt-get install -y \
