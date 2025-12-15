@@ -28,6 +28,19 @@ services:
       DB_USER: ${SECURE_DB_USER:-${DB_USER}}
       DB_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
       WP_ENV: ${SECURE_WP_ENV:-production}
+
+      DEV_ENV: ${DEV_ENV:-false}
+      WORDPRESS_DEBUG: ${WORDPRESS_DEBUG:-1}
+      WORDPRESS_DEBUG_LOG: ${WORDPRESS_DEBUG_LOG:-1}
+      WORDPRESS_DEBUG_DISPLAY: ${WORDPRESS_DEBUG_DISPLAY:-0}
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_ENVIRONMENT_TYPE', 'local');
+        define('SCRIPT_DEBUG', true);
+        define('SAVEQUERIES', true);
+      XDEBUG_MODE: ${XDEBUG_MODE:-debug}
+      XDEBUG_CONFIG: client_host=${XDEBUG_CLIENT_HOST:-host.docker.internal} client_port=${XDEBUG_CLIENT_PORT:-9003} idekey=${XDEBUG_IDE_KEY:-VSCODE}
+      PHP_IDE_CONFIG: serverName=${WORDPRESS_HOSTNAME:-localhost}
+      
       MAILHOG_HOST: mailhog
     depends_on:
       - db
