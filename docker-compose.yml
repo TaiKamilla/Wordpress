@@ -19,7 +19,7 @@ services:
     volumes:
       - ./wordpress:/var/www/html
       - ./uploads_data:/var/www/html/web/app/uploads
-      - ./.env:/var/www/html/.env:ro
+      # - ./.env:/var/www/html/.env:ro
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_NAME: ${SECURE_DB_NAME:-${DB_NAME}}
