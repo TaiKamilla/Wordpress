@@ -1,4 +1,11 @@
-FROM wordpress:6.9.0-php8.5-apache
+# Define build arguments for WordPress and PHP versions
+ARG WORDPRESS_VERSION
+ARG PHP_VERSION
+
+# Use versioned tag if WORDPRESS_VERSION is set, otherwise use 'apache' tag
+ARG TAG=${WORDPRESS_VERSION:+${WORDPRESS_VERSION}-php${PHP_VERSION}-}apache
+
+FROM wordpress:${TAG}
 
 # Install dependencies needed for Composer
 RUN apt-get update && apt-get install -y \
