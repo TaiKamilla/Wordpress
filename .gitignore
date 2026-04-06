@@ -1,3 +1,5 @@
 wordpress
 
 .DS_Store
+
+*.sql
