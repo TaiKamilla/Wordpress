@@ -1,27 +1,16 @@
-# Local development configuration
-localhost {
-reverse_proxy app:80
+{$SITE_HOST} {
+	reverse_proxy app:80
 
-encode gzip
+	encode gzip
 
-log {
-output file /var/log/caddy/access.log
-}
+	tls internal
+
+	log {
+		output file /var/log/caddy/access.log
+	}
 }
 
 www.{$SITE_HOST} {
-redir https://{$SITE_HOST}{uri} permanent
-}
-
-# Staging configuration
-{$SITE_HOST} {
-reverse_proxy app:80
-
-encode gzip
-
-log {
-output file /var/log/caddy/access.log
-}
-
-tls {$ACME_EMAIL}
+	redir https://{$SITE_HOST}{uri} permanent
+	tls internal
 }
