@@ -1,33 +1,32 @@
 services:
   db:
     image: mariadb:10.11.6
-    # container_name: db
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: ${SECURE_DB_ROOT_PASSWORD:-${DB_ROOT_PASSWORD}}
-      MYSQL_DATABASE: ${SECURE_DB_NAME:-${DB_NAME}}
-      MYSQL_USER: ${SECURE_DB_USER:-${DB_USER}}
-      MYSQL_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
     restart: unless-stopped
 
   app:
     build:
       context: .
       dockerfile: docker/Dockerfile
-    # container_name: app
     volumes:
       - ./wordpress:/var/www/html
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_NAME: ${SECURE_DB_NAME:-${DB_NAME}}
-      WORDPRESS_DB_USER: ${SECURE_DB_USER:-${DB_USER}}
-      WORDPRESS_DB_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
-      DB_HOST: ${SECURE_DB_HOST:-db}
-      DB_NAME: ${SECURE_DB_NAME:-${DB_NAME}}
-      DB_USER: ${SECURE_DB_USER:-${DB_USER}}
-      DB_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
-      WP_ENV: ${SECURE_WP_ENV:-production}
+      WORDPRESS_DB_NAME: ${DB_NAME}
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DOMAIN_CURRENT_SITE: ${SITE_HOST}
+      DB_HOST: db
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      WP_ENV: ${WP_ENV:-production}
       MAILHOG_HOST: mailhog
     depends_on:
       - db
@@ -36,7 +35,6 @@ services:
 
   caddy:
     image: caddy:2.7.6
-    # container_name: caddy
     ports:
       - "80:80"
       - "443:443"
@@ -44,22 +42,21 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
     environment:
-      SITE_HOST: ${SECURE_SITE_HOST:-${SITE_HOST}}
-      ACME_EMAIL: ${SECURE_ACME_EMAIL:-${ACME_EMAIL}}
+      SITE_HOST: ${SITE_HOST}
+      ACME_EMAIL: ${ACME_EMAIL}
     depends_on:
       - app
     restart: unless-stopped
 
   phpmyadmin:
     image: phpmyadmin:5.2.1
-    # container_name: phpmyadmin
     ports:
       - "8081:80"
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
-      PMA_USER: ${SECURE_DB_USER:-${DB_USER}}
-      PMA_PASSWORD: ${SECURE_DB_PASSWORD:-${DB_PASSWORD}}
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD: ${DB_PASSWORD}
       PMA_AUTOLOGIN: 1
       UPLOAD_LIMIT: 128M
     depends_on:
@@ -68,7 +65,6 @@ services:
 
   mailhog:
     image: mailhog/mailhog:v1.0.1
-    # container_name: mailhog
     ports:
       - "8025:8025"
     restart: unless-stopped
