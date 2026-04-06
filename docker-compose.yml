@@ -70,16 +70,6 @@ services:
       - "8025:8025"
     restart: unless-stopped
 
-  db-backup:
-    image: tiredofit/db-backup:4.1.100
-    environment:
-      DB_BACKUP_HOST: db
-      DB_BACKUP_PORT: 3306
-      DB_BACKUP_USER: ${DB_USER}
-      DB_BACKUP_PASSWORD: ${DB_PASSWORD}
-      DB_BACKUP_DATABASE: ${DB_NAME}
-      DB_BACKUP_COMPRESS: "true"
-
 volumes:
   db_data:
   caddy_data:
