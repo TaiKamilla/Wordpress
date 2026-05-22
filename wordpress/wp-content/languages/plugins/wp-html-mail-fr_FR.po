@@ -1,0 +1,430 @@
+# Translation of Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-03-17 15:25:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release)\n"
+
+#: views/admin/settings.php:12
+msgid "The only true all-in-one email template solution"
+msgstr "L’unique véritable solution de modèles d’e-mails tout-en-un"
+
+#: views/admin/settings-webfonts-sales-page.php:49
+#: template-designer/build/index.js:1
+msgid "This may be one of the reasons for our ★★★★★ ratings."
+msgstr "C’est peut-être l’une des raisons pour lesquelles nous avons obtenu l’évaluation de ★★★★★."
+
+#: views/admin/settings-webfonts-sales-page.php:47
+#: template-designer/build/index.js:1
+msgid "You are a user of our product so we do not want you to buy something you can't use as expected."
+msgstr "Vous êtes utilisateur/utilisatrice de notre produit et nous ne voulons pas que vous achetiez quelque chose que vous ne pouvez pas utiliser comme prévu."
+
+#: includes/class-haet-mail.php:271
+msgid "Main settings"
+msgstr "Réglages principaux"
+
+#: includes/class-haet-mail.php:227
+msgid "Template has been created in your theme folder."
+msgstr "Le modèle a été créé dans le dossier de votre thème."
+
+#: includes/class-content-editor.php:176
+msgid "start writing your email content"
+msgstr "commencez à rédiger le contenu de votre e-mail"
+
+#: includes/class-content-editor.php:175
+msgid "Add title"
+msgstr "Ajouter un titre"
+
+#: includes/class-content-editor.php:155
+msgid "Full Size"
+msgstr "Taille originale"
+
+#: includes/class-content-editor.php:154
+msgid "Large"
+msgstr "Grande"
+
+#: includes/class-content-editor.php:153
+msgid "Medium"
+msgstr "Moyenne"
+
+#: includes/class-content-editor.php:152
+msgid "Thumbnail"
+msgstr "Miniature"
+
+#: includes/class-mailbuilder.php:374
+msgid "Warning: You are adding custom code here which is sent to your site visitors. Wrong code can destroy your emails or can even be a security risk. Only use this feature if you know what you are doing here!"
+msgstr "Avertissement : Vous ajoutez ici un code personnalisé qui est envoyé aux visiteurs de votre site. Un code erroné peut détruire vos e-mails ou même constituer un risque pour la sécurité. Utilisez uniquement cette fonctionnalité si vous savez ce que vous faites !"
+
+#: includes/class-haet-mail.php:61
+msgid "This doesn't seem to be a valid email address."
+msgstr "Cette adresse e-mail ne semble pas être valide."
+
+#: views/admin/settings-webfonts-sales-page.php:63
+#: template-designer/build/index.js:1
+msgid "get the webfonts extension"
+msgstr "obtenez l’extension webfonts"
+
+#: views/admin/settings-webfonts-sales-page.php:60
+#: template-designer/build/index.js:1
+msgid "Works with our BuddyPress extension."
+msgstr "Fonctionne avec notre extension BuddyPress."
+
+#: views/admin/settings-webfonts-sales-page.php:58
+#: template-designer/build/index.js:1
+msgid "Works with our Easy Digital Downloads extension."
+msgstr "Fonctionne avec notre extension Easy Digital Downloads."
+
+#: views/admin/settings-webfonts-sales-page.php:56
+#: template-designer/build/index.js:1
+msgid "Works with our WooCommerce extension."
+msgstr "Fonctionne avec notre extension WooCommerce."
+
+#: views/admin/settings-webfonts-sales-page.php:54
+#: template-designer/build/index.js:1
+msgid "Most requested feature by our users."
+msgstr "Fonctionnalité la plus demandée par nos utilisateurs/utilisatrices."
+
+#: views/admin/settings-webfonts-sales-page.php:52
+#: template-designer/build/index.js:1
+msgid "Use more than 1000 Google fonts."
+msgstr "Utilisez plus de 1000 polices Google."
+
+#: views/admin/settings-webfonts-sales-page.php:45
+#: template-designer/build/index.js:1
+msgid "Not the sales pitch you expected?"
+msgstr "L’argumentaire de vente n’est pas celui que vous attendiez ?"
+
+#: views/admin/settings-webfonts-sales-page.php:38
+#: template-designer/build/index.js:1
+msgid "See our own tests here"
+msgstr "Consultez nos propres tests ici"
+
+#: views/admin/settings-webfonts-sales-page.php:36
+#: template-designer/build/index.js:1
+msgid "Test your emails in multiple email clients to make sure they look either great or at least ok and not completely different than expected."
+msgstr "Testez vos e-mails avec plusieurs clients de messagerie pour vous assurer qu’ils sont excellents ou au moins corrects et qu’ils ne sont pas complètement différents de ce qui était prévu."
+
+#: views/admin/settings-webfonts-sales-page.php:34
+#: template-designer/build/index.js:1
+msgid "Test, test, test"
+msgstr "Test, test, test"
+
+#: views/admin/settings-webfonts-sales-page.php:29
+#: template-designer/build/index.js:1
+msgid "caniemail.com statistics"
+msgstr "statistiques de caniemail.com"
+
+#: views/admin/settings-webfonts-sales-page.php:27
+#: template-designer/build/index.js:1
+msgid "If you already know how many of your recipients use Outlook, Gmail, Apple Mail, Thunderbird, ... check the stats on whether or not it even makes sense to use non standard fonts."
+msgstr "Si vous savez déjà combien de vos destinataires utilisent Outlook, Gmail, Apple Mail, Thunderbird… vérifiez les statistiques pour savoir s’il est judicieux ou non d’utiliser des polices non standard."
+
+#: views/admin/settings-webfonts-sales-page.php:25
+#: template-designer/build/index.js:1
+msgid "Know your recipients"
+msgstr "Connaissez vos destinataires"
+
+#: views/admin/settings-webfonts-sales-page.php:21
+#: template-designer/build/index.js:1
+msgid "Those users whose email clients do not support webfonts will see an alternative font so use webfonts that can be replaced easily by a standard font without destroying your complete email design."
+msgstr "Les internautes dont les clients de messagerie ne prennent pas en charge les polices web verront une police alternative. Utilisez donc des polices web qui peuvent être facilement remplacées par une police standard sans détruire l’ensemble de la conception de votre e-mail."
+
+#: views/admin/settings-webfonts-sales-page.php:19
+#: template-designer/build/index.js:1
+msgid "Choose fonts with suitable fallbacks"
+msgstr "Choisissez des polices de caractères avec des alternatives adéquates"
+
+#: views/admin/settings-webfonts-sales-page.php:15
+#: template-designer/build/index.js:1
+msgid "To be honest, this is a really bad value! So what does it mean for us?"
+msgstr "Pour être honnête, il s’agit d’une très mauvaise valeur ! Qu’est-ce que cela signifie pour nous ?"
+
+#: views/admin/settings-webfonts-sales-page.php:13
+#: template-designer/build/index.js:1
+msgid "According to caniemail.com webfonts in emails work for just around 52% of users."
+msgstr "D’après le site caniemail.com, les polices web dans les e-mails ne fonctionnent que pour 52 % des utilisateurs/utilisatrices."
+
+#: views/admin/settings-webfonts-sales-page.php:11
+#: template-designer/build/index.js:1
+msgid "The facts"
+msgstr "Les faits"
+
+#: views/admin/settings.php:101
+msgid "Please select a language in your admin bar at the top of the page to show the preview."
+msgstr "Veuillez sélectionner une langue dans votre barre d’administration en haut de la page pour afficher la prévisualisation."
+
+#. Plugin Name of the plugin
+#: wp-html-mail.php
+msgid "WP HTML Mail - Email Template Designer"
+msgstr "WP HTML Mail - Email Template Designer"
+
+#: views/admin/settings.php:67 views/admin/settings.php:97
+msgid "Preview"
+msgstr "Prévisualiser"
+
+#: includes/class-haet-mail.php:1034
+msgid "Uppercase"
+msgstr "Majuscules"
+
+#: views/admin/settings.php:111
+msgid "Translation settings for this field are updated."
+msgstr "Les réglages de traduction de ce champ ont été mis à jour."
+
+#: views/admin/settings.php:109
+msgid "Please wait"
+msgstr "Veuillez patienter"
+
+#: includes/class-template-designer.php:399
+msgid "If you don't use a child theme and need an update save place to store your email template you can also copy the template file from the plugin to <strong>wp-content/uploads/wp-html-mail/template.html</strong>."
+msgstr "Si vous n’utilisez pas de thème enfant et avez besoin d’un emplacement de sauvegarde pour stocker votre modèle d’e-mail, vous pouvez également copier le fichier de modèle de l’extension dans<strong>wp-content/uploads/wp-html-mail/template.html</strong>."
+
+#. Author URI of the plugin
+#: wp-html-mail.php
+msgid "https://codemiq.com"
+msgstr "https://codemiq.com"
+
+#. Author of the plugin
+#: wp-html-mail.php
+msgid "Hannes Etzelstorfer // codemiq"
+msgstr "Hannes Etzelstorfer // codemiq"
+
+#. Plugin URI of the plugin
+#: wp-html-mail.php
+msgid "https://codemiq.com/en/plugins/wp-html-mail-email-templates/"
+msgstr "https://codemiq.com/en/plugins/wp-html-mail-email-templates/"
+
+#: includes/class-mailbuilder.php:325
+msgid "show / hide footer for this email"
+msgstr "afficher/masquer le pied de page pour cet e-mail"
+
+#: includes/class-mailbuilder.php:315
+msgid "show / hide header for this email"
+msgstr "afficher/masquer l’en-tête pour cet e-mail"
+
+#: includes/class-haet-mail.php:1101
+msgid "<strong>Warning:</strong> WP HTML Mail – Email test mode is enabled. All emails are redirected to <strong>%1$s</strong>."
+msgstr "<strong>Avertissement :</strong> WP HTML Mail - Le mode de test des e-mails est activé. Tous les e-mails sont redirigés vers <strong>%1$s</strong>."
+
+#: includes/class-template-designer.php:398
+msgid "<strong>Only use this feature if you know what you are doing!</strong><br>From this point you have to continue your work in HTML and CSS code."
+msgstr "<strong>N’utilisez cette fonctionnalité que si vous savez ce que vous faites !</strong> <br> À partir de maintenant, vous devez continuer votre travail en HTML et CSS."
+
+#: includes/class-template-designer.php:407
+msgid "Are you sure you want to write your own code?"
+msgstr "Confirmez-vous vouloir écrire votre propre code ?"
+
+#: includes/class-template-designer.php:376
+msgid "Delete ALL settings"
+msgstr "Supprimer TOUS les réglages"
+
+#: includes/class-template-designer.php:370
+msgid "Delete design settings"
+msgstr "Supprimer les réglages de design"
+
+#: includes/class-template-designer.php:373
+#: includes/class-template-designer.php:379
+msgid "Are you sure? This can not be undone!"
+msgstr "Confirmez-vous ? Ça ne peut pas être annulé !"
+
+#: includes/class-mailbuilder.php:398
+msgid "Done"
+msgstr "Terminé"
+
+#: includes/class-mailbuilder.php:393
+msgid "CSS changes are not shown live. Please save the email to see your changes."
+msgstr "Les modifications CSS ne sont pas affichées en direct. Veuillez enregistrer l’e-mail pour voir vos modifications."
+
+#: includes/class-mailbuilder.php:384
+msgid "Mobile CSS"
+msgstr "CSS pour mobile"
+
+#: includes/class-mailbuilder.php:383
+msgid "WP HTML Mail converts all desktop styling to inline CSS code for better support in webmail clients. Mobile CSS stays in the head, so please don't write @media queries to the field above but use the mobil CSS field below"
+msgstr "WP HTML Mail convertit tous les styles de bureau en code CSS en ligne pour une meilleure prise en charge dans les clients de messagerie Web. Le CSS mobile reste dans la tête, veuillez donc ne pas écrire de requêtes @media dans le champ ci-dessus mais utiliser le champ CSS mobile ci-dessous"
+
+#: includes/class-mailbuilder.php:333 includes/class-mailbuilder.php:373
+msgid "Custom CSS"
+msgstr "CSS personnalisées"
+
+#: includes/class-haet-mail.php:1088
+msgid "Settings"
+msgstr "Réglages"
+
+#: includes/class-haet-mail.php:211 includes/class-haet-mail.php:220
+msgid "Settings deleted."
+msgstr "Réglages supprimés."
+
+#: includes/class-mailbuilder.php:160
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: includes/class-contenttype.php:166
+msgid "Padding mobile"
+msgstr "Marges internes sur mobile"
+
+#: includes/class-contenttype.php:139
+msgid "Padding desktop"
+msgstr "Marges internes sur ordinateur"
+
+#: includes/class-contenttype.php:127
+msgid "Content Element Settings"
+msgstr "Réglages des éléments de contenu"
+
+#: includes/class-mailbuilder.php:187 template-designer/build/index.js:1
+msgid "Add attachments"
+msgstr "Ajouter des fichiers joints"
+
+#: includes/class-mailbuilder.php:139
+msgid "Attach files"
+msgstr "Joindre des fichiers"
+
+#: wp-html-mail.php:56
+msgid "<strong>Warning:</strong> To use WP HTML Mail please update your PHP version to 7.2 or higher in your hosting admin panel."
+msgstr "<strong>Avertissement :</strong> pour utiliser WP HTML Mail, veuillez mettre à jour votre version PHP à 7.2 ou plus dans le panneau d’administration de votre hébergement."
+
+#. Description of the plugin
+#: wp-html-mail.php
+msgid "Create your own professional email design for all your outgoing WordPress emails"
+msgstr "Créez un style d’e-mail professionnel pour tous les e-mails sortants de WordPress"
+
+#: includes/class-haet-mail.php:74
+msgid "Your message has been sent."
+msgstr "Votre message a bien été envoyé."
+
+#: views/admin/settings.php:77 views/admin/settings.php:80
+msgid "Send a test mail"
+msgstr "Envoyer un e-mail de test"
+
+#: views/admin/settings.php:53 template-designer/build/index.js:1
+msgid "Save and Preview"
+msgstr "Enregistrer et prévisualiser"
+
+#: includes/class-contenttype.php:132 template-designer/build/index.js:1
+msgid "Background color"
+msgstr "Couleur d’arrière-plan"
+
+#: includes/class-template-designer.php:397
+msgid "Customize your mail template as far as you can. Then click this button to export the template to your theme directory for further modifications.<br>The template will be created in <strong>wp-content/YOUR-THEME/wp-html-mail/template.html</strong>"
+msgstr "Personnalisez votre modèle d’e-mail comme vous le souhaitez. Cliquez ensuite sur ce bouton pour exporter le modèle vers votre répertoire de thèmes pour d’autres modifications.<br>Le modèle sera créé dans <strong>wp-content/YOUR-THEME/wp-html-mail/template.html</strong>"
+
+#: includes/class-template-designer.php:396
+msgid "WARNING: Your theme directory is not writable by the server. Please change the permission to allow us to create the mail template."
+msgstr "AVERTISSEMENT : votre répertoire de thèmes n’est pas accessible en écriture par le serveur. Veuillez modifier l’autorisation pour permettre de créer le modèle d’emploi-mail."
+
+#: includes/class-template-designer.php:392
+msgid "You already have a custom template. If you create a new one the existing template will be backed up."
+msgstr "Vous disposez déjà d’un modèle personnalisé. Si vous en créez un nouveau, le modèle existant sera enregistré."
+
+#: includes/class-template-designer.php:404
+msgid "create template file in my theme folder"
+msgstr "créer un fichier modèle dans mon dossier de thème"
+
+#: includes/class-mailbuilder.php:509
+msgid "Add Content Element"
+msgstr "Ajouter un élément de contenu"
+
+#: includes/class-contenttype.php:200 includes/class-mailbuilder.php:367
+msgid "Cancel"
+msgstr "Annuler"
+
+#: includes/class-contenttype.php:196 includes/class-mailbuilder.php:363
+msgid "Apply"
+msgstr "Appliquer"
+
+#: includes/class-mailbuilder.php:130
+msgid "Email Content Builder"
+msgstr "Constructeur de contenu d’e-mail"
+
+#: includes/class-mailbuilder.php:122
+msgid "Email Subject"
+msgstr "Sujet de l’e-mail"
+
+#: includes/class-mailbuilder.php:114
+msgid "Message"
+msgstr "Message"
+
+#: includes/class-mailbuilder.php:77
+msgid "Custom Emails"
+msgstr "E-mails personnalisés"
+
+#: includes/class-mailbuilder.php:76
+msgid "Parent Custom Email:"
+msgstr "E-mail personnalisé du parent :"
+
+#: includes/class-mailbuilder.php:75
+msgid "No Custom Emails found in Trash"
+msgstr "Aucun e-mail personnalisé trouvé dans la corbeille"
+
+#: includes/class-mailbuilder.php:74
+msgid "No Custom Emails found"
+msgstr "Aucun e-mail personnalisé trouvé"
+
+#: includes/class-mailbuilder.php:73
+msgid "Search Custom Emails"
+msgstr "Rechercher des e-mails personnalisés"
+
+#: includes/class-mailbuilder.php:72
+msgid "View Custom Email"
+msgstr "Voir l’e-mail personnalisé"
+
+#: includes/class-mailbuilder.php:71
+msgid "New Custom Email"
+msgstr "Nouvel e-mail personnalisé"
+
+#: includes/class-mailbuilder.php:70
+msgid "Edit Custom Email"
+msgstr "Modifier l’e-mail personnalisé"
+
+#: includes/class-mailbuilder.php:68 includes/class-mailbuilder.php:69
+msgid "Add New Custom Email"
+msgstr "Ajouter un nouvel e-mail personnalisé"
+
+#: includes/class-mailbuilder.php:67
+msgid "custom email"
+msgstr "e-mail personnalisé"
+
+#: includes/class-mailbuilder.php:66
+msgid "custom emails"
+msgstr "e-mails personnalisés"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:13
+msgid "The administrator has unlocked your file"
+msgstr "L’administrateur a déverrouillé votre fichier"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:11
+msgid "Order Pending: Payment Required"
+msgstr "Commande en attente : paiement obligatoire"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:10
+msgid "Purchase Receipt"
+msgstr "Reçu"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:9
+msgid "Transaction Report"
+msgstr "Rapport de transaction"
+
+#: includes/class-haet-mail.php:247
+msgid "Settings Updated."
+msgstr "Réglages mis à jour."
+
+#: includes/class-haet-mail.php:195
+msgid "Email template"
+msgstr "Modèle d’e-mail"
+
+#: includes/class-haet-mail.php:195
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/class-contenttype-twocol.php:48
+msgid "Two Columns"
+msgstr "Deux colonnes"
+
+#: includes/class-contenttype-text.php:64
+msgid "Text"
+msgstr "Texte"

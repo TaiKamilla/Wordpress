@@ -1,0 +1,26 @@
+# Terraform state — must NEVER be committed (contains secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directory and cache
+.terraform/
+.terraform.lock.hcl.bak
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Plan outputs
+*.tfplan
+tfplan
+
+# CLI logs
+crash.log
+crash.*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

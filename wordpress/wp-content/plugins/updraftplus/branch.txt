@@ -1,0 +1,14 @@
+commit b764a0467c6dfc015ad577019636aaf4054a5a7f
+Merge: 0e4e07d e5c3c9f
+Author: David Anderson <david@updraftplus.com>
+Date:   Tue May 27 20:38:04 2025 +0000
+
+    Merge branch '1894-live-release-1-25-6' into 'master'
+    
+    Resolve "Live release 1.25.6"
+    
+    Closes #1894
+    
+    See merge request team-updraft/updraftplus!2045
+
+branch:

@@ -1,0 +1,232 @@
+# Translation of Plugins - User Menus &#8211; Nav Menu Visibility - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - User Menus &#8211; Nav Menu Visibility - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-02-22 15:01:46+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - User Menus &#8211; Nav Menu Visibility - Stable (latest release)\n"
+
+#. translators: 1: link to registration page, 2: closing link tag.
+#: includes/classes/admin/menu-editor.php:140
+msgid "Registration is %1$scurrently disabled%2$s on your site."
+msgstr "Die Registrierung ist auf deiner Website %1$smomentan deaktiviert%2$s."
+
+#: includes/classes/admin/menu-editor.php:88
+msgid "Register"
+msgstr "Registrieren"
+
+#: includes/classes/admin/menu-settings.php:154
+msgid "Choose which roles won't see this link"
+msgstr "Wähle, welche Benutzerrollen diesen Link nicht sehen können"
+
+#. Author URI of the plugin
+msgid "https://code-atlantic.com/"
+msgstr "https://code-atlantic.com/"
+
+#. Author of the plugin
+msgid "Code Atlantic"
+msgstr "Code Atlantic"
+
+#. Description of the plugin
+msgid "Quickly customize your menus with a user's name & avatar, or show items based on user role."
+msgstr "Passe deine Menüs schnell mit dem Namen und dem Profilbild eines Benutzers an oder zeige Elemente basierend auf der Rolle des Benutzers an."
+
+#: includes/classes/admin/reviews.php:408
+msgid "I already did"
+msgstr "Habe ich bereits gemacht"
+
+#: includes/classes/admin/reviews.php:403
+msgid "Nope, maybe later"
+msgstr "Nein, vielleicht später"
+
+#: includes/classes/admin/reviews.php:398
+msgid "Ok, you deserve it"
+msgstr "OK, es ist verdient"
+
+#: includes/classes/admin/reviews.php:252
+msgid "3 months"
+msgstr "3 Monate"
+
+#: includes/classes/admin/reviews.php:244
+msgid "2 weeks"
+msgstr "2 Wochen"
+
+#: includes/classes/admin/reviews.php:239
+msgid "Hi there! You've been using the User Menus plugin on your site for %s now - We hope it's been helpful. If you're enjoying the plugin, would you mind rating it 5-stars to help spread the word?"
+msgstr "Hallo! Du verwendest das User-Menus-Plugin nun schon seit %s auf deiner Seite – wir hoffen, es war hilfreich. Wenn du mit dem Plugin zufrieden bist, könntest du es bitte mit 5 Sternen bewerten, um es weiterzuempfehlen?"
+
+#: includes/classes/user/codes.php:32
+msgid "Email"
+msgstr "E-Mail"
+
+#: includes/classes/user/codes.php:31
+msgid "Nickname"
+msgstr "Spitzname"
+
+#: includes/classes/user/codes.php:30
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#: includes/classes/user/codes.php:29
+msgid "Username"
+msgstr "Benutzername"
+
+#: includes/classes/user/codes.php:28
+msgid "Last Name"
+msgstr "Nachname"
+
+#: includes/classes/user/codes.php:27
+msgid "First Name"
+msgstr "Vorname"
+
+#: includes/classes/user/codes.php:26
+msgid "Avatar"
+msgstr "Avatar"
+
+#: includes/classes/admin/menu-settings.php:46
+msgid "Avatar Size"
+msgstr "Avatar-Größe"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/user-menus/"
+msgstr "https://de.wordpress.org/plugins/user-menus/"
+
+#. Plugin Name of the plugin
+msgid "User Menus"
+msgstr "Benutzer-Menüs"
+
+#: user-menus.php:238
+msgid "Plugin Activation Error"
+msgstr "Plugin-Aktivierungsfehler"
+
+#. translators: 1: Plugin Name, 2: Flagged software (PHP or WP), 3: PHP or
+#. WordPress version
+#: user-menus.php:235
+msgid "The %4$s %1$s %5$s plugin requires %2$s version %3$s or greater."
+msgstr "Das %4$s %1$s %5$s Plugin benötigt %2$s Version %3$s oder höher."
+
+#: includes/classes/menu/items.php:51
+msgid "User Link"
+msgstr "Benutzer-Link"
+
+#: includes/classes/importer/menu.php:294
+msgid "Have fun!"
+msgstr "Viel Spaß!"
+
+#: includes/classes/importer/menu.php:294
+msgid "All done."
+msgstr "Alles erledigt."
+
+#: includes/classes/importer/menu.php:226
+msgid "The file does not exist, please try again."
+msgstr "Die Datei existiert nicht, bitte versuche es erneut."
+
+#: includes/classes/importer/menu.php:173
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr "Diese WXR-Datei  (Version %s) kann nicht von dieser Version des Importers unterstützt werden. Wir empfehlen dir ein Update."
+
+#: includes/classes/importer/menu.php:155
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr "Die Exportdatei konnte unter <code>%s</code> nicht gefunden werden. Dies liegt wahrscheinlich an einem Problem mit den erforderlichen Rechten."
+
+#: includes/classes/importer/menu.php:149
+#: includes/classes/importer/menu.php:154
+#: includes/classes/importer/menu.php:164
+#: includes/classes/importer/menu.php:225
+#: includes/classes/importer/menu.php:236
+msgid "Sorry, there has been an error."
+msgstr "Entschuldigung, es gab einen Fehler."
+
+#: includes/classes/importer/menu.php:134
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Wähle eine WXR-Datei (.xml) für den Upload aus und klicke dann auf „Datei hochladen und importieren“."
+
+#: includes/classes/importer/menu.php:133
+msgid "Upload your WordPress export (WXR) file and import the Nav Menus and any meta for the Nav Menu items."
+msgstr "Lade deine WordPress-Exportdatei (WXR) hoch und importiere die Navigationsmenüs und Metaangaben für die Navigationsmenüelemente."
+
+#: includes/classes/importer/menu.php:123
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr "Eine neue Version dieses Importers ist verfügbar. Bitte aktualisiere auf Version %s um die Kompatibilität mit neueren Export-Dateien zu gewährleisten."
+
+#: includes/classes/importer/menu.php:116
+msgid "Import Nav Menus"
+msgstr "Import Navigationsmenüs"
+
+#: includes/classes/admin/menu-settings.php:147
+msgid "Choose which roles can see this link"
+msgstr "Wähle, welche Benutzerrollen diesen Link sehen können"
+
+#: includes/classes/admin/menu-settings.php:105
+#: includes/classes/admin/menu-settings.php:129
+msgid "Who can see this link?"
+msgstr "Wer kann diesen Link sehen?"
+
+#: includes/classes/admin/menu-settings.php:60
+msgid "Logged In Users"
+msgstr "Angemeldete Benutzer"
+
+#: includes/classes/admin/menu-settings.php:59
+msgid "Logged Out Users"
+msgstr "Abgemeldete Benutzer"
+
+#: includes/classes/admin/menu-settings.php:58
+msgid "Everyone"
+msgstr "Alle"
+
+#: includes/classes/admin/menu-settings.php:93
+msgid "Enter a url user should be redirected to"
+msgstr "Gib eine URL ein, zu der Anwender weitergeleitet werden sollen"
+
+#: includes/classes/admin/menu-settings.php:75
+msgid "Where should users be taken afterwards?"
+msgstr "Wohin sollen Anwender anschließend gebracht werden?"
+
+#: includes/classes/admin/menu-settings.php:67
+msgid "Custom URL"
+msgstr "Individuelle URL"
+
+#: includes/classes/admin/menu-settings.php:66
+msgid "Home Page"
+msgstr "Homepage"
+
+#: includes/classes/admin/menu-settings.php:65
+msgid "Current Page"
+msgstr "Aktuelle Seite"
+
+#: includes/classes/admin/menu-importer.php:46
+msgid "Import nav menus and other menu item meta skipped by the default importer"
+msgstr "Import von Navigationsmenüs und anderen Menüelementen, die vom Standard-Importer übersprungen werden"
+
+#: includes/classes/admin/menu-importer.php:45
+msgid "WP Nav Menus"
+msgstr "WP Navigationsmenüs"
+
+#: includes/classes/admin/menu-editor.php:203
+msgid "Insert User Menu Codes"
+msgstr "Benutzermenü-Codes einfügen"
+
+#: includes/classes/admin/menu-editor.php:167
+msgid "Add to Menu"
+msgstr "Zum Menü hinzufügen"
+
+#: includes/classes/admin/menu-editor.php:161
+msgid "Select All"
+msgstr "Alle auswählen"
+
+#: includes/classes/admin/menu-editor.php:92
+msgid "Logout"
+msgstr "Abmelden"
+
+#: includes/classes/admin/menu-editor.php:84
+msgid "Login"
+msgstr "Anmelden"
+
+#: includes/classes/admin/menu-editor.php:70
+msgid "User Links"
+msgstr "Benutzer-Links"

@@ -1,0 +1,329 @@
+# Translation of Themes - Hello Elementor in Chinese (China)
+# This file is distributed under the same license as the Themes - Hello Elementor package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-11-24 09:53:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Themes - Hello Elementor\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators."
+msgstr "Hello Elementor 是一款轻量级、简约的 WordPress 主题，专为与 Elementor 建站插件无缝配合而设计。该主题免费、开源，专为那些希望拥有一个灵活、易用和可定制网站的用户而设计。该主题对性能进行了优化，为用户使用 Elementor 拖放建站器创建自己的独特设计提供了坚实的基础。它的简洁性和灵活性使其成为初学者和经验丰富的网站创建者的最佳选择。"
+
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Hello Elementor"
+msgstr "你好 Elementor"
+
+#: includes/settings/settings-footer.php:748
+#: includes/settings/settings-header.php:781
+#: modules/admin-home/rest/promotions.php:22
+msgid "Elementor Pro"
+msgstr "Elementor Pro"
+
+#: includes/settings/settings-footer.php:738
+#: includes/settings/settings-header.php:771
+msgid "Get Elementor Pro"
+msgstr "获取 Elementor Pro"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:323
+#: includes/settings/settings-header.php:325
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's title"
+msgstr "转到<a href=\"%s\">网站标识</a>来管理您网站的标题"
+
+#: header.php:30
+msgid "Skip to content"
+msgstr "跳到内容"
+
+#: includes/settings/settings-header.php:667
+msgid "Breakpoint"
+msgstr "断点"
+
+#: includes/settings/settings-header.php:634
+msgid "Menu Layout"
+msgstr "菜单布局"
+
+#: includes/settings/settings-footer.php:752
+msgid "Create Footer"
+msgstr "创建页脚"
+
+#: includes/settings/settings-footer.php:670
+msgid "All rights reserved"
+msgstr "版权所有"
+
+#: includes/settings/settings-footer.php:618
+#: includes/settings/settings-header.php:681
+msgid "Color"
+msgstr "颜色"
+
+#: includes/settings/settings-footer.php:585
+#: includes/settings/settings-header.php:601
+msgid "Go to <a href=\"%s\" target=\"_blank\">Menus screen</a> to create one."
+msgstr "转到<a href=\"%s\" target=\"_blank\">菜单屏幕</a>创建一个。"
+
+#: includes/settings/settings-footer.php:583
+#: includes/settings/settings-header.php:599
+msgid "There are no menus in your site."
+msgstr "您的站点中没有菜单。"
+
+#: includes/settings/settings-footer.php:572
+#: includes/settings/settings-header.php:588
+msgid "— Select a Menu —"
+msgstr "— 选择菜单 —"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:509
+#: includes/settings/settings-header.php:518
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's tagline"
+msgstr "转到<a href=\"%s\">站点标识</a>以管理您站点的标题和标语"
+
+#: includes/settings/settings-footer.php:379
+#: includes/settings/settings-footer.php:537
+#: includes/settings/settings-footer.php:630
+#: includes/settings/settings-footer.php:692
+#: includes/settings/settings-header.php:381
+#: includes/settings/settings-header.php:546
+#: includes/settings/settings-header.php:724
+msgid "Typography"
+msgstr "排版"
+
+#: includes/settings/settings-footer.php:430
+#: includes/settings/settings-footer.php:458
+#: includes/settings/settings-footer.php:522
+#: includes/settings/settings-footer.php:677
+#: includes/settings/settings-header.php:432
+#: includes/settings/settings-header.php:460
+#: includes/settings/settings-header.php:531
+msgid "Text Color"
+msgstr "文字颜色"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:305
+#: includes/settings/settings-header.php:307
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's logo"
+msgstr "转到<a href=\"%s\">站点标识</a>以管理您站点的徽标"
+
+#: includes/settings/settings-footer.php:352
+#: includes/settings/settings-header.php:354
+msgid "Logo Width"
+msgstr "标志宽度"
+
+#: includes/settings/settings-footer.php:342
+#: includes/settings/settings-header.php:344
+msgid "Title"
+msgstr "标题"
+
+#: includes/settings/settings-footer.php:341
+#: includes/settings/settings-header.php:343
+msgid "Logo"
+msgstr "标识"
+
+#: includes/settings/settings-footer.php:337
+#: includes/settings/settings-header.php:339
+msgid "Type"
+msgstr "类型"
+
+#: includes/settings/settings-footer.php:278
+#: includes/settings/settings-header.php:273
+msgid "Background"
+msgstr "背景"
+
+#: includes/settings/settings-footer.php:226
+#: includes/settings/settings-header.php:211
+msgid "Content Width"
+msgstr "内容宽度"
+
+#: includes/settings/settings-footer.php:214
+#: includes/settings/settings-header.php:199
+msgid "Full Width"
+msgstr "全屏宽度"
+
+#: includes/settings/settings-footer.php:213
+#: includes/settings/settings-header.php:198
+msgid "Boxed"
+msgstr "盒装"
+
+#: includes/settings/settings-footer.php:211
+#: includes/settings/settings-header.php:196
+msgid "Width"
+msgstr "宽度"
+
+#: includes/settings/settings-footer.php:129
+#: includes/settings/settings-header.php:114
+msgid "Centered"
+msgstr "居中"
+
+#: includes/settings/settings-footer.php:125
+#: includes/settings/settings-header.php:110
+msgid "Inverted"
+msgstr "倒"
+
+#: includes/settings/settings-footer.php:133
+#: includes/settings/settings-header.php:118
+msgid "Default"
+msgstr "默认"
+
+#: includes/settings/settings-footer.php:122
+#: includes/settings/settings-header.php:107
+msgid "Layout"
+msgstr "布局"
+
+#: includes/settings/settings-footer.php:90
+#: includes/settings/settings-footer.php:651
+msgid "Copyright"
+msgstr "版权"
+
+#: includes/settings/settings-footer.php:78
+#: includes/settings/settings-footer.php:563
+#: includes/settings/settings-footer.php:608
+#: includes/settings/settings-header.php:77
+#: includes/settings/settings-header.php:572
+#: includes/settings/settings-header.php:624
+msgid "Menu"
+msgstr "菜单"
+
+#: includes/settings/settings-footer.php:66
+#: includes/settings/settings-footer.php:495
+#: includes/settings/settings-header.php:66
+#: includes/settings/settings-header.php:497
+msgid "Tagline"
+msgstr "标语"
+
+#: includes/settings/settings-footer.php:57
+#: includes/settings/settings-footer.php:69
+#: includes/settings/settings-footer.php:81
+#: includes/settings/settings-footer.php:93
+#: includes/settings/settings-header.php:58
+#: includes/settings/settings-header.php:69
+#: includes/settings/settings-header.php:80
+msgid "Hide"
+msgstr "隐藏"
+
+#: includes/settings/settings-footer.php:56
+#: includes/settings/settings-footer.php:68
+#: includes/settings/settings-footer.php:80
+#: includes/settings/settings-footer.php:92
+#: includes/settings/settings-header.php:57
+#: includes/settings/settings-header.php:68
+#: includes/settings/settings-header.php:79
+msgid "Show"
+msgstr "节目"
+
+#: includes/settings/settings-footer.php:54
+#: includes/settings/settings-footer.php:291
+#: includes/settings/settings-header.php:55
+#: includes/settings/settings-header.php:286
+#: modules/admin-home/rest/admin-config.php:233
+msgid "Site Logo"
+msgstr "网站标志"
+
+#: functions.php:43 includes/settings/settings-footer.php:46
+#: modules/admin-home/rest/admin-config.php:150
+msgid "Footer"
+msgstr "页脚"
+
+#: functions.php:42 includes/settings/settings-header.php:47
+#: modules/admin-home/rest/admin-config.php:143
+msgid "Header"
+msgstr "标题"
+
+#: includes/settings/settings-header.php:785
+msgid "Create Header"
+msgstr "创建页眉"
+
+#: includes/settings/settings-header.php:695
+msgid "Toggle Color"
+msgstr "切换按钮颜色"
+
+#: includes/settings/settings-header.php:662
+msgid "None"
+msgstr "无"
+
+#: includes/settings/settings-header.php:639
+msgid "Dropdown"
+msgstr "下拉式"
+
+#: includes/settings/settings-header.php:638
+msgid "Horizontal"
+msgstr "水平"
+
+#: includes/customizer/customizer-action-links.php:67
+#: includes/customizer/customizer-action-links.php:69
+#: modules/admin-home/rest/admin-config.php:272
+msgid "Activate Elementor"
+msgstr "启用Elementor"
+
+#: includes/customizer/customizer-action-links.php:48
+#: includes/customizer/customizer-action-links.php:50
+#: modules/admin-home/rest/admin-config.php:274
+msgid "Install Elementor"
+msgstr "安装Elementor"
+
+#: modules/admin-home/rest/admin-config.php:278
+msgid "Thanks for installing the Hello Theme!"
+msgstr "感谢您安装 Hello Theme！"
+
+#: template-parts/404.php:16
+msgid "The page can&rsquo;t be found."
+msgstr "有点尴尬诶！该页无法显示。"
+
+#: template-parts/404.php:21
+msgid "It looks like nothing was found at this location."
+msgstr "看起来在这个位置找不到任何东西。"
+
+#: template-parts/single.php:30
+msgid "Tagged "
+msgstr "标签 "
+
+#: modules/admin-home/components/admin-menu-controller.php:32
+#: modules/admin-home/components/admin-menu-controller.php:33
+#: template-parts/dynamic-footer.php:33 template-parts/dynamic-header.php:39
+#: template-parts/header.php:30
+msgid "Home"
+msgstr "主页"
+
+#: template-parts/search.php:17
+msgid "Search results for: "
+msgstr "搜索结果： "
+
+#: template-parts/search.php:43
+msgid "It seems we can't find what you're looking for."
+msgstr "看来我们找不到您要找的东西了。"
+
+#: comments.php:32
+msgctxt "comments title"
+msgid "One Response"
+msgstr "一个回复"
+
+#: comments.php:37
+msgctxt "comments title"
+msgid "%s Response"
+msgid_plural "%s Responses"
+msgstr[0] "%1$s 回复"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "Elementor Team"
+msgstr "Elementor 团队"

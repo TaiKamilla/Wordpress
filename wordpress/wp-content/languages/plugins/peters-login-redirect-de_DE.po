@@ -1,0 +1,86 @@
+# Translation of Plugins - LoginWP (Formerly Peter&#039;s Login Redirect) - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - LoginWP (Formerly Peter&#039;s Login Redirect) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-11 15:50:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - LoginWP (Formerly Peter&#039;s Login Redirect) - Stable (latest release)\n"
+
+#: src/core/src/Functions.php:17
+msgid "Register"
+msgstr "Registrieren"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:64
+msgid "URL:"
+msgstr "URL:"
+
+#: src/core/src/Admin/views/view.condition-rule.php:49
+msgid "Order"
+msgstr "Reihenfolge"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:20
+msgid "All Other Users"
+msgstr "Alle anderen Benutzer"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:92
+#: src/core/src/Admin/views/view.bottom-settings.php:107
+msgid "Yes"
+msgstr "Ja"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:93
+#: src/core/src/Admin/views/view.bottom-settings.php:108
+msgid "No"
+msgstr "Nein"
+
+#: src/core/src/Functions.php:22
+msgid "Site Admin"
+msgstr "Website-Administrator"
+
+#: src/core/src/Admin/RedirectionsPage.php:302
+msgid "ERROR: Non-existent username submitted"
+msgstr "FEHLER: Eingegebener Benutzername existiert nicht"
+
+#: src/core/src/Admin/RedirectionsPage.php:310
+msgid "ERROR: Non-existent level submitted"
+msgstr "FEHLER: Eingegebene Ebene existiert nicht"
+
+#: src/core/src/Admin/RedirectWPList.php:142
+#: src/core/src/Admin/RedirectWPList.php:252
+#: src/core/src/Admin/views/include.view.php:61
+msgid "Delete"
+msgstr "Löschen"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:38
+msgid "Logout URL:"
+msgstr "Abmelden-URL:"
+
+#: src/core/src/Admin/RedirectionsPage.php:306
+msgid "ERROR: Non-existent role submitted"
+msgstr "FEHLER: Eingegebene Rolle existiert nicht"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:101
+msgid "Allow a POST or GET &#34;redirect_to&#34; logout variable to take redirect precedence"
+msgstr "Erlaube eine POST oder GET „redirect_to“-Abmelde-Variable für die Umleitungs-Reihenfolge"
+
+#: src/core/src/Admin/RedirectWPList.php:141
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: src/core/src/Admin/RedirectWPList.php:221
+#: src/core/src/Admin/views/view.redirect-urls.php:18
+msgid "Login URL"
+msgstr "Anmelde-URL"
+
+#: src/core/src/Admin/RedirectWPList.php:222
+#: src/core/src/Admin/views/view.redirect-urls.php:26
+msgid "Logout URL"
+msgstr "Abmelde-URL"
+
+#: src/core/src/MoAdminNotice.php:95
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis verwerfen"

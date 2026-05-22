@@ -1,0 +1,9928 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Themes - Astra\n"
+"PO-Revision-Date: 2025-06-18 23:43+0000\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-18 23:37+0000\n"
+"Last-Translator: \n"
+"X-Loco-Version: 2.8.0; wp-6.7.2; php-8.3.19"
+
+msgid ""
+" Certain Cart page options may not work smoothly on the block editor based "
+"Cart page. For best results with these features, prefer using a shortcode "
+"based Cart page."
+msgstr ""
+"Ciertas opciones de página del carrito pueden no funcionar sin problemas en "
+"la página de carrito basada en el editor de bloques. Para obtener los "
+"mejores resultados con estas características, prefiera usar una página de "
+"carrito basada en un código corto."
+
+msgid ""
+" Certain Checkout page options may not work smoothly on the block editor "
+"based Checkout page. For best results with these features, prefer using a "
+"shortcode-based Checkout page."
+msgstr ""
+"Ciertas opciones de página de pago pueden no funcionar sin problemas en la "
+"página de pago basada en el editor de bloques. Para obtener los mejores "
+"resultados con estas características, prefiera usar una página de pago "
+"basada en un brevemente."
+
+msgid " Page Title"
+msgstr "Título de página"
+
+msgid " review"
+msgstr "revisar"
+
+msgid " reviews"
+msgstr "reseñas"
+
+msgid " Title Area"
+msgstr "Área de título"
+
+msgid "#1 Sales Funnel WordPress Builder."
+msgstr "#1 BUDEL DE VENTAS WordPress Builder."
+
+msgid "% Comments"
+msgstr "% Comentarios"
+
+msgid "%1$s at %2$s"
+msgstr "%1$s at %2$s"
+
+msgid "%s Integrations"
+msgstr "%s integraciones"
+
+msgid ""
+"%s is fast, fully customizable & beautiful WordPress theme suitable for blog,"
+" personal portfolio, business website and WooCommerce storefront. It is very "
+"lightweight and offers unparalleled speed."
+msgstr ""
+"%s es un tema rápido, totalmente personalizable y hermoso de WordPress "
+"adecuado para blog, cartera personal, sitio web de negocios y escaparates de "
+"WooCommerce. Es muy liviano y ofrece una velocidad incomparable."
+
+msgid "%s Modules"
+msgstr "módulos %s"
+
+msgid "%s Page"
+msgstr "%s Página"
+
+msgid "%s Settings"
+msgstr "Configuración de %s"
+
+msgid "& Free Shipping"
+msgstr "& Envío gratis"
+
+msgid ""
+"'None' respects hierarchy; 'Behind' position is not applicable for single "
+"product page."
+msgstr ""
+"'Ninguno' respeta la jerarquía; La posición 'detrás' no es aplicable para la "
+"página de producto único."
+
+msgid ""
+"'None' respects hierarchy; 'Behind' positions the image under the article."
+msgstr ""
+"'Ninguno' respeta la jerarquía; 'Detrás' posiciona la imagen bajo el "
+"artículo."
+
+msgid ""
+"'None' respects hierarchy; 'Below' position is not applicable for single "
+"product page."
+msgstr ""
+"'Ninguno' respeta la jerarquía; La posición 'abajo' no es aplicable para la "
+"página de producto único."
+
+msgid ""
+"'None' respects hierarchy; 'Below' positions image on top of the article."
+msgstr ""
+"'Ninguno' respeta la jerarquía; La imagen de las posiciones de 'abajo' en la "
+"parte superior del artículo."
+
+msgid "(Edit)"
+msgstr "(Editar)"
+
+msgid "1"
+msgstr "1"
+
+msgid "1 Comment"
+msgstr "1 comentario"
+
+msgid "100 Italic"
+msgstr "100 cursiva"
+
+msgid "16:9"
+msgstr "16: 9"
+
+msgid "1:1"
+msgstr "1: 1"
+
+msgid "2"
+msgstr "2"
+
+msgid "200 Italic"
+msgstr "200 cursiva"
+
+msgid "24/7 Premium Support"
+msgstr "Soporte premium 24/7"
+
+msgid "2:1"
+msgstr "2: 1"
+
+msgid "3"
+msgstr "3"
+
+msgid "300 Italic"
+msgstr "300 cursiva"
+
+msgid "300+ Templates"
+msgstr "300+ plantillas"
+
+msgid "4"
+msgstr "4"
+
+msgid "400 Italic"
+msgstr "400 cursiva"
+
+msgid "404"
+msgstr "404"
+
+msgid "404 Not Found"
+msgstr "404 no encontrado"
+
+msgid "404 Page"
+msgstr "404 página"
+
+msgid "42.group"
+msgstr "42. Grupo"
+
+msgid "4:3"
+msgstr "4: 3"
+
+msgid "500 Italic"
+msgstr "500 cursiva"
+
+msgid "500px"
+msgstr "500px"
+
+msgid "600 Italic"
+msgstr "600 cursiva"
+
+msgid "700 Italic"
+msgstr "700 cursiva"
+
+msgid "800 Italic"
+msgstr "800 cursiva"
+
+msgid "900 Italic"
+msgstr "900 cursiva"
+
+msgid "<span class=\"count\">%1$s</span>"
+msgid_plural "<span class=\"count\">%1$s</span>"
+msgstr[0] "<span class=\"count\">%1$s</span>"
+msgstr[1] "<span class=\"count\">%1$s</span>"
+
+msgid "A"
+msgstr "A"
+
+msgid "A versatile form builder plugin."
+msgstr "Un complemento de constructor de formularios versátil."
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Above Comments"
+msgstr "Comentarios anteriores"
+
+msgid "Above Footer"
+msgstr "Pie de página por encima de"
+
+msgid "Above Header"
+msgstr "Por encima del encabezado"
+
+msgid "Accent"
+msgstr "Acento"
+
+msgid ""
+"Access extra conversion tools to make more profit from your eCommerce store"
+msgstr ""
+"Acceda a herramientas de conversión adicionales para obtener más ganancias "
+"de su tienda de comercio electrónico"
+
+msgid ""
+"Access powerful features for painless WordPress design without the high "
+"costs. Powerful tools, premium support, limitless opportunity with Pro! "
+"Toggle upgrade notices on or off "
+msgstr ""
+"Acceda a características potentes para el diseño de WordPress sin dolor sin "
+"los altos costos. Herramientas poderosas, soporte premium, oportunidad "
+"ilimitada con Pro! Activa o desactive los avisos de actualización"
+
+msgid "Access To Pro Updates"
+msgstr "Acceso a actualizaciones de Pro"
+
+msgid "Accessibility"
+msgstr "Accesibilidad"
+
+msgid "Accessible Icon"
+msgstr "Icono accesible"
+
+msgid "Account"
+msgstr "Cuenta"
+
+msgid "Account icon link"
+msgstr "Enlace de icono de cuenta"
+
+msgid "Account Menu Color"
+msgstr "Color de menú de cuenta"
+
+msgid "Account URL"
+msgstr "URL de cuenta"
+
+msgid "Account Woo Navigation"
+msgstr "Navegación de cuentas woo"
+
+msgid "Accusoft"
+msgstr "Acusador"
+
+msgid "Activate"
+msgstr "Activar"
+
+msgid "Activate all"
+msgstr "Activar todo"
+
+msgid "Activate Now"
+msgstr "Activar ahora"
+
+msgid "Activate Spectra"
+msgstr "Activar espectros"
+
+msgid "Activated"
+msgstr "Activado"
+
+msgid "Activated!"
+msgstr "¡Activado!"
+
+msgid "Activating"
+msgstr "Activador"
+
+msgid "Activating Importer Plugin "
+msgstr "Activación del complemento de importador"
+
+msgid "Activation failed. Please try again."
+msgstr "La activación falló. Por favor intente de nuevo."
+
+msgid "Active"
+msgstr "Activo"
+
+msgid "active users"
+msgstr "usuarios activos"
+
+msgid "Add"
+msgstr "Agregar"
+
+msgid "Add content conditionally in the various hook areas of the theme."
+msgstr ""
+"Agregue contenido condicionalmente en las diversas áreas de gancho del tema."
+
+msgid "Add Custom HTML"
+msgstr "Agregar HTML personalizado"
+
+msgid "Add custom text for cart button"
+msgstr "Agregar texto personalizado para el botón CART"
+
+msgid "Add payment title"
+msgstr "Agregar título de pago"
+
+msgid "Add Social Icon"
+msgstr "Agregar icono social"
+
+msgid "Add To Cart"
+msgstr "Añadir a la cesta"
+
+msgid "Add To Cart Action"
+msgstr "Agregar a la acción del carrito"
+
+msgid "Add Widget"
+msgstr "Agregar widget"
+
+msgid "Add widgets here:"
+msgstr "Agregar widgets aquí:"
+
+msgid "Address Book"
+msgstr "Libreta de direcciones"
+
+msgid "Address Card"
+msgstr "Tarjeta de dirección"
+
+msgid "Adds plus and minus buttons besides product quantity"
+msgstr "Agrega más y menos botones además de la cantidad del producto"
+
+msgid "Adds shipping text next to the product price."
+msgstr "Agrega texto de envío junto al precio del producto."
+
+msgid "Advanced Settings"
+msgstr "Configuración avanzada"
+
+msgid "Adversal"
+msgstr "Adversal"
+
+msgid "affiliatetheme"
+msgstr "afiliatetetema"
+
+msgid "After"
+msgstr "Después"
+
+msgid "After Comments"
+msgstr "Después de los comentarios"
+
+msgid "After Content"
+msgstr "Después del contenido"
+
+msgid "After Footer"
+msgstr "Después del pie de página"
+
+msgid "After Header"
+msgstr "Después del encabezado"
+
+msgid "After Page"
+msgstr "Después de la página"
+
+msgid "After Post"
+msgstr "Después de la publicación"
+
+msgid "After Post Content"
+msgstr "Después de la publicación de contenido"
+
+msgid "After Sidebar"
+msgstr "Después de la barra lateral"
+
+msgid ""
+"After years of evolution and updates, the old header footer builder is at "
+"the point where it can no longer handle all of the new features. We "
+"recommend that you upgrade to the new header footer builder which has an "
+"assortment of new features and provides a more seamless experience."
+msgstr ""
+"Después de años de evolución y actualizaciones, el antiguo constructor de "
+"pies de página de encabezado está en el punto en que ya no puede manejar "
+"todas las nuevas características. Le recomendamos que actualice al nuevo "
+"constructor de pies de página que tiene una variedad de nuevas "
+"características y proporciona una experiencia más perfecta."
+
+msgid "Airbnb"
+msgstr "Airbnb"
+
+msgid "Algolia"
+msgstr "Algolia"
+
+msgid "Align Center"
+msgstr "Alinear centro"
+
+msgid "Align Justify"
+msgstr "Alinear justificar"
+
+msgid "Align Left"
+msgstr "Alinearse a la izquierda"
+
+msgid "Align Right"
+msgstr "Alinearse a la derecha"
+
+msgid "Alignment"
+msgstr "Alineación"
+
+msgid "Alipay"
+msgstr "Alipay"
+
+msgid "All Features"
+msgstr "Todas las características"
+
+msgid "All Icons"
+msgstr "Todos los íconos"
+
+msgid "All Layouts"
+msgstr "Todos los diseños"
+
+msgid "All Pages, All Posts, All Attachments"
+msgstr ""
+"Todas las páginas, todas las publicaciones, todos los archivos adjuntos"
+
+msgid "Alt Brand"
+msgstr "Marca alternativa"
+
+msgid "Alternate Background"
+msgstr "Antecedentes alternativos"
+
+msgid "Alternate Brand"
+msgstr "Marca alternativa"
+
+msgid "Alternate Creative Commons Public Domain"
+msgstr "Dominio público alternativo de Creative Commons"
+
+msgid "Alternate CSS3 Logo"
+msgstr "Logotipo alternativo CSS3"
+
+msgid "Alternate First Order"
+msgstr "Alternativo de primer orden"
+
+msgid "Alternate Fort Awesome"
+msgstr "Fuerte alternativo impresionante"
+
+msgid "Alternate GitHub"
+msgstr "Github alternativo"
+
+msgid "Alternate Pied Piper Logo (Old)"
+msgstr "Logotipo de Piper de pied alternativo (antiguo)"
+
+msgid "Amazon"
+msgstr "Amazonas"
+
+msgid "Amazon Pay"
+msgstr "Amazon Pay"
+
+msgid "Amazon Pay Credit Card"
+msgstr "Tarjeta de crédito de Amazon Pay"
+
+msgid "Amazon Web Services (AWS)"
+msgstr "Servicios web de Amazon (AWS)"
+
+msgid "American Express Credit Card"
+msgstr "Tarjeta de crédito American Express"
+
+msgid "Amex"
+msgstr "Amex"
+
+msgid "Amilia"
+msgstr "Amilia"
+
+msgid "An error occurred while regenerating assets."
+msgstr "Se produjo un error al regenerar los activos."
+
+msgid "An error occurred while saving."
+msgstr "Se produjo un error mientras se guardaba."
+
+msgid "Anchor"
+msgstr "Ancla"
+
+msgid "Anchor Circle Check"
+msgstr "Cheque del círculo de anclaje"
+
+msgid "Anchor Circle Exclamation"
+msgstr "Exclamación del círculo de anclaje"
+
+msgid "Anchor Circle Xmark"
+msgstr "Anchor Circle Xmark"
+
+msgid "Anchor Lock"
+msgstr "Cerradura de anclaje"
+
+msgid "Android"
+msgstr "Androide"
+
+msgid "AngelList"
+msgstr "Angelista"
+
+msgid "Angle Down"
+msgstr "Ángulo hacia abajo"
+
+msgid "Angle Left"
+msgstr "Ángulo a la izquierda"
+
+msgid "Angle Right"
+msgstr "Ángulo a la derecha"
+
+msgid "Angle Up"
+msgstr "Ángulo"
+
+msgid "Angles Down"
+msgstr "Ángulo"
+
+msgid "Angles Left"
+msgstr "Ángulos quedados"
+
+msgid "Angles Right"
+msgstr "Ángulos a la derecha"
+
+msgid "Angles Up"
+msgstr "Ángulo"
+
+msgid "Angry Creative"
+msgstr "Creativo enojado"
+
+msgid "Angular"
+msgstr "Angular"
+
+msgid "Ankh"
+msgstr "Ankh"
+
+msgid "App Store"
+msgstr "Tienda de aplicaciones"
+
+msgid "App.net"
+msgstr "App.net"
+
+msgid "Apper Systems AB"
+msgstr "Sistemas de apuertas AB"
+
+msgid "Apple"
+msgstr "Manzana"
+
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+msgid "Apple Pay Credit Card"
+msgstr "Tarjeta de crédito de Apple Pay"
+
+msgid "Apple Whole"
+msgstr "Apple entero"
+
+msgid "Archive"
+msgstr "Archivo"
+
+msgid "Archive Banner"
+msgstr "Banner de archivo"
+
+msgid "Archive Columns"
+msgstr "Columnas de archivo"
+
+msgid "Archive Content Width"
+msgstr "Ancho de contenido de archivo"
+
+msgid "Archive Description"
+msgstr "Descripción del archivo"
+
+msgid "Archive excerpt options"
+msgstr "Opciones de extracto de archivo"
+
+msgid "Archive Page - Post Content Layouts"
+msgstr "Página de archivo: diseños de contenido de publicación"
+
+msgid "Archive Page - Post Grid Control"
+msgstr "Página de archivo: control de cuadrícula post"
+
+msgid "Archive Page - Post Readtime Meta Option"
+msgstr "Página de archivo - Publicar Meta de lectura Meta"
+
+msgid "Archive pagination options"
+msgstr "Opciones de paginación de archivo"
+
+msgid "Archive read time"
+msgstr "Tiempo de lectura del archivo"
+
+msgid "Archive Title"
+msgstr "Título de archivo"
+
+msgid "Archives"
+msgstr "Archivo"
+
+msgid "Archway"
+msgstr "Arco"
+
+msgid "Arrow Down"
+msgstr "Flecha hacia abajo"
+
+msgid "Arrow Down 1 9"
+msgstr "Flecha hacia abajo 1 9"
+
+msgid "Arrow Down 9 1"
+msgstr "Flecha hacia abajo 9 1"
+
+msgid "Arrow Down A Z"
+msgstr "Arrow hacia abajo una z"
+
+msgid "Arrow Down Long"
+msgstr "Flecha hacia abajo mucho"
+
+msgid "Arrow Down Short Wide"
+msgstr "Flecha baja de ancho"
+
+msgid "Arrow Down Up Across Line"
+msgstr "Arrow hacia arriba a través de la línea"
+
+msgid "Arrow Down Up Lock"
+msgstr "Flecha hacia abajo Bloqueo"
+
+msgid "Arrow Down Wide Short"
+msgstr "Flecha hacia abajo"
+
+msgid "Arrow Down Z A"
+msgstr "Arrow Down Z A"
+
+msgid "Arrow Left"
+msgstr "Flecha a la izquierda"
+
+msgid "Arrow Left Long"
+msgstr "Flecha se fue larga"
+
+msgid "Arrow Pointer"
+msgstr "Puntero de flecha"
+
+msgid "Arrow Right"
+msgstr "Flecha a la derecha"
+
+msgid "Arrow Right Arrow Left"
+msgstr "Flecha flecha derecha a la izquierda"
+
+msgid "Arrow Right From Bracket"
+msgstr "Flecha directamente desde el soporte"
+
+msgid "Arrow Right Long"
+msgstr "Flecha a la derecha larga"
+
+msgid "Arrow Right To Bracket"
+msgstr "Flecha derecha al soporte"
+
+msgid "Arrow Right To City"
+msgstr "Flecha derecha a la ciudad"
+
+msgid "Arrow Rotate Left"
+msgstr "Flecha girar a la izquierda"
+
+msgid "Arrow Rotate Right"
+msgstr "Flecha girar a la derecha"
+
+msgid "Arrow Trend Down"
+msgstr "Tendencia de la flecha hacia abajo"
+
+msgid "Arrow Trend Up"
+msgstr "Flecha tendencia hacia arriba"
+
+msgid "Arrow Turn Down"
+msgstr "Arrow Rate hacia abajo"
+
+msgid "Arrow Turn Up"
+msgstr "Arrow Subir"
+
+msgid "Arrow Up"
+msgstr "Arrow Arrow"
+
+msgid "Arrow Up 1 9"
+msgstr "Arrow Up 1 9"
+
+msgid "Arrow Up 9 1"
+msgstr "Flecha arriba 9 1"
+
+msgid "Arrow Up A Z"
+msgstr "Arrow A Up a Z"
+
+msgid "Arrow Up From Bracket"
+msgstr "Flecha hacia arriba desde el soporte"
+
+msgid "Arrow Up From Ground Water"
+msgstr "Flecha de agua subterránea"
+
+msgid "Arrow Up From Water Pump"
+msgstr "Flecha hacia arriba de la bomba de agua"
+
+msgid "Arrow Up Long"
+msgstr "Arrow arriba"
+
+msgid "Arrow Up Right Dots"
+msgstr "Arrow Up Right Dots"
+
+msgid "Arrow Up Right From Square"
+msgstr "Flecha directamente desde la plaza"
+
+msgid "Arrow Up Short Wide"
+msgstr "Flecha hacia arriba de ancho"
+
+msgid "Arrow Up Wide Short"
+msgstr "Flecha ancha corta"
+
+msgid "Arrow Up Z A"
+msgstr "Arrow up z a"
+
+msgid "Arrows Down To Line"
+msgstr "Flechas hacia abajo a la línea"
+
+msgid "Arrows Down To People"
+msgstr "Flechas a la gente"
+
+msgid "Arrows Left Right"
+msgstr "Flechas a la izquierda a la derecha"
+
+msgid "Arrows Left Right To Line"
+msgstr "Flechas a la derecha a la derecha a línea"
+
+msgid "Arrows Rotate"
+msgstr "Las flechas giran"
+
+msgid "Arrows Spin"
+msgstr "Giro de flechas"
+
+msgid "Arrows Split Up And Left"
+msgstr "Flechas divididas hacia arriba y hacia la izquierda"
+
+msgid "Arrows To Circle"
+msgstr "Flechas al círculo"
+
+msgid "Arrows To Dot"
+msgstr "Flechas al punto"
+
+msgid "Arrows To Eye"
+msgstr "Flechas a la vista"
+
+msgid "Arrows Turn Right"
+msgstr "Las flechas giran a la derecha"
+
+msgid "Arrows Turn To Dots"
+msgstr "Las flechas se vuelven de los puntos"
+
+msgid "Arrows Up Down"
+msgstr "Flechas hacia arriba"
+
+msgid "Arrows Up Down Left Right"
+msgstr "Flechas hacia abajo hacia abajo a la derecha"
+
+msgid "Arrows Up To Line"
+msgstr "Flechas hasta la línea"
+
+msgid "Artstation"
+msgstr "Artestación"
+
+msgid "Ascending"
+msgstr "Ascendente"
+
+msgid "Assets Regenerated!"
+msgstr "Activos regenerados!"
+
+msgid "Assign Footer Menu"
+msgstr "Asignar menores de pie de página"
+
+msgid "Asterisk"
+msgstr "Asterisco"
+
+msgid "Astra"
+msgstr "Astro"
+
+msgid "Astra Free Vs Pro"
+msgstr "Astra Free vs Pro"
+
+msgid "Astra Free vs Pro"
+msgstr "Astra Free vs Pro"
+
+msgid "Astra Integrations"
+msgstr "Integraciones Astra"
+
+msgid "Astra Menu Settings"
+msgstr "Configuración del menú Astra"
+
+msgid "Astra Settings"
+msgstr "Astra Configuración"
+
+msgid "Astra WordPress Theme"
+msgstr "Astra WordPress Tema"
+
+msgid "Astra Works Seamlessly with WooCommerce!"
+msgstr "¡Astra funciona sin problemas con WooCommerce!"
+
+msgid "Asymmetrik, Ltd."
+msgstr "Asymmetrik, Ltd."
+
+msgid "At"
+msgstr "En"
+
+msgid "Atlassian"
+msgstr "Atlassiano"
+
+msgid "Atom"
+msgstr "Átomo"
+
+msgid "Attachment"
+msgstr "Adjunto"
+
+msgid "Audible"
+msgstr "Audible"
+
+msgid "Audio Description"
+msgstr "Descripción de audio"
+
+msgid "Austral Sign"
+msgstr "Austral Signo"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Author Avatar"
+msgstr "Avatar de autor"
+
+msgid "Author Box with Social Share"
+msgstr "Cuadro de autor con participación social"
+
+msgid "Author name: "
+msgstr "Nombre del autor:"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Auto load previous posts"
+msgstr "Carga automática de publicaciones anteriores"
+
+msgid "Automate your WordPress setup."
+msgstr "Automatice su configuración de WordPress."
+
+msgid "Autoprefixer"
+msgstr "Piloto automático"
+
+msgid "Availability:"
+msgstr "Disponibilidad:"
+
+msgid "Available in Astra Pro"
+msgstr "Disponible en Astra Pro"
+
+msgid "Avatar"
+msgstr "Avatar"
+
+msgid "Avatar Width"
+msgstr "Ancho de avatar"
+
+msgid "avianex"
+msgstr "avanex"
+
+msgid "Aviato"
+msgstr "Aviato"
+
+msgid "Award"
+msgstr "Otorgar"
+
+msgid "B"
+msgstr "B"
+
+msgid "Baby"
+msgstr "Bebé"
+
+msgid "Baby Carriage"
+msgstr "Cochecito de bebé"
+
+msgid "Background"
+msgstr "Fondo"
+
+msgid "Background Color"
+msgstr "Color de fondo"
+
+msgid "Background Color-Image"
+msgstr "IMAGEN DE COLOR DE FRAVERSE"
+
+msgid "Background Overlay"
+msgstr "Superposición de fondo"
+
+msgid "Backward"
+msgstr "Hacia atrás"
+
+msgid "Backward Fast"
+msgstr "Atrasado"
+
+msgid "Backward Step"
+msgstr "Paso atrás"
+
+msgid "Bacon"
+msgstr "Tocino"
+
+msgid "Bacteria"
+msgstr "Bacterias"
+
+msgid "Bacterium"
+msgstr "Bacteria"
+
+msgid "Badge"
+msgstr "Insignia"
+
+msgid "Bag Shopping"
+msgstr "Compras de bolsas"
+
+msgid "Bahai"
+msgstr "Bahai"
+
+msgid "Baht Sign"
+msgstr "Signo de baht"
+
+msgid "Ban"
+msgstr "Prohibición"
+
+msgid "Ban Smoking"
+msgstr "Prohibir fumar"
+
+msgid "Bandage"
+msgstr "Vendaje"
+
+msgid "Bandcamp"
+msgstr "Pañuelo"
+
+msgid "Banner Layout"
+msgstr "Diseño de banner"
+
+msgid "Banner Min Height"
+msgstr "Banner mín altura"
+
+msgid "Barcode"
+msgstr "Código de barras"
+
+msgid "Bars"
+msgstr "Verja"
+
+msgid "Bars Progress"
+msgstr "Progreso de barras"
+
+msgid "Bars Staggered"
+msgstr "Barras escalonadas"
+
+msgid "Base Colors"
+msgstr "Colores base"
+
+msgid "Base Font"
+msgstr "Fuente base"
+
+msgid "Base Typography"
+msgstr "Tipografía base"
+
+msgid "Baseball"
+msgstr "Béisbol"
+
+msgid "Baseball Bat Ball"
+msgstr "Bola de béisbol"
+
+msgid "Based on 5k+ reviews"
+msgstr "Basado en 5K+ revisiones"
+
+msgid "Basket Shopping"
+msgstr "Compras de canasta"
+
+msgid "Basketball"
+msgstr "Baloncesto"
+
+msgid "Bath"
+msgstr "Baño"
+
+msgid "Battery Empty"
+msgstr "Batería vacía"
+
+msgid "Battery Full"
+msgstr "Batería llena"
+
+msgid "Battery Half"
+msgstr "Mitad de la batería"
+
+msgid "Battery Quarter"
+msgstr "Trimestre de la batería"
+
+msgid "Battery Three Quarters"
+msgstr "Batería tres cuartos"
+
+msgid "Battle.net"
+msgstr "Battle.net"
+
+msgid "Bed"
+msgstr "Cama"
+
+msgid "Bed Pulse"
+msgstr "Pulso de cama"
+
+msgid "Beer Mug Empty"
+msgstr "Taza de cerveza vacía"
+
+msgid "Before Comments"
+msgstr "Antes de los comentarios"
+
+msgid "Before Content"
+msgstr "Antes de contenido"
+
+msgid "Before Footer"
+msgstr "Antes del pie"
+
+msgid "Before Header"
+msgstr "Antes del encabezado"
+
+msgid "Before Page"
+msgstr "Página antes"
+
+msgid "Before Post"
+msgstr "Antes de la publicación"
+
+msgid "Before Post Content"
+msgstr "Antes de publicar contenido"
+
+msgid "Before Sidebar"
+msgstr "Antes de la barra lateral"
+
+msgid "Before Title"
+msgstr "Antes del título"
+
+msgid "Behance"
+msgstr "Bey"
+
+msgid "Behance Square"
+msgstr "Behance Square"
+
+msgid "Behind"
+msgstr "Detrás"
+
+msgid "Behind Positioned Image Width"
+msgstr "Detrás del ancho de imagen posicionado"
+
+msgid "Bell"
+msgstr "Campana"
+
+msgid "Bell Concierge"
+msgstr "Conserje de campana"
+
+msgid "Bell Slash"
+msgstr "Pizarra"
+
+msgid "Below"
+msgstr "Abajo"
+
+msgid "Below Comments"
+msgstr "Comentarios a continuación"
+
+msgid "Below Footer"
+msgstr "Debajo del pie"
+
+msgid "Below Header"
+msgstr "Debajo del encabezado"
+
+msgid "Bezier Curve"
+msgstr "Curva de bezier"
+
+msgid "Bicycle"
+msgstr "Bicicleta"
+
+msgid "Bilibili"
+msgstr "Bilibili"
+
+msgid "BIMobject"
+msgstr "Bimobjeto"
+
+msgid "Binoculars"
+msgstr "Prismáticos"
+
+msgid "Biohazard"
+msgstr "Biohazard"
+
+msgid "Bitbucket"
+msgstr "Bitbucket"
+
+msgid "Bitcoin"
+msgstr "Bitcoin"
+
+msgid "Bitcoin Sign"
+msgstr "Signo de bitcoin"
+
+msgid "Bity"
+msgstr "Bity"
+
+msgid "BlackBerry"
+msgstr "Zarzamora"
+
+msgid "Blender"
+msgstr "Licuadora"
+
+msgid "Blender Phone"
+msgstr "Teléfono de la licuadora"
+
+msgid "Block Editor"
+msgstr "Editor de bloques"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Blog / Archive"
+msgstr "Blog / Archivo"
+
+msgid "Blog Description"
+msgstr "Descripción del blog"
+
+msgid "Blog Layout"
+msgstr "Diseño de blog"
+
+msgid "Blog Options"
+msgstr "Opciones de blog"
+
+msgid ""
+"Blog Page is when Latest Posts are selected to be displayed on a particular "
+"page."
+msgstr ""
+"La página del blog es cuando las últimas publicaciones se seleccionan para "
+"mostrarse en una página en particular."
+
+msgid "Blog Pro"
+msgstr "Blog Pro"
+
+msgid "Blog Title"
+msgstr "Título de blog"
+
+msgid "Blogger"
+msgstr "Blogger"
+
+msgid "Blogger B"
+msgstr "Blogger B"
+
+msgid "%astra%"
+msgstr "%Astra%"
+
+msgid "Bluesky"
+msgstr "Bluesky"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Body Font"
+msgstr "Fuente del cuerpo"
+
+msgid "Body Text"
+msgstr "Texto del cuerpo"
+
+msgid "Bold"
+msgstr "Atrevido"
+
+msgid "Bold 700"
+msgstr "Bold 700"
+
+msgid "Bold 700 Italic"
+msgstr "Bold 700 cursiva"
+
+msgid "Bolt"
+msgstr "Tornillo"
+
+msgid "Bolt Lightning"
+msgstr "Rayo de perno"
+
+msgid "Bomb"
+msgstr "Bomba"
+
+msgid "Bone"
+msgstr "Hueso"
+
+msgid "Bong"
+msgstr "Bong"
+
+msgid "Book"
+msgstr "Libro"
+
+msgid "Book Atlas"
+msgstr "Atlas de libro"
+
+msgid "Book Bible"
+msgstr "Biblia"
+
+msgid "Book Bookmark"
+msgstr "Libro de libros"
+
+msgid "Book Journal Whills"
+msgstr "Book Journal Whills"
+
+msgid "Book Medical"
+msgstr "Libro médico"
+
+msgid "Book Open"
+msgstr "Libro abierto"
+
+msgid "Book Open Reader"
+msgstr "Libro de lector abierto"
+
+msgid "Book Quran"
+msgstr "Libro del Corán"
+
+msgid "Book Skull"
+msgstr "Libro de cráneo"
+
+msgid "Bookmark"
+msgstr "Marcador"
+
+msgid "Bootstrap"
+msgstr "Oreja"
+
+msgid "Border"
+msgstr "Borde"
+
+msgid "Border All"
+msgstr "Borde"
+
+msgid "Border Color"
+msgstr "Color de borde"
+
+msgid "Border None"
+msgstr "Bordear ninguno"
+
+msgid "Border Radius"
+msgstr "Radio fronterizo"
+
+msgid "Border Size"
+msgstr "Tamaño del borde"
+
+msgid "Border Top Left"
+msgstr "Borde superior a la izquierda"
+
+msgid "Border Width"
+msgstr "Ancho fronterizo"
+
+msgid "Borders"
+msgstr "Fronteras"
+
+msgid "Bore Hole"
+msgstr "Agujero"
+
+msgid "Bots"
+msgstr "Bots"
+
+msgid "Bottle Droplet"
+msgstr "Gota de botella"
+
+msgid "Bottle Water"
+msgstr "Agua de botella"
+
+msgid "Bottom"
+msgstr "Abajo"
+
+msgid "Bottom Border Color"
+msgstr "Color del borde inferior"
+
+msgid "Bottom Border Size"
+msgstr "Tamaño del borde inferior"
+
+msgid "Bowl Food"
+msgstr "Comida"
+
+msgid "Bowl Rice"
+msgstr "Arroz con tazón"
+
+msgid "Bowling Ball"
+msgstr "Bola de boliche"
+
+msgid "Box"
+msgstr "Caja"
+
+msgid "Box Archive"
+msgstr "Archivo"
+
+msgid "Box Background"
+msgstr "Fondos de caja"
+
+msgid "Box Open"
+msgstr "Abierta"
+
+msgid "Box shadow design options"
+msgstr "Opciones de diseño de sombra de caja"
+
+msgid "Box Tissue"
+msgstr "Bañera"
+
+msgid "Boxed"
+msgstr "En caja"
+
+msgid "Boxes Packing"
+msgstr "Empacación de cajas"
+
+msgid "Boxes Stacked"
+msgstr "Cajas apiladas"
+
+msgid "Braille"
+msgstr "Braille"
+
+msgid "Brain"
+msgstr "Cerebro"
+
+msgid "Brainstorm Force"
+msgstr "Fuerza de lluvia de ideas"
+
+msgid "Brand"
+msgstr "Marca"
+
+msgid "Brands"
+msgstr "Marcas"
+
+msgid "Brazilian Real Sign"
+msgstr "Signo real brasileño"
+
+msgid "Bread Slice"
+msgstr "Rebanada de pan"
+
+msgid "Breadcrumb"
+msgstr "Migaja de pan"
+
+msgid "Breadcrumb Overview"
+msgstr "Descripción general de pan"
+
+msgid "Breadcrumb Source"
+msgstr "Fuente de pan de pan"
+
+msgid "Breadcrumbs"
+msgstr "Pan rallado"
+
+msgid "Breadcrumbs Shortcode"
+msgstr "Breadrumbs Shortcode"
+
+msgid "Bridge"
+msgstr "Puente"
+
+msgid "Bridge Circle Check"
+msgstr "Cheque de círculo de puente"
+
+msgid "Bridge Circle Exclamation"
+msgstr "Exclamación del círculo de puente"
+
+msgid "Bridge Circle Xmark"
+msgstr "Bridge Circle Xmark"
+
+msgid "Bridge Lock"
+msgstr "Mechón de puente"
+
+msgid "Bridge Water"
+msgstr "Agua de puente"
+
+msgid "Briefcase"
+msgstr "Maletín"
+
+msgid "Briefcase Medical"
+msgstr "Maletín médico"
+
+msgid "Broom"
+msgstr "Escoba"
+
+msgid "Broom Ball"
+msgstr "Bola de escoba"
+
+msgid "Browse:"
+msgstr "Navegar:"
+
+msgid "Brush"
+msgstr "Cepillar"
+
+msgid "BTC"
+msgstr "BTC"
+
+msgid "Bucket"
+msgstr "Balde"
+
+msgid "Buffer"
+msgstr "Buffer"
+
+msgid "Bug"
+msgstr "Bicho"
+
+msgid "Bug Slash"
+msgstr "Barra"
+
+msgid "Bugs"
+msgstr "Insectos"
+
+msgid "Build Better Websites with Astra Pro"
+msgstr "Crear mejores sitios web con Astra Pro"
+
+msgid ""
+"Build high-converting E-Commerce stores with CartFlows, the ultimate "
+"checkout and funnel builder."
+msgstr ""
+"Construya tiendas de comercio electrónico de alta conversión con flujos de "
+"carritos, el mejor pago y el constructor de embudo."
+
+msgid "Build Ultra High Performance Websites, Without Coding"
+msgstr "Cree sitios web de alto rendimiento ultra, sin codificar"
+
+msgid "Build Your Dream Site in Minutes With AI 🚀"
+msgstr "Construya el sitio de sus sueños en minutos con AI 🚀"
+
+msgid "Building"
+msgstr "Edificio"
+
+msgid "Building Circle Arrow Right"
+msgstr "Arrow del círculo de construcción a la derecha"
+
+msgid "Building Circle Check"
+msgstr "Verificación del círculo de construcción"
+
+msgid "Building Circle Exclamation"
+msgstr "Exclamación del círculo de construcción"
+
+msgid "Building Circle Xmark"
+msgstr "Building Circle Xmark"
+
+msgid "Building Columns"
+msgstr "Columnas de construcción"
+
+msgid "Building Flag"
+msgstr "Bandera"
+
+msgid "Building Lock"
+msgstr "Bloqueo"
+
+msgid "Building Ngo"
+msgstr "Edificio ONG"
+
+msgid "Building Shield"
+msgstr "Escudo"
+
+msgid "Building Un"
+msgstr "Construyendo la ONU"
+
+msgid "Building User"
+msgstr "Usuario de edificios"
+
+msgid "Building Wheat"
+msgstr "Construcción de trigo"
+
+msgid "Bullhorn"
+msgstr "Megáfono"
+
+msgid "Bullseye"
+msgstr "Diana"
+
+msgid "Burger"
+msgstr "Hamburguesa"
+
+msgid "Burst"
+msgstr "Explosión"
+
+msgid "Bus"
+msgstr "Autobús"
+
+msgid "Bus Simple"
+msgstr "Autobús simple"
+
+msgid "Business"
+msgstr "Negocio"
+
+msgid "Business Time"
+msgstr "Tiempo de negocio"
+
+msgid "Button"
+msgstr "Botón"
+
+msgid "Button %s"
+msgstr "Botón %s"
+
+msgid "Button 1"
+msgstr "Botón 1"
+
+msgid "Button 2"
+msgstr "Botón 2"
+
+msgid "Button Background"
+msgstr "Fondo del botón"
+
+msgid "Button Color"
+msgstr "Color de botón"
+
+msgid "Button Link"
+msgstr "Enlace de botón"
+
+msgid "Button Presets"
+msgstr "Presets de botones"
+
+msgid "Button Style"
+msgstr "Estilo de botón"
+
+msgid "Button Text"
+msgstr "Texto de botón"
+
+msgid "Button Width"
+msgstr "Ancho de botón"
+
+msgid "Buttons"
+msgstr "Botones"
+
+msgid "Buy n Large"
+msgstr "Comprar n grande"
+
+msgid "BuySellAds"
+msgstr "Buysellads"
+
+msgid "By "
+msgstr "Por"
+
+msgid "By: %s"
+msgstr "Por: %s"
+
+msgid "Büromöbel-Experte GmbH & Co. KG."
+msgstr "Büromöbel-Experte Gmbh & Co. Kg."
+
+msgid "C"
+msgstr "do"
+
+msgid "Cache Cleared!"
+msgstr "Cache despejado!"
+
+msgid "Cake Candles"
+msgstr "Velas de pastel"
+
+msgid ""
+"Calculate a personalized image ratio using this %1$s online tool %2$s for "
+"your image dimensions."
+msgstr ""
+"Calcule una relación de imagen personalizada utilizando esta %1$s "
+"herramienta en línea %2$s para las dimensiones de su imagen."
+
+msgid "Calculator"
+msgstr "Calculadora"
+
+msgid "Calendar"
+msgstr "Calendario"
+
+msgid "Calendar Check"
+msgstr "Control de calendario"
+
+msgid "Calendar Day"
+msgstr "Día calendario"
+
+msgid "Calendar Days"
+msgstr "Días calendario"
+
+msgid "Calendar Minus"
+msgstr "Calendario menos"
+
+msgid "Calendar Plus"
+msgstr "Calendario más"
+
+msgid "Calendar Week"
+msgstr "Semana del calendario"
+
+msgid "Calendar Xmark"
+msgstr "Calendario xmark"
+
+msgid "Camera"
+msgstr "Cámara"
+
+msgid "Camera Retro"
+msgstr "Cámara retro"
+
+msgid "Camera Rotate"
+msgstr "Rotar la cámara"
+
+msgid "Campground"
+msgstr "Terreno de camping"
+
+msgid "Canadian Maple Leaf"
+msgstr "Hoja de arce canadiense"
+
+msgid "Cancel Reply"
+msgstr "Cancelar respuesta"
+
+msgid "Candy Cane"
+msgstr "Bastón de caramelo"
+
+msgid "Cannabis"
+msgstr "Canabis"
+
+msgid "Capitalize"
+msgstr "Capitalizar"
+
+msgid "Capsules"
+msgstr "Cápsulas"
+
+msgid ""
+"Capture emails at checkout and send follow-up emails to recover lost revenue."
+msgstr ""
+"Capture los correos electrónicos en el pago y envíe correos electrónicos de "
+"seguimiento para recuperar los ingresos perdidos."
+
+msgid "Car"
+msgstr "Auto"
+
+msgid "Car Battery"
+msgstr "Batería de coche"
+
+msgid "Car Burst"
+msgstr "Estallar"
+
+msgid "Car On"
+msgstr "Coche"
+
+msgid "Car Rear"
+msgstr "Trasero"
+
+msgid "Car Side"
+msgstr "Lado del coche"
+
+msgid "Car Tunnel"
+msgstr "Túnel de coche"
+
+msgid "Caravan"
+msgstr "Caravana"
+
+msgid "Caret Down"
+msgstr "Caretero"
+
+msgid "Caret Left"
+msgstr "Careto a la izquierda"
+
+msgid "Caret Right"
+msgstr "Careto a la derecha"
+
+msgid "Caret Up"
+msgstr "Alertar"
+
+msgid "Carrot"
+msgstr "Zanahoria"
+
+msgid "Cart"
+msgstr "Carro"
+
+msgid "Cart Arrow Down"
+msgstr "Flecha de carrito"
+
+msgid "Cart Button"
+msgstr "Botón de carrito"
+
+msgid "Cart Button Text"
+msgstr "Texto del botón del carrito"
+
+msgid "Cart Click"
+msgstr "CARRO CLIC"
+
+msgid "Cart Click Action"
+msgstr "Acción de clic en el carrito"
+
+msgid "Cart Color"
+msgstr "Color de carro"
+
+msgid "Cart Flatbed"
+msgstr "Cama plana"
+
+msgid "Cart Flatbed Suitcase"
+msgstr "Maleta plana"
+
+msgid "Cart Icon"
+msgstr "Icono de carro"
+
+msgid "Cart Label"
+msgstr "Etiqueta de carro"
+
+msgid "Cart Label Position"
+msgstr "Posición de la etiqueta del carro"
+
+msgid "Cart Page"
+msgstr "Página de carro"
+
+msgid "Cart Plus"
+msgstr "Carro más"
+
+msgid "Cart Shopping"
+msgstr "Compras de carros"
+
+msgid "Cart Tray"
+msgstr "Bandeja"
+
+msgid "Cash Register"
+msgstr "Caja registradora"
+
+msgid "Cat"
+msgstr "Gato"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Cedi Sign"
+msgstr "Signo de cedi"
+
+msgid "Cent Sign"
+msgstr "Signo de centavo"
+
+msgid "Center"
+msgstr "Centro"
+
+msgid "Center Bottom"
+msgstr "Fondo central"
+
+msgid "Center Center"
+msgstr "Centro central"
+
+msgid "Center Heavy 25/50/25"
+msgstr "Centro pesado 25/50/25"
+
+msgid "Center Top"
+msgstr "Top central"
+
+msgid "Centercode"
+msgstr "Centrar"
+
+msgid "Centos"
+msgstr "Cento"
+
+msgid "Certificate"
+msgstr "Certificado"
+
+msgid "Chair"
+msgstr "Silla"
+
+msgid "Chalkboard"
+msgstr "Pizarra"
+
+msgid "Chalkboard User"
+msgstr "Usuario de pizarra"
+
+msgid "Champagne Glasses"
+msgstr "Copas de champán"
+
+msgid "Change Cart Button Text"
+msgstr "Cambiar el texto del botón del carrito"
+
+msgid "Change Icon"
+msgstr "Cambiar icono"
+
+msgid ""
+"Changes single product variation layout to be displayed inline or stacked."
+msgstr ""
+"Cambia el diseño de variación del producto único que se mostrará en línea o "
+"apilado."
+
+msgid "Charging Station"
+msgstr "Estación de carga"
+
+msgid "Chart Area"
+msgstr "Área de la tabla"
+
+msgid "Chart Bar"
+msgstr "Barra de gráfico"
+
+msgid "Chart Column"
+msgstr "Columna de gráfico"
+
+msgid "Chart Gantt"
+msgstr "Gráfico Gantt"
+
+msgid "Chart Line"
+msgstr "Línea de gráfico"
+
+msgid "Chart Pie"
+msgstr "Pastel de gráfico"
+
+msgid "Chart Simple"
+msgstr "Cuadro simple"
+
+msgid "Check"
+msgstr "Controlar"
+
+msgid "Check Double"
+msgstr "Verifique el doble"
+
+msgid "Check To Slot"
+msgstr "Comprobar a la ranura"
+
+msgid "Checkout"
+msgstr "Verificar"
+
+msgid "Checkout Button"
+msgstr "Botón de pago"
+
+msgid "Cheese"
+msgstr "Queso"
+
+msgid "Chess"
+msgstr "Ajedrez"
+
+msgid "Chess Bishop"
+msgstr "Obispo de ajedrez"
+
+msgid "Chess Board"
+msgstr "Tablero de ajedrez"
+
+msgid "Chess King"
+msgstr "Rey de ajedrez"
+
+msgid "Chess Knight"
+msgstr "Caballero de ajedrez"
+
+msgid "Chess Pawn"
+msgstr "Peón de ajedrez"
+
+msgid "Chess Queen"
+msgstr "Reina del ajedrez"
+
+msgid "Chess Rook"
+msgstr "Torre de ajedrez"
+
+msgid "Chevron Down"
+msgstr "Gallo"
+
+msgid "Chevron Left"
+msgstr "Chevron se fue"
+
+msgid "Chevron Right"
+msgstr "Chevron Derecha"
+
+msgid "Chevron Up"
+msgstr "Chevron arriba"
+
+msgid "Child"
+msgstr "Niño"
+
+msgid "Child Dress"
+msgstr "Vestido para niños"
+
+msgid "Child Reaching"
+msgstr "Niño llegando"
+
+msgid "Child Rifle"
+msgstr "Rifle de niños"
+
+msgid "Children"
+msgstr "Niños"
+
+msgid "Choose from Icon Library"
+msgstr "Elija entre la biblioteca de iconos"
+
+msgid "Choose Icon Colors"
+msgstr "Elija colores de iconos"
+
+msgid ""
+"Choose if you want to display Icon or Avatar with the Text selected Profile "
+"Type."
+msgstr ""
+"Elija si desea mostrar icono o avatar con el tipo de perfil de texto "
+"seleccionado."
+
+msgid ""
+"Choose if you want to display Icon with the Text selected Profile Type for "
+"logged out users."
+msgstr ""
+"Elija si desea mostrar el icono con el tipo de perfil de texto seleccionado "
+"para los usuarios de la sesión."
+
+msgid "Chrome"
+msgstr "Cromo"
+
+msgid "Chromecast"
+msgstr "Chromecast"
+
+msgid "Church"
+msgstr "Iglesia"
+
+msgid "Circle"
+msgstr "Círculo"
+
+msgid "Circle Arrow Down"
+msgstr "Flecha de círculo hacia abajo"
+
+msgid "Circle Arrow Left"
+msgstr "Flecha circular a la izquierda"
+
+msgid "Circle Arrow Right"
+msgstr "Flecha circular a la derecha"
+
+msgid "Circle Arrow Up"
+msgstr "Flecha circular"
+
+msgid "Circle Check"
+msgstr "Cheque en círculo"
+
+msgid "Circle Chevron Down"
+msgstr "Circuario Chevron Down"
+
+msgid "Circle Chevron Left"
+msgstr "Circle Chevron a la izquierda"
+
+msgid "Circle Chevron Right"
+msgstr "Circle Chevron Derecha"
+
+msgid "Circle Chevron Up"
+msgstr "Circle Chevron arriba"
+
+msgid "Circle Dollar To Slot"
+msgstr "Círculo de dólar a la ranura"
+
+msgid "Circle Dot"
+msgstr "Punto de vista circular"
+
+msgid "Circle Down"
+msgstr "Rodear"
+
+msgid "Circle Exclamation"
+msgstr "Exclamación del círculo"
+
+msgid "Circle H"
+msgstr "Círculo H"
+
+msgid "Circle Half Stroke"
+msgstr "Medio golpe de círculo"
+
+msgid "Circle Info"
+msgstr "Información en círculo"
+
+msgid "Circle Left"
+msgstr "Círculo a la izquierda"
+
+msgid "Circle Minus"
+msgstr "Círculo menos"
+
+msgid "Circle Nodes"
+msgstr "Nodos circulares"
+
+msgid "Circle Notch"
+msgstr "Muesca"
+
+msgid "Circle Pause"
+msgstr "Pausa del círculo"
+
+msgid "Circle Play"
+msgstr "Juego circular"
+
+msgid "Circle Plus"
+msgstr "Círculo más"
+
+msgid "Circle Question"
+msgstr "Cuestión de círculo"
+
+msgid "Circle Radiation"
+msgstr "Radiación circular"
+
+msgid "Circle Right"
+msgstr "Rodean a la derecha"
+
+msgid "Circle Stop"
+msgstr "Parada circular"
+
+msgid "Circle Up"
+msgstr "Rodear"
+
+msgid "Circle User"
+msgstr "Usuario de círculo"
+
+msgid "Circle Xmark"
+msgstr "Círculo xmark"
+
+msgid "City"
+msgstr "Ciudad"
+
+msgid "Clapperboard"
+msgstr "Tablero"
+
+msgid "Classic"
+msgstr "Clásico"
+
+msgid "Classic Layout"
+msgstr "Diseño clásico"
+
+msgid ""
+"Clean code written using the latest standards to maximize security and work "
+"flawlessly with any WordPress plugin."
+msgstr ""
+"Limpie el código escrito utilizando los últimos estándares para maximizar la "
+"seguridad y trabajar sin problemas con cualquier complemento de WordPress."
+
+msgid "Clear"
+msgstr "Claro"
+
+msgid "Click here to assign a widget for this area."
+msgstr "Haga clic aquí para asignar un widget para esta área."
+
+msgid "Click the button to reset the local fonts cache."
+msgstr "Haga clic en el botón para restablecer el caché de fuentes locales."
+
+msgid "Click to edit this element."
+msgstr "Haga clic para editar este elemento."
+
+msgid "Click to edit this Row."
+msgstr "Haga clic para editar esta fila."
+
+msgid "Click to unlock"
+msgstr "Haga clic para desbloquear"
+
+msgid "Clipboard"
+msgstr "Portapapeles"
+
+msgid "Clipboard Check"
+msgstr "Comprobación de portapapeles"
+
+msgid "Clipboard List"
+msgstr "Lista de portapapeles"
+
+msgid "Clipboard Question"
+msgstr "Cuestión de portapapeles"
+
+msgid "Clipboard User"
+msgstr "Usuario de portapapeles"
+
+msgid "Clock"
+msgstr "Reloj"
+
+msgid "Clock Rotate Left"
+msgstr "Reloj girar a la izquierda"
+
+msgid "Clone"
+msgstr "Clon"
+
+msgid "Clone element"
+msgstr "Elemento clon"
+
+msgid "Clone, Delete element options"
+msgstr "Clon, Eliminar opciones de elementos"
+
+msgid "Close"
+msgstr "Cerca"
+
+msgid "Close "
+msgstr "Cerca"
+
+msgid "Close Cart Drawer"
+msgstr "Cerrar cajón"
+
+msgid "Close Icon Color"
+msgstr "Cerrar el color del icono"
+
+msgid "Closed Captioning"
+msgstr "Subtítulos"
+
+msgid "Cloud"
+msgstr "Nube"
+
+msgid "Cloud Arrow Down"
+msgstr "Flecha de nube hacia abajo"
+
+msgid "Cloud Arrow Up"
+msgstr "Arrow de nube hacia arriba"
+
+msgid "Cloud Bolt"
+msgstr "Perno de nubes"
+
+msgid "Cloud Meatball"
+msgstr "Albóndigas de nube"
+
+msgid "Cloud Moon"
+msgstr "Luna nube"
+
+msgid "Cloud Moon Rain"
+msgstr "Lluvia de luna en la nube"
+
+msgid "Cloud Rain"
+msgstr "Lluvia nube"
+
+msgid "Cloud Showers Heavy"
+msgstr "Duchas de nubes pesadas"
+
+msgid "Cloud Showers Water"
+msgstr "Agua de duchas de nubes"
+
+msgid "Cloud Sun"
+msgstr "Sol de nube"
+
+msgid "Cloud Sun Rain"
+msgstr "Nube Sun Rain"
+
+msgid "Cloudflare"
+msgstr "Marco de la nube"
+
+msgid "cloudscale.ch"
+msgstr "escala de nubes.Ch"
+
+msgid "Cloudsmith"
+msgstr "Nubes"
+
+msgid "cloudversify"
+msgstr "Cloudversify"
+
+msgid "Clover"
+msgstr "Trébol"
+
+msgid "Cmplid"
+msgstr "Cmplid"
+
+msgid "Code"
+msgstr "Código"
+
+msgid "Code Branch"
+msgstr "Rama de código"
+
+msgid "Code Commit"
+msgstr "Código de confirmación"
+
+msgid "Code Compare"
+msgstr "Comparar el código"
+
+msgid "Code Fork"
+msgstr "Código de bifurcación"
+
+msgid "Code Merge"
+msgstr "Fusionar el código"
+
+msgid "Code Pull Request"
+msgstr "Solicitud de extracción de código"
+
+msgid "Codepen"
+msgstr "Codepen"
+
+msgid "Codie Pie"
+msgstr "Pastel codie"
+
+msgid "Coins"
+msgstr "Monedas"
+
+msgid "Collapse to Rows"
+msgstr "Colapso de filas"
+
+msgid "Collection"
+msgstr "Recopilación"
+
+msgid "Collections"
+msgstr "Colecciones"
+
+msgid "Colon Sign"
+msgstr "Signo de colon"
+
+msgid "Color"
+msgstr "Color"
+
+msgid "Color & Typography Options"
+msgstr "Opciones de color y tipografía"
+
+msgid "Color 1"
+msgstr "Color 1"
+
+msgid "Color 2"
+msgstr "Color 2"
+
+msgid "Color 3"
+msgstr "Color 3"
+
+msgid "Color 4"
+msgstr "Color 4"
+
+msgid "Color 5"
+msgstr "Color 5"
+
+msgid "Color 6"
+msgstr "Color 6"
+
+msgid "Color 7"
+msgstr "Color 7"
+
+msgid "Color 8"
+msgstr "Color 8"
+
+msgid "Color 9"
+msgstr "Color 9"
+
+msgid "Theme Color 1"
+msgstr "Color del tema 1"
+
+msgid "Theme Color 2"
+msgstr "Color del tema 2"
+
+msgid "Theme Color 3"
+msgstr "Color del tema 3"
+
+msgid "Theme Color 4"
+msgstr "Color del tema 4"
+
+msgid "Theme Color 5"
+msgstr "Color del tema 5"
+
+msgid "Theme Color 6"
+msgstr "Color del tema 6"
+
+msgid "Theme Color 7"
+msgstr "Color del tema 7"
+
+msgid "Theme Color 8"
+msgstr "Color del tema 8"
+
+msgid "Theme Color 9"
+msgstr "Color del tema 9"
+
+msgid "Color Type"
+msgstr "Tipo de color"
+
+msgid "Colors"
+msgstr "Bandera"
+
+msgid "Colors & Background"
+msgstr "Colores y fondo"
+
+msgid "Colors & Background Overview"
+msgstr "Descripción general de colores y fondo"
+
+msgid "Colors and Backgrounds"
+msgstr "Colores y fondos"
+
+msgid "Column"
+msgstr "Columna"
+
+msgid "Columns"
+msgstr "Columnas"
+
+msgid "Comfort"
+msgstr "Comodidad"
+
+msgid "Comment"
+msgstr "Comentario"
+
+msgid "Comment Counts"
+msgstr "Comentario cuenta"
+
+msgid "Comment Dollar"
+msgstr "Comentario dólar"
+
+msgid "Comment Dots"
+msgstr "Puntos de comentario"
+
+msgid "Comment Medical"
+msgstr "Comentario médico"
+
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+msgid "Comment Page %s"
+msgstr "Página de comentarios %s"
+
+msgid "Comment Slash"
+msgstr "Comentar Slash"
+
+msgid "Comment Sms"
+msgstr "Comentario SMS"
+
+msgid "Comments"
+msgstr "Comentario"
+
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+msgid "Comments Dollar"
+msgstr "Comentarios dólar"
+
+msgid "Comments Navigation"
+msgstr "Comentarios Navegación"
+
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s pensó en “%2$s”"
+msgstr[1] ""
+"%1$s pensamientos sobre “%2$s”\n"
+"\n"
+
+msgid "Communication"
+msgstr "Comunicación"
+
+msgid "Compact"
+msgstr "Compacto"
+
+msgid "Compact Disc"
+msgstr "Disco compacto"
+
+msgid "Compass"
+msgstr "Brújula"
+
+msgid "Compass Drafting"
+msgstr "Redacción de la brújula"
+
+msgid "Compress"
+msgstr "Comprimir"
+
+msgid "Computer"
+msgstr "Computadora"
+
+msgid "Computer Mouse"
+msgstr "Mouse de computadora"
+
+msgid "Configure Menu from Here."
+msgstr "Configurar menú desde aquí."
+
+msgid "Configuring"
+msgstr "Configuración"
+
+msgid "Confluence"
+msgstr "Confluencia"
+
+msgid "Connect Develop"
+msgstr "Conectar desarrollar"
+
+msgid ""
+"Connect your WordPress plugins, WooCommerce sites, apps, and websites for "
+"powerful automations."
+msgstr ""
+"Conecte sus complementos de WordPress, los sitios de WooCommerce, las "
+"aplicaciones y los sitios web para potentes automatizaciones."
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+msgid "Contain"
+msgstr "Contener"
+
+msgid "Contained"
+msgstr "Contenido"
+
+msgid "Container"
+msgstr "Recipiente"
+
+msgid "Container Background"
+msgstr "Fondo del contenedor"
+
+msgid "Container Border"
+msgstr "Borde del contenedor"
+
+msgid "Container Layout"
+msgstr "Diseño del contenedor"
+
+msgid "Container Overview"
+msgstr "Descripción general del contenedor"
+
+msgid "Container spacings"
+msgstr "Espacios de contenedores"
+
+msgid "Container Structure"
+msgstr "Estructura de contenedores"
+
+msgid "Container Style"
+msgstr "Estilo de contenedor"
+
+msgid ""
+"Container style will apply only when layout is set to either normal or "
+"narrow."
+msgstr ""
+"El estilo del contenedor se aplicará solo cuando el diseño se establece en "
+"normal o estrecho."
+
+msgid "Container Width"
+msgstr "Ancho de contenedor"
+
+msgid "Contao"
+msgstr "Contao"
+
+msgid "Content"
+msgstr "Contenido"
+
+msgid "Content Alignment"
+msgstr "Alineación de contenido"
+
+msgid "Content Background"
+msgstr "Antecedentes de contenido"
+
+msgid "Content Boxed"
+msgstr "Contenido en caja"
+
+msgid "Content Color"
+msgstr "Color de contenido"
+
+msgid "Content Colors"
+msgstr "Colores de contenido"
+
+msgid "Content Font"
+msgstr "Fuente de contenido"
+
+msgid "Content Font Size"
+msgstr "Tamaño de fuente de contenido"
+
+msgid "Content Images Box Shadow"
+msgstr "Sombra de cajas de imágenes de contenido"
+
+msgid "Content Layout"
+msgstr "Diseño de contenido"
+
+msgid "Content Link Color"
+msgstr "Color de enlace de contenido"
+
+msgid "Content Width"
+msgstr "Ancho de contenido"
+
+msgid "Continue reading %s"
+msgstr "Continuar leyendo %s"
+
+msgid "Continue Shopping"
+msgstr "Continuar comprando"
+
+msgid "Convert more, earn more with extensive cart conversion features"
+msgstr ""
+"Convertir más, ganar más con extensas características de conversión de "
+"carritos"
+
+msgid ""
+"Convert WooCommerce variation dropdown attributes into attractive swatches "
+"instantly."
+msgstr ""
+"Convierta los atributos desplegables de variación de WooCommerce en muestras "
+"atractivas al instante."
+
+msgid "Cookie"
+msgstr "Galleta"
+
+msgid "Cookie Bite"
+msgstr "Mordedura de galletas"
+
+msgid "Copy"
+msgstr "Copiar"
+
+msgid "Copyright"
+msgstr "Derechos de autor"
+
+msgid ""
+"Copyright &copy; [current_year] [site_title] | Powered by [theme_author]"
+msgstr ""
+"Copyright y copia; [Current_Year] [Site_title] | Autorizado por "
+"[theme_author]"
+
+msgid ""
+"Copyright [copyright] [current_year] [site_title] | Powered by [theme_author]"
+msgstr ""
+"Copyright [Copyright] [Current_Year] [Site_title] | Autorizado por "
+"[theme_author]"
+
+msgid "CORE"
+msgstr "CENTRO"
+
+msgid "Core Blocks Spacing"
+msgstr "Espaciado de bloques de núcleo"
+
+msgid "Cotton Bureau"
+msgstr "Oficina de Algodón"
+
+msgid "Couch"
+msgstr "Sofá"
+
+msgid ""
+"Could you please do us a favor and give us a 5-star rating on WordPress? It "
+"would help others choose Astra with confidence. Thank you!"
+msgstr ""
+"¿Podría hacernos un favor y darnos una calificación de 5 estrellas en "
+"WordPress? Ayudaría a otros a elegir Astra con confianza. ¡Gracias!"
+
+msgid "Count + Text"
+msgstr "Recuento + texto"
+
+msgid "Count Color"
+msgstr "Contar color"
+
+msgid "Course Columns"
+msgstr "Columnas del curso"
+
+msgid "Course Content Table"
+msgstr "Tabla de contenido del curso"
+
+msgid "Course/Lesson Sidebar Layout"
+msgstr "Diseño de la barra lateral de curso/lección"
+
+msgid "Course/Lesson Sidebar Style"
+msgstr "Curso/lección de estilo de barra lateral"
+
+msgid "Cover"
+msgstr "Cubrir"
+
+msgid "Cow"
+msgstr "Vaca"
+
+msgid "cPanel"
+msgstr "cpanel"
+
+msgid ""
+"Create professional designed pixel perfect websites in minutes. Get access "
+"to 280+ pre-made full website templates for your favorite page builder."
+msgstr ""
+"Cree sitios web perfectos de píxeles diseñados profesionales en minutos. "
+"Obtenga acceso a más de 280 plantillas de sitio web completas prefabricadas "
+"para su constructor de páginas favorito."
+
+msgid "Creative Commons"
+msgstr "Comunics creativos"
+
+msgid "Creative Commons Attribution"
+msgstr "Atribución de los bienes comunes creativos"
+
+msgid "Creative Commons CC0"
+msgstr "Creative Commons CC0"
+
+msgid "Creative Commons No Derivative Works"
+msgstr "Creative Commons sin trabajo derivado"
+
+msgid "Creative Commons Noncommercial"
+msgstr "Creative Commons no comercial"
+
+msgid "Creative Commons Noncommercial (Euro Sign)"
+msgstr "Creative Commons no comercial (signo euro)"
+
+msgid "Creative Commons Noncommercial (Yen Sign)"
+msgstr "Creative Commons no comercial (signo de yen)"
+
+msgid "Creative Commons Public Domain"
+msgstr "Dominio público de Creative Commons"
+
+msgid "Creative Commons Remix"
+msgstr "Creative Commons Remix"
+
+msgid "Creative Commons Sampling"
+msgstr "Muestreo de Creative Commons"
+
+msgid "Creative Commons Sampling +"
+msgstr "Creative Commons Sampling +"
+
+msgid "Creative Commons Share"
+msgstr "Compartir Creative Commons"
+
+msgid "Creative Commons Share Alike"
+msgstr "Creative Commons comparten tanto"
+
+msgid "Credit Card"
+msgstr "Tarjeta de crédito"
+
+msgid "Critical Role"
+msgstr "Papel crítico"
+
+msgid "Crop"
+msgstr "Cultivo"
+
+msgid "Crop Simple"
+msgstr "Cultivo simple"
+
+msgid "Cross"
+msgstr "Cruz"
+
+msgid "Crosshairs"
+msgstr "Mira"
+
+msgid "Crow"
+msgstr "Cuervo"
+
+msgid "Crown"
+msgstr "Corona"
+
+msgid "Crutch"
+msgstr "Muleta"
+
+msgid "Cruzeiro Sign"
+msgstr "Signo de Cruzeiro"
+
+msgid "CSS 3 Logo"
+msgstr "Logotipo CSS 3"
+
+msgid "CSS File Generation For Speed Optimization"
+msgstr "Generación de archivos CSS para la optimización de velocidad"
+
+msgid "Cube"
+msgstr "Cubo"
+
+msgid "Cubes"
+msgstr "Cubitos"
+
+msgid "Cubes Stacked"
+msgstr "Cubos apilados"
+
+msgid "Currency Name"
+msgstr "Nombre de moneda"
+
+msgid "Currency Symbol"
+msgstr "Símbolo de moneda"
+
+msgid "Custom"
+msgstr "Costumbre"
+
+msgid "Custom 404 Page"
+msgstr "Página personalizada 404"
+
+msgid "Custom featured images size"
+msgstr "Tamaño de imágenes destacadas personalizadas"
+
+msgid "Custom Footer"
+msgstr "Pie de página personalizado"
+
+msgid "Custom Header"
+msgstr "Encabezado personalizado"
+
+msgid "Custom Layouts"
+msgstr "Diseños personalizados"
+
+msgid "Custom Menu Text / HTML"
+msgstr "Texto de menú personalizado / html"
+
+msgid "Custom Post Types"
+msgstr "Tipos de publicación personalizados"
+
+msgid "Custom separator"
+msgstr "Separador personalizado"
+
+msgid "Custom SVG"
+msgstr "SVG personalizado"
+
+msgid "Custom Text"
+msgstr "Texto personalizado"
+
+msgid "Custom Width"
+msgstr "Ancho personalizado"
+
+msgid "Customize"
+msgstr "Personalizar"
+
+msgid "Customize Button Style."
+msgstr "Personalizar el estilo del botón."
+
+msgid "Customize Transparent Header."
+msgstr "Personalizar el encabezado transparente."
+
+msgid "Customizer Setting"
+msgstr "Configuración de personalizador"
+
+msgid "Customizing &#9656; %s"
+msgstr "Personalización &#9656; %s"
+
+msgid "Customizing ▸ %s"
+msgstr "Personalización ▸ %s"
+
+msgid "Cuttlefish"
+msgstr "Calamar"
+
+msgid "D"
+msgstr "D"
+
+msgid "D&D Beyond"
+msgstr "D&D más allá"
+
+msgid "j"
+msgstr "j"
+
+msgid "dailymotion"
+msgstr "dailymotion"
+
+msgid "Dashboard"
+msgstr "Panel"
+
+msgid "DashCube"
+msgstr "Dashcube"
+
+msgid "Database"
+msgstr "Base de datos"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Deactivate"
+msgstr "Desactivar"
+
+msgid "Deactivate all"
+msgstr "Desactivar todo"
+
+msgid "Deactivated!"
+msgstr "Desactivado!"
+
+msgid "Deactivating"
+msgstr "Desactivado"
+
+msgid ""
+"Decide whether to isolate or integrate the module with the entry content "
+"area."
+msgstr ""
+"Decide si aislar o integrar el módulo con el área de contenido de entrada."
+
+msgid "Deezer"
+msgstr "Deezer"
+
+msgid "Default"
+msgstr "Por defecto"
+
+msgid "Default Layout"
+msgstr "Diseño predeterminado"
+
+msgid "Default System Font"
+msgstr "Fuente de sistema predeterminada"
+
+msgid "Delete Left"
+msgstr "Eliminar a la izquierda"
+
+msgid "Delicious"
+msgstr "Delicioso"
+
+msgid "Democrat"
+msgstr "Demócrata"
+
+msgid "deploy.dog"
+msgstr "implement.dog"
+
+msgid "Descending"
+msgstr "Descendente"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "Design"
+msgstr "Diseño"
+
+msgid "Design 1"
+msgstr "Diseño 1"
+
+msgid "Design 2"
+msgstr "Diseño 2"
+
+msgid "Design 3"
+msgstr "Diseño 3"
+
+msgid "Deskpro"
+msgstr "Deskpro"
+
+msgid "Desktop"
+msgstr "De oficina"
+
+msgid "Desktop + Mobile"
+msgstr "Escritorio + móvil"
+
+msgid "Details &#187;"
+msgstr "Detalles &#187;"
+
+msgid "DEV"
+msgstr "Enchufe"
+
+msgid "deviantART"
+msgstr "desviantart"
+
+msgid "Dharmachakra"
+msgstr "Dharmachakra"
+
+msgid "DHL"
+msgstr "DHL"
+
+msgid "Diagram Next"
+msgstr "Diagrama a continuación"
+
+msgid "Diagram Predecessor"
+msgstr "Diagrama predecesor"
+
+msgid "Diagram Project"
+msgstr "Proyecto de diagrama"
+
+msgid "Diagram Successor"
+msgstr "Sucesor de diagrama"
+
+msgid "Diamond"
+msgstr "Diamante"
+
+msgid "Diamond Turn Right"
+msgstr "Diamante girar a la derecha"
+
+msgid "Diaspora"
+msgstr "Diáspora"
+
+msgid "Dice"
+msgstr "Dados"
+
+msgid "Dice D20"
+msgstr "Dados d20"
+
+msgid "Dice D6"
+msgstr "Dados d6"
+
+msgid "Dice Five"
+msgstr "Dados cinco"
+
+msgid "Dice Four"
+msgstr "Dados cuatro"
+
+msgid "Dice One"
+msgstr "Dados uno"
+
+msgid "Dice Six"
+msgstr "Dados seis"
+
+msgid "Dice Three"
+msgstr "Dados tres"
+
+msgid "Dice Two"
+msgstr "Dados dos"
+
+msgid "Different Logo For Mobile Devices?"
+msgstr "¿Diferente logotipo para dispositivos móviles?"
+
+msgid "Different Logo For Retina Devices?"
+msgstr "¿Logotipo diferente para dispositivos Retina?"
+
+msgid "Different Transparent Logo"
+msgstr "Logotipo transparente diferente"
+
+msgid "Differentiate Rows"
+msgstr "Diferenciar filas"
+
+msgid "Digg Logo"
+msgstr "Logotipo de Digg"
+
+msgid "Digital Ocean"
+msgstr "Océano digital"
+
+msgid "Diner's Club Credit Card"
+msgstr "Tarjeta de crédito del Diner's Club"
+
+msgid "Disable"
+msgstr "Desactivar"
+
+msgid "Disable Above Header"
+msgstr "Deshabilitar por encima del encabezado"
+
+msgid "Disable Banner Area"
+msgstr "Deshabilitar el área de banner"
+
+msgid "Disable Below Header"
+msgstr "Desactivar debajo del encabezado"
+
+msgid "Disable Breadcrumb"
+msgstr "Deshabilitar la cáscara de pan"
+
+msgid "Disable Elements"
+msgstr "Desactivar elementos"
+
+msgid "Disable Featured Image"
+msgstr "Deshabilitar la imagen destacada"
+
+msgid "Disable Footer"
+msgstr "Deshabilitar el pie de página"
+
+msgid "Disable Footer Widgets"
+msgstr "Desactivar widgets de pie de página"
+
+msgid "Disable Header"
+msgstr "Desactivar encabezado"
+
+msgid "Disable Menu"
+msgstr "Deshabilitar el menú"
+
+msgid "Disable Mobile Header"
+msgstr "Desactivar el encabezado móvil"
+
+msgid "Disable on 404 Page?"
+msgstr "¿Desactivar en la página 404?"
+
+msgid "Disable on Archive Pages?"
+msgstr "¿Deshabilitar en las páginas de archivo?"
+
+msgid "Disable on Blog page?"
+msgstr "¿Deshabilitar en la página del blog?"
+
+msgid "Disable on Front Page?"
+msgstr "¿Desactivar en la portada?"
+
+msgid "Disable on Latest Posts Page?"
+msgstr "¿Deshabilitar en las últimas publicaciones?"
+
+msgid "Disable on Pages?"
+msgstr "Deshabilitar en páginas?"
+
+msgid "Disable on Posts?"
+msgstr "Deshabilitar en las publicaciones?"
+
+msgid "Disable on Search Page?"
+msgstr "¿Desactivar en la página de búsqueda?"
+
+msgid "Disable on WooCommerce Product Pages?"
+msgstr "¿Desactivar las páginas de productos de WooCommerce?"
+
+msgid "Disable Primary Header"
+msgstr "Deshabilitar el encabezado primario"
+
+msgid "Disable Product Navigation"
+msgstr "Deshabilitar la navegación del producto"
+
+msgid "Disable Sections"
+msgstr "Desactivar secciones"
+
+msgid "Disable Title"
+msgstr "Deshabilitar el título"
+
+msgid "Disabled"
+msgstr "Desactivado"
+
+msgid "Discord"
+msgstr "Discordia"
+
+msgid "Discourse"
+msgstr "Discurso"
+
+msgid "Discover"
+msgstr "Descubrir"
+
+msgid "Discover Credit Card"
+msgstr "Descubrir tarjeta de crédito"
+
+msgid "Disease"
+msgstr "Enfermedad"
+
+msgid "Display"
+msgstr "Mostrar"
+
+msgid "Display Cart Count"
+msgstr "Mostrar recuento de carros"
+
+msgid "Display Cart Title"
+msgstr "Título del carrito de visualización"
+
+msgid "Display Cart Total"
+msgstr "Total de carro de visualización"
+
+msgid "Display On"
+msgstr "Visualizar"
+
+msgid "Display Serial Number"
+msgstr "Mostrar número de serie"
+
+msgid "Display Settings"
+msgstr "Mostrar configuración"
+
+msgid "Distraction free checkout"
+msgstr "Correcto gratuito de distracción"
+
+msgid "Divide"
+msgstr "Dividir"
+
+msgid "Divider"
+msgstr "Divisor"
+
+msgid "Divider 1"
+msgstr "Divisor 1"
+
+msgid "Divider 2"
+msgstr "Divisor 2"
+
+msgid "Divider 3"
+msgstr "Divisor 3"
+
+msgid "Divider Color"
+msgstr "Color divisor"
+
+msgid "Divider element"
+msgstr "Elemento divisor"
+
+msgid "Divider Elements"
+msgstr "Elementos divisorios"
+
+msgid "Divider Size"
+msgstr "Tamaño de divisor"
+
+msgid "Divider Type"
+msgstr "Tipo divisor"
+
+msgid "Dna"
+msgstr "ADN"
+
+msgid "Do more with %s Modules"
+msgstr "Hacer más con módulos %s"
+
+msgid "Do More with Astra Pro"
+msgstr "Haz más con Astra Pro"
+
+msgid "DocHub"
+msgstr "Dogal"
+
+msgid "Docker"
+msgstr "Estibador"
+
+msgid "Documentation"
+msgstr "Documentación"
+
+msgid "Dog"
+msgstr "Perro"
+
+msgid "Dollar Sign"
+msgstr "Signo de dólar"
+
+msgid "Dolly"
+msgstr "Muñequita"
+
+msgid "Dong Sign"
+msgstr "Signo de dong"
+
+msgid "Door Closed"
+msgstr "Puerta cerrada"
+
+msgid "Door Open"
+msgstr "Puerta abierta"
+
+msgid "Dotted"
+msgstr "Punteado"
+
+msgid "Dove"
+msgstr "Paloma"
+
+msgid "Down Left And Up Right To Center"
+msgstr "Hacia abajo a la izquierda y hacia arriba a la derecha al centro"
+
+msgid "Down Long"
+msgstr "Abajo"
+
+msgid "Download"
+msgstr "Descargar"
+
+msgid "Downloads, Orders grid view"
+msgstr "Descargas, Vista de cuadrícula de pedidos"
+
+msgid "Draft2digital"
+msgstr "Draft2Digital"
+
+msgid "Dragon"
+msgstr "Dragón"
+
+msgid "Draw Polygon"
+msgstr "Dibujar polígono"
+
+msgid "Dribbble"
+msgstr "Dribbble"
+
+msgid "Dribbble Square"
+msgstr "Cuadrado de dribbble"
+
+msgid "Dropbox"
+msgstr "Dropbox"
+
+msgid "Dropdown"
+msgstr "Desplegable"
+
+msgid "Dropdown Target"
+msgstr "Objetivo desplegable"
+
+msgid "Droplet"
+msgstr "Gotita"
+
+msgid "Droplet Slash"
+msgstr "Barra de gotas"
+
+msgid "Drum"
+msgstr "Tambor"
+
+msgid "Drum Steelpan"
+msgstr "Tambor de acero"
+
+msgid "Drumstick Bite"
+msgstr "Mordedura"
+
+msgid "Drupal Logo"
+msgstr "Logotipo de Drupal"
+
+msgid "Dumbbell"
+msgstr "Pesa"
+
+msgid "Dumpster"
+msgstr "Contenedor"
+
+msgid "Dumpster Fire"
+msgstr "Incendio de contenedor"
+
+msgid "Dungeon"
+msgstr "Mazmorra"
+
+msgid "Dungeons & Dragons"
+msgstr "Dungeons & Dragons"
+
+msgid "Dyalog"
+msgstr "Diálogo"
+
+msgid "E"
+msgstr "mi"
+
+msgid "Ear Deaf"
+msgstr "Sordos"
+
+msgid "Ear Listen"
+msgstr "Oído escuchar"
+
+msgid "Earlybirds"
+msgstr "Cebolas tempranas"
+
+msgid "Earth Africa"
+msgstr "África de la tierra"
+
+msgid "Earth Americas"
+msgstr "Earth Americas"
+
+msgid "Earth Asia"
+msgstr "Tierra Asia"
+
+msgid "Earth Europe"
+msgstr "Europa de la Tierra"
+
+msgid "Earth Oceania"
+msgstr "Oceanía de la Tierra"
+
+msgid "Easy Digital Downloads"
+msgstr "Descargas digitales fáciles"
+
+msgid "Easy Digital Downloads Sidebar"
+msgstr "Barra lateral fácil de descargas digitales"
+
+msgid "eBay"
+msgstr "eBay"
+
+msgid "Ecommerce steps navigation"
+msgstr "Navegación de pasos de comercio electrónico"
+
+msgid "EDD Cart"
+msgstr "Carrito de edd"
+
+msgid "EDD Cart Icon Color"
+msgstr "Color de icono de carrito de edd"
+
+msgid "EDD Mini-Cart Shortcode"
+msgstr "Mini-carto de EDD Mini-carto"
+
+msgid "EDD Single Product Sidebar"
+msgstr "Barra lateral de producto único EDD"
+
+msgid "Edge Browser"
+msgstr "Navegador de borde"
+
+msgid "Edge Legacy Browser"
+msgstr "Navegador Legacy de borde"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Edit %s"
+msgstr "Editar %s"
+
+msgid "Education"
+msgstr "Educación"
+
+msgid "Egg"
+msgstr "Huevo"
+
+msgid "Eject"
+msgstr "Expulsar"
+
+msgid "Elementor"
+msgstr "Elemento"
+
+msgid "Elements"
+msgstr "Elementos"
+
+msgid "Elements used in the builder will be visible here."
+msgstr "Los elementos utilizados en el constructor serán visibles aquí."
+
+msgid "Elevator"
+msgstr "Ascensor"
+
+msgid "Ellipsis"
+msgstr "Elipsis"
+
+msgid "Ellipsis Vertical"
+msgstr "Elipsis vertical"
+
+msgid "Ello"
+msgstr "Ello"
+
+msgid "Email"
+msgstr "Correo electrónico"
+
+msgid "Email 1"
+msgstr "Correo electrónico 1"
+
+msgid "Email 2"
+msgstr "Correo electrónico 2"
+
+msgid "Ember"
+msgstr "Ascua"
+
+msgid "Enable Brand Color On Hover"
+msgstr "Habilitar el color de la marca en el flotador"
+
+msgid "Enable Breadcrumb"
+msgstr "Habilitar pan de pan"
+
+msgid "Enable Cross-sells"
+msgstr "Habilitar Ventas cruzadas"
+
+msgid "Enable On"
+msgstr "Habilitar en"
+
+msgid "Enable on 404 Page?"
+msgstr "Habilitar en la página 404?"
+
+msgid "Enable on Archive?"
+msgstr "Habilitar en el archivo?"
+
+msgid "Enable on Blog / Posts Page?"
+msgstr "Habilitar en la página de blog / publicaciones?"
+
+msgid "Enable on Complete Website"
+msgstr "Habilitar en el sitio web completo"
+
+msgid "Enable on Home Page?"
+msgstr "Habilitar en la página de inicio?"
+
+msgid "Enable on Search?"
+msgstr "Habilitar en la búsqueda?"
+
+msgid "Enable on Single Page?"
+msgstr "Habilitar en una sola página?"
+
+msgid "Enable on Single Post?"
+msgstr "Habilitar en una sola publicación?"
+
+msgid "Enable on Singular?"
+msgstr "Habilitar en singular?"
+
+msgid "Enable Post Excerpt"
+msgstr "Habilitar el extracto de post"
+
+msgid "Enable Quantity Plus and Minus"
+msgstr "Habilitar la cantidad más y menos"
+
+msgid "Enable Scroll to Top"
+msgstr "Habilitar el desplazamiento a la parte superior"
+
+msgid "Enable Shipping Text"
+msgstr "Habilitar texto de envío"
+
+msgid "Enable Smooth Scroll to ID"
+msgstr "Habilitar el desplazamiento suave a la identificación"
+
+msgid "Enable Sticky Add to Cart"
+msgstr "Habilitar agregue pegajoso al carrito"
+
+msgid "Enable Sticky Sidebar"
+msgstr "Habilitar barra lateral pegajosa"
+
+msgid ""
+"Enable this option to download Google fonts and save them on your server. "
+"This can be great for improving speed of your website and to comply with "
+"GDPR laws."
+msgstr ""
+"Habilite esta opción para descargar Google Fonts y guardarlas en su servidor."
+" Esto puede ser excelente para mejorar la velocidad de su sitio web y para "
+"cumplir con las leyes de GDPR."
+
+msgid "Enable to shift the body content when the off-canvas menu opens."
+msgstr ""
+"Habilite cambiar el contenido del cuerpo cuando se abra el menú fuera de "
+"canvas."
+
+msgid "Enabled"
+msgstr "Activado"
+
+msgid ""
+"Enabling this option will override global > colors > surface color options"
+msgstr ""
+"Habilitar esta opción anulará global> colores> opciones de color de "
+"superficie"
+
+msgid ""
+"Encourage last-minute purchases with extra conversion options at checkout"
+msgstr ""
+"Fomentar las compras de última hora con opciones de conversión adicionales "
+"al finalizar la compra"
+
+msgid ""
+"Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your "
+"support!"
+msgstr ""
+"¿Disfrutaste %1$s? Por favor, déjanos una calificación de %2$s. ¡Agradecemos "
+"mucho tu apoyo!"
+
+msgid "Enter valid email address!"
+msgstr "¡Ingrese la dirección de correo electrónico válida!"
+
+msgid "Envelope"
+msgstr "Sobre"
+
+msgid "Envelope Circle Check"
+msgstr "Cheque del círculo de sobre"
+
+msgid "Envelope Open"
+msgstr "Sobre abierto"
+
+msgid "Envelope Open Text"
+msgstr "Texto de sobre sobre"
+
+msgid "Envelopes Bulk"
+msgstr "Sobres a granel"
+
+msgid "Envira Gallery"
+msgstr "Galería Envira"
+
+msgid "Environment"
+msgstr "Ambiente"
+
+msgid "Equal Width Columns"
+msgstr "Columnas de ancho de igualdad"
+
+msgid "Equals"
+msgstr "Iguales"
+
+msgid "Eraser"
+msgstr "Borrador"
+
+msgid "Erlang"
+msgstr "Erlang"
+
+msgid "Ethereum"
+msgstr "Ethereum"
+
+msgid "Ethernet"
+msgstr "Éternet"
+
+msgid "Etsy"
+msgstr "Etc."
+
+msgid "Euro Sign"
+msgstr "Signo de euro"
+
+msgid "Evernote"
+msgstr "Evernote"
+
+msgid "Every %d Minutes"
+msgstr "Cada %d minutos"
+
+msgid "Excerpt"
+msgstr "Extracto"
+
+msgid "Excerpt Word Count"
+msgstr "Recuento de palabras de extracto"
+
+msgid "Exclamation"
+msgstr "Exclamación"
+
+msgid "Expand"
+msgstr "Expandir"
+
+msgid "ExpeditedSSL"
+msgstr "Expeditedssl"
+
+msgid ""
+"Explore different font families, sizes, weights, and styles to find the "
+"perfect combination that encapsulates the essence of your brand. With each "
+"adjustment, see how your message transforms, becoming a powerful reflection "
+"of your identity and vision."
+msgstr ""
+"Explore diferentes familias de fuentes, tamaños, pesas y estilos para "
+"encontrar la combinación perfecta que encapsula la esencia de su marca. Con "
+"cada ajuste, vea cómo se transforma su mensaje, convirtiéndose en un "
+"poderoso reflejo de su identidad y visión."
+
+msgid "Explore Spectra"
+msgstr "Explorar espectros"
+
+msgid "Explosion"
+msgstr "Explosión"
+
+msgid "Extend Your Website"
+msgstr "Extienda su sitio web"
+
+msgid "Extended Meta Style Options"
+msgstr "Opciones extendidas de meta estilo"
+
+msgid "Extended spacing options"
+msgstr "Opciones de espaciado extendidas"
+
+msgid "Extended typography options"
+msgstr "Opciones de tipografía extendida"
+
+msgid "Extensions"
+msgstr "Extensiones"
+
+msgid "Extensive range of tools to help blog pages stand out."
+msgstr ""
+"Una amplia gama de herramientas para ayudar a que las páginas de blogs se "
+"destaquen."
+
+msgid "Extra"
+msgstr "Extra"
+
+msgid "Extra conversion options for store product pages means extra profit!"
+msgstr ""
+"¡Opciones de conversión adicionales para las páginas de productos de la "
+"tienda significa ganancias adicionales!"
+
+msgid "Extra Light 200"
+msgstr "Extra Light 200"
+
+msgid "Extra Light 200 Italic"
+msgstr "Luz extra 200 italic"
+
+msgid "Extra-Bold 800"
+msgstr "Extraño 800"
+
+msgid "Extra-Bold 800 Italic"
+msgstr "Extraño extravagante 800"
+
+msgid "Extra-Light 200"
+msgstr "Extra luz 200"
+
+msgid "Extras"
+msgstr "Extras"
+
+msgid "Extras option for product structure"
+msgstr "Opción de extras para la estructura del producto"
+
+msgid "Eye"
+msgstr "Ojo"
+
+msgid "Eye Dropper"
+msgstr "Gotero para los ojos"
+
+msgid "Eye Low Vision"
+msgstr "Ojo bajo visión"
+
+msgid "Eye Slash"
+msgstr "Barra de ojo"
+
+msgid "F"
+msgstr "F"
+
+msgid "Face Angry"
+msgstr "Cara enojada"
+
+msgid "Face Dizzy"
+msgstr "Cara mareado"
+
+msgid "Face Flushed"
+msgstr "Cara sonrojada"
+
+msgid "Face Frown"
+msgstr "Cara frunce el ceño"
+
+msgid "Face Frown Open"
+msgstr "Cara frunce el ceño"
+
+msgid "Face Grimace"
+msgstr "Mueca de cara"
+
+msgid "Face Grin"
+msgstr "Sonrisa de cara"
+
+msgid "Face Grin Beam"
+msgstr "Rayo de sonrisa de cara"
+
+msgid "Face Grin Beam Sweat"
+msgstr "Sudor de rayo de sonrisa de cara"
+
+msgid "Face Grin Hearts"
+msgstr "Cara de corazón Corazones"
+
+msgid "Face Grin Squint"
+msgstr "Silvento de sonrisa de cara"
+
+msgid "Face Grin Squint Tears"
+msgstr "Lágrimas de entradas para sonreír con ruido"
+
+msgid "Face Grin Stars"
+msgstr "Estrellas de la sonrisa de cara"
+
+msgid "Face Grin Tears"
+msgstr "Lágrimas de la sonrisa de la cara"
+
+msgid "Face Grin Tongue"
+msgstr "Lengua de sonrisa de cara"
+
+msgid "Face Grin Tongue Squint"
+msgstr "Entrecerrar la lengua de la cara de la cara"
+
+msgid "Face Grin Tongue Wink"
+msgstr "Cara de ruisilla de sonrisa guiño"
+
+msgid "Face Grin Wide"
+msgstr "Grin de la cara de ancho"
+
+msgid "Face Grin Wink"
+msgstr "Ruido de la cara guiño"
+
+msgid "Face Kiss"
+msgstr "Cara beso"
+
+msgid "Face Kiss Beam"
+msgstr "Face Beso Beam"
+
+msgid "Face Kiss Wink Heart"
+msgstr "Cara beso guiño corazón"
+
+msgid "Face Laugh"
+msgstr "Risa de la cara"
+
+msgid "Face Laugh Beam"
+msgstr "Face Beam de risa"
+
+msgid "Face Laugh Squint"
+msgstr "Cara de risa entrecerrando"
+
+msgid "Face Laugh Wink"
+msgstr "Cara risa guiño"
+
+msgid "Face Meh"
+msgstr "Cara meh"
+
+msgid "Face Meh Blank"
+msgstr "Cara meh en blanco"
+
+msgid "Face Rolling Eyes"
+msgstr "Ojos de los ojos de la cara"
+
+msgid "Face Sad Cry"
+msgstr "Cara triste llorando"
+
+msgid "Face Sad Tear"
+msgstr "Cara triste lágrima"
+
+msgid "Face Smile"
+msgstr "Sonrisa de la cara"
+
+msgid "Face Smile Beam"
+msgstr "Cara de la sonrisa de rayo"
+
+msgid "Face Smile Wink"
+msgstr "Smile de la cara guiño"
+
+msgid "Face Surprise"
+msgstr "CARA SURSIÓN"
+
+msgid "Face Tired"
+msgstr "Cara cansada"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Facebook F"
+msgstr "Facebook F"
+
+msgid "Facebook Group"
+msgstr "Grupo de Facebook"
+
+msgid "Facebook Messenger"
+msgstr "Messenger de Facebook"
+
+msgid "Fade"
+msgstr "Desteñir"
+
+msgid "Failed to Flush, try again later."
+msgstr "No pudo enjuagar, intente de nuevo más tarde."
+
+msgid "Fan"
+msgstr "Admirador"
+
+msgid "Fantasy Flight-games"
+msgstr "Juegos de vuelo de fantasía"
+
+msgid ""
+"Faster and exclusive support service designed for VIP assistance and "
+"benefits."
+msgstr ""
+"Servicio de soporte más rápido y exclusivo diseñado para asistencia y "
+"beneficios VIP."
+
+msgid "Faucet"
+msgstr "Grifo"
+
+msgid "Faucet Drip"
+msgstr "Goteo de grifo"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Feather"
+msgstr "Pluma"
+
+msgid "Feather Pointed"
+msgstr "Pluma puntiaguda"
+
+msgid "Featured"
+msgstr "Presentado"
+
+msgid "Featured Image"
+msgstr "Imagen destacada"
+
+msgid "Features"
+msgstr "Características"
+
+msgid "FedEx"
+msgstr "Fedex"
+
+msgid "Fedora"
+msgstr "Fedora"
+
+msgid "Ferry"
+msgstr "Transportar"
+
+msgid ""
+"Fewer external scripts and dependencies keep the code clean, resulting in "
+"small file sizes and faster loading times."
+msgstr ""
+"Menos scripts y dependencias externas mantienen el código limpio, lo que "
+"resulta en pequeños tamaños de archivos y tiempos de carga más rápidos."
+
+msgid "Figma"
+msgstr "Figma"
+
+msgid "File"
+msgstr "Archivo"
+
+msgid "File Arrow Down"
+msgstr "Flecha de archivo hacia abajo"
+
+msgid "File Arrow Up"
+msgstr "Flecha de archivo"
+
+msgid "File Audio"
+msgstr "Audio de archivo"
+
+msgid "File Circle Check"
+msgstr "Cheque del círculo de archivo"
+
+msgid "File Circle Exclamation"
+msgstr "Exclamación del círculo de archivo"
+
+msgid "File Circle Minus"
+msgstr "FILE CIRCO MINUS"
+
+msgid "File Circle Plus"
+msgstr "File Circle Plus"
+
+msgid "File Circle Question"
+msgstr "Pregunta del círculo de archivo"
+
+msgid "File Circle Xmark"
+msgstr "File Circle Xmark"
+
+msgid "File Code"
+msgstr "Código de archivo"
+
+msgid "File Contract"
+msgstr "Contrato de archivo"
+
+msgid "File Csv"
+msgstr "File CSV"
+
+msgid "File Excel"
+msgstr "Archivo Excel"
+
+msgid "File Export"
+msgstr "Exportación de archivos"
+
+msgid "File Image"
+msgstr "Imagen de archivo"
+
+msgid "File Import"
+msgstr "Importación de archivos"
+
+msgid "File Invoice"
+msgstr "Factura de archivo"
+
+msgid "File Invoice Dollar"
+msgstr "FRABA DE ARRIBA DE DOBLAR"
+
+msgid "File Lines"
+msgstr "Líneas de archivo"
+
+msgid "File Medical"
+msgstr "Archivo médico"
+
+msgid "File Pdf"
+msgstr "PDF de archivo"
+
+msgid "File Pen"
+msgstr "Pluma de archivo"
+
+msgid "File Powerpoint"
+msgstr "Archivo PowerPoint"
+
+msgid "File Prescription"
+msgstr "Prescripción de archivo"
+
+msgid "File Shield"
+msgstr "Escudo de archivos"
+
+msgid "File Signature"
+msgstr "Firma de archivo"
+
+msgid "File Video"
+msgstr "Video de archivo"
+
+msgid "File Waveform"
+msgstr "Forma de onda de archivo"
+
+msgid "File Word"
+msgstr "Palabra de archivo"
+
+msgid "File Zipper"
+msgstr "Cremallera de archivo"
+
+msgid "Fill"
+msgstr "Llenar"
+
+msgid "Fill Drip"
+msgstr "Llenar el goteo"
+
+msgid "Film"
+msgstr "Película"
+
+msgid "Filter"
+msgstr "Filtrar"
+
+msgid "Filter Circle Dollar"
+msgstr "Filtro Circle Dollar"
+
+msgid "Filter Circle Xmark"
+msgstr "Filter Circle Xmark"
+
+msgid "Fingerprint"
+msgstr "Huella dactilar"
+
+msgid "Finish your page on a high with amazing website footers"
+msgstr ""
+"Termine su página en un alto con increíbles pies de página del sitio web"
+
+msgid "Fire"
+msgstr "Fuego"
+
+msgid "Fire Burner"
+msgstr "Quemador de fuego"
+
+msgid "Fire Extinguisher"
+msgstr "Extintor de incendios"
+
+msgid "Fire Flame Curved"
+msgstr "Fuego de fuego curvado"
+
+msgid "Fire Flame Simple"
+msgstr "Fuego de fuego simple"
+
+msgid "Firefox"
+msgstr "Firefox"
+
+msgid "Firefox Browser"
+msgstr "Navegador Firefox"
+
+msgid "First Order"
+msgstr "De primer pedido"
+
+msgid "First Row, Next Columns 100 - 50/50"
+msgstr "Primera fila, siguientes columnas 100 - 50/50"
+
+msgid "firstdraft"
+msgstr "primera"
+
+msgid "Fish"
+msgstr "Pez"
+
+msgid "Fish Fins"
+msgstr "Aletas de pescado"
+
+msgid "Fixed"
+msgstr "Fijado"
+
+msgid "Flag"
+msgstr "Bandera"
+
+msgid "Flag Checkered"
+msgstr "Bandera a cuadros"
+
+msgid "Flag Usa"
+msgstr "FLAG USA"
+
+msgid "Flask"
+msgstr "Matraz"
+
+msgid "Flask Vial"
+msgstr "Frasco"
+
+msgid "Flickr"
+msgstr "Flickr"
+
+msgid "Flipboard"
+msgstr "Flipboard"
+
+msgid "Floppy Disk"
+msgstr "Disco flexible"
+
+msgid "Florin Sign"
+msgstr "Signo de Florina"
+
+msgid "Fluid layout"
+msgstr "Diseño de fluido"
+
+msgid "Fluid Site Layout"
+msgstr "Diseño del sitio de fluido"
+
+msgid "Flush Local Font Files"
+msgstr "Flush Fuentes locales de los archivos"
+
+msgid "Flush Local Fonts Cache"
+msgstr "Fuente de la caché local de las fuentes locales"
+
+msgid "Fly"
+msgstr "Volar"
+
+msgid "Flyout"
+msgstr "Volante"
+
+msgid "Folder"
+msgstr "Carpeta"
+
+msgid "Folder Closed"
+msgstr "Carpeta cerrada"
+
+msgid "Folder Minus"
+msgstr "Carpeta menos"
+
+msgid "Folder Open"
+msgstr "Carpeta abierta"
+
+msgid "Folder Plus"
+msgstr "Carpeta más"
+
+msgid "Folder Tree"
+msgstr "Árbol de carpetas"
+
+msgid "Font"
+msgstr "Fuente"
+
+msgid "Font Awesome"
+msgstr "Fuente impresionante"
+
+msgid "Font Awesome Black Tie"
+msgstr "Font impresionante corbata negra"
+
+msgid "Font Awesome in Square"
+msgstr "Fuente impresionante en cuadrado"
+
+msgid "Font Awesome in Square with Stroke Outline"
+msgstr "Fuente impresionante en cuadrado con bosque de trazo"
+
+msgid "Font Extras"
+msgstr "Extras de fuente"
+
+msgid "Font Family"
+msgstr "Familia de fuentes"
+
+msgid "Font Size"
+msgstr "Tamaño de fuente"
+
+msgid "Extra Large"
+msgstr "Extra grande"
+
+msgid "Large"
+msgstr "Grande"
+
+msgid "Medium"
+msgstr "Medio"
+
+msgid "Small"
+msgstr "Pequeño"
+
+msgid "Font Weight"
+msgstr "Peso de la fuente"
+
+msgid "Fonticons"
+msgstr "Foncones"
+
+msgid "Fonticons Fi"
+msgstr "FONTICONS FI"
+
+msgid "Football"
+msgstr "Fútbol americano"
+
+msgid "Footer"
+msgstr "Pie de página"
+
+msgid "Footer Bar"
+msgstr "Pie de pie de página"
+
+msgid "Footer Bar Layout 1"
+msgstr "Diseño de barra de pie de página 1"
+
+msgid "Footer Bar Layout 2"
+msgstr "Diseño de barra de pie de página 2"
+
+msgid "Footer Bar Overview"
+msgstr "Descripción general de la barra de pie"
+
+msgid "Footer Bar Section 1"
+msgstr "Sección de barra de pie de página 1"
+
+msgid "Footer Bar Section 2"
+msgstr "Sección de barra de pie de página 2"
+
+msgid "Footer Builder"
+msgstr "Fusorador"
+
+msgid "Footer Layout"
+msgstr "Diseño de pie de página"
+
+msgid "Footer Menu"
+msgstr "Menú del pie de página"
+
+msgid "Footer Settings"
+msgstr "Configuración de pie de página"
+
+msgid "Footer Widget Area 1"
+msgstr "Área de widget de pie de página 1"
+
+msgid "Footer Widget Area 2"
+msgstr "Área de widget de pie de página 2"
+
+msgid "Footer Widget Area 3"
+msgstr "Área de widget de pie de página 3"
+
+msgid "Footer Widget Area 4"
+msgstr "Área de widget de pie de página 4"
+
+msgid "Footer Widgets"
+msgstr "Widgets de pie de página"
+
+msgid "For "
+msgstr "Para"
+
+msgid "Form Position"
+msgstr "Posición de formulario"
+
+msgid "Format"
+msgstr "Formato"
+
+msgid "Fort Awesome"
+msgstr "Fort Impresionante"
+
+msgid "Forumbee"
+msgstr "Ford"
+
+msgid "Forward"
+msgstr "Adelante"
+
+msgid "Forward Fast"
+msgstr "Avance rápido"
+
+msgid "Forward Step"
+msgstr "Paso adelante"
+
+msgid "Foursquare"
+msgstr "Firme"
+
+msgid "Franc Sign"
+msgstr "Signo franco"
+
+msgid "FREE"
+msgstr "GRATIS"
+
+msgid "Free"
+msgstr "Gratis"
+
+msgid "Free vs Pro"
+msgstr "GRATIS VS PRO"
+
+msgid "Free WordPress Page Builder Plugin."
+msgstr "Complemento gratuito de constructor de páginas de WordPress."
+
+msgid "Free WordPress Page Builder."
+msgstr "GRATIS WordPress Page Builder."
+
+msgid "FreeBSD"
+msgstr "FreeBSD"
+
+msgid "freeCodeCamp"
+msgstr "Freecodecamp"
+
+msgid "Frog"
+msgstr "Rana"
+
+msgid "Fulcrum"
+msgstr "Fulcro"
+
+msgid "Full Content"
+msgstr "Contenido completo"
+
+msgid "Full Size"
+msgstr "Tamaño completo"
+
+msgid "Full Width"
+msgstr "Ancho completo"
+
+msgid "Full Width / Contained"
+msgstr "Ancho completo / contenido"
+
+msgid "Full Width / Stretched"
+msgstr "Ancho completo / estirado"
+
+msgid "Full Width layout"
+msgstr "Diseño de ancho completo"
+
+msgid "Full Width Site Layout"
+msgstr "Diseño del sitio de ancho completo"
+
+msgid "Full-Screen"
+msgstr "Pantalla completa"
+
+msgid "Futbol"
+msgstr "Futuro"
+
+msgid "G"
+msgstr "GRAMO"
+
+msgid "Galactic Empire"
+msgstr "Imperio galáctico"
+
+msgid "Galactic Republic"
+msgstr "República galáctica"
+
+msgid "Galactic Senate"
+msgstr "Senado galáctico"
+
+msgid "Gamepad"
+msgstr "Gamepad"
+
+msgid "Gas Pump"
+msgstr "Bomba de gas"
+
+msgid "Gauge"
+msgstr "Indicador"
+
+msgid "Gauge High"
+msgstr "Calibre alto"
+
+msgid "Gauge Simple"
+msgstr "Calibre simple"
+
+msgid "Gauge Simple High"
+msgstr "Calibre simple alto"
+
+msgid "Gavel"
+msgstr "Mazo"
+
+msgid "Gear"
+msgstr "Engranaje"
+
+msgid "Gears"
+msgstr "Engranaje"
+
+msgid "Gem"
+msgstr "Joya"
+
+msgid "Genderless"
+msgstr "Sin género"
+
+msgid "General"
+msgstr "General"
+
+msgid ""
+"Get access to powerful features for painless WordPress designing, without "
+"the high costs. With all the time you will save, it’s a product that pays "
+"for itself!"
+msgstr ""
+"Obtenga acceso a características potentes para el diseño de WordPress sin "
+"dolor, sin los altos costos. Con todo el tiempo que ahorrará, ¡es un "
+"producto que se paga por sí mismo!"
+
+msgid "Get Pocket"
+msgstr "Conseguir bolsillo"
+
+msgid "GG Currency"
+msgstr "Moneda GG"
+
+msgid "GG Currency Circle"
+msgstr "Círculo de divisas GG"
+
+msgid "Ghost"
+msgstr "Fantasma"
+
+msgid "Gift"
+msgstr "Regalo"
+
+msgid "Gifts"
+msgstr "Regalos"
+
+msgid "Git"
+msgstr "Git"
+
+msgid "Git Alt"
+msgstr "Git alt"
+
+msgid "GitHub"
+msgstr "Github"
+
+msgid "GitKraken"
+msgstr "Gitkraken"
+
+msgid "GitLab"
+msgstr "Gitlab"
+
+msgid "Gitter"
+msgstr "Dar un desprendimiento"
+
+msgid "Glass Water"
+msgstr "Agua de vidrio"
+
+msgid "Glass Water Droplet"
+msgstr "Gota de agua de vidrio"
+
+msgid "Glasses"
+msgstr "Anteojos"
+
+msgid "Glide"
+msgstr "Planeo"
+
+msgid "Glide G"
+msgstr "Deslizamiento"
+
+msgid "Global"
+msgstr "Global"
+
+msgid "Global Highlight"
+msgstr "Destacado global"
+
+msgid ""
+"Global padding setting for WordPress Group, Column, Cover blocks, it can be "
+"overridden by respective block's Dimension setting."
+msgstr ""
+"Configuración global de relleno para el grupo de WordPress, columna, bloques "
+"de cobertura, se puede anular mediante la configuración de dimensiones de "
+"Bloque."
+
+msgid "Global Palette"
+msgstr "Paleta global"
+
+msgid "Global Sidebar Layout"
+msgstr "Diseño global de la barra lateral"
+
+msgid "Global Sidebar Style"
+msgstr "Estilo global de la barra lateral"
+
+msgid "Globe"
+msgstr "Globo"
+
+msgid "Go"
+msgstr "Ir"
+
+msgid "Go to Customizer"
+msgstr "Ir a Customizer"
+
+msgid "Go to Dashboard"
+msgstr "Ir al tablero"
+
+msgid "Gofore"
+msgstr "Gofre"
+
+msgid "Golf Ball Tee"
+msgstr "Camiseta de pelota de golf"
+
+msgid "Goodreads"
+msgstr "Goodreads"
+
+msgid "Goodreads G"
+msgstr "Goodreads g"
+
+msgid "Google Drive"
+msgstr "Google Drive"
+
+msgid "Google Logo"
+msgstr "Logotipo de Google"
+
+msgid "Google Pay"
+msgstr "Pago de Google"
+
+msgid "Google Play"
+msgstr "Google Play"
+
+msgid "Google Plus"
+msgstr "Google Plus"
+
+msgid "Google Plus G"
+msgstr "Google más G"
+
+msgid "Google Reviews"
+msgstr "Revisiones de Google"
+
+msgid "Google Wallet"
+msgstr "Billetera de Google"
+
+msgid "Google Will Love and Rank"
+msgstr "Google amará y clasificará"
+
+msgid "Gopuram"
+msgstr "Gopuram"
+
+msgid ""
+"Got a question about the plugin, want to share your awesome project or just "
+"say hi? Join our wonderful community!"
+msgstr ""
+"¿Tienes una pregunta sobre el complemento, quieres compartir tu increíble "
+"proyecto o simplemente saludar? ¡Únete a nuestra maravillosa comunidad!"
+
+msgid "Gradient"
+msgstr "Gradiente"
+
+msgid "Graduation Cap"
+msgstr "Tapa de graduación"
+
+msgid "Gratipay (Gittip)"
+msgstr "Gratipay (Gittip)"
+
+msgid "Grav"
+msgstr "Gravedad"
+
+msgid "Grayscale"
+msgstr "Escala de grises"
+
+msgid "Greater Than"
+msgstr "Más que"
+
+msgid "Greater Than Equal"
+msgstr "Mayor que igual"
+
+msgid "Grid"
+msgstr "Red"
+
+msgid "Grid Column Layout"
+msgstr "Diseño de columna de cuadrícula"
+
+msgid "Grid, Masonry layout"
+msgstr "Cuadrícula, diseño de mampostería"
+
+msgid "Grip"
+msgstr "Agarre"
+
+msgid "Grip Lines"
+msgstr "Líneas de agarre"
+
+msgid "Grip Lines Vertical"
+msgstr "Líneas de agarre vertical"
+
+msgid "Grip Vertical"
+msgstr "Agarre vertical"
+
+msgid "Gripfire, Inc."
+msgstr "Gripfire, Inc."
+
+msgid "Group Arrows Rotate"
+msgstr "Las flechas de grupo giran"
+
+msgid "Grunt"
+msgstr "Gruñido"
+
+msgid "Guarani Sign"
+msgstr "Signo guaraní"
+
+msgid "Guaranteed Safe Checkout"
+msgstr "Correcto seguro garantizado"
+
+msgid "Guilded"
+msgstr "Gremado"
+
+msgid "Guitar"
+msgstr "Guitarra"
+
+msgid "Gulp"
+msgstr "Trago"
+
+msgid "Gun"
+msgstr "Pistola"
+
+msgid "H"
+msgstr "H"
+
+msgid "H1 Font"
+msgstr "Fuente H1"
+
+msgid "H2 Font"
+msgstr "Fuente H2"
+
+msgid "H3 Font"
+msgstr "Fuente H3"
+
+msgid "H4 Font"
+msgstr "Fuente H4"
+
+msgid "H5 Font"
+msgstr "Fuente H5"
+
+msgid "H6 Font"
+msgstr "Fuente H6"
+
+msgid "Hacker News"
+msgstr "Noticias de hacker"
+
+msgid "Hackerrank"
+msgstr "Truco"
+
+msgid "Hammer"
+msgstr "Martillo"
+
+msgid "Hamsa"
+msgstr "Hamsa"
+
+msgid "Hand"
+msgstr "Mano"
+
+msgid "Hand Back Fist"
+msgstr "Mano hacia atrás Puño"
+
+msgid "Hand Dots"
+msgstr "Puntos de mano"
+
+msgid "Hand Fist"
+msgstr "Puño de mano"
+
+msgid "Hand Holding"
+msgstr "Sostenimiento de la mano"
+
+msgid "Hand Holding Dollar"
+msgstr "Mano que tiene dólar"
+
+msgid "Hand Holding Droplet"
+msgstr "Gotita para sostener a mano"
+
+msgid "Hand Holding Hand"
+msgstr "Mano sosteniendo la mano"
+
+msgid "Hand Holding Heart"
+msgstr "Mano sosteniendo corazón"
+
+msgid "Hand Holding Medical"
+msgstr "Mano que sostiene médico"
+
+msgid "Hand Lizard"
+msgstr "Lagarto de la mano"
+
+msgid "Hand Middle Finger"
+msgstr "Dedo medio"
+
+msgid "Hand Peace"
+msgstr "Paz de mano"
+
+msgid "Hand Point Down"
+msgstr "Punto de mano hacia abajo"
+
+msgid "Hand Point Left"
+msgstr "Punto de mano izquierda"
+
+msgid "Hand Point Right"
+msgstr "Punto de mano a la derecha"
+
+msgid "Hand Point Up"
+msgstr "Apuntando con la mano"
+
+msgid "Hand Pointer"
+msgstr "Puntero de mano"
+
+msgid "Hand Scissors"
+msgstr "Tijeras para manos"
+
+msgid "Hand Sparkles"
+msgstr "Brillo de mano"
+
+msgid "Hand Spock"
+msgstr "Spock manual"
+
+msgid "Handcuffs"
+msgstr "Esposas"
+
+msgid "Hands"
+msgstr "Manos"
+
+msgid "Hands Asl Interpreting"
+msgstr "Manos de interpretación de ASL"
+
+msgid "Hands Bound"
+msgstr "Manos atadas"
+
+msgid "Hands Bubbles"
+msgstr "Burbujas de manos"
+
+msgid "Hands Clapping"
+msgstr "Manos aplausos"
+
+msgid "Hands Holding"
+msgstr "Manos sosteniendo"
+
+msgid "Hands Holding Child"
+msgstr "Manos sosteniendo hijo"
+
+msgid "Hands Holding Circle"
+msgstr "Manos sosteniendo círculo"
+
+msgid "Hands Praying"
+msgstr "Manos rezando"
+
+msgid "Handshake"
+msgstr "Apretón de manos"
+
+msgid "Handshake Angle"
+msgstr "Ángulo de apretón de manos"
+
+msgid "Handshake Simple"
+msgstr "Apretón de manos simple"
+
+msgid "Handshake Simple Slash"
+msgstr "Playshake simple barra de corte"
+
+msgid "Handshake Slash"
+msgstr "Barra de apretón de manos"
+
+msgid "Hang Over Top"
+msgstr "Colgar sobre la parte superior"
+
+msgid "Hanukiah"
+msgstr "Hanukiah"
+
+msgid "Hard Drive"
+msgstr "Disco duro"
+
+msgid "Hashnode"
+msgstr "Hashnode"
+
+msgid "Hashtag"
+msgstr "Hashtag"
+
+msgid "Hat Cowboy"
+msgstr "Vaquero de sombrero"
+
+msgid "Hat Cowboy Side"
+msgstr "Hat Cowboy Side"
+
+msgid "Hat Wizard"
+msgstr "Mago de sombrero"
+
+msgid "Head Side Cough"
+msgstr "Tos lateral de la cabeza"
+
+msgid "Head Side Cough Slash"
+msgstr "Cabeza lateral de tos barra"
+
+msgid "Head Side Mask"
+msgstr "Máscara lateral de la cabeza"
+
+msgid "Head Side Virus"
+msgstr "Virus lateral"
+
+msgid "Header"
+msgstr "Encabezamiento"
+
+msgid "Header Builder"
+msgstr "Constructor de encabezados"
+
+msgid "Header Button"
+msgstr "Botón de encabezado"
+
+msgid "Header Cart Icon"
+msgstr "Icono de carro de encabezado"
+
+msgid "Header Layout"
+msgstr "Diseño de encabezado"
+
+msgid "Header Position"
+msgstr "Posición de encabezado"
+
+msgid "Header Presets"
+msgstr "Preajuste de encabezado"
+
+msgid "Header Rows"
+msgstr "Hileras de encabezado"
+
+msgid "Header Sections"
+msgstr "Secciones de encabezado"
+
+msgid "Header Settings"
+msgstr "Configuración de encabezado"
+
+msgid "Header Type"
+msgstr "Tipo de encabezado"
+
+msgid "Header Types"
+msgstr "Tipos de encabezado"
+
+msgid "Heading"
+msgstr "Título"
+
+msgid "Heading (H1-H6)"
+msgstr "Encabezado (H1-H6)"
+
+msgid "Heading 1"
+msgstr "Encabezado 1"
+
+msgid "Heading 2"
+msgstr "Encabezado 2"
+
+msgid "Heading 3"
+msgstr "Encabezado 3"
+
+msgid "Heading 4"
+msgstr "Encabezado 4"
+
+msgid "Heading 5"
+msgstr "Encabezado 5"
+
+msgid "Heading 6"
+msgstr "Encabezado 6"
+
+msgid "Heading Color"
+msgstr "Color de rumbo"
+
+msgid "Heading Font"
+msgstr "Fuente"
+
+msgid "Headings"
+msgstr "Encabezados"
+
+msgid "Headings Font"
+msgstr "Fuente de encabezados"
+
+msgid "Headphones"
+msgstr "Auriculares"
+
+msgid "Headphones Simple"
+msgstr "Auriculares simples"
+
+msgid "Headset"
+msgstr "Auriculares"
+
+msgid "Heart"
+msgstr "Corazón"
+
+msgid "Heart Circle Bolt"
+msgstr "Perno del círculo de corazón"
+
+msgid "Heart Circle Check"
+msgstr "Verificación del círculo de corazón"
+
+msgid "Heart Circle Exclamation"
+msgstr "Exclamación del círculo del corazón"
+
+msgid "Heart Circle Minus"
+msgstr "Círculo de corazón menos"
+
+msgid "Heart Circle Plus"
+msgstr "Círculo de corazón más"
+
+msgid "Heart Circle Xmark"
+msgstr "Círculo de corazón xmark"
+
+msgid "Heart Crack"
+msgstr "Crack"
+
+msgid "Heart Pulse"
+msgstr "Pulso del corazón"
+
+msgid "Height"
+msgstr "Altura"
+
+msgid "Helicopter"
+msgstr "Helicóptero"
+
+msgid "Helicopter Symbol"
+msgstr "Símbolo de helicóptero"
+
+msgid "Hello "
+msgstr "Hola"
+
+msgid "Helmet Safety"
+msgstr "Seguridad"
+
+msgid "Helmet Un"
+msgstr "Casco un"
+
+msgid "Help"
+msgstr "Ayuda"
+
+msgid "Helpful Information"
+msgstr "Información útil"
+
+msgid "Here are the search results for your search."
+msgstr "Aquí están los resultados de búsqueda para su búsqueda."
+
+msgid ""
+"Here's how the body text will look like on your website. You can customize "
+"the typography to match your brand personality. Whether you aim for a modern "
+"and sleek appearance or a more traditional and elegant feel, the right "
+"typography sets the tone for your content."
+msgstr ""
+"Así es como se verá el texto del cuerpo en su sitio web. Puede personalizar "
+"la tipografía para que coincida con la personalidad de su marca. Ya sea que "
+"apunte a una apariencia moderna y elegante o una sensación más tradicional y "
+"elegante, la tipografía adecuada establece la pauta para su contenido."
+
+msgid "here."
+msgstr "aquí."
+
+msgid "Hide Builder"
+msgstr "Ocultar constructor"
+
+msgid "Hide Cart Total Label"
+msgstr "Ocultar etiqueta total de carro"
+
+msgid "Hide cart total label if cart is empty"
+msgstr "Ocultar el carrito etiqueta total si el carrito está vacío"
+
+msgid "Hide Last Item in Menu on Mobile"
+msgstr "Ocultar el último elemento en el menú en el móvil"
+
+msgid "Hide Sticky When Scroll Down"
+msgstr "Esconderse pegajoso cuando se desplace hacia abajo"
+
+msgid "Highlighter"
+msgstr "Resaltante"
+
+msgid "Hill Avalanche"
+msgstr "Avalancha de colina"
+
+msgid "Hill Rockslide"
+msgstr "Deslizamiento de roca"
+
+msgid "Hippo"
+msgstr "Hipopótamo"
+
+msgid "Hips"
+msgstr "Caderas"
+
+msgid "HireAHelper"
+msgstr "Hireahelper"
+
+msgid "Hive Blockchain Network"
+msgstr "Red de blockchain de colmena"
+
+msgid "Hockey Puck"
+msgstr "Disco de hockey"
+
+msgid "Holly Berry"
+msgstr "Baya de acebo"
+
+msgid "Home"
+msgstr "Hogar"
+
+msgid "Hooks"
+msgstr "Manos"
+
+msgid "Hooks Support to Add Custom Code"
+msgstr "Soporte de ganchos para agregar código personalizado"
+
+msgid "Hooli"
+msgstr "Hooli"
+
+msgid "Horizontal Alignment"
+msgstr "Alineación horizontal"
+
+msgid "Horizontal Content Alignment"
+msgstr "Alineación de contenido horizontal"
+
+msgid "Hornbill"
+msgstr "Cónerta"
+
+msgid "Horse"
+msgstr "Caballo"
+
+msgid "Horse Head"
+msgstr "Cabeza de caballo"
+
+msgid "Hospital"
+msgstr "Hospital"
+
+msgid "Hospital User"
+msgstr "Usuario del hospital"
+
+msgid "Hot Tub Person"
+msgstr "Persona de hidromasaje"
+
+msgid "Hotdog"
+msgstr "Hot dog"
+
+msgid "Hotel"
+msgstr "Hotel"
+
+msgid "Hotjar"
+msgstr "Hotjar"
+
+msgid "g a"
+msgstr "G A"
+
+msgid "Hourglass"
+msgstr "Reloj de arena"
+
+msgid "Hourglass End"
+msgstr "Final de reloj de arena"
+
+msgid "Hourglass Start"
+msgstr "Comienzo de reloj de arena"
+
+msgid "House"
+msgstr "Casa"
+
+msgid "House Chimney"
+msgstr "Chimenea"
+
+msgid "House Chimney Crack"
+msgstr "Chimenea de la casa crack"
+
+msgid "House Chimney Medical"
+msgstr "Casa de chimenea"
+
+msgid "House Chimney User"
+msgstr "Usuario de chimenea de la casa"
+
+msgid "House Chimney Window"
+msgstr "Ventana de chimenea de la casa"
+
+msgid "House Circle Check"
+msgstr "Cheque de círculo de la casa"
+
+msgid "House Circle Exclamation"
+msgstr "Exclamación del círculo de la casa"
+
+msgid "House Circle Xmark"
+msgstr "Círculo de la casa xmark"
+
+msgid "House Crack"
+msgstr "Crack"
+
+msgid "House Fire"
+msgstr "Incendio de la casa"
+
+msgid "House Flag"
+msgstr "Bandera"
+
+msgid "House Flood Water"
+msgstr "Agua de inundación de la casa"
+
+msgid "House Flood Water Circle Arrow Right"
+msgstr "House Flood Water Circle Flecha derecha"
+
+msgid "House Laptop"
+msgstr "Laptop de casa"
+
+msgid "House Lock"
+msgstr "Cerradura de la casa"
+
+msgid "House Medical"
+msgstr "Casa médica"
+
+msgid "House Medical Circle Check"
+msgstr "Cheque de círculo médico de la casa"
+
+msgid "House Medical Circle Exclamation"
+msgstr "Exclamación del círculo médico de la casa"
+
+msgid "House Medical Circle Xmark"
+msgstr "Círculo médico de la casa xmark"
+
+msgid "House Medical Flag"
+msgstr "Bandera médica de la casa"
+
+msgid "House Signal"
+msgstr "Señal de la casa"
+
+msgid "House Tsunami"
+msgstr "Tsunami de casa"
+
+msgid "House User"
+msgstr "Usuario de la casa"
+
+msgid "Houzz"
+msgstr "Houzz"
+
+msgid "Hover"
+msgstr "Flotar"
+
+msgid "Hover / Active"
+msgstr "Flotar / activo"
+
+msgid "Hover Color"
+msgstr "Color de choque"
+
+msgid "Hover Effect"
+msgstr "Efecto flotante"
+
+msgid ""
+"How likely are you to recommend #pluginname to your friends or colleagues?"
+msgstr ""
+"¿Qué tan probable es que recomiende #PluginName a sus amigos o colegas?"
+
+msgid "Hryvnia Sign"
+msgstr "Signo de hryvnia"
+
+msgid "HTML %s"
+msgstr "Html %s"
+
+msgid "HTML 3"
+msgstr "HTML 3"
+
+msgid "HTML 5 Logo"
+msgstr "Logotipo HTML 5"
+
+msgid "HTML Color"
+msgstr "Color html"
+
+msgid "https://wpastra.com/"
+msgstr "https://wpastra.com/"
+
+msgid ""
+"https://wpastra.com/about/?"
+"utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme"
+msgstr ""
+"https://wpastra.com/about/?"
+"utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme"
+
+msgid "HubSpot"
+msgstr "Hubspot"
+
+msgid "Hurray! All Components Are Being Used."
+msgstr "¡Viva! Todos los componentes se están utilizando."
+
+msgid "Hurricane"
+msgstr "Huracán"
+
+msgid "I"
+msgstr "I"
+
+msgid "I Cursor"
+msgstr "Yo cursor"
+
+msgid "I want to build this website from scratch"
+msgstr "Quiero construir este sitio web desde cero"
+
+msgid "Ice Cream"
+msgstr "Helado"
+
+msgid "Icicles"
+msgstr "Carámbano"
+
+msgid "Icon"
+msgstr "Icono"
+
+msgid "Icon Background Space"
+msgstr "Espacio de fondo de icono"
+
+msgid "Icon Color"
+msgstr "Color de icono"
+
+msgid "Icon Library"
+msgstr "Biblioteca de iconos"
+
+msgid "Icon Radius"
+msgstr "Radio de icono"
+
+msgid "Icon Size"
+msgstr "Tamaño del icono"
+
+msgid "Icon Spacing"
+msgstr "Espaciado ícono"
+
+msgid "Icons"
+msgstr "Íconos"
+
+msgid "Id Badge"
+msgstr "Insignia de identificación"
+
+msgid "Id Card"
+msgstr "Tarjeta de identificación"
+
+msgid "Id Card Clip"
+msgstr "Clip de tarjeta de identificación"
+
+msgid "iDeal"
+msgstr "ideal"
+
+msgid ""
+"If this color setting is not reflecting, check if colors are set from "
+"dedicated above, below or primary footer settings."
+msgstr ""
+"Si esta configuración de color no se refleja, verifique si los colores se "
+"configuran desde la configuración dedicada de arriba, abajo o de pie de "
+"página principal."
+
+msgid ""
+"If you would like to apply custom header for this page, select the one from "
+"the list above. Page headers can be created and customized from "
+msgstr ""
+"Si desea aplicar encabezado personalizado para esta página, seleccione el de "
+"la lista de arriba. Los encabezados de página se pueden crear y personalizar "
+"desde"
+
+msgid "Igloo"
+msgstr "Iglú"
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "Image Overlay"
+msgstr "Superposición de imágenes"
+
+msgid "Image Portrait"
+msgstr "Retrato de imagen"
+
+msgid "Image Position"
+msgstr "Posición de la imagen"
+
+msgid "Image Ratio"
+msgstr "Relación de imagen"
+
+msgid "Image Size"
+msgstr "Tamaño de imagen"
+
+msgid "Images"
+msgstr "Imágenes"
+
+msgid "IMDB"
+msgstr "IMDB"
+
+msgid "Inbox"
+msgstr "Bandeja de entrada"
+
+msgid "Increased element count"
+msgstr "Mayor recuento de elementos"
+
+msgid "Indent"
+msgstr "Sangrar"
+
+msgid "Indian Rupee Sign"
+msgstr "Signo de rupia india"
+
+msgid "Industry"
+msgstr "Industria"
+
+msgid "Info"
+msgstr "Información"
+
+msgid "Inherit"
+msgstr "Heredar"
+
+msgid "Inline"
+msgstr "En línea"
+
+msgid "Inline Logo & Site Title"
+msgstr "Logotipo en línea y título de sitio"
+
+msgid "Inner Column Spacing"
+msgstr "Espaciado de columna interna"
+
+msgid "Inner Element Spacing"
+msgstr "Espaciado de elementos internos"
+
+msgid "Inner Elements Layout"
+msgstr "Diseño de elementos internos"
+
+msgid "Inner Elements Spacing"
+msgstr "Espacio de elementos internos"
+
+msgid "Input Highlight"
+msgstr "Resaltar de entrada"
+
+msgid "INSERT ELEMENTS"
+msgstr "Insertar elementos"
+
+msgid "Insert HTML text here."
+msgstr "Inserte el texto HTML aquí."
+
+msgid "Insert Icon"
+msgstr "Insertar icono"
+
+msgid "Inside"
+msgstr "Adentro"
+
+msgid "Inside Post/Page"
+msgstr "Post/página interior"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Install & Activate"
+msgstr "Instalar y activar"
+
+msgid "Install Spectra - It’s free"
+msgstr "Instalar espectros: es gratis"
+
+msgid "Installed"
+msgstr "Instalado"
+
+msgid "Installing"
+msgstr "Instalación"
+
+msgid "InstaLOD"
+msgstr "Instalod"
+
+msgid "Intercom"
+msgstr "Intercomunicador"
+
+msgid "Internet-explorer"
+msgstr "Explorador de Internet"
+
+msgid "InVision"
+msgstr "Invisión"
+
+msgid "iOS App Store"
+msgstr "Tienda de aplicaciones de iOS"
+
+msgid "ioxhost"
+msgstr "ioxhost"
+
+msgid "It looks like the link pointing here was faulty. Maybe try searching?"
+msgstr ""
+"Parece que el enlace que apunta aquí fue defectuoso. ¿Quizás intentar buscar?"
+
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parece que no podemos encontrar lo que estás buscando. Quizás buscar puede "
+"ayudar."
+
+msgid "It would not be effective if transparent header is enabled."
+msgstr "No sería efectivo si el encabezado transparente está habilitado."
+
+msgid "Italic"
+msgstr "Itálico"
+
+msgid "itch.io"
+msgstr "Itch.io"
+
+msgid "Item Divider"
+msgstr "Divisor de artículos"
+
+msgid "iTunes"
+msgstr "iTunes"
+
+msgid "Itunes Note"
+msgstr "Nota de iTunes"
+
+msgid "J"
+msgstr "J"
+
+msgid "Jar"
+msgstr "Frasco"
+
+msgid "Jar Wheat"
+msgstr "Trigo de jarra"
+
+msgid "Java"
+msgstr "Java"
+
+msgid "JavaScript (JS)"
+msgstr "JavaScript (JS)"
+
+msgid "JCB Credit Card"
+msgstr "Tarjeta de crédito JCB"
+
+msgid "Jedi"
+msgstr "Jedi"
+
+msgid "Jedi Order"
+msgstr "Orden jedi"
+
+msgid "Jenkis"
+msgstr "Jenkis"
+
+msgid "Jet Fighter"
+msgstr "Caza de reacción"
+
+msgid "Jet Fighter Up"
+msgstr "Caza a reacción"
+
+msgid "Jira"
+msgstr "Jira"
+
+msgid "Joget"
+msgstr "Joget"
+
+msgid "Join Now →"
+msgstr "Únete ahora →"
+
+msgid "Join the Community"
+msgstr "Únete a la comunidad"
+
+msgid "Joint"
+msgstr "Articulación"
+
+msgid "Joomla Logo"
+msgstr "Logotipo de Joomla"
+
+msgid "jsFiddle"
+msgstr "jsfiddle"
+
+msgid "Jug Detergent"
+msgstr "Detergente de la jarra"
+
+msgid "Just-in-time Compiler"
+msgstr "Compilador justo a tiempo"
+
+msgid "K"
+msgstr "K"
+
+msgid "Kaaba"
+msgstr "Kaaba"
+
+msgid "Kaggle"
+msgstr "Kaggle"
+
+msgid "Key"
+msgstr "Llave"
+
+msgid "Keybase"
+msgstr "Base de teclas"
+
+msgid "Keyboard"
+msgstr "Teclado"
+
+msgid "KeyCDN"
+msgstr "Keycdn"
+
+msgid "Khanda"
+msgstr "Khanda"
+
+msgid "Kickstarter"
+msgstr "Pedal de arranque"
+
+msgid "Kickstarter K"
+msgstr "Kickstarter K"
+
+msgid "Kip Sign"
+msgstr "Signo de Kip"
+
+msgid "Kit Medical"
+msgstr "Kit médico"
+
+msgid "Kitchen Set"
+msgstr "Juego de cocina"
+
+msgid "Kiwi Bird"
+msgstr "Pájaro kiwi"
+
+msgid "Know More →"
+msgstr "Saber más →"
+
+msgid "Knowledge Base"
+msgstr "Base de conocimiento"
+
+msgid "KORVUE"
+msgstr "Korvue"
+
+msgid "L"
+msgstr "L"
+
+msgid "Label"
+msgstr "Etiqueta"
+
+msgid "Label Color"
+msgstr "Color de la etiqueta"
+
+msgid "Land Mine On"
+msgstr "Aterrizar el mío"
+
+msgid "Landmark"
+msgstr "Marca"
+
+msgid "Landmark Dome"
+msgstr "Cúpula histórica"
+
+msgid "Landmark Flag"
+msgstr "Bandera histórica"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Language Switcher"
+msgstr "Conmutador de idiomas"
+
+msgid "Language Switcher element"
+msgstr "Elemento de conmutador de idiomas"
+
+msgid "Laptop"
+msgstr "Computadora portátil"
+
+msgid "Laptop Code"
+msgstr "Código de portátil"
+
+msgid "Laptop File"
+msgstr "Archivo de laptop"
+
+msgid "Laptop Medical"
+msgstr "Médico de laptop"
+
+msgid "Laravel"
+msgstr "Laravado"
+
+msgid "Lari Sign"
+msgstr "Letrero de Lari"
+
+msgid "Last Item in Menu"
+msgstr "Último elemento en el menú"
+
+msgid "Last Row, Previous Columns 50/50 - 100"
+msgstr "Última fila, columnas anteriores 50/50 - 100"
+
+msgid "Last Updated"
+msgstr "Última actualización"
+
+msgid "last.fm"
+msgstr "Last.fm"
+
+msgid ""
+"Latest Posts page is your site's front page when the latest posts are "
+"displayed on the home page."
+msgstr ""
+"La última página de publicaciones es la página principal de su sitio cuando "
+"se muestran las últimas publicaciones en la página de inicio."
+
+msgid "Latest posts page or when any page is selected as blog page"
+msgstr ""
+"Última página de publicaciones o cuando se selecciona cualquier página como "
+"página de blog"
+
+msgid "Layer Group"
+msgstr "Grupo de capas"
+
+msgid "Layout"
+msgstr "Disposición"
+
+msgid "Layout 1"
+msgstr "Diseño 1"
+
+msgid "Layout 2"
+msgstr "Diseño 2"
+
+msgid "Layout 3"
+msgstr "Diseño 3"
+
+msgid "Layout 4"
+msgstr "Diseño 4"
+
+msgid "Leaf"
+msgstr "Hoja"
+
+msgid "Leanpub"
+msgstr "Lean"
+
+msgid "Learn More"
+msgstr "Obtenga más información"
+
+msgid "LearnDash"
+msgstr "Learndash"
+
+msgid "Leave a Comment"
+msgstr "Deja un comentario"
+
+msgid "Leave Review"
+msgstr "Revisión de licencia"
+
+msgid "Left"
+msgstr "Izquierda"
+
+msgid "Left Bottom"
+msgstr "Fondo izquierdo"
+
+msgid "Left Center"
+msgstr "Centro izquierdo"
+
+msgid "Left Heavy 50/25/25"
+msgstr "Izquierda pesada 50/25/25"
+
+msgid "Left Heavy 66/33"
+msgstr "Izquierda pesada 66/33"
+
+msgid "Left Long"
+msgstr "Se fue mucho"
+
+msgid "Left Right"
+msgstr "Izquierda a la derecha"
+
+msgid "Left Sidebar"
+msgstr "Barra lateral izquierda"
+
+msgid "Left Top"
+msgstr "Top de izquierda"
+
+msgid "Legacy"
+msgstr "Legado"
+
+msgid "Lemon"
+msgstr "Limón"
+
+msgid "Less"
+msgstr "Menos"
+
+msgid "Less Than"
+msgstr "Menos que"
+
+msgid "Less Than Equal"
+msgstr "Menos que igual"
+
+msgid "Letter Spacing"
+msgstr "Espaciado de letras"
+
+msgid "Let’s Get Started with Starter Templates"
+msgstr "Comencemos con plantillas de inicio"
+
+msgid "Life Ring"
+msgstr "Anillo de vida"
+
+msgid "Lifestyle"
+msgstr "Estilo de vida"
+
+msgid "LifterLMS"
+msgstr "LIBTERLMS"
+
+msgid "Light 300"
+msgstr "Luz 300"
+
+msgid "Light 300 Italic"
+msgstr "Luz 300 cursiva"
+
+msgid "Lightbulb"
+msgstr "Bombilla"
+
+msgid "Limited Features"
+msgstr "Características limitadas"
+
+msgid "Line"
+msgstr "Línea"
+
+msgid "Line Height"
+msgstr "Altura de línea"
+
+msgid "Lines Leaning"
+msgstr "Líneas inclinadas"
+
+msgid "Link"
+msgstr "Enlace"
+
+msgid "Link / Text"
+msgstr "Enlace / texto"
+
+msgid "Link / Text Color"
+msgstr "Color de enlace / texto"
+
+msgid "Link Color"
+msgstr "Color de enlace"
+
+msgid "Link Hover Color"
+msgstr "Link Color flotante"
+
+msgid "Link Rel"
+msgstr "Enlace REL"
+
+msgid "Link Slash"
+msgstr "Enlace barro"
+
+msgid "Link Values Together"
+msgstr "Valores de enlace juntos"
+
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+msgid "Linkedin"
+msgstr "LinkedIn"
+
+msgid "LinkedIn In"
+msgstr "LinkedIn en"
+
+msgid "Links"
+msgstr "Campo de golf"
+
+msgid "Linode"
+msgstr "Linodo"
+
+msgid "Linux"
+msgstr "Linux"
+
+msgid "Lira Sign"
+msgstr "Letrero lira"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "List Check"
+msgstr "Comprobación de la lista"
+
+msgid "List Item 1"
+msgstr "Lista del elemento 1"
+
+msgid "List Item 2"
+msgstr "Lista del elemento 2"
+
+msgid "List Item 3"
+msgstr "Artículo de la lista 3"
+
+msgid "List Ol"
+msgstr "Listar ol"
+
+msgid "List Ul"
+msgstr "Lista de ul"
+
+msgid "Litecoin Sign"
+msgstr "Signo de litecoin"
+
+msgid "Live Search"
+msgstr "Búsqueda en vivo"
+
+msgid "Load Google Fonts Locally"
+msgstr "Cargue las fuentes de Google localmente"
+
+msgid ""
+"Loads assets dynamically on demand. Assets are loaded for only those blocks "
+"that are used on a page."
+msgstr ""
+"Carga activos dinámicamente a pedido. Los activos se cargan solo para "
+"aquellos bloques que se usan en una página."
+
+msgid "Local font files not present."
+msgstr "Archivos de fuentes locales no presentes."
+
+msgid "Location"
+msgstr "Ubicación"
+
+msgid "Location Arrow"
+msgstr "Flecha de ubicación"
+
+msgid "Location Crosshairs"
+msgstr "Ubicación de la mira"
+
+msgid "Location Dot"
+msgstr "Dot de ubicación"
+
+msgid "Location Pin"
+msgstr "Pasador de ubicación"
+
+msgid "Location Pin Lock"
+msgstr "Localización de pasador de ubicación"
+
+msgid "Lock"
+msgstr "Cerrar"
+
+msgid "Lock Open"
+msgstr "Bloqueo abierto"
+
+msgid "Locust"
+msgstr "Langosta"
+
+msgid "Log In"
+msgstr "Acceso"
+
+msgid "Log in"
+msgstr "Acceso"
+
+msgid "Logged In Account Menu"
+msgstr "Iniciado en el menú de la cuenta"
+
+msgid "Logged In View"
+msgstr "Iniciado en la vista"
+
+msgid "Logged Out View"
+msgstr "Vista de salida registrada"
+
+msgid "Login URL"
+msgstr "URL de inicio de sesión"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Logo Center"
+msgstr "Centro de logotipo"
+
+msgid "Logo Color"
+msgstr "Color del logotipo"
+
+msgid "Logo Left"
+msgstr "Logotipo restante"
+
+msgid "Logo Right"
+msgstr "LOGO DERECHO"
+
+msgid "Logo SVG Gap"
+msgstr "Logotipo SVG GAP"
+
+msgid "Logo SVG Icon"
+msgstr "Icono de logotipo svg"
+
+msgid "Logo SVG Icon Color"
+msgstr "LOGO Color de icono SVG"
+
+msgid "Logo Width"
+msgstr "Ancho del logotipo"
+
+msgid "Loop End"
+msgstr "Extremo de bucle"
+
+msgid "Loop Start"
+msgstr "Inicio de bucle"
+
+msgid "Lowercase"
+msgstr "Minúscula"
+
+msgid "Lungs"
+msgstr "Pulmones"
+
+msgid "Lungs Virus"
+msgstr "Virus de los pulmones"
+
+msgid "lyft"
+msgstr "lyft"
+
+msgid "M"
+msgstr "METRO"
+
+msgid "Magento"
+msgstr "Magento"
+
+msgid "Magnet"
+msgstr "Imán"
+
+msgid "Magnifying Glass"
+msgstr "Lupa"
+
+msgid "Magnifying Glass Arrow Right"
+msgstr "Flecha de lupa a la derecha"
+
+msgid "Magnifying Glass Chart"
+msgstr "Gráfico de lupa"
+
+msgid "Magnifying Glass Dollar"
+msgstr "Dólar de lupa"
+
+msgid "Magnifying Glass Location"
+msgstr "Ubicación de lupa"
+
+msgid "Magnifying Glass Minus"
+msgstr "Lupa menos"
+
+msgid "Magnifying Glass Plus"
+msgstr "Lupa más"
+
+msgid "Mailchimp"
+msgstr "Mailchimp"
+
+msgid "Main Menu"
+msgstr "Menú principal"
+
+msgid "Main Sidebar"
+msgstr "Barra lateral principal"
+
+msgid "Make an instant connection with amazing site headers"
+msgstr "Haga una conexión instantánea con los encabezados del sitio increíbles"
+
+msgid "Make sidebars work harder to engage with Astra Pro"
+msgstr ""
+"Hacer que las barras laterales trabajen más para interactuar con Astra Pro"
+
+msgid "Make sure to update your post for changes to take effect."
+msgstr ""
+"Asegúrese de actualizar su publicación para obtener cambios para entrar en "
+"vigencia."
+
+msgid "Make your header layouts look more appealing and sexy!"
+msgstr "¡Haga que sus diseños de encabezado se vean más atractivos y sexys!"
+
+msgid "Manat Sign"
+msgstr "Signo de Manat"
+
+msgid "Mandalorian"
+msgstr "Mandaloriano"
+
+msgid "Map"
+msgstr "Mapa"
+
+msgid "Map Location"
+msgstr "Ubicación del mapa"
+
+msgid "Map Location Dot"
+msgstr "Mapa ubicación de punto"
+
+msgid "Map Pin"
+msgstr "Pasador de mapa"
+
+msgid "Margin"
+msgstr "Margen"
+
+msgid "Markdown"
+msgstr "Reducción"
+
+msgid "Marker"
+msgstr "Marcador"
+
+msgid "Mars"
+msgstr "Marte"
+
+msgid "Mars And Venus"
+msgstr "Marte y Venus"
+
+msgid "Mars And Venus Burst"
+msgstr "Marte y Venus estallaron"
+
+msgid "Mars Double"
+msgstr "Doble de Marte"
+
+msgid "Mars Stroke"
+msgstr "Marte accidente cerebrovascular"
+
+msgid "Mars Stroke Right"
+msgstr "Marte Stroke Right"
+
+msgid "Mars Stroke Up"
+msgstr "Marte acer vez"
+
+msgid "Martini Glass"
+msgstr "Copa de martini"
+
+msgid "Martini Glass Citrus"
+msgstr "Cítricos de Martini Glass"
+
+msgid "Martini Glass Empty"
+msgstr "Copa de martini vacía"
+
+msgid "Mask"
+msgstr "Mascarilla"
+
+msgid "Mask Face"
+msgstr "Cara de máscara"
+
+msgid "Mask Ventilator"
+msgstr "Ventilador de máscara"
+
+msgid "Masks Theater"
+msgstr "Teatro de máscaras"
+
+msgid "Mastercard"
+msgstr "Tarjeta MasterCard"
+
+msgid "MasterCard Credit Card"
+msgstr "Tarjeta de crédito MasterCard"
+
+msgid "Mastodon"
+msgstr "Mastodonte"
+
+msgid "Material Design for Bootstrap"
+msgstr "Diseño de material para bootstrap"
+
+msgid "Mattress Pillow"
+msgstr "Almohada de colchón"
+
+msgid "Max Width Site Layout"
+msgstr "Diseño del sitio de ancho máximo"
+
+msgid "MaxCDN"
+msgstr "Maxcdn"
+
+msgid "Maximize"
+msgstr "Maximizar"
+
+msgid "Medal"
+msgstr "Medalla"
+
+msgid "MedApps"
+msgstr "Medapps"
+
+msgid "Medium 500"
+msgstr "Medio 500"
+
+msgid "Medium 500 Italic"
+msgstr "Medium 500 Italia"
+
+msgid "Medium Large"
+msgstr "Medio grande"
+
+msgid "Meetup"
+msgstr "Reunión"
+
+msgid "Mega Menu"
+msgstr "Mega menú"
+
+msgid "Megaport"
+msgstr "Megaport"
+
+msgid "Membership Columns"
+msgstr "Columnas de membresía"
+
+msgid "Memory"
+msgstr "Memoria"
+
+msgid "Mendeley"
+msgstr "Mendeley"
+
+msgid "Menorah"
+msgstr "Menorah"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Menu "
+msgstr "Menú"
+
+msgid "Menu 2"
+msgstr "Menú 2"
+
+msgid "Menu 3"
+msgstr "Menú 3"
+
+msgid "Menu Breakpoint"
+msgstr "Punto de interrupción del menú"
+
+msgid "Menu Color"
+msgstr "Color de menú"
+
+msgid "Menu Font"
+msgstr "Fuente de menú"
+
+msgid "Menu Font Size"
+msgstr "Tamaño de fuente de menú"
+
+msgid "Menu Hover Style"
+msgstr "Menú estilo flotante"
+
+msgid "Menu Label"
+msgstr "Etiqueta de menú"
+
+msgid "Menu Spacing"
+msgstr "Espaciado de menú"
+
+msgid "Menu Toggle"
+msgstr "Menú alternar"
+
+msgid "Menus"
+msgstr "Menús"
+
+msgid "Mercury"
+msgstr "Mercurio"
+
+msgid "Message"
+msgstr "Mensaje"
+
+msgid "Meta"
+msgstr "Meta"
+
+msgid "Meta Color"
+msgstr "Meta color"
+
+msgid "Meta Font"
+msgstr "Meta"
+
+msgid "Meta Font Size"
+msgstr "Tamaño de metaoleta"
+
+msgid "Meta Link Color"
+msgstr "Color de metaetlink"
+
+msgid "Meteor"
+msgstr "Meteorito"
+
+msgid "Micro.blog"
+msgstr "Micro.blog"
+
+msgid "Microchip"
+msgstr "Pastilla"
+
+msgid "Microphone"
+msgstr "Micrófono"
+
+msgid "Microphone Lines"
+msgstr "Líneas de micrófono"
+
+msgid "Microphone Lines Slash"
+msgstr "Cortes de líneas de micrófonos"
+
+msgid "Microphone Slash"
+msgstr "Barra de micrófono"
+
+msgid "Microscope"
+msgstr "Microscopio"
+
+msgid "Microsoft"
+msgstr "Microsoft"
+
+msgid "Middle"
+msgstr "Medio"
+
+msgid "Mill Sign"
+msgstr "Letrero de molino"
+
+msgid "Minimal"
+msgstr "Mínimo"
+
+msgid "Minimize"
+msgstr "Minimizar"
+
+msgid "Minus"
+msgstr "Menos"
+
+msgid "Minus Quantity"
+msgstr "Menos cantidad"
+
+msgid "Minute %s"
+msgstr "Minuto %s"
+
+msgid "g:i a"
+msgstr "G: Yo A"
+
+msgid "i"
+msgstr "i"
+
+msgid "Misc"
+msgstr "Maga"
+
+msgid "Mitten"
+msgstr "Mitón"
+
+msgid "Mix"
+msgstr "Mezcla"
+
+msgid "Mixcloud"
+msgstr "Mixcloud"
+
+msgid "Mixer"
+msgstr "Mezclador"
+
+msgid "Mizuni"
+msgstr "Mizuni"
+
+msgid "Mobile"
+msgstr "Móvil"
+
+msgid "Mobile button"
+msgstr "Botón móvil"
+
+msgid "Mobile Header"
+msgstr "Encabezado móvil"
+
+msgid "Mobile Logo (optional)"
+msgstr "Logotipo móvil (opcional)"
+
+msgid "Mobile Menu"
+msgstr "Menú móvil"
+
+msgid "Mobile Retro"
+msgstr "Móvil retro"
+
+msgid "Mobile screen"
+msgstr "Pantalla móvil"
+
+msgid "Mobile Screen Button"
+msgstr "Botón de pantalla móvil"
+
+msgid "Modern cart layout"
+msgstr "Diseño moderno del carrito"
+
+msgid "Modern input style"
+msgstr "Estilo de entrada moderno"
+
+msgid "Modern layout"
+msgstr "Diseño moderno"
+
+msgid "Modern my-account page"
+msgstr "Página moderna de mi cuenta"
+
+msgid "Modern order received layout"
+msgstr "Diseño recibido de orden moderno"
+
+msgid "Modern thank-you page design"
+msgstr "Diseño moderno de Page de agradecimiento"
+
+msgid "MODX"
+msgstr "Moderno"
+
+msgid "Monero"
+msgstr "Monero"
+
+msgid "Money Bill"
+msgstr "Factura de dinero"
+
+msgid "Money Bill 1"
+msgstr "Billera de dinero 1"
+
+msgid "Money Bill 1 Wave"
+msgstr "Money Bill 1 Wave"
+
+msgid "Money Bill Transfer"
+msgstr "Transferencia de factura de dinero"
+
+msgid "Money Bill Trend Up"
+msgstr "Money Bill está tendencia"
+
+msgid "Money Bill Wave"
+msgstr "Money Bill Wave"
+
+msgid "Money Bill Wheat"
+msgstr "Money Bill Wheat"
+
+msgid "Money Bills"
+msgstr "Facturas de dinero"
+
+msgid "Money Check"
+msgstr "Cheque de dinero"
+
+msgid "Money Check Dollar"
+msgstr "Dólar de cheque de dinero"
+
+msgid "Monument"
+msgstr "Monumento"
+
+msgid "Moon"
+msgstr "Luna"
+
+msgid "More color options"
+msgstr "Más opciones de color"
+
+msgid "More design controls"
+msgstr "Más controles de diseño"
+
+msgid "More design options"
+msgstr "Más opciones de diseño"
+
+msgid "More Options Available in Astra Pro!"
+msgstr "¡Más opciones disponibles en Astra Pro!"
+
+msgid "More product galleries"
+msgstr "Más galerías de productos"
+
+msgid "More shop design layouts"
+msgstr "Más diseños de diseño de tiendas"
+
+msgid "More spacing options"
+msgstr "Más opciones de espaciado"
+
+msgid "More typography options"
+msgstr "Más opciones de tipografía"
+
+msgid "Mortar Pestle"
+msgstr "Lata de mortero"
+
+msgid "Mosque"
+msgstr "Mezquita"
+
+msgid "Mosquito"
+msgstr "Mosquito"
+
+msgid "Mosquito Net"
+msgstr "Mosquitero"
+
+msgid "Motorcycle"
+msgstr "Motocicleta"
+
+msgid "Mound"
+msgstr "Montículo"
+
+msgid "Mountain"
+msgstr "Montaña"
+
+msgid "Mountain City"
+msgstr "Ciudad de montaña"
+
+msgid "Mountain Sun"
+msgstr "Sol de montaña"
+
+msgid "Move Body"
+msgstr "Mover el cuerpo"
+
+msgid "MRT"
+msgstr "MRT"
+
+msgid "Mug Hot"
+msgstr "Taza caliente"
+
+msgid "Mug Saucer"
+msgstr "Platillo"
+
+msgid "Multi-column layouts"
+msgstr "Diseños de columna multivalización"
+
+msgid "Multiple Button Elements"
+msgstr "Elementos de múltiples botones"
+
+msgid "Multiple HTML Elements"
+msgstr "Múltiples elementos HTML"
+
+msgid "Multiple Page Headers"
+msgstr "Cabezales de múltiples páginas"
+
+msgid "Music"
+msgstr "Música"
+
+msgid "My Account"
+msgstr "Mi cuenta"
+
+msgid "N"
+msgstr "norte"
+
+msgid "Naira Sign"
+msgstr "Signo de naira"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Napster"
+msgstr "Buzo"
+
+msgid "Narrow"
+msgstr "Angosto"
+
+msgid "Narrow Container Width"
+msgstr "Ancho de contenedor estrecho"
+
+msgid "Native WordPress Interface"
+msgstr "Interfaz nativa de WordPress"
+
+msgid "Nav Menu"
+msgstr "Menú de navegación"
+
+msgid "Neos"
+msgstr "Neos"
+
+msgid "Network Wired"
+msgstr "Network Wired"
+
+msgid "Neuter"
+msgstr "Neutro"
+
+msgid "Newer Comments"
+msgstr "Comentarios más recientes"
+
+msgid "Newspaper"
+msgstr "Periódico"
+
+msgid "Next"
+msgstr "Próximo"
+
+msgid "Next %s"
+msgstr "Siguiente %s"
+
+msgid "Nextdoor"
+msgstr "A continuación"
+
+msgid "NFC Directional"
+msgstr "NFC direccional"
+
+msgid "Nfc Symbol"
+msgstr "Símbolo de NFC"
+
+msgid "Nimblr"
+msgstr "Nimblr"
+
+msgid "No docs found!"
+msgstr "¡No se encontraron documentos!"
+
+msgid "No Icons Found"
+msgstr "No se encontraron íconos"
+
+msgid "No Page Headers Found"
+msgstr "No se encontraron encabezados de página"
+
+msgid "No plugin specified"
+msgstr "Sin complemento especificado"
+
+msgid "No post data found!"
+msgstr "¡No se encontraron datos de publicación!"
+
+msgid "No products in the cart."
+msgstr "No hay productos en el carrito."
+
+msgid "No Repeat"
+msgstr "Sin repetición"
+
+msgid "No results found"
+msgstr "No se encontraron resultados"
+
+msgid "No Sidebar"
+msgstr "Sin barra lateral"
+
+msgid "Node.js"
+msgstr "Nodo.js"
+
+msgid "Node.js JS"
+msgstr "Node.js js"
+
+msgid "Nonce validation failed"
+msgstr "Falló la validación de NonCe"
+
+msgid "Nonce verification failed."
+msgstr "La verificación no CE falló."
+
+msgid "None"
+msgstr "Ninguno"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Normal 400"
+msgstr "Normal 400"
+
+msgid "Not Equal"
+msgstr "No igual"
+
+msgid "Note Sticky"
+msgstr "Nota pegajosa"
+
+msgid "Note:"
+msgstr "Nota:"
+
+msgid ""
+"Note: Image Size & Ratio won't work if Image Position set as Background."
+msgstr ""
+"Nota: El tamaño y la relación de la imagen no funcionarán si la posición de "
+"la imagen se establece como fondo."
+
+msgid ""
+"Note: The Cart Label on the header will be displayed by using shortcodes. "
+"Type any custom string in it or click on the plus icon above to add your "
+"desired shortcode."
+msgstr ""
+"Nota: La etiqueta del carrito en el encabezado se mostrará utilizando "
+"códigos cortos. Escriba cualquier cadena personalizada o haga clic en el "
+"icono más arriba para agregar el código corto deseado."
+
+msgid "Note: This description appear on %1$s archive for banner Layout 2."
+msgstr ""
+"Nota: Esta descripción aparece en el archivo %1$s para el diseño de banner 2."
+
+msgid "Note: This is not applicable on Transparent and Sticky Headers!"
+msgstr "Nota: ¡Esto no es aplicable en encabezados transparentes y pegajosos!"
+
+msgid "Note: This title appear on %1$s archive for banner Layout 2."
+msgstr ""
+"Nota: Este título aparece en el archivo %1$s para el diseño de banner 2."
+
+msgid ""
+"Note: To get design settings in action make sure to enable Scroll to Top."
+msgstr ""
+"Nota: Para obtener la configuración de diseño en acción, asegúrese de "
+"habilitar el desplazamiento a la parte superior."
+
+msgid ""
+"Note: To get design settings in action make sure to select Header Position "
+"other than None."
+msgstr ""
+"Nota: Para obtener la configuración de diseño en acción, asegúrese de "
+"seleccionar la posición del encabezado que no sea ninguna."
+
+msgid "Note: To get design settings make sure to enable sticky add to cart."
+msgstr ""
+"Nota: Para obtener la configuración de diseño, asegúrese de habilitar el "
+"complemento Sticky al carrito."
+
+msgid "Notes Medical"
+msgstr "Notas médicas"
+
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+msgid "Notice Position"
+msgstr "Posición de notificación"
+
+msgid "npm"
+msgstr "npm"
+
+msgid "NS8"
+msgstr "NS8"
+
+msgid "Number"
+msgstr "Número"
+
+msgid "Nutritionix"
+msgstr "Nutritionix"
+
+msgid "O"
+msgstr "O"
+
+msgid "Object Group"
+msgstr "Grupo de objetos"
+
+msgid "Object Ungroup"
+msgstr "Objeto sin grupo"
+
+msgid "Octopus Deploy"
+msgstr "Despliegue de pulpo"
+
+msgid "Odnoklassniki"
+msgstr "Odnoklassniki"
+
+msgid "Off Canvas"
+msgstr "Lienzo"
+
+msgid "Off-Canvas"
+msgstr "De canvas"
+
+msgid "Off-Canvas Menu"
+msgstr "Menú fuera de canvas"
+
+msgid "Offcanvas product filters"
+msgstr "Filtros de productos Offanvas"
+
+msgid "Official"
+msgstr "Oficial"
+
+msgid "Oil Can"
+msgstr "Lata de aceite"
+
+msgid "Oil Well"
+msgstr "Pozo de petróleo"
+
+msgid "Old Republic"
+msgstr "Antigua república"
+
+msgid "Older Comments"
+msgstr "Comentarios más antiguos"
+
+msgid "Om"
+msgstr "Om"
+
+msgid "Oops! Documentation not found."
+msgstr "¡Ups! Documentación no encontrada."
+
+msgid "Open in a New Tab"
+msgstr "Abrir en una nueva pestaña"
+
+msgid "Open Source Initiative"
+msgstr "Iniciativa de código abierto"
+
+msgid "OpenCart"
+msgstr "Opencart"
+
+msgid "OpenID"
+msgstr "Ferenal"
+
+msgid "Opera"
+msgstr "Ópera"
+
+msgid ""
+"Optimize your WooCommerce store for maximum profit with enhanced features"
+msgstr ""
+"Optimice su tienda WooCommerce para obtener el máximo beneficio con "
+"características mejoradas"
+
+msgid "Optin Monster"
+msgstr "Monstruo optino"
+
+msgid "Options"
+msgstr "Opción"
+
+msgid "ORCID"
+msgstr "Órcido"
+
+msgid "Order"
+msgstr "Orden"
+
+msgid "Order by"
+msgstr "Ordenar"
+
+msgid "Order note, Coupon field control"
+msgstr "Nota de pedido, control de campo de cupón"
+
+msgid "Original"
+msgstr "Original"
+
+msgid "Other Supporting"
+msgstr "Otro apoyo"
+
+msgid "Other System Fonts"
+msgstr "Otras fuentes del sistema"
+
+msgid "Otter"
+msgstr "Nutria"
+
+msgid "Out of stock"
+msgstr "Agotado"
+
+msgid "Outdent"
+msgstr "Ouxi"
+
+msgid "Outline"
+msgstr "Describir"
+
+msgid "Outside"
+msgstr "Afuera"
+
+msgid "Overlay Color"
+msgstr "Color superpuesto"
+
+msgid "Overlay Opacity"
+msgstr "Opacidad de superposición"
+
+msgid "Overline"
+msgstr "Exceso"
+
+msgid "P"
+msgstr "PAG"
+
+msgid "Padded layout"
+msgstr "Diseño acolchado"
+
+msgid "Padded Site Layout"
+msgstr "Diseño de sitio acolchado"
+
+msgid "Padding"
+msgstr "Relleno"
+
+msgid "Padlet"
+msgstr "Paleta"
+
+msgid "Page"
+msgstr "Página"
+
+msgid "Page %s"
+msgstr "Página %s"
+
+msgid "Page Background"
+msgstr "Fondo de la página"
+
+msgid "Page Background Styling"
+msgstr "Estilización de fondo de la página"
+
+msgid "Page Header"
+msgstr "Encabezado de página"
+
+msgid "Page Headers"
+msgstr "Encabezados de página"
+
+msgid "page4 Corporation"
+msgstr "Page4 Corporación"
+
+msgid "Pagelines"
+msgstr "Pagín"
+
+msgid "Pager"
+msgstr "Buscapersonas"
+
+msgid "Pages:"
+msgstr "Páginas:"
+
+msgid "Paint Roller"
+msgstr "Rodillo de pintura"
+
+msgid "Paintbrush"
+msgstr "Brocha"
+
+msgid "Palette"
+msgstr "Paleta"
+
+msgid "Palfed"
+msgstr "Palfado"
+
+msgid "Pallet"
+msgstr "Paleta"
+
+msgid "Panorama"
+msgstr "Panorama"
+
+msgid "Paper Plane"
+msgstr "Avión de papel"
+
+msgid "Paperclip"
+msgstr "Clip de papel"
+
+msgid "Parachute Box"
+msgstr "Caja de paracaídas"
+
+msgid "Paragraph"
+msgstr "Párrafo"
+
+msgid "Paragraph Margin Bottom"
+msgstr "Margen de párrafo Bottom"
+
+msgid "Passport"
+msgstr "Pasaporte"
+
+msgid "Paste"
+msgstr "Pasta"
+
+msgid "Patreon"
+msgstr "Patreón"
+
+msgid "Pause"
+msgstr "Pausa"
+
+msgid "Paw"
+msgstr "Pata"
+
+msgid "Payment Title"
+msgstr "Título de pago"
+
+msgid "Payments"
+msgstr "Pagos"
+
+msgid "Paypal"
+msgstr "Paypal"
+
+msgid "Paypal Credit Card"
+msgstr "Tarjeta de crédito de PayPal"
+
+msgid ""
+"PayPal Payments For WooCommerce simplifies and secures PayPal transactions "
+"on your store."
+msgstr ""
+"Los pagos de PayPal para WooCommerce simplifican y aseguran las "
+"transacciones de PayPal en su tienda."
+
+msgid "Peace"
+msgstr "Paz"
+
+msgid "Pen"
+msgstr "Bolígrafo"
+
+msgid "Pen Clip"
+msgstr "Clip para lápiz"
+
+msgid "Pen Fancy"
+msgstr "Fantasía"
+
+msgid "Pen Nib"
+msgstr "Plumilla"
+
+msgid "Pen Ruler"
+msgstr "Regla de corral"
+
+msgid "Pen To Square"
+msgstr "Pluma a cuadrado"
+
+msgid "Pencil"
+msgstr "Lápiz"
+
+msgid "People Carry Box"
+msgstr "La gente lleva la caja"
+
+msgid "People Group"
+msgstr "Grupo de personas"
+
+msgid "People Line"
+msgstr "Línea de personas"
+
+msgid "People Pulling"
+msgstr "Gente tirando"
+
+msgid "People Robbery"
+msgstr "Robo de personas"
+
+msgid "People Roof"
+msgstr "Techo de la gente"
+
+msgid "Pepper Hot"
+msgstr "Picante de pimienta"
+
+msgid "PerByte"
+msgstr "Perbyte"
+
+msgid "Percent"
+msgstr "Por ciento"
+
+msgid "Performance"
+msgstr "Actuación"
+
+msgid "Periscope"
+msgstr "Periscopio"
+
+msgid "Persistent checkout form data"
+msgstr "Datos de formulario de pago persistente"
+
+msgid "Person"
+msgstr "Persona"
+
+msgid "Person Arrow Down To Line"
+msgstr "Flecha de persona a la línea"
+
+msgid "Person Arrow Up From Line"
+msgstr "Flecha de persona desde línea"
+
+msgid "Person Biking"
+msgstr "Ciclismo de persona"
+
+msgid "Person Booth"
+msgstr "Stand de persona"
+
+msgid "Person Breastfeeding"
+msgstr "Persona amamantando"
+
+msgid "Person Burst"
+msgstr "Persona estalló"
+
+msgid "Person Cane"
+msgstr "Caña de la persona"
+
+msgid "Person Chalkboard"
+msgstr "Pizarra"
+
+msgid "Person Circle Check"
+msgstr "Cheque de círculo de persona"
+
+msgid "Person Circle Exclamation"
+msgstr "Exclamación del círculo de la persona"
+
+msgid "Person Circle Minus"
+msgstr "Círculo de persona menos"
+
+msgid "Person Circle Plus"
+msgstr "Círculo de persona más"
+
+msgid "Person Circle Question"
+msgstr "Pregunta del círculo de la persona"
+
+msgid "Person Circle Xmark"
+msgstr "Círculo de persona xmark"
+
+msgid "Person Digging"
+msgstr "Persona cavando"
+
+msgid "Person Dots From Line"
+msgstr "Puntos de la persona de la línea"
+
+msgid "Person Dress"
+msgstr "Vestido de persona"
+
+msgid "Person Dress Burst"
+msgstr "Vestido de la persona estallado"
+
+msgid "Person Drowning"
+msgstr "Persona ahogada"
+
+msgid "Person Falling"
+msgstr "Persona cayendo"
+
+msgid "Person Falling Burst"
+msgstr "Persona que cae estallido"
+
+msgid "Person Half Dress"
+msgstr "Medio vestido"
+
+msgid "Person Harassing"
+msgstr "Persona acosando"
+
+msgid "Person Hiking"
+msgstr "Persona de excursión"
+
+msgid "Person Military Pointing"
+msgstr "Persona apuntando militar"
+
+msgid "Person Military Rifle"
+msgstr "Rifle militar persona"
+
+msgid "Person Military To Person"
+msgstr "Persona militar a persona"
+
+msgid "Person Praying"
+msgstr "Persona rezando"
+
+msgid "Person Pregnant"
+msgstr "Persona embarazada"
+
+msgid "Person Rays"
+msgstr "Rayos de la persona"
+
+msgid "Person Rifle"
+msgstr "Rifle de persona"
+
+msgid "Person Running"
+msgstr "Persona corriendo"
+
+msgid "Person Shelter"
+msgstr "Refugio de personas"
+
+msgid "Person Skating"
+msgstr "Patinaje de la persona"
+
+msgid "Person Skiing"
+msgstr "Persona esquiando"
+
+msgid "Person Skiing Nordic"
+msgstr "Persona esquiando nordic"
+
+msgid "Person Snowboarding"
+msgstr "Snowboard de persona"
+
+msgid "Person Swimming"
+msgstr "Persona nadando"
+
+msgid "Person Through Window"
+msgstr "Persona a través de la ventana"
+
+msgid "Person Walking"
+msgstr "Persona caminando"
+
+msgid "Person Walking Arrow Loop Left"
+msgstr "Persona caminando con flecha bucle a la izquierda"
+
+msgid "Person Walking Arrow Right"
+msgstr "Persona caminando con flecha a la derecha"
+
+msgid "Person Walking Dashed Line Arrow Right"
+msgstr "Persona caminando línea discontinua flecha derecha"
+
+msgid "Person Walking Luggage"
+msgstr "Persona caminando equipaje"
+
+msgid "Person Walking With Cane"
+msgstr "Persona caminando con bastón"
+
+msgid "Peseta Sign"
+msgstr "Señal de peseta"
+
+msgid "Peso Sign"
+msgstr "Signo de pesas"
+
+msgid "Phabricator"
+msgstr "Fabricador"
+
+msgid "Phoenix Framework"
+msgstr "Marco de Phoenix"
+
+msgid "Phoenix Squadron"
+msgstr "Escuadrón Phoenix"
+
+msgid "Phone"
+msgstr "Teléfono"
+
+msgid "Phone 1"
+msgstr "Teléfono 1"
+
+msgid "Phone 2"
+msgstr "Teléfono 2"
+
+msgid "Phone Flip"
+msgstr "Flip de teléfono"
+
+msgid "Phone Slash"
+msgstr "Teléfono."
+
+msgid "Phone Volume"
+msgstr "Volumen telefónico"
+
+msgid "Photo Film"
+msgstr "Película fotográfica"
+
+msgid "PHP"
+msgstr "Php"
+
+msgid "Pied Piper Hat (Old)"
+msgstr "Gat de Pied Piper (viejo)"
+
+msgid "Pied Piper Logo"
+msgstr "Logotipo de Pied Piper"
+
+msgid "Pied Piper PP Logo (Old)"
+msgstr "Logotipo de Pied Piper PP (antiguo)"
+
+msgid "Piggy Bank"
+msgstr "Hucha"
+
+msgid "Pills"
+msgstr "Píldoras"
+
+msgid "Pingback:"
+msgstr "Pingback:"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "Pinterest P"
+msgstr "Pinterest P"
+
+msgid "Pix"
+msgstr "Pix"
+
+msgid "Pizza Slice"
+msgstr "Pizzería"
+
+msgid "Place Of Worship"
+msgstr "Lugar de culto"
+
+msgid "Search..."
+msgstr "Buscar..."
+
+msgid "Plane"
+msgstr "Avión"
+
+msgid "Plane Arrival"
+msgstr "Llegada de avión"
+
+msgid "Plane Circle Check"
+msgstr "Control del círculo de avión"
+
+msgid "Plane Circle Exclamation"
+msgstr "Exclamación del círculo de avión"
+
+msgid "Plane Circle Xmark"
+msgstr "Círculo de avión xmark"
+
+msgid "Plane Departure"
+msgstr "Partida de avión"
+
+msgid "Plane Lock"
+msgstr "Cerradura de avión"
+
+msgid "Plane Slash"
+msgstr "Barra de avión"
+
+msgid "Plane Up"
+msgstr "Avanzar"
+
+msgid "Plant Wilt"
+msgstr "Planta marchita"
+
+msgid "Plate Wheat"
+msgstr "Trigo de placa"
+
+msgid "Play"
+msgstr "Jugar"
+
+msgid "PlayStation"
+msgstr "PlayStation"
+
+msgid "Please click the link below to customize Transparent Header"
+msgstr ""
+"Haga clic en el enlace a continuación para personalizar el encabezado "
+"transparente"
+
+msgid ""
+"Please publish the changes and see result on the frontend.<br />[Slide in "
+"cart requires Cart added inside Header Builder]"
+msgstr ""
+"Publique los cambios y vea el resultado en el frontend. <Br /> [La "
+"diapositiva en el carrito requiere un carrito agregado dentro del "
+"constructor de encabezado]"
+
+msgid ""
+"Please update the %1$1s to version %2$2s or higher. Ignore if already "
+"updated."
+msgstr ""
+"Actualice el %1 $ 1S a la versión %2 $ 2s o más. Ignorar si ya se actualiza."
+
+msgid "Plug"
+msgstr "Enchufar"
+
+msgid "Plug Circle Bolt"
+msgstr "Perno de círculo de enchufe"
+
+msgid "Plug Circle Check"
+msgstr "Cheque de círculo de enchufe"
+
+msgid "Plug Circle Exclamation"
+msgstr "Exclamación del círculo de enchufe"
+
+msgid "Plug Circle Minus"
+msgstr "Círculo de enchufe menos"
+
+msgid "Plug Circle Plus"
+msgstr "Círculo de enchufe más"
+
+msgid "Plug Circle Xmark"
+msgstr "Enchufe círculo xmark"
+
+msgid "Plugin installation function not found."
+msgstr "Función de instalación del complemento no se encuentra."
+
+msgid "Plugin slug is missing."
+msgstr "Falta la babosa del complemento."
+
+msgid "Plugin Successfully Activated"
+msgstr "Complemento activado con éxito"
+
+msgid "Plugin Successfully Deactivated"
+msgstr "Complemento desactivado con éxito"
+
+msgid "Plus"
+msgstr "Más"
+
+msgid "Plus Minus"
+msgstr "Más menos"
+
+msgid "Plus Quantity"
+msgstr "Más cantidad"
+
+msgid "Podcast"
+msgstr "Podcast"
+
+msgid "Poo"
+msgstr "Caca"
+
+msgid "Poo Storm"
+msgstr "Tormenta de caca"
+
+msgid "Poop"
+msgstr "Caca"
+
+msgid "Popup Padding"
+msgstr "Relleno emergente"
+
+msgid "Position"
+msgstr "Posición"
+
+msgid "Post Cards"
+msgstr "Postales"
+
+msgid "Post Comment"
+msgstr "Publicar comentario"
+
+msgid "Post Comment &raquo;"
+msgstr "Public Comment & Raquo;"
+
+msgid "Post Content"
+msgstr "Publicar contenido"
+
+msgid "Post Elements"
+msgstr "Publicar elementos"
+
+msgid "Post Meta"
+msgstr "Post meta"
+
+msgid "Post navigation"
+msgstr "Post navegación"
+
+msgid "Post Order"
+msgstr "Pedido postal"
+
+msgid "Post pagination"
+msgstr "Post -paginación"
+
+msgid "Post Per Page"
+msgstr "Publicación por página"
+
+msgid "Post Spacing"
+msgstr "Post Spacing"
+
+msgid "Post Title Font"
+msgstr "Publicación del título de la fuente"
+
+msgid "Post Title Size"
+msgstr "Tamaño del título de publicación"
+
+msgid "Posts Filter"
+msgstr "Filtro de publicaciones"
+
+msgid "Posts Query"
+msgstr "Consulta de publicaciones"
+
+msgid "Posts Reveal Effect"
+msgstr "Las publicaciones revelan el efecto"
+
+msgid "Posts Structure"
+msgstr "Estructura de publicaciones"
+
+msgid "Power Off"
+msgstr "Apagar"
+
+msgid ""
+"Power-up block editor with advanced blocks for faster and effortlessly "
+"website creation."
+msgstr ""
+"Editor de bloque de potencia con bloques avanzados para la creación de "
+"sitios web más rápida y sin esfuerzo."
+
+msgid "Predefined"
+msgstr "Predefinido"
+
+msgid "Prefix Label"
+msgstr "Etiqueta de prefijo"
+
+msgid "Preload Local Fonts"
+msgstr "Fuentes locales de precarga"
+
+msgid "Prescription"
+msgstr "Prescripción"
+
+msgid "Prescription Bottle"
+msgstr "Botella recetada"
+
+msgid "Prescription Bottle Medical"
+msgstr "Botella recetada médica"
+
+msgid "Presets"
+msgstr "Preajustes"
+
+msgid "Preview"
+msgstr "Avance"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Previous %s"
+msgstr "%s anterior"
+
+msgid "Price"
+msgstr "Precio"
+
+msgid "Primary"
+msgstr "Primario"
+
+msgid "Primary Background"
+msgstr "Antecedentes principales"
+
+msgid "Primary Footer"
+msgstr "Pie de página principal"
+
+msgid "Primary Header"
+msgstr "Encabezado principal"
+
+msgid "Primary Header Button"
+msgstr "Botón de encabezado principal"
+
+msgid "Primary Header Overview"
+msgstr "Descripción general del encabezado"
+
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+msgid "Print"
+msgstr "Imprimir"
+
+msgid "PRO"
+msgstr "PRO"
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Proceed to checkout"
+msgstr "Pasar por la caja"
+
+msgid "Product"
+msgstr "Producto"
+
+msgid "Product Archive"
+msgstr "Archivo de productos"
+
+msgid "%1$s Product"
+msgid_plural "%1$s Products"
+msgstr[0] "Producto %1$s"
+msgstr[1] "Productos %1$s"
+
+msgid "Product description layouts"
+msgstr "Diseños de descripción del producto"
+
+msgid "Product Hunt"
+msgstr "Búsqueda de productos"
+
+msgid "Product Options"
+msgstr "Opciones de productos"
+
+msgid "Product Sidebar"
+msgstr "Barra lateral del producto"
+
+msgid "Product Structure"
+msgstr "Estructura de productos"
+
+msgid "Product Structure Options"
+msgstr "Opciones de estructura de productos"
+
+msgid "Product Variation Layout"
+msgstr "Diseño de variación del producto"
+
+msgid "Products"
+msgstr "Productos"
+
+msgid "Products Per Page"
+msgstr "Productos por página"
+
+msgid "Products quick view"
+msgstr "Vista rápida de productos"
+
+msgid "Profile Text Color"
+msgstr "Color de texto de perfil"
+
+msgid "Profile Type"
+msgstr "Tipo de perfil"
+
+msgid "Published"
+msgstr "Publicado"
+
+msgid "Pump Medical"
+msgstr "Médico de bombeo"
+
+msgid "Pump Soap"
+msgstr "Jabón de bomba"
+
+msgid "Pushed"
+msgstr "Empujado"
+
+msgid "Puzzle Piece"
+msgstr "Pieza de rompecabezas"
+
+msgid "Python"
+msgstr "Pitón"
+
+msgid "Q"
+msgstr "Q"
+
+msgid "QQ"
+msgstr "QQ"
+
+msgid "Qrcode"
+msgstr "Código QR"
+
+msgid "Quantity updater designs"
+msgstr "Diseños de actualizadores de cantidad"
+
+msgid "Question"
+msgstr "Pregunta"
+
+msgid "Quick Links"
+msgstr "Enlaces rápidos"
+
+msgid "Quick Settings"
+msgstr "Configuración rápida"
+
+msgid "QuinScape"
+msgstr "Quinscape"
+
+msgid "Quora"
+msgstr "Quora"
+
+msgid "Quote"
+msgstr "Cita"
+
+msgid "Quote Left"
+msgstr "Cita a la izquierda"
+
+msgid "Quote Right"
+msgstr "Cita a la derecha"
+
+msgid "R"
+msgstr "Riñonal"
+
+msgid "R Project"
+msgstr "R Proyecto"
+
+msgid "Radiation"
+msgstr "Radiación"
+
+msgid "Radio"
+msgstr "Radio"
+
+msgid "Rainbow"
+msgstr "Arcoíris"
+
+msgid "Random"
+msgstr "Aleatorio"
+
+msgid "Ranking Star"
+msgstr "Estrella de clasificación"
+
+msgid "Raspberry Pi"
+msgstr "Frambuesa pi"
+
+msgid "Rate the Theme"
+msgstr "Califica el tema"
+
+msgid "Rate Us"
+msgstr "Calificamos"
+
+msgid "Ratings"
+msgstr "Calificaciones"
+
+msgid "Ravelry"
+msgstr "Raver"
+
+msgid "React"
+msgstr "Reaccionar"
+
+msgid "ReactEurope"
+msgstr "Reacteuropea"
+
+msgid "Read More"
+msgstr "Leer más"
+
+msgid "Read More &raquo;"
+msgstr "Leer más y raquo;"
+
+msgid "Read more about %s"
+msgstr "Lea más sobre %s"
+
+msgid "Read More »"
+msgstr "Leer más \""
+
+msgid "Read Post »"
+msgstr "Leer publicación »"
+
+msgid "Read Time"
+msgstr "Tiempo de lectura"
+
+msgid "ReadMe"
+msgstr "Readme"
+
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"¿Listo para publicar tu primera publicación? <a href = \"%1$s\"> Comience "
+"aquí </a>."
+
+msgid "Real-time quantity updater"
+msgstr "Actualizador de cantidad en tiempo real"
+
+msgid "Rebel Alliance"
+msgstr "Alianza rebelde"
+
+msgid "Receipt"
+msgstr "Recibo"
+
+msgid "Record Vinyl"
+msgstr "Vinilo registrar"
+
+msgid "Recover lost revenue automatically."
+msgstr "Recuperar los ingresos perdidos automáticamente."
+
+msgid "Rectangle Ad"
+msgstr "Rectángulo"
+
+msgid "Rectangle List"
+msgstr "Lista de rectángulos"
+
+msgid "Rectangle Xmark"
+msgstr "Rectángulo xmark"
+
+msgid "Recycle"
+msgstr "Reciclar"
+
+msgid "red river"
+msgstr "río rojo"
+
+msgid "Reddit"
+msgstr "Reddit"
+
+msgid "reddit Alien"
+msgstr "Reddit Alien"
+
+msgid "reddit Logo"
+msgstr "logotipo de Reddit"
+
+msgid "Redhat"
+msgstr "Redhat"
+
+msgid "Redirect To Cart Page"
+msgstr "Redirigir a la página del carrito"
+
+msgid "Redirect To Checkout Page"
+msgstr "Redirigir a la página de pago"
+
+msgid "Registered"
+msgstr "Registrado"
+
+msgid "Regular 400"
+msgstr "400 regulares"
+
+msgid "Regular 400 Italic"
+msgstr "400 itálicos regulares"
+
+msgid "Related post link"
+msgstr "Enlace de publicación relacionado"
+
+msgid "Related Posts"
+msgstr "Publicaciones relacionadas"
+
+msgid "Related Posts by"
+msgstr "Publicaciones relacionadas por"
+
+msgid "Related, Upsell product controls"
+msgstr "Controles de productos de ventas relacionadas"
+
+msgid "Remove"
+msgstr "Eliminar"
+
+msgid "Remove element from grid"
+msgstr "Eliminar elemento de la cuadrícula"
+
+msgid "Remove Image"
+msgstr "Eliminar la imagen"
+
+msgid "Remove Image Padding"
+msgstr "Eliminar el relleno de la imagen"
+
+msgid "Remove the padding around featured image when position is \"None\"."
+msgstr ""
+"Retire el relleno alrededor de la imagen presentada cuando la posición es "
+"\"Ninguno\"."
+
+msgid "Renren"
+msgstr "Renren"
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Repeat All"
+msgstr "Repetir todo"
+
+msgid "Repeat Horizontally"
+msgstr "Repita horizontalmente"
+
+msgid "Repeat Vertically"
+msgstr "Repita verticalmente"
+
+msgid "Replace Image"
+msgstr "Reemplazar imagen"
+
+msgid "Replace image"
+msgstr "Reemplazar imagen"
+
+msgid "Reply"
+msgstr "Responder"
+
+msgid "Reply All"
+msgstr "Responder todo"
+
+msgid "replyd"
+msgstr "respondido"
+
+msgid "Republican"
+msgstr "Republicano"
+
+msgid "Researchgate"
+msgstr "Investigador"
+
+msgid "Reset"
+msgstr "Reiniciar"
+
+msgid "Resolving"
+msgstr "Resolución"
+
+msgid "Responsive Cart Click Action"
+msgstr "Acción de clic del carrito receptivo"
+
+msgid "Restroom"
+msgstr "Baño"
+
+msgid "Results Layout"
+msgstr "Diseño de resultados"
+
+msgid "Retina Logo"
+msgstr "Logotipo de retina"
+
+msgid "Return To Post"
+msgstr "Regresar a la publicación"
+
+msgid "Retweet"
+msgstr "Retuitear"
+
+msgid "Rev.io"
+msgstr "Rev.io"
+
+msgid "Reveal Effect"
+msgstr "Efecto revelador"
+
+msgid "Review Count"
+msgstr "Recuento de revisiones"
+
+msgid "Review Text"
+msgstr "Texto de revisión"
+
+msgid "Review Text is required."
+msgstr "Se requiere texto de revisión."
+
+msgid "Review Title"
+msgstr "Título de revisión"
+
+msgid "Review Title is required."
+msgstr "Se requiere título de revisión."
+
+msgid "Reviews"
+msgstr "Reseñas"
+
+msgid "Ribbon"
+msgstr "Cinta"
+
+msgid "Right"
+msgstr "Bien"
+
+msgid "Right Bottom"
+msgstr "Inferior derecho"
+
+msgid "Right Center"
+msgstr "Centro derecho"
+
+msgid "Right From Bracket"
+msgstr "Justo desde el soporte"
+
+msgid "Right Heavy 25/25/50"
+msgstr "Derecho pesado 25/25/50"
+
+msgid "Right Heavy 33/66"
+msgstr "Afecto pesado 33/66"
+
+msgid "Right Left"
+msgstr "Derecha a la izquierda"
+
+msgid "Right Long"
+msgstr "Bien largo"
+
+msgid "Right Sidebar"
+msgstr "Barra lateral derecha"
+
+msgid "Right To Bracket"
+msgstr "Derecho al soporte"
+
+msgid "Right Top"
+msgstr "Cima de la derecha"
+
+msgid "Ring"
+msgstr "Anillo"
+
+msgid "Road"
+msgstr "Camino"
+
+msgid "Road Barrier"
+msgstr "Barrera de la carretera"
+
+msgid "Road Bridge"
+msgstr "Puente de carretera"
+
+msgid "Road Circle Check"
+msgstr "Control del círculo de carreteras"
+
+msgid "Road Circle Exclamation"
+msgstr "Exclamación del círculo de carreteras"
+
+msgid "Road Circle Xmark"
+msgstr "Road Circle Xmark"
+
+msgid "Road Lock"
+msgstr "Mechón de carretera"
+
+msgid "Road Spikes"
+msgstr "Picos de carretera"
+
+msgid "Robot"
+msgstr "Robot"
+
+msgid "Rocket"
+msgstr "Cohete"
+
+msgid "Rocket.Chat"
+msgstr "Cohete.chat"
+
+msgid "Rockrms"
+msgstr "Rockrms"
+
+msgid "Rotate"
+msgstr "Girar"
+
+msgid "Rotate Left"
+msgstr "Girar a la izquierda"
+
+msgid "Rotate Right"
+msgstr "Girar a la derecha"
+
+msgid "Route"
+msgstr "Ruta"
+
+msgid "RSS"
+msgstr "RSS"
+
+msgid "Rss"
+msgstr "RSS"
+
+msgid "Ruble Sign"
+msgstr "Signo de rublo"
+
+msgid "Rug"
+msgstr "Alfombra"
+
+msgid "Ruler"
+msgstr "Gobernante"
+
+msgid "Ruler Combined"
+msgstr "Regla combinada"
+
+msgid "Ruler Horizontal"
+msgstr "Regla horizontal"
+
+msgid "Ruler Vertical"
+msgstr "Regla vertical"
+
+msgid "Rupee Sign"
+msgstr "Signo de rupia"
+
+msgid "Rupiah Sign"
+msgstr "Signo de rupia"
+
+msgid "Rust"
+msgstr "Óxido"
+
+msgid "S"
+msgstr "S"
+
+msgid "Sack Dollar"
+msgstr "Saco de dólar"
+
+msgid "Sack Xmark"
+msgstr "Sack Xmark"
+
+msgid "Safari"
+msgstr "Safari"
+
+msgid "Sailboat"
+msgstr "Velero"
+
+msgid "Sale badge modifications"
+msgstr "Modificaciones de la insignia de venta"
+
+msgid "Sale!"
+msgstr "¡Venta!"
+
+msgid "Salesforce"
+msgstr "Salesforce"
+
+msgid "Sass"
+msgstr "Hablar con descaro a"
+
+msgid "Satellite"
+msgstr "Satélite"
+
+msgid "Satellite Dish"
+msgstr "Plato satelital"
+
+msgid ""
+"Say goodbye to the days of spending weeks designing and building your "
+"website. With Astra and our Starter Templates plugin, you can now create "
+"professional-grade websites in minutes."
+msgstr ""
+"Diga adiós a los días de pasar semanas diseñando y construyendo su sitio web."
+" Con Astra y nuestro complemento de plantillas de inicio, ahora puede crear "
+"sitios web de grado profesional en minutos."
+
+msgid "Scale Balanced"
+msgstr "Escala equilibrada"
+
+msgid "Scale Unbalanced"
+msgstr "Escala desequilibrada"
+
+msgid "Scale Unbalanced Flip"
+msgstr "Escala de flip desequilibrado"
+
+msgid "SCHLIX"
+msgstr "Schlix"
+
+msgid "School"
+msgstr "Escuela"
+
+msgid "School Circle Check"
+msgstr "Verificación del círculo escolar"
+
+msgid "School Circle Exclamation"
+msgstr "Exclamación del círculo escolar"
+
+msgid "School Circle Xmark"
+msgstr "Círculo escolar xmark"
+
+msgid "School Flag"
+msgstr "Bandera de la escuela"
+
+msgid "School Lock"
+msgstr "Bloqueo de la escuela"
+
+msgid "Science"
+msgstr "Ciencia"
+
+msgid "Scissors"
+msgstr "Tijeras"
+
+msgid ""
+"Score 100% in CWV. Clean code output and lightning-fast load times keep "
+"visitors and search engines happy."
+msgstr ""
+"Puntaje 100% en CWV. Limpie la salida del código y los tiempos de carga de "
+"rayo mantengan felices a los visitantes y los motores de búsqueda."
+
+msgid "Screenpal"
+msgstr "Screenpal"
+
+msgid "Screwdriver"
+msgstr "Destornillador"
+
+msgid "Screwdriver Wrench"
+msgstr "Llave de destornillador"
+
+msgid "Scribd"
+msgstr "Escribuamiento"
+
+msgid "Scroll"
+msgstr "Voluta"
+
+msgid "Scroll To Top"
+msgstr "Desplácese hasta arriba"
+
+msgid "Scroll to Top"
+msgstr "Desplácese hasta arriba"
+
+msgid "Scroll Torah"
+msgstr "Desplazarse por la Torá"
+
+msgid "Sd Card"
+msgstr "Tarjeta SD"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search Box Shortcode"
+msgstr "Código de shortcode de cuadro de búsqueda"
+
+msgid "Search Color"
+msgstr "Color de búsqueda"
+
+msgid "Search for:"
+msgstr "Buscar:"
+
+msgid "Search icon link"
+msgstr "Enlace de icono de búsqueda"
+
+msgid "Search Results for:"
+msgstr "Resultados de la búsqueda para:"
+
+msgid "Search results for: %s"
+msgstr "Resultados de la búsqueda para: %s"
+
+msgid "Search Submit"
+msgstr "SERVICIÓN DE SEBILIZAR"
+
+msgid "Search Width"
+msgstr "Ancho de búsqueda"
+
+msgid "Search Within Post Types"
+msgstr "Buscar dentro de los tipos de publicaciones"
+
+msgid "Searchengin"
+msgstr "Searchengin"
+
+msgid "Secondary"
+msgstr "Secundario"
+
+msgid "Secondary Background"
+msgstr "Fondo secundario"
+
+msgid "Secondary Menu"
+msgstr "Menú secundario"
+
+msgid "Section"
+msgstr "Sección"
+
+msgid "Section 1"
+msgstr "Sección 1"
+
+msgid "Section 1 Custom Text"
+msgstr "Sección 1 Texto personalizado"
+
+msgid "Section 2"
+msgstr "Sección 2"
+
+msgid "Section 2 Custom Text"
+msgstr "Sección 2 Texto personalizado"
+
+msgid "Section Background"
+msgstr "Fondo de la sección"
+
+msgid "Section Placement"
+msgstr "Colocación de la sección"
+
+msgid "Section Title"
+msgstr "Título de sección"
+
+msgid "Section Title Font"
+msgstr "Fuente de título de la sección"
+
+msgid "Secure and Integrated"
+msgstr "Seguro e integrado"
+
+msgid "See all Astra Pro features"
+msgstr "Ver todas las características de Astra Pro"
+
+msgid "See Library &#187;"
+msgstr "Ver Biblioteca &#187;"
+
+msgid "Seedling"
+msgstr "Planta de semillero"
+
+msgid "Select"
+msgstr "Seleccionar"
+
+msgid "Select Background Image"
+msgstr "Seleccionar imagen de fondo"
+
+msgid "Select Cart Icon"
+msgstr "Seleccionar icono del carrito"
+
+msgid "Select Icon"
+msgstr "Seleccionar icono"
+
+msgid "Select Image"
+msgstr "Seleccionar imagen"
+
+msgid "Select Rel"
+msgstr "Seleccionar REL"
+
+msgid "Select Shortcodes"
+msgstr "Seleccionar códigos cortos"
+
+msgid "Sellcast"
+msgstr "Sellcast"
+
+msgid "Sellsy"
+msgstr "Vendido"
+
+msgid "Semi-Bold 600"
+msgstr "Semi-Bold 600"
+
+msgid "Semi-Bold 600 Italic"
+msgstr "Semi-Bold 600 cursiva"
+
+msgid "Separated"
+msgstr "Apartado"
+
+msgid "Separator"
+msgstr "Separador"
+
+msgid "Separator Color"
+msgstr "Color separador"
+
+msgid "Server"
+msgstr "Servidor"
+
+msgid "Services"
+msgstr "Servicios"
+
+msgid "Servicestack"
+msgstr "Servicio de servicio"
+
+msgid "Settings"
+msgstr "Ajustes"
+
+msgid "Shapes"
+msgstr "Formas"
+
+msgid "Share"
+msgstr "Compartir"
+
+msgid "Share From Square"
+msgstr "Compartir desde Square"
+
+msgid "Share Nodes"
+msgstr "Compartir nodos"
+
+msgid "Sheet Plastic"
+msgstr "Plástico"
+
+msgid "Shekel Sign"
+msgstr "Signo de shekel"
+
+msgid "Shield"
+msgstr "Blindaje"
+
+msgid "Shield Cat"
+msgstr "Gato de escudo"
+
+msgid "Shield Dog"
+msgstr "Perro de escudo"
+
+msgid "Shield Halved"
+msgstr "Escudo a la mitad"
+
+msgid "Shield Heart"
+msgstr "Corazón de escudo"
+
+msgid "Shield Virus"
+msgstr "Virus del escudo"
+
+msgid "Ship"
+msgstr "Barco"
+
+msgid "Shipping Text"
+msgstr "Texto de envío"
+
+msgid "Shirt"
+msgstr "Camisa"
+
+msgid "Shirts in Bulk"
+msgstr "Camisas a granel"
+
+msgid "Shoe Prints"
+msgstr "Huellas de zapatos"
+
+msgid "Shop"
+msgstr "Comercio"
+
+msgid "Shop Archive Content Width"
+msgstr "Compra el ancho de contenido del archivo"
+
+msgid "Shop Card Design"
+msgstr "Diseño de tarjetas de tienda"
+
+msgid "Shop Card Structure"
+msgstr "Estructura de tarjetas de tienda"
+
+msgid "Shop Card Styling"
+msgstr "Estiling de tarjetas de tienda"
+
+msgid "Shop Columns"
+msgstr "Columnas de tiendas"
+
+msgid "Shop Display Options"
+msgstr "Opciones de exhibición de tiendas"
+
+msgid "Shop Layout"
+msgstr "Diseño de la tienda"
+
+msgid "Shop Lock"
+msgstr "Cerradura de la tienda"
+
+msgid "Shop pagination"
+msgstr "Paginación de la tienda"
+
+msgid "Shop Slash"
+msgstr "Compra de barras"
+
+msgid "Shop toolbar structure"
+msgstr "Comprar estructura de la barra de herramientas"
+
+msgid "Shopify"
+msgstr "Shop"
+
+msgid "Shopping Cart"
+msgstr "Carro de la compra"
+
+msgid "Shopware"
+msgstr "Hendidura"
+
+msgid "Short Description"
+msgstr "Descripción corta"
+
+msgid "Show Builder"
+msgstr "Show builder"
+
+msgid "Show Label"
+msgstr "Sello de exhibición"
+
+msgid "Show Text with"
+msgstr "Mostrar texto con"
+
+msgid "Shower"
+msgstr "Ducha"
+
+msgid "Shrimp"
+msgstr "Camarón"
+
+msgid "Shrink When Scroll Up"
+msgstr "Encogerse al desplazarse hacia arriba"
+
+msgid "Shuffle"
+msgstr "Barajar"
+
+msgid "Shuttle Space"
+msgstr "Espacio de transporte"
+
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+msgid "Sidebar color options"
+msgstr "Opciones de color de la barra lateral"
+
+msgid "Sidebar Designing Styles"
+msgstr "Estilos de diseño de barra lateral"
+
+msgid "Sidebar Layout"
+msgstr "Diseño de la barra lateral"
+
+msgid "Sidebar Overview"
+msgstr "Descripción general de la barra"
+
+msgid "Sidebar spacing"
+msgstr "Espaciado de la barra lateral"
+
+msgid "Sidebar Style"
+msgstr "Estilo de la barra lateral"
+
+msgid "Sidebar Width"
+msgstr "Ancho de la barra lateral"
+
+msgid "Sidebar width will apply only when one of the above sidebar is set."
+msgstr ""
+"El ancho de la barra lateral se aplicará solo cuando se establezca una de la "
+"barra lateral anterior."
+
+msgid "Sidebar will only apply when container layout is set to normal."
+msgstr ""
+"La barra lateral solo se aplicará cuando el diseño del contenedor esté "
+"configurado en la normalidad."
+
+msgid "Sign Hanging"
+msgstr "Cartel colgando"
+
+msgid "Sign up"
+msgstr "Inscribirse"
+
+msgid "Signal"
+msgstr "Señal"
+
+msgid "Signature"
+msgstr "Firma"
+
+msgid "Signs Post"
+msgstr "Signs Post"
+
+msgid "Sim Card"
+msgstr "Tarjeta SIM"
+
+msgid "Simplifying selling online with WordPress."
+msgstr "Simplificando la venta en línea con WordPress."
+
+msgid "SimplyBuilt"
+msgstr "Simplemente construido"
+
+msgid "Single"
+msgstr "Soltero"
+
+msgid "Single Banner"
+msgstr "Pancarta"
+
+msgid "Single Page"
+msgstr "Página única"
+
+msgid "Single Post"
+msgstr "Poste"
+
+msgid "Single post navigation control"
+msgstr "Control de navegación de una sola publicación"
+
+msgid "Single Post Page - Author Info Box"
+msgstr "Página de publicación única - Cuadro de información del autor"
+
+msgid "Single Post Page - Post Navigation Visibility Control"
+msgstr ""
+"Página de publicación única - Control de visibilidad de la navegación "
+"posterior"
+
+msgid "Single Post Page - Post Readtime Meta Option"
+msgstr "Página de publicación única - Public Meta Opción de tiempo de lectura"
+
+msgid "Single post read time"
+msgstr "Tiempo de lectura de una sola publicación"
+
+msgid "Single Product"
+msgstr "Producto único"
+
+msgid "Single Product Structure"
+msgstr "Estructura de producto único"
+
+msgid "Single Row"
+msgstr "Fila única"
+
+msgid "Sink"
+msgstr "Hundir"
+
+msgid "SISTRIX"
+msgstr "Sistrix"
+
+msgid "Site Accessibility"
+msgstr "Accesibilidad del sitio"
+
+msgid "Site Background"
+msgstr "Antecedentes del sitio"
+
+msgid "Site Builder"
+msgstr "Creador de sitios"
+
+msgid "Site Icon"
+msgstr "Icono del sitio"
+
+msgid ""
+"Site Icons are what you see in browser tabs, bookmark bars, and within the "
+"WordPress mobile apps. Upload one here! Site Icons should be square and at "
+"least 512 × 512 pixels."
+msgstr ""
+"Los iconos del sitio son lo que ve en las pestañas del navegador, las barras "
+"de marcador y dentro de las aplicaciones móviles de WordPress. ¡Sube uno "
+"aquí! Los iconos del sitio deben ser cuadrados y al menos 512 × 512 píxeles."
+
+msgid "Site Identity"
+msgstr "Identidad del sitio"
+
+msgid "Site Identity Overview"
+msgstr "Descripción general de la identidad del sitio"
+
+msgid "Site Layout Overview"
+msgstr "Descripción general del diseño del sitio"
+
+msgid "Site Layouts"
+msgstr "Diseños del sitio"
+
+msgid "Site Navigation"
+msgstr "Navegación del sitio"
+
+msgid "Site Navigation: "
+msgstr "Navegación del sitio:"
+
+msgid "Site Tagline Visibility"
+msgstr "Visibilidad del lema del sitio"
+
+msgid "Site Title"
+msgstr "Título del sitio"
+
+msgid "Site Title & Logo"
+msgstr "Título y logotipo del sitio"
+
+msgid "Site Title & Logo Settings"
+msgstr "Configuración de título y logotipo del sitio"
+
+msgid "Site Title Visibility"
+msgstr "Visibilidad del título del sitio"
+
+msgid "Sitemap"
+msgstr "Mapa del sitio"
+
+msgid "Sith"
+msgstr "Sith"
+
+msgid "Sitrox"
+msgstr "Sitrox"
+
+msgid "Size"
+msgstr "Tamaño"
+
+msgid "Sketch"
+msgstr "Bosquejo"
+
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+msgid "Skull"
+msgstr "Cráneo"
+
+msgid "Skull Crossbones"
+msgstr "Bonos cruzados del cráneo"
+
+msgid "skyatlas"
+msgstr "skyatlas"
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid "Slack Logo"
+msgstr "Logotipo de Slack"
+
+msgid "Slash"
+msgstr "Barra oblicua"
+
+msgid "Sleigh"
+msgstr "Trineo"
+
+msgid "Slide Down"
+msgstr "Bajar deslizándose"
+
+msgid "Slide In Cart"
+msgstr "Deslizar en el carrito"
+
+msgid "Slide in Cart Width"
+msgstr "Diapositiva en el ancho del carrito"
+
+msgid "Slide Up"
+msgstr "Deslizarse"
+
+msgid "Slide-In"
+msgstr "Deslizamiento"
+
+msgid "Sliders"
+msgstr "Controles deslizantes"
+
+msgid "Slideshare"
+msgstr "Slideshare"
+
+msgid "Smog"
+msgstr "Niebla tóxica"
+
+msgid "Smoking"
+msgstr "De fumar"
+
+msgid "SMS"
+msgstr "SMS"
+
+msgid "Snapchat"
+msgstr "Snapchat"
+
+msgid "Snowflake"
+msgstr "Copo de nieve"
+
+msgid "Snowman"
+msgstr "Muñeco de nieve"
+
+msgid "Snowplow"
+msgstr "Quitanieves"
+
+msgid "Soap"
+msgstr "Jabón"
+
+msgid "Social"
+msgstr "Social"
+
+msgid "Social Color"
+msgstr "Color social"
+
+msgid "Social Icons"
+msgstr "Íconos sociales"
+
+msgid "Social Icons %s"
+msgstr "Íconos sociales %s"
+
+msgid "Social Item"
+msgstr "Artículo social"
+
+msgid "Social sharing options"
+msgstr "Opciones de intercambio social"
+
+msgid "Socks"
+msgstr "Medias"
+
+msgid "Solar Panel"
+msgstr "Panel solar"
+
+msgid "Solid"
+msgstr "Sólido"
+
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Lo siento, pero nada coincidió con sus términos de búsqueda. Vuelva a "
+"intentarlo con algunas palabras clave diferentes."
+
+msgid ""
+"Sorry, but we could not find anything related to your search terms. Please "
+"try again."
+msgstr ""
+"Lo siento, pero no pudimos encontrar nada relacionado con sus términos de "
+"búsqueda. Por favor intente de nuevo."
+
+msgid "Sorry, something went wrong."
+msgstr "Lo siento, algo salió mal."
+
+msgid "Sorry, you are not allowed to do that."
+msgstr "Lo siento, no se le permite hacer eso."
+
+msgid "Sorry, you are not allowed to do this operation."
+msgstr "Lo siento, no se le permite hacer esta operación."
+
+msgid "Sorry, you cannot list resources."
+msgstr "Lo siento, no puedes enumerar los recursos."
+
+msgid "Sort"
+msgstr "Clasificar"
+
+msgid "Sort Down"
+msgstr "Solucionar"
+
+msgid "Sort Up"
+msgstr "Ordenar"
+
+msgid "SoundCloud"
+msgstr "Nubes de sonido"
+
+msgid "Sourcetree"
+msgstr "Sourcetree"
+
+msgid "Spa"
+msgstr "Spa"
+
+msgid "Spacing"
+msgstr "Espaciado"
+
+msgid "Spaghetti Monster Flying"
+msgstr "Spaghetti Monster Flying"
+
+msgid "Speakap"
+msgstr "Sendar"
+
+msgid "Speaker Deck"
+msgstr "Mazo de altavoces"
+
+msgid "Spectra - WordPress Free Page Builder"
+msgstr "Spectra - WordPress GRATIS Page Builder"
+
+msgid ""
+"Spectra Integrates into the same WordPress editor, making it super intuitive "
+"website builder."
+msgstr ""
+"Spectra se integra en el mismo editor de WordPress, lo que lo convierte en "
+"un constructor de sitios web súper intuitivo."
+
+msgid ""
+"Spectra is 100% beginner friendly and enhances the default WordPress block "
+"editor."
+msgstr ""
+"Spectra es 100% amigable para principiantes y mejora el editor de bloques de "
+"WordPress predeterminado."
+
+msgid ""
+"Spectra works with the native WordPress editor with no dependency on "
+"external code. So, it is fast and stable."
+msgstr ""
+"Spectra funciona con el editor nativo de WordPress sin dependencia del "
+"código externo. Entonces, es rápido y estable."
+
+msgid "Spell Check"
+msgstr "Control ortográfico"
+
+msgid "Spider"
+msgstr "Araña"
+
+msgid "Spinner"
+msgstr "Hilandero"
+
+msgid "Splotch"
+msgstr "Mancha"
+
+msgid "Spoon"
+msgstr "Cuchara"
+
+msgid "Spotify"
+msgstr "Spotify"
+
+msgid "Spray Can"
+msgstr "Pulverizador"
+
+msgid "Spray Can Sparkles"
+msgstr "Spray puede brillar"
+
+msgid "Square"
+msgstr "Cuadrado"
+
+msgid "Square Arrow Up Right"
+msgstr "Flecha cuadrada hacia arriba a la derecha"
+
+msgid "Square Caret Down"
+msgstr "Careto cuadrado"
+
+msgid "Square Caret Left"
+msgstr "CARETO CUADRADO Izquierda"
+
+msgid "Square Caret Right"
+msgstr "CARETO CUADRADO DERECHA"
+
+msgid "Square Caret Up"
+msgstr "CARETO CUADRADO"
+
+msgid "Square Check"
+msgstr "Chequeo cuadrado"
+
+msgid "Square Envelope"
+msgstr "Sobre cuadrado"
+
+msgid "Square Full"
+msgstr "Cuadrado completo"
+
+msgid "Square H"
+msgstr "Cuadrado H"
+
+msgid "Square Minus"
+msgstr "Cuadrado menos"
+
+msgid "Square Nfi"
+msgstr "NFI cuadrado"
+
+msgid "Square Parking"
+msgstr "Estacionamiento cuadrado"
+
+msgid "Square Pen"
+msgstr "Pluma cuadrada"
+
+msgid "Square Person Confined"
+msgstr "Persona cuadrada confinada"
+
+msgid "Square Phone"
+msgstr "Teléfono cuadrado"
+
+msgid "Square Phone Flip"
+msgstr "Flip de teléfono cuadrado"
+
+msgid "Square Plus"
+msgstr "Cuadrado"
+
+msgid "Square Poll Horizontal"
+msgstr "Encuesta cuadrada horizontal"
+
+msgid "Square Poll Vertical"
+msgstr "Encuesta cuadrada vertical"
+
+msgid "Square Root Variable"
+msgstr "Variable de raíz cuadrada"
+
+msgid "Square Rss"
+msgstr "RSS cuadrado"
+
+msgid "Square Share Nodes"
+msgstr "Nodos de compartir cuadrados"
+
+msgid "Square Up Right"
+msgstr "Cuadrado a la derecha"
+
+msgid "Square Virus"
+msgstr "Virus cuadrado"
+
+msgid "Square Xmark"
+msgstr "Cuadrado xmark"
+
+msgid "Squarespace"
+msgstr "Squarespace"
+
+msgid "Stack"
+msgstr "Pila"
+
+msgid "Stack Exchange"
+msgstr "Intercambio de pilas"
+
+msgid "Stack on Responsive"
+msgstr "Pila de respuesta"
+
+msgid "Stack Overflow"
+msgstr "Desbordamiento de la pila"
+
+msgid "Stackpath"
+msgstr "Stackpath"
+
+msgid "Stairs"
+msgstr "Escaleras"
+
+msgid "Stamp"
+msgstr "Estampilla"
+
+msgid "Star"
+msgstr "Estrella"
+
+msgid "Star And Crescent"
+msgstr "Estrella y media luna"
+
+msgid "Star Half"
+msgstr "Mitad estrella"
+
+msgid "Star Half Stroke"
+msgstr "Medio golpe de estrella"
+
+msgid "Star Of David"
+msgstr "Estrella de David"
+
+msgid "Star Of Life"
+msgstr "Estrella de la vida"
+
+msgid "Start Customising"
+msgstr "Empiece a personalizar"
+
+msgid "Start customizing every part of your website."
+msgstr "Comience a personalizar cada parte de su sitio web."
+
+msgid "Start typing and press enter to search"
+msgstr "Comience a escribir y presione ENTER para buscar"
+
+msgid "Starter Templates"
+msgstr "Plantillas de inicio"
+
+msgid "StayLinked"
+msgstr "Estadía"
+
+msgid "Steam"
+msgstr "Vapor"
+
+msgid "Steam Symbol"
+msgstr "Símbolo de vapor"
+
+msgid "Sterling Sign"
+msgstr "Signo esterlino"
+
+msgid "Stethoscope"
+msgstr "Estetoscopio"
+
+msgid "Stick Above Header"
+msgstr "Palo sobre el encabezado"
+
+msgid "Stick Below Header"
+msgstr "Pegar debajo del encabezado"
+
+msgid "Stick Primary Header"
+msgstr "Encabezado primario de palo"
+
+msgid "Sticker Mule"
+msgstr "Pegatina"
+
+msgid "Sticky Add To Cart"
+msgstr "Adición pegajosa al carrito"
+
+msgid "Sticky Add To Cart Colors"
+msgstr "Añadir pegajoso a los colores del carrito"
+
+msgid "Sticky cart totals"
+msgstr "Totales de carrito pegajoso"
+
+msgid "Sticky Header"
+msgstr "Encabezado pegajoso"
+
+msgid "Sticky header"
+msgstr "Encabezado pegajoso"
+
+msgid "Sticky Header Animations"
+msgstr "Animaciones de encabezado pegajoso"
+
+msgid "Sticky order review"
+msgstr "Revisión de pedido pegajoso"
+
+msgid "Sticky Placement "
+msgstr "Colocación pegajosa"
+
+msgid "Sticky product summary"
+msgstr "Resumen de productos pegajosos"
+
+msgid "Sticky When Scroll Up"
+msgstr "Pegajoso cuando se desplaza hacia arriba"
+
+msgid "Stop"
+msgstr "Detener"
+
+msgid "Stopwatch"
+msgstr "Cronógrafo"
+
+msgid "Stopwatch 20"
+msgstr "Cronómetro 20"
+
+msgid "Store"
+msgstr "Almacenar"
+
+msgid "Store Slash"
+msgstr "Almacenar barras"
+
+msgid "Strava"
+msgstr "Strava"
+
+msgid "Street View"
+msgstr "Vista a la calle"
+
+msgid "Strikethrough"
+msgstr "Fusible"
+
+msgid "Stripe"
+msgstr "Raya"
+
+msgid "Stripe Credit Card"
+msgstr "Tarjeta de crédito de rayas"
+
+msgid ""
+"Stripe Payments for WooCommerce securely accepts credit cards, Apple Pay, "
+"and Google Pay."
+msgstr ""
+"Pagos de rayas para WooCommerce acepta segura tarjetas de crédito, Apple Pay "
+"y Google Pay."
+
+msgid "Stripe Payments for WooCommerce."
+msgstr "Pagos de rayas para WooCommerce."
+
+msgid "Stripe S"
+msgstr "Stripe S"
+
+msgid "Stroopwafel"
+msgstr "Stroopwafel"
+
+msgid "Structure"
+msgstr "Estructura"
+
+msgid "Studio Vinari"
+msgstr "Estudio vinari"
+
+msgid "StumbleUpon Circle"
+msgstr "Círculo de tope"
+
+msgid "StumbleUpon Logo"
+msgstr "Logotipo de Stumbleupon"
+
+msgid "Style"
+msgstr "Estilo"
+
+msgid "Style Guide"
+msgstr "Guía de estilo"
+
+msgid "Sub Menu"
+msgstr "Subdirector"
+
+msgid "Subheading"
+msgstr "Subtítulo"
+
+msgid "Submenu"
+msgstr "Submenú"
+
+msgid "Submenu Animation"
+msgstr "Animación submenú"
+
+msgid "Submenu Color"
+msgstr "Color submenú"
+
+msgid "Submenu Container"
+msgstr "Contenedor submenú"
+
+msgid "Submenu Divider"
+msgstr "Divisor submenú"
+
+msgid "Submit a Review →"
+msgstr "Envíe una revisión →"
+
+msgid "Subscript"
+msgstr "Subíndice"
+
+msgid "Subtle Background"
+msgstr "Antecedentes sutiles"
+
+msgid "Subtle BG"
+msgstr "BG sutil"
+
+msgid "Successfully Activated!"
+msgstr "¡Activado con éxito!"
+
+msgid "Successfully Deactivated!"
+msgstr "¡Desactivado con éxito!"
+
+msgid "Successfully imported!"
+msgstr "¡Importado con éxito!"
+
+msgid "Successfully saved data!"
+msgstr "¡Datos guardados con éxito!"
+
+msgid "Successfully saved!"
+msgstr "¡Guardado con éxito!"
+
+msgid "Suitcase"
+msgstr "Maleta"
+
+msgid "Suitcase Medical"
+msgstr "Maleta médica"
+
+msgid "Suitcase Rolling"
+msgstr "Maleta rodante"
+
+msgid "Summary, Payment background"
+msgstr "Resumen, antecedentes de pago"
+
+msgid "Sun"
+msgstr "Sol"
+
+msgid "Sun Plant Wilt"
+msgstr "Sun Plant Wilt"
+
+msgid "Super Fast and Stable"
+msgstr "Súper rápido y estable"
+
+msgid "Supercharge your LearnDash website with amazing design features."
+msgstr ""
+"Supercare su sitio web de LearnDash con increíbles características de diseño."
+
+msgid "Superpowers"
+msgstr "Superpoderes"
+
+msgid "Superscript"
+msgstr "Sobrescrito"
+
+msgid "Supple"
+msgstr "Flexible"
+
+msgid "SureCart"
+msgstr "Surecart"
+
+msgid "Surface Color"
+msgstr "Color superficial"
+
+msgid "Surface Colors"
+msgstr "Colores de superficie"
+
+msgid "Suse"
+msgstr "Asustar"
+
+msgid "Swatchbook"
+msgstr "Swatchbook"
+
+msgid "Swift"
+msgstr "Rápido"
+
+msgid "Symfony"
+msgstr "Simpatía"
+
+msgid "Synagogue"
+msgstr "Sinagoga"
+
+msgid "Syringe"
+msgstr "Jeringuilla"
+
+msgid "T"
+msgstr "T"
+
+msgid "Table"
+msgstr "Mesa"
+
+msgid "Table Cells"
+msgstr "Células de tabla"
+
+msgid "Table Cells Large"
+msgstr "Células de mesa grandes"
+
+msgid "Table Columns"
+msgstr "Columnas de tabla"
+
+msgid "Table List"
+msgstr "Lista de mesa"
+
+msgid "Table Tennis Paddle Ball"
+msgstr "Bola de paleta de tenis de mesa"
+
+msgid "Tablet"
+msgstr "Tableta"
+
+msgid "Tablet Button"
+msgstr "Botón de tableta"
+
+msgid "Tablet Screen Button"
+msgstr "Botón de la pantalla de tableta"
+
+msgid "Tablets"
+msgstr "Tabletas"
+
+msgid "Tachograph Digital"
+msgstr "Tacógrafo digital"
+
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgid "Tagline"
+msgstr "Lema"
+
+msgid "Tagline Font"
+msgstr "Fuente de lema"
+
+msgid "Tagline Font Size"
+msgstr "Tamaño de fuente de lema"
+
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgid "Take Last Item Outside Menu"
+msgstr "Tome el último elemento fuera del menú"
+
+msgid "Take your blog to the next level with powerful design features."
+msgstr ""
+"Lleve su blog al siguiente nivel con potentes características de diseño."
+
+msgid "Tape"
+msgstr "Cinta"
+
+msgid "Tarp"
+msgstr "Lata"
+
+msgid "Tarp Droplet"
+msgstr "Gota de lona"
+
+msgid "Taxi"
+msgstr "Taxi"
+
+msgid "Taxonomies"
+msgstr "Taxonomías"
+
+msgid "Taxonomy"
+msgstr "Taxonomía"
+
+msgid "Taxonomy Font"
+msgstr "Fuente de taxonomía"
+
+msgid "TeamSpeak"
+msgstr "Espíritu de equipo"
+
+msgid "Teeth"
+msgstr "Dientes"
+
+msgid "Teeth Open"
+msgstr "Dientes abiertos"
+
+msgid "Telegram"
+msgstr "Telegrama"
+
+msgid "Temperature Arrow Down"
+msgstr "Flecha de temperatura hacia abajo"
+
+msgid "Temperature Arrow Up"
+msgstr "Arrow de temperatura"
+
+msgid "Temperature Empty"
+msgstr "Temperatura vacía"
+
+msgid "Temperature Full"
+msgstr "Temperatura llena"
+
+msgid "Temperature Half"
+msgstr "Temperatura mitad"
+
+msgid "Temperature High"
+msgstr "Temperatura alta"
+
+msgid "Temperature Low"
+msgstr "Temperatura baja"
+
+msgid "Temperature Quarter"
+msgstr "Temperatura"
+
+msgid "Temperature Three Quarters"
+msgstr "Temperatura tres cuartos"
+
+msgid "Tencent Weibo"
+msgstr "Tencent weibo"
+
+msgid "Tenge Sign"
+msgstr "Signo Tenge"
+
+msgid "Tent"
+msgstr "Carpa"
+
+msgid "Tent Arrow Down To Line"
+msgstr "Flecha de carpa hacia abajo"
+
+msgid "Tent Arrow Left Right"
+msgstr "Flecha de la tienda izquierda a la derecha"
+
+msgid "Tent Arrow Turn Left"
+msgstr "Flecha de la tienda Gire a la izquierda"
+
+msgid "Tent Arrows Down"
+msgstr "Flechas de carpa hacia abajo"
+
+msgid "Tents"
+msgstr "Carpas"
+
+msgid "Terminal"
+msgstr "Terminal"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Text / HTML"
+msgstr "Texto / html"
+
+msgid "Text / Icon"
+msgstr "Texto / icono"
+
+msgid "Text / Link"
+msgstr "Texto / enlace"
+
+msgid "Text / Placeholder"
+msgstr "Texto / marcador de posición"
+
+msgid "Text Color"
+msgstr "Color de texto"
+
+msgid "Text Font"
+msgstr "Fuente de texto"
+
+msgid "Text form options"
+msgstr "Opciones de formulario de texto"
+
+msgid "Text Height"
+msgstr "Altura de texto"
+
+msgid "Text Options"
+msgstr "Opciones de texto"
+
+msgid "Text Slash"
+msgstr "Cortesía de texto"
+
+msgid "Text Transform"
+msgstr "Transformación de texto"
+
+msgid "Text Width"
+msgstr "Ancho de texto"
+
+msgid "Thank you for choosing the Astra theme!"
+msgstr "¡Gracias por elegir el tema Astra!"
+
+msgid "Thank you for using"
+msgstr "Gracias por usar"
+
+msgid "Thank you for your feedback"
+msgstr "Gracias por sus comentarios"
+
+msgid "Thank you for your review!"
+msgstr "¡Gracias por su revisión!"
+
+msgid "Thanks a lot for your feedback! 😍"
+msgstr "¡Muchas gracias por sus comentarios! 😍"
+
+msgid ""
+"The Astra WordPress theme is lightning-fast and highly customizable. It has "
+"over 1 million downloads and the only theme in the world with 5,700+ five-"
+"star reviews! It’s ideal for professional web designers, solopreneurs, small "
+"businesses, eCommerce, membership sites and any type of website. It offers "
+"special features and templates so it works perfectly with all page builders "
+"like Spectra, Elementor, Beaver Builder, etc. Fast performance, clean code, "
+"mobile-first design and schema markup are all built-in, making the theme "
+"exceptionally SEO-friendly. It’s fully compatible with WooCommerce, SureCart "
+"and other eCommerce plugins and comes with lots of store-friendly features "
+"and templates. Astra also provides expert support for free users. A "
+"dedicated team of fully trained WordPress experts are on hand to help with "
+"every aspect of the theme. Try the live demo of Astra: https://zipwp."
+"org/themes/astra/"
+msgstr ""
+"El tema Astra WordPress es un rayo y altamente personalizable. ¡Tiene más de "
+"1 millón de descargas y el único tema en el mundo con más de 5,700 reseñas "
+"de cinco estrellas! Es ideal para diseñadores web profesionales, "
+"solopreneurs, pequeñas empresas, comercio electrónico, sitios de membresía y "
+"cualquier tipo de sitio web. Ofrece características y plantillas especiales, "
+"por lo que funciona perfectamente con todos los constructores de páginas "
+"como Spectra, Elementor, Beaver Builder, etc. Rendimiento rápido, código "
+"limpio, diseño móvil primero y marcado de esquema están incorporados, lo que "
+"hace que el tema sea excepcionalmente amigable con SEO. Es totalmente "
+"compatible con WooCommerce, Surecart y otros complementos de comercio "
+"electrónico y viene con muchas características y plantillas amigables con "
+"las tiendas. Astra también brinda soporte experto para usuarios gratuitos. "
+"Un equipo dedicado de expertos en WordPress totalmente entrenados está "
+"disponible para ayudar con cada aspecto del tema. Pruebe la demostración en "
+"vivo de Astra: https://zipwp.org/themes/astra/"
+
+msgid ""
+"The future will belongs to those who believe in the beauty of their dreams."
+msgstr ""
+"El futuro pertenecerá a aquellos que creen en la belleza de sus sueños."
+
+msgid "The header on this page is set from the Transparent Header."
+msgstr ""
+"El encabezado de esta página se establece desde el encabezado transparente."
+
+msgid ""
+"The Image option cannot be sortable if the Product Style is selected to the "
+"List Style "
+msgstr ""
+"La opción de imagen no puede ser ordenable si el estilo del producto se "
+"selecciona para el estilo de la lista"
+
+msgid ""
+"The Logo on this page is set from the Transparent Header Section. Please "
+"click the link below to customize Transparent Header Logo."
+msgstr ""
+"El logotipo en esta página se establece desde la sección de encabezado "
+"transparente. Haga clic en el enlace a continuación para personalizar el "
+"logotipo de encabezado transparente."
+
+msgid "The new way to sell on WordPress."
+msgstr "La nueva forma de vender en WordPress."
+
+msgid "The parent menu should have a # link for the submenu to open on a link."
+msgstr ""
+"El menú principal debe tener un enlace # para que el submenú se abra en un "
+"enlace."
+
+msgid "The Red Yeti"
+msgstr "El yeti rojo"
+
+msgid "Theme Button"
+msgstr "Botón del tema"
+
+msgid "Theme Color"
+msgstr "Color del tema"
+
+msgid "Themeco"
+msgstr "Themeco"
+
+msgid "ThemeIsle"
+msgstr "Tema"
+
+msgid "Thermometer"
+msgstr "Termómetro"
+
+msgid "Thin 100"
+msgstr "Delgado 100"
+
+msgid "Thin 100 Italic"
+msgstr "Delgado 100 cursiva"
+
+msgid "Think Peaks"
+msgstr "Piensa en Peaks"
+
+msgid ""
+"This is a demo store for testing purposes &mdash; no orders shall be "
+"fulfilled."
+msgstr ""
+"Esta es una tienda de demostración para fines de prueba y mdash; No se "
+"cumplirán órdenes."
+
+msgid ""
+"This option activates Live Search support for the search box on the no "
+"results page."
+msgstr ""
+"Esta opción activa el soporte de búsqueda en vivo para el cuadro de búsqueda "
+"en la página sin resultados."
+
+msgid "This option only available on Astra Pro."
+msgstr "Esta opción solo disponible en Astra Pro."
+
+msgid ""
+"This option will load the font files right away on page load. Preloading "
+"Local Fonts can speeds up your website even further."
+msgstr ""
+"Esta opción cargará los archivos de fuentes de inmediato en la carga de la "
+"página. La precarga de fuentes locales puede acelerar aún más su sitio web."
+
+msgid "This page doesn't seem to exist."
+msgstr "Esta página no parece existir."
+
+msgid ""
+"This responsive cart click option will work for tablet and mobile in same way"
+msgstr ""
+"Esta opción de clic de carrito receptivo funcionará para tabletas y móviles "
+"de la misma manera"
+
+msgid ""
+"This setting is generally not recommended on 404 page. If you would like to "
+"enable it, uncheck this option"
+msgstr ""
+"Esta configuración generalmente no se recomienda en la página 404. Si desea "
+"habilitarlo, desmarque esta opción"
+
+msgid ""
+"This setting is generally not recommended on archives pages, etc. If you "
+"would like to enable it, uncheck this option"
+msgstr ""
+"Esta configuración generalmente no se recomienda en las páginas de archivos, "
+"etc. Si desea habilitarla, desmarque esta opción"
+
+msgid ""
+"This setting is generally not recommended on search page. If you would like "
+"to enable it, uncheck this option"
+msgstr ""
+"Esta configuración generalmente no se recomienda en la página de búsqueda. "
+"Si desea habilitarlo, desmarque esta opción"
+
+msgid "This sidebar will be used on EDD Single Product page."
+msgstr ""
+"Esta barra lateral se utilizará en la página de productos únicos de EDD."
+
+msgid ""
+"This sidebar will be used on Product archive, Cart, Checkout and My Account "
+"pages."
+msgstr ""
+"Esta barra lateral se utilizará en el archivo de productos, el carrito, el "
+"pago y mis páginas de cuenta."
+
+msgid "This sidebar will be used on Single Product page."
+msgstr "Esta barra lateral se utilizará en la página de producto único."
+
+msgid "Threads"
+msgstr "Trapos"
+
+msgid "Thumbnail"
+msgstr "Uña del pulgar"
+
+msgid "Thumbs Down"
+msgstr "Pulgar hacia abajo"
+
+msgid "Thumbs Up"
+msgstr "Pulgares hacia arriba"
+
+msgid "Thumbtack"
+msgstr "Chinche"
+
+msgid "Ticket"
+msgstr "Boleto"
+
+msgid "Ticket Simple"
+msgstr "Boleto simple"
+
+msgid "TikTok"
+msgstr "Tiktok"
+
+msgid "Timeline"
+msgstr "Línea de tiempo"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Title & Post Meta"
+msgstr "Título y post meta"
+
+msgid "Title Alignment"
+msgstr "Alineación del título"
+
+msgid "Title Area"
+msgstr "Área de título"
+
+msgid "Title Color"
+msgstr "Color de título"
+
+msgid "Title Font"
+msgstr "Título de la fuente"
+
+msgid "Title Font Size"
+msgstr "Título Tamaño de fuente"
+
+msgid ""
+"To sync this option with comments, use the same positioning for both "
+"sections: Contained or Separated."
+msgstr ""
+"Para sincronizar esta opción con comentarios, use el mismo posicionamiento "
+"para ambas secciones: contenido o separado."
+
+msgid "Toggle Button"
+msgstr "Botón de palanca"
+
+msgid "Toggle Button Color"
+msgstr "Color de botón de palanca"
+
+msgid "Toggle Button element"
+msgstr "Elemento de botón de palanca"
+
+msgid "Toggle Button Style"
+msgstr "Estilo de botón de palanca"
+
+msgid "Toggle Color"
+msgstr "Color de palanca"
+
+msgid "Toggle Item Visiblity"
+msgstr "Alternar la visible del artículo"
+
+msgid "Toggle Off"
+msgstr "Alternar"
+
+msgid "Toggle On"
+msgstr "Alternar"
+
+msgid "Toilet"
+msgstr "Baño"
+
+msgid "Toilet Paper"
+msgstr "Papel higiénico"
+
+msgid "Toilet Paper Slash"
+msgstr "Barra de papel higiénico"
+
+msgid "Toilet Portable"
+msgstr "Inodoro portátil"
+
+msgid "Toilets Portable"
+msgstr "Inodoros portátiles"
+
+msgid "Toolbox"
+msgstr "Caja de instrumento"
+
+msgid "Tooth"
+msgstr "Diente"
+
+msgid "Top"
+msgstr "Arriba"
+
+msgid "Top Border Color"
+msgstr "Color de borde superior"
+
+msgid "Top Border Size"
+msgstr "Tamaño del borde superior"
+
+msgid "Top Offset"
+msgstr "Compensación superior"
+
+msgid "Torii Gate"
+msgstr "Puerta de Torii"
+
+msgid "Tornado"
+msgstr "Tornado"
+
+msgid "Total + Currency symbol"
+msgstr "Símbolo total + moneda"
+
+msgid "Total amount"
+msgstr "Cantidad total"
+
+msgid "Total Number of Related Posts"
+msgstr "Número total de publicaciones relacionadas"
+
+msgid "Tower Broadcast"
+msgstr "Transmisión de la torre"
+
+msgid "Tower Cell"
+msgstr "Celda de torre"
+
+msgid "Tower Observation"
+msgstr "Observación de la torre"
+
+msgid "Tractor"
+msgstr "Tractor"
+
+msgid "Trade Federation"
+msgstr "Federación de comercio"
+
+msgid "Trademark"
+msgstr "Marca"
+
+msgid "Traffic Light"
+msgstr "Semáforo"
+
+msgid "Trailer"
+msgstr "Tráiler"
+
+msgid "Train"
+msgstr "Tren"
+
+msgid "Train Subway"
+msgstr "Metro de tren"
+
+msgid "Train Tram"
+msgstr "Tranvía de tren"
+
+msgid "Transgender"
+msgstr "Transgénero"
+
+msgid "Transparent Header"
+msgstr "Encabezado transparente"
+
+msgid "Transparent Header Button"
+msgstr "Botón de encabezado transparente"
+
+msgid "Trash"
+msgstr "Basura"
+
+msgid "Trash Arrow Up"
+msgstr "Flecha de basura"
+
+msgid "Trash Can"
+msgstr "Bote de basura"
+
+msgid "Trash Can Arrow Up"
+msgstr "Trash Can Arrow Up"
+
+msgid "Travel"
+msgstr "Viajar"
+
+msgid "Tree"
+msgstr "Árbol"
+
+msgid "Tree City"
+msgstr "Ciudad de los árboles"
+
+msgid "Trello"
+msgstr "Trello"
+
+msgid "Triangle Exclamation"
+msgstr "Exclamación del triángulo"
+
+msgid "Trip Advisor"
+msgstr "Asesor de viaje"
+
+msgid "Trophy"
+msgstr "Trofeo"
+
+msgid "Trowel"
+msgstr "Paleta"
+
+msgid "Trowel Bricks"
+msgstr "Ladrillos de la llana"
+
+msgid "Truck"
+msgstr "Camión"
+
+msgid "Truck Arrow Right"
+msgstr "Flecha de camión derecha"
+
+msgid "Truck Droplet"
+msgstr "Gota de camión"
+
+msgid "Truck Fast"
+msgstr "Camión rápido"
+
+msgid "Truck Field"
+msgstr "Campo de camiones"
+
+msgid "Truck Field Un"
+msgstr "Campo de camión sin"
+
+msgid "Truck Front"
+msgstr "Frontal del camión"
+
+msgid "Truck Medical"
+msgstr "Médico de camión"
+
+msgid "Truck Monster"
+msgstr "Monstruo de camión"
+
+msgid "Truck Moving"
+msgstr "Camión Movimiento"
+
+msgid "Truck Pickup"
+msgstr "Recogida de camiones"
+
+msgid "Truck Plane"
+msgstr "Avión de camión"
+
+msgid "Truck Ramp Box"
+msgstr "Caja de rampa para camiones"
+
+msgid "Tty"
+msgstr "Tty"
+
+msgid "Tumblr"
+msgstr "Tumblr"
+
+msgid "Turkish Lira Sign"
+msgstr "Signo de lira turca"
+
+msgid "Turn Down"
+msgstr "Rechazar"
+
+msgid "Turn Up"
+msgstr "Aparecer"
+
+msgid "Tv"
+msgstr "Televisor"
+
+msgid "Twitch"
+msgstr "Contracción nerviosa"
+
+msgid "Twitter"
+msgstr "Gorjeo"
+
+msgid "Twitter / X"
+msgstr "Twitter / X"
+
+msgid "Two Column Grid"
+msgstr "Cuadrícula de dos columnas"
+
+msgid "Two-step checkout"
+msgstr "Pago de dos pasos"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Type 1"
+msgstr "Tipo 1"
+
+msgid "Type 2"
+msgstr "Tipo 2"
+
+msgid "Type 3"
+msgstr "Tipo 3"
+
+msgid "Type here.."
+msgstr "Escriba aquí .."
+
+msgid "Typo3"
+msgstr "Tipo3"
+
+msgid "Typography"
+msgstr "Tipografía"
+
+msgid "Typography Overview"
+msgstr "Descripción de la tipografía"
+
+msgid "U"
+msgstr "U"
+
+msgid "Uber"
+msgstr "Súper"
+
+msgid "Ubuntu"
+msgstr "Ubuntu"
+
+msgid "UIkit"
+msgstr "Uikit"
+
+msgid "Ultimate Video Player For WordPress."
+msgstr "Ultimate Video Player para WordPress."
+
+msgid "Ultra-Bold 900"
+msgstr "Ultra-Bold 900"
+
+msgid "Ultra-Bold 900 Italic"
+msgstr "Ultra-doño 900 cursiva"
+
+msgid "Umbraco"
+msgstr "Umbraco"
+
+msgid "Umbrella"
+msgstr "Paraguas"
+
+msgid "Umbrella Beach"
+msgstr "Playa paraguas"
+
+msgid "Unboxed"
+msgstr "Desanimado"
+
+msgid "Uncharted Software"
+msgstr "Software desconocido"
+
+msgid "Underline"
+msgstr "Subrayar"
+
+msgid "Underline Content Links"
+msgstr "Subraye los enlaces de contenido"
+
+msgid "Unicode"
+msgstr "Unicode"
+
+msgid "Uniregistry"
+msgstr "Uniregistro"
+
+msgid "United States Postal Service"
+msgstr "Servicio Postal de los Estados Unidos"
+
+msgid "Unity 3D"
+msgstr "Unidad 3D"
+
+msgid "Universal Access"
+msgstr "Acceso universal"
+
+msgid "Unlock"
+msgstr "Descubrir"
+
+msgid "Unlock Keyhole"
+msgstr "Desbloquear"
+
+msgid "Unlock Pro Features"
+msgstr "Desbloquear características Pro"
+
+msgid "Unlock Pro Widgets"
+msgstr "Desbloquear widgets Pro"
+
+msgid "Unlock with Astra Pro"
+msgstr "Desbloquear con Astra Pro"
+
+msgid ""
+"Unlock your full design potential and build a website to be proud of with "
+"Astra Pro."
+msgstr ""
+"Desbloquee su potencial de diseño completo y cree un sitio web para estar "
+"orgulloso con Astra Pro."
+
+msgid "Unordered List"
+msgstr "Lista desordenada"
+
+msgid "Unsplash"
+msgstr "Sin estelares"
+
+msgid "Untappd"
+msgstr "Untappd"
+
+msgid "Up Down"
+msgstr "Hacia arriba"
+
+msgid "Up Down Left Right"
+msgstr "Arriba hacia abajo a la derecha"
+
+msgid "Up Long"
+msgstr "De largo"
+
+msgid "Up Right And Down Left From Center"
+msgstr "Arriba a la derecha y hacia abajo a la izquierda desde el centro"
+
+msgid "Up Right From Square"
+msgstr "Arriba desde el cuadrado"
+
+msgid "updating..."
+msgstr "Actualización ..."
+
+msgid "Upgrade"
+msgstr "Mejora"
+
+msgid "Upgrade Now"
+msgstr "Actualización ahora"
+
+msgid "Upgrade to Astra Pro"
+msgstr "Actualizar a Astra Pro"
+
+msgid ""
+"Upgrade to Astra Pro for even more header and footer options, as well as "
+"several other wonderful features!"
+msgstr ""
+"¡Actualice a Astra Pro para obtener aún más opciones de encabezado y pie de "
+"página, así como varias otras características maravillosas!"
+
+msgid ""
+"Upgrade to Astra Pro to get access to the Site Builder, which allow you to "
+"create a unique header, footer, 404 pages, and custom content."
+msgstr ""
+"Actualice a Astra Pro para obtener acceso al creador de sitios, que le "
+"permite crear un encabezado, pie de página, 404 páginas y contenido "
+"personalizado y contenido personalizado."
+
+msgid "Upgrade to unlock"
+msgstr "Actualizar para desbloquear"
+
+msgid "Upload"
+msgstr "Subir"
+
+msgid "Uppercase"
+msgstr "Mayúscula"
+
+msgid "UPS"
+msgstr "Unión Postal Universal"
+
+msgid "Upsell"
+msgstr "Ventajas"
+
+msgid "Upsells"
+msgstr "Ventas"
+
+msgid "URL"
+msgstr "Url"
+
+msgid "us-Sunnah Foundation"
+msgstr "Fundación de la Sunnah de EE. UU."
+
+msgid "USB"
+msgstr "USB"
+
+msgid "Use as Background"
+msgstr "Usar como fondo"
+
+msgid "Use containers to their maximum potential with Astra Pro"
+msgstr "Use contenedores para su máximo potencial con Astra Pro"
+
+msgid ""
+"Use every tool at your disposal to optimize your online store for conversion."
+" All the advantages you need to make more profit!"
+msgstr ""
+"Use todas las herramientas a su disposición para optimizar su tienda en "
+"línea para su conversión. ¡Todas las ventajas que necesita para obtener más "
+"ganancias!"
+
+msgid "Use it with transparent images for optimal results."
+msgstr "Úselo con imágenes transparentes para obtener resultados óptimos."
+
+msgid "Use Logo SVG Icon"
+msgstr "Utilice el icono de logotipo SVG"
+
+msgid "Use New Header/Footer Builder"
+msgstr "Use un nuevo encabezado/pie de página"
+
+msgid "User"
+msgstr "Usuario"
+
+msgid "User Astronaut"
+msgstr "Astronauta de usuario"
+
+msgid "User Check"
+msgstr "Comprobación de usuario"
+
+msgid "User Clock"
+msgstr "Reloj de usuario"
+
+msgid "User Doctor"
+msgstr "Usuaria"
+
+msgid "User Gear"
+msgstr "Equipo de usuario"
+
+msgid "User Graduate"
+msgstr "Graduado de usuario"
+
+msgid "User Group"
+msgstr "Grupo de usuarios"
+
+msgid "User Injured"
+msgstr "Usuario herido"
+
+msgid "User Large"
+msgstr "Usuario grande"
+
+msgid "User Large Slash"
+msgstr "Usuario gran barra"
+
+msgid "User Lock"
+msgstr "Bloqueo de usuarios"
+
+msgid "User Minus"
+msgstr "Usuario menos"
+
+msgid "User Ninja"
+msgstr "Ninja de usuario"
+
+msgid "User Nurse"
+msgstr "Enfermera de usuario"
+
+msgid "User Pen"
+msgstr "Pluma de usuario"
+
+msgid "User Plus"
+msgstr "Usuario más"
+
+msgid "User Secret"
+msgstr "Secreto de usuario"
+
+msgid "User Shield"
+msgstr "Escudo de usuario"
+
+msgid "User Slash"
+msgstr "Barra de usuarios"
+
+msgid "User Tag"
+msgstr "Etiqueta de usuario"
+
+msgid "User Tie"
+msgstr "Empate de usuario"
+
+msgid "User Xmark"
+msgstr "Usuario xmark"
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "Users Between Lines"
+msgstr "Usuarios entre líneas"
+
+msgid "Users Gear"
+msgstr "Equipo de usuarios"
+
+msgid "Users Line"
+msgstr "Línea de usuarios"
+
+msgid "Users Rays"
+msgstr "Rayos de usuarios"
+
+msgid "Users Rectangle"
+msgstr "Rectángulo de usuarios"
+
+msgid "Users Slash"
+msgstr "Los usuarios recortan"
+
+msgid "Users Viewfinder"
+msgstr "Visualización de usuarios"
+
+msgid "Utensils"
+msgstr "Utensilios"
+
+msgid "V"
+msgstr "V"
+
+msgid "Vaadin"
+msgstr "Vaadín"
+
+msgid "Van Shuttle"
+msgstr "Transporte de camioneta"
+
+msgid "Variable Product Button"
+msgstr "Botón de producto variable"
+
+msgid "Variable Product Button Text"
+msgstr "Texto del botón del producto variable"
+
+msgid "Vault"
+msgstr "Bóveda"
+
+msgid "Vector Square"
+msgstr "Cuadrado vectorial"
+
+msgid "Venus"
+msgstr "Venus"
+
+msgid "Venus Double"
+msgstr "Venus doble"
+
+msgid "Venus Mars"
+msgstr "Venus Marte"
+
+msgid "Vertical Alignment"
+msgstr "Alineación vertical"
+
+msgid "Vest"
+msgstr "Chaleco"
+
+msgid "Vest Patches"
+msgstr "Parches de chaleco"
+
+msgid "Viacoin"
+msgstr "Viacoin"
+
+msgid "Viadeo"
+msgstr "Viadeo"
+
+msgid "Vial"
+msgstr "Frasco"
+
+msgid "Vial Circle Check"
+msgstr "Cheque de círculo vial"
+
+msgid "Vial Virus"
+msgstr "Virus vial"
+
+msgid "Vials"
+msgstr "Viales"
+
+msgid "Viber"
+msgstr "Vibrar"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Video Slash"
+msgstr "Video Slash"
+
+msgid "View All Documentation"
+msgstr "Ver toda la documentación"
+
+msgid "View all posts by %1$s"
+msgstr "Ver todas las publicaciones de %1$s"
+
+msgid "View Astra Pro Features"
+msgstr "Ver características Astra Pro"
+
+msgid "View Details"
+msgstr "Ver detalles"
+
+msgid "View Documentation"
+msgstr "Ver documentación"
+
+msgid "View your shopping cart"
+msgstr "Vea su carrito de compras"
+
+msgid "Vihara"
+msgstr "Vihara"
+
+msgid "Vimeo"
+msgstr "Vimeo"
+
+msgid "Vine"
+msgstr "Enredadera"
+
+msgid "VIP Priority Support"
+msgstr "Soporte de prioridad VIP"
+
+msgid "Virus"
+msgstr "Virus"
+
+msgid "Virus Covid"
+msgstr "Virus Covid"
+
+msgid "Virus Covid Slash"
+msgstr "Virus Covid Slash"
+
+msgid "Virus Slash"
+msgstr "Barra de virus"
+
+msgid "Viruses"
+msgstr "Virus"
+
+msgid "Visa"
+msgstr "Visa"
+
+msgid "Visa Credit Card"
+msgstr "Tarjeta de crédito Visa"
+
+msgid "Visibility"
+msgstr "Visibilidad"
+
+msgid "Visible Search Result"
+msgstr "Resultado de la búsqueda visible"
+
+msgid "VK"
+msgstr "VK"
+
+msgid "VNV"
+msgstr "VNV"
+
+msgid "Voicemail"
+msgstr "Correo de voz"
+
+msgid "Volcano"
+msgstr "Volcán"
+
+msgid "Volleyball"
+msgstr "Voleibol"
+
+msgid "Volume High"
+msgstr "Volumen alto"
+
+msgid "Volume Low"
+msgstr "Volumen bajo"
+
+msgid "Volume Off"
+msgstr "Volumen"
+
+msgid "Volume Xmark"
+msgstr "Volumen Xmark"
+
+msgid "Vr Cardboard"
+msgstr "Cartón VR"
+
+msgid "Vue.js"
+msgstr "Vue.js"
+
+msgid "W"
+msgstr "W"
+
+msgid "Walkie Talkie"
+msgstr "Walkie talkie"
+
+msgid "Wallet"
+msgstr "Billetera"
+
+msgid "Wand Magic"
+msgstr "Magia de la varita"
+
+msgid "Wand Magic Sparkles"
+msgstr "Wand Magic Sparkles"
+
+msgid "Wand Sparkles"
+msgstr "Varita brilla"
+
+msgid "Warehouse"
+msgstr "Depósito"
+
+msgid "Watch the Quick Starter Guide"
+msgstr "Mira la guía de inicio rápido"
+
+msgid "Watchman Monitoring"
+msgstr "Monitoreo de Watchman"
+
+msgid "Water"
+msgstr "Agua"
+
+msgid "Water Ladder"
+msgstr "Escalera de agua"
+
+msgid "Wave Square"
+msgstr "Cuadrado de onda"
+
+msgid "Waze"
+msgstr "Agitar"
+
+msgid "We love to hear from you, we would appreciate every single review."
+msgstr "Nos encanta saber de usted, apreciamos cada reseña."
+
+msgid "We value your input. How can we improve your experience?"
+msgstr "Valoramos su entrada. ¿Cómo podemos mejorar su experiencia?"
+
+msgid "Website"
+msgstr "Sitio web"
+
+msgid "Website Parts"
+msgstr "Piezas del sitio web"
+
+msgid "WeChat"
+msgstr "Veloz"
+
+msgid "Weebly"
+msgstr "Maldito"
+
+msgid "Week %s"
+msgstr "Semana %s"
+
+msgid "Weibo"
+msgstr "Weibo"
+
+msgid "Weight Hanging"
+msgstr "Colgante de peso"
+
+msgid "Weight Scale"
+msgstr "Escala de peso"
+
+msgid "Weixin (WeChat)"
+msgstr "Weixin (WeChat)"
+
+msgid "Welcome"
+msgstr "Bienvenido"
+
+msgid "Welcome Banner"
+msgstr "Banner de bienvenida"
+
+msgid "Welcome to %s"
+msgstr "Bienvenido a %s"
+
+msgid "Welcome to KB Docs"
+msgstr "Bienvenido a KB Docs"
+
+msgid "What Others Have Said"
+msgstr "Lo que otros han dicho"
+
+msgid "What's App"
+msgstr "¿Qué es la aplicación?"
+
+msgid "What's New?"
+msgstr "¿Qué hay de nuevo?"
+
+msgid "Whats's New"
+msgstr "Que es nuevo"
+
+msgid "WhatsApp"
+msgstr "Whatsapp"
+
+msgid "Wheat Awn"
+msgstr "Toldo de trigo"
+
+msgid "Wheat Awn Circle Exclamation"
+msgstr "Exclamación de Wheat Town Circle"
+
+msgid "Wheelchair"
+msgstr "Silla de ruedas"
+
+msgid "Wheelchair Move"
+msgstr "Movimiento de silla de ruedas"
+
+msgid "When Results Found"
+msgstr "Cuando los resultados se encuentran"
+
+msgid "When Results Not Found"
+msgstr "Cuando los resultados no se encuentran"
+
+msgid ""
+"When using Custom SVG code, do not include few attributes such as \"width\", "
+"\"height\", and \"fill\" in your custom svg code to utilize existing "
+"customizer controls."
+msgstr ""
+"Al usar el código SVG personalizado, no incluya pocos atributos como "
+"\"ancho\", \"altura\" y \"llene\" su código SVG personalizado para utilizar "
+"los controles de personalización existentes."
+
+msgid "Whiskey Glass"
+msgstr "Vidrio de whisky"
+
+msgid "White Label"
+msgstr "Etiqueta blanca"
+
+msgid "WHMCS"
+msgstr "WHMCS"
+
+msgid "Why Us"
+msgstr "Por qué nosotros"
+
+msgid "Wide"
+msgstr "Ancho"
+
+msgid "Wide Center 20/60/20"
+msgstr "Centro ancho 20/60/20"
+
+msgid "Widget"
+msgstr "Widget"
+
+msgid "Widget "
+msgstr "Widget"
+
+msgid "Widget 3"
+msgstr "Widget 3"
+
+msgid "Widget 4"
+msgstr "Widget 4"
+
+msgid "Widget 5"
+msgstr "Widget 5"
+
+msgid "Widget 6"
+msgstr "Widget 6"
+
+msgid "Widget color options"
+msgstr "Opciones de color de widget"
+
+msgid "Widget content typography"
+msgstr "Tipografía de contenido de widgets"
+
+msgid "Widget title typography"
+msgstr "Tipografía de título de widget"
+
+msgid "Width"
+msgstr "Ancho"
+
+msgid "Wifi"
+msgstr "Wifi"
+
+msgid "Wikipedia W"
+msgstr "Wikipedia w"
+
+msgid "Wind"
+msgstr "Viento"
+
+msgid "Window Maximize"
+msgstr "La ventana maximizar"
+
+msgid "Window Minimize"
+msgstr "Minimizar la ventana"
+
+msgid "Window Restore"
+msgstr "Restaurar ventana"
+
+msgid "Windows"
+msgstr "Windows"
+
+msgid "Wine Bottle"
+msgstr "Botella de vino"
+
+msgid "Wine Glass"
+msgstr "Copa de vino"
+
+msgid "Wine Glass Empty"
+msgstr "Copa de vino vacía"
+
+msgid "wirsindhandwerk"
+msgstr "wirsindhandwerk"
+
+msgid "Wix"
+msgstr "Wix"
+
+msgid "Wizards of the Coast"
+msgstr "Magos de la costa"
+
+msgid "Wodu"
+msgstr "Wodu"
+
+msgid "Wolf Pack Battalion"
+msgstr "Batallón de paquete de lobo"
+
+msgid "Won Sign"
+msgstr "Letrero ganado"
+
+msgid "Woo Cart"
+msgstr "Carro de cortejo"
+
+msgid "Woo Cart Icon Color"
+msgstr "Color de icono de carro woo"
+
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+msgid "WooCommerce Cart"
+msgstr "Carrito de wooCommerce"
+
+msgid ""
+"WooCommerce extensions that will elevate your online store from good to "
+"exceptional."
+msgstr ""
+"Extensiones de WooCommerce que elevarán su tienda en línea de buena a "
+"excepcional."
+
+msgid "WooCommerce Mini-Cart Shortcode"
+msgstr "WooCommerce Mini-CART-Código"
+
+msgid "WooCommerce Sidebar"
+msgstr "Barra lateral de WooCommerce"
+
+msgid "WordPress"
+msgstr "WordPress"
+
+msgid "WordPress Logo"
+msgstr "Logotipo de WordPress"
+
+msgid "WordPress Nonce not validated."
+msgstr "WordPress Nonce no validado."
+
+msgid "Wordpress Simple"
+msgstr "WordPress simple"
+
+msgid "WordPress Theme"
+msgstr "Tema de WordPress"
+
+msgid "Worm"
+msgstr "Gusano"
+
+msgid "WPBeginner"
+msgstr "Wpbeginner"
+
+msgid "WPExplorer"
+msgstr "WPEXPLORER"
+
+msgid "WPForms"
+msgstr "WPFORMS"
+
+msgid "wpressr"
+msgstr "Wpressr"
+
+msgid "Wrench"
+msgstr "Llave inglesa"
+
+msgid "Write a Review"
+msgstr "Escribe una reseña"
+
+msgid "X"
+msgstr "incógnita"
+
+msgid "X Ray"
+msgstr "Rayo x"
+
+msgid "Xbox"
+msgstr "Xbox"
+
+msgid "Xing"
+msgstr "Xing"
+
+msgid "Xmark"
+msgstr "Xmark"
+
+msgid "Xmarks Lines"
+msgstr "Xmarks Lines"
+
+msgid "Y"
+msgstr "Y"
+
+msgid "Y Combinator"
+msgstr "Y combinador"
+
+msgid "Yahoo Logo"
+msgstr "Logo de Yahoo"
+
+msgid "Yammer"
+msgstr "Quejarse"
+
+msgid "Yandex"
+msgstr "Yandex"
+
+msgid "Yandex International"
+msgstr "Yandex International"
+
+msgid "Yarn"
+msgstr "Hilo"
+
+msgid "Yelp"
+msgstr "Gañido"
+
+msgid "Yen Sign"
+msgstr "Signo de yen"
+
+msgid "Yin Yang"
+msgstr "Yin yang"
+
+msgid "Yoast"
+msgstr "Yoast"
+
+msgid ""
+"You can specify Custom image sizes from the Single Post's 'Featured Image "
+"Size' option."
+msgstr ""
+"Puede especificar los tamaños de imagen personalizados desde la opción de "
+"'tamaño de imagen presentado' de la publicación única."
+
+msgid "You don't have the access"
+msgstr "No tienes el acceso"
+
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está esperando ser moderado."
+
+msgid "Your License"
+msgstr "Tu licencia"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Z"
+msgstr "Z"
+
+msgid "Zero Bloat, No Dependencies"
+msgstr "Cero hinchazón, sin dependencias"
+
+msgid "Zhihu"
+msgstr "Zhihu"
+
+msgid "Zoom In"
+msgstr "Dar un golpe de zoom"
+
+msgid "Zoom Out"
+msgstr "Alejarse"

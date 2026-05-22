@@ -1,0 +1,22 @@
+# Infracost config: runs all projects with their per-environment usage estimates.
+#
+# Usage:
+#   infracost breakdown --config-file infracost.yml
+#   infracost diff --config-file infracost.yml --compare-to baseline.json
+#
+# See INFRACOST.md for the full workflow, including the manual Front Door
+# adjustment (Infracost doesn't yet support azurerm_cdn_frontdoor_*).
+
+version: 0.1
+
+projects:
+  - path: bootstrap
+    name: bootstrap
+
+  - path: environments/staging
+    name: staging
+    usage_file: environments/staging/infracost-usage.yml
+
+  - path: environments/prod
+    name: prod
+    usage_file: environments/prod/infracost-usage.yml

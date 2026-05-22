@@ -1,0 +1,838 @@
+# Translation of Themes - Twenty Eleven in Korean
+# This file is distributed under the same license as the Themes - Twenty Eleven package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-06-07 06:10:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ko_KR\n"
+"Project-Id-Version: Themes - Twenty Eleven\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom \"Ephemera\" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured \"sticky\" posts), and special styles for six different post formats."
+msgstr "워드 프레스를 위한 2011 테마는 세련되고 가볍고, 그리고 개조할 수 있습니다. 사용자 지정 메뉴, 헤더 이미지 및 배경으로 당신의 것으로 만들 수 있습니다 - 그리고 밝거나 어두운 색상, 사용자 정의 링크 색상, 세가지 레이아웃 선택을 할 수 있습니다. 2011은 첫번째 페이지에 최고의 컨텐츠를 보여줄 수 있는 쇼케이스 페이지 템플릿과 많은 위젯 지원 (사이드바, 3개의 푸터 영역 그리고 쇼케이스 페이지 위젯 영역), 그리고 당신의 추가 정보를 표시하기 위한 사용자 정의 \"하루살이 \" 위젯, 링크, 인용, 또는 상태 글을 갖추고 있습니다. 인쇄를 위한 스타일 및 관리자 편집기, 추천 이미지 지원 (글과 페이지의 사용자 정의 헤더 이미지와 게시물 및 페이지와 추천 \"스티커 \"글의 큰 이미지), 그리고 6가지 다른 글 형식의 스페셜 스타일이 포함되어 있습니다."
+
+#. Theme Name of the theme
+#: style.css inc/block-patterns.php:20
+#, gp-priority: high
+msgid "Twenty Eleven"
+msgstr "Twenty Eleven"
+
+#: inc/theme-options.php:121
+msgid "<a href=\"https://wordpress.org/documentation/article/customizer/\" target=\"_blank\">Documentation on Theme Customization</a>"
+msgstr "<a href=\"https://wordpress.org/documentation/article/customizer/\" target=\"_blank\">테마 사용자 정의에 대한 문서</a>"
+
+#: inc/block-patterns.php:153
+msgid "Blandit. Id ornare arcu odio ut"
+msgstr ""
+"The translation of \"Blandit. Id ornare arcu odio ut\" to Korean is:\n"
+"\n"
+"\"블란딧. 아이드 오르나레 아르쿠 오디오 우트\" \n"
+"\n"
+"(Note: The original text appears to be a mix of Latin phrases, which may not have a direct meaning in Korean. The translation provided is a phonetic representation.)"
+
+#: inc/block-patterns.php:153
+msgid "At quis risus sed vulputate odio ut enim"
+msgstr ""
+"At quis risus sed vulputate odio ut enim\" can be translated to Korean as:\n"
+"\n"
+"\"그는 미소를 지으며 증오를 발산한다.\" \n"
+"\n"
+"Please note that this translation is a contextual interpretation, as the original text appears to be a fragment and may not have a direct translation. If you have a specific context or meaning in mind, please provide more details for a more accurate translation."
+
+#: inc/block-patterns.php:153
+msgid "Etiam tempor orci eu lobortis"
+msgstr ""
+"Etiam tempor orci eu lobortis\" can be translated to Korean as:\n"
+"\n"
+"\"에티암 템포르 오르치 유 로보르티스\" \n"
+"\n"
+"However, please note that this phrase appears to be in Latin and may not have a direct meaning in Korean. If you need a specific context or meaning, please provide more details!"
+
+#: inc/block-patterns.php:153
+msgid "Lectus quam id leo in vitae turpis"
+msgstr ""
+"Lectus quam id leo in vitae turpis\" can be translated to Korean as:\n"
+"\n"
+"\"생명에서의 터프한 것에 대한 레크투스\" \n"
+"\n"
+"However, please note that this phrase seems to be a mix of Latin and may not have a direct meaning in Korean. If you have a specific context or meaning in mind, please provide more details for a more accurate translation."
+
+#: inc/block-patterns.php:153
+msgid "Nisi quis eleifend"
+msgstr "Nisi quis eleifend\" can be translated to Korean as \"누군가가 요소를 선택하지 않는 한\". However, please note that this phrase seems to be a fragment and may not have a clear meaning without additional context."
+
+#: inc/block-patterns.php:153
+msgid "Aenean euismod elementum"
+msgstr "Aenean euismod elementum\" can be translated to Korean as \"아에넌 유이스모드 엘리먼트움\". However, please note that this phrase appears to be a Latin placeholder text commonly used in design and may not have a direct meaning in Korean. If you need a specific context or meaning, please provide more details!"
+
+#: inc/block-patterns.php:150
+msgid "Talks"
+msgstr "Talks\" in Korean can be translated as \"대화\" or \"토크\". The appropriate translation may depend on the context in which it is used."
+
+#: inc/block-patterns.php:145
+msgid "Aenean euismod elementum II, 2020"
+msgstr ""
+"Aenean euismod elementum II, 2020\" can be translated to Korean as:\n"
+"\n"
+"\"아에넨 유이스모드 엘리먼트 II, 2020"
+
+#: inc/block-patterns.php:145
+msgid "Blandit. Id ornare arcu odio ut, 2018"
+msgstr "밴딧. 아이드 오르나레 아르쿠 오디오 우트, 2018"
+
+#: inc/block-patterns.php:145
+msgid "At quis risus sed vulputate odio ut enim, 2015"
+msgstr ""
+"At quis risus sed vulputate odio ut enim, 2015\" can be translated to Korean as:\n"
+"\n"
+"\"At quis risus sed vulputate odio ut enim, 2015\" (This text appears to be a placeholder or nonsensical text, often used in design and does not have a direct translation.) \n"
+"\n"
+"If you need a specific context or meaning, please provide more details!"
+
+#: inc/block-patterns.php:145
+msgid "Etiam tempor orci eu lobortis, 2009"
+msgstr ""
+"Etiam tempor orci eu lobortis, 2009\" can be translated to Korean as:\n"
+"\n"
+"\"에티암 템포르 오르치 유 로보르티스, 2009\" \n"
+"\n"
+"(Note: The original text appears to be in Latin and may not have a direct meaning in Korean. The translation provided is a transliteration of the Latin text.)"
+
+#: inc/block-patterns.php:145
+msgid "Lectus quam id leo in vitae turpis, 2006"
+msgstr ""
+"Lectus quam id leo in vitae turpis, 2006\" can be translated to Korean as:\n"
+"\n"
+"\"레크투스 캄 아이드 레오 인 비타에 투르피스, 2006\" \n"
+"\n"
+"(Note: The original text appears to be a mix of Latin and a year, so the translation retains the original terms.)"
+
+#: inc/block-patterns.php:145
+msgid "Nisi quis eleifend, 1999"
+msgstr ""
+"Nisi quis eleifend, 1999\" can be translated to Korean as:\n"
+"\n"
+"\"니시 퀴스 엘레펜드, 1999\" \n"
+"\n"
+"(Note: The phrase appears to be in Latin and may not have a direct meaning in Korean. The translation provided is a phonetic representation of the original text.)"
+
+#: inc/block-patterns.php:145
+msgid "Aenean euismod elementum, 1999"
+msgstr ""
+"Aenean euismod elementum, 1999\" can be translated to Korean as:\n"
+"\n"
+"\"아에넨 유이스모드 엘리먼트, 1999\" \n"
+"\n"
+"(Note: This text appears to be a placeholder or a Latin phrase commonly used in design and may not have a direct meaning in Korean.)"
+
+#: inc/block-patterns.php:142
+msgid "Books"
+msgstr "책"
+
+#: inc/block-patterns.php:136
+msgid "Two Columns of Lists"
+msgstr "두 개의 목록 열"
+
+#: inc/block-patterns.php:125
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus. Feugiat nisl pretium fusce id velit. Cursus risus at ultrices mi. Pellentesque nec nam aliquam sem et tortor consequat. Est lorem ipsum dolor sit amet consectetur adipiscing. Nisi porta lorem mollis aliquam. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Viverra vitae congue eu consequat."
+msgstr "로렘 입숨 돌로르 시트 아메트, 컨섹테투르 아디피싱 엘리트, 세드 도 이우스모드 템포르 인시디돈트 우트 라보르 에트 돌로레 마그나 알리쿠아. 눌라 포르티토르 마사 이드 네크 알리쿰 베스티불룸 모르비 블란딧 커르수스. 페귀트 니슬 프레티움 푸스케 이드 벨리트. 커르수스 리수스 앳 울트리체스 미. 펠렌테스케 넥 남 알리쿰 세므 에트 토르토르 콘세콰트. 에스트 로렘 입숨 돌로르 시트 아메트 컨섹테투르 아디피싱. 니시 포르타 로렘 몰리스 알리쿰. 아에넌 유이스모드 엘리멘툼 니시 퀴스 엘레펜드 퀸 아디피싱 비타에 프로인. 말레수아다 비벤덤 아르쿠 비타에 엘리멘트 커라비투르 비타에 넌크 세드. 퀴스 헨드레리트 돌로르 마그나 에겟 에스트 로렘 입숨 돌로르 시트. 비베라 비타에 콩구에 유 콘세콰트."
+
+#: inc/block-patterns.php:125
+msgid "This is a paragraph to tell about yourself."
+msgstr "이것은 자신에 대해 이야기하는 단락입니다."
+
+#: inc/block-patterns.php:112 inc/block-patterns.php:116
+msgid "About Me"
+msgstr "내 소개"
+
+#: inc/block-patterns.php:101
+msgid "Follow"
+msgstr "팔로우"
+
+#: inc/block-patterns.php:97
+msgid "Join 1,729 other followers"
+msgstr "1,729명의 다른 팔로워와 함께하세요"
+
+#: inc/block-patterns.php:94
+msgid "Click to subscribe to this blog and receive notifications of new posts by email."
+msgstr "이 블로그를 구독하고 새로운 게시물에 대한 알림을 이메일로 받으려면 클릭하세요."
+
+#: inc/block-patterns.php:91
+msgid "Get In Touch"
+msgstr "연락하기"
+
+#: inc/block-patterns.php:86
+msgid "Follow Blog"
+msgstr "블로그 팔로우"
+
+#: inc/block-patterns.php:75
+msgid "Henri Matisse"
+msgstr "앙리 마티스"
+
+#: inc/block-patterns.php:75
+msgid "\"There are always flowers for those who want to see them.\""
+msgstr "꽃을 보고 싶어하는 사람에게는 항상 꽃이 있다."
+
+#: inc/block-patterns.php:61
+msgid "Inline Quote"
+msgstr "인라인 인용"
+
+#: inc/block-patterns.php:50
+msgid "Aenean euismod elementum nisi quis eleifend. Lectus quam id leo in vitae turpis. Etiam tempor orci eu lobortis elementum nibh. At quis risus sed vulputate odio ut enim blandit. Id ornare arcu odio ut. Blandit massa enim nec dui nunc mattis enim ut tellus. Fermentum iaculis eu non diam phasellus vestibulum. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Cursus sit amet dictum sit amet justo donec. At tellus at urna condimentum mattis. Et ligula ullamcorper malesuada proin libero nunc. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Pellentesque diam volutpat commodo sed egestas. Mi proin sed libero enim sed faucibus."
+msgstr "아에넨 유스모드 엘리먼툼 니시 퀴스 엘레펜드. 렉투스 콰므 이드 레오 인 비타에 투르피스. 에티암 템포르 오르치 유 로보르티스 엘리먼트 움 니브. 앳 퀴스 리수스 세드 불푸테 오디오 우트 에님 블란딧. 이드 오르나레 아르쿠 오디오 우트. 블란딧 마사 에님 넥 두이 눈크 마티스 에님 우트 텔루스. 페르멘툼 이아쿨리스 유 논 디암 파셀루스 베스티부룸. 마그나 페르멘툼 이아쿨리스 유 논 디암 파셀루스 베스티부룸 로렘. 울람코르퍼 벨리트 세드 울람코르퍼 모르비 틴칸투드 오르나레 마사. 커스루스 시트 아멧 딕텀 시트 아멧 주스토 도넥. 앳 텔루스 앳 우르나 콘딘멘툼 마티스. 엣 리굴라 울람코르퍼 말레사두 프로인 리베로 눈크. 입숨 돌로르 시트 아멧 콘세크투르 아드리피스킹 엘리트 두이스 트리스티크 솔리시투딘. 펠렌테스케 디암 볼루파트 코모도 세드 에게스타스. 미 프로인 세드 리베로 에님 세드 파우시부스."
+
+#: inc/block-patterns.php:45 inc/block-patterns.php:67
+msgid "This is just an example post to showcase the featured post section on the showcase page. Who doesn&#8217;t like flowers? I like flowers. Nullam hendrerit enim nunc. Vestibulum eget nulla magna! Fusce lobortis neque eu neque egestas tincidunt. Duis elementum consequat lorem, in eleifend justo mollis at. Nam quis adipiscing magna. Duis adipiscing est ac nibh feugiat rhoncus. Donec non lorem felis, eget commodo purus."
+msgstr "이것은 쇼케이스 페이지의 추천 글 섹션을 보여주기 위한 예시 글입니다. 누가 꽃을 싫어하겠어요? 저는 꽃을 좋아합니다. Nullam hendrerit enim nunc. Vestibulum eget nulla magna! Fusce lobortis neque eu neque egestas tincidunt. Duis elementum consequat lorem, in eleifend justo mollis at. Nam quis adipiscing magna. Duis adipiscing est ac nibh feugiat rhoncus. Donec non lorem felis, eget commodo purus."
+
+#: inc/block-patterns.php:37
+msgid "A Bowl Full of&nbsp;Flowers"
+msgstr "꽃이 가득한 그릇"
+
+#: inc/block-patterns.php:33
+msgid "Image and Text Columns"
+msgstr "이미지 및 텍스트 열"
+
+#: functions.php:794
+msgid "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
+msgstr "당신의 댓글은 승인 대기 중입니다. 이것은 미리보기입니다; 당신의 댓글은 승인된 후에 볼 수 있습니다."
+
+#. translators: %s: The post title.
+#: comments.php:37
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "%1$s에 대한 한 가지 생각"
+
+#: functions.php:134
+msgid "White"
+msgstr "White\" in Korean is \"흰색\" (pronounced: huin-saek)."
+
+#: functions.php:129
+msgid "Light Gray"
+msgstr "연한 회색"
+
+#: functions.php:124
+msgid "Medium Gray"
+msgstr "중간 회색"
+
+#: functions.php:119
+msgid "Dark Gray"
+msgstr "다크 그레이"
+
+#: functions.php:114
+msgid "Black"
+msgstr "검정"
+
+#: functions.php:109
+msgid "Blue"
+msgstr "파란색"
+
+#. Template Name of the theme
+msgid "Sidebar Template"
+msgstr "사이드바 템플릿"
+
+#. Template Name of the theme
+msgid "Showcase Template"
+msgstr "쇼케이스 템플릿"
+
+#. translators: %s: Tag title.
+#: tag.php:21
+msgid "Tag Archives: %s"
+msgstr "태그 보관물: %s"
+
+#: single.php:23
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "다음 <span class=\"meta-nav\">&rarr;</span>"
+
+#: single.php:22
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> 이전"
+
+#: sidebar.php:26
+msgid "Meta"
+msgstr "그 밖의 기능"
+
+#: sidebar.php:19
+msgid "Archives"
+msgstr "글 보관함"
+
+#: showcase.php:185
+msgid "Recent Posts"
+msgstr "최근 글"
+
+#. translators: %s: Post title.
+#: showcase.php:173
+msgid "Featuring: %s"
+msgstr "추천: %s"
+
+#: showcase.php:92
+msgid "Featured Post"
+msgstr "특성 글"
+
+#: searchform.php:11 searchform.php:12 searchform.php:13
+msgid "Search"
+msgstr "검색"
+
+#: search.php:56
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "죄송합니다. 입력한 검색어에 해당하는 항목이 없습니다. 다른 키워드로 바꿔서 시도해보세요."
+
+#. translators: %s: Search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "검색 결과 : %s"
+
+#: inc/widgets.php:199
+msgid "Number of posts to show:"
+msgstr "보여줄 글의 수:"
+
+#: inc/widgets.php:196
+msgid "Title:"
+msgstr "타이틀:"
+
+#: inc/widgets.php:119 inc/widgets.php:128
+msgid "% <span class=\"reply\">comments &rarr;</span>"
+msgstr "% 개의<span class=\"reply\"> 댓글 &rarr;</span>"
+
+#: inc/widgets.php:119 inc/widgets.php:128
+msgid "1 <span class=\"reply\">comment &rarr;</span>"
+msgstr "1 개의<span class=\"reply\"> 댓글 &rarr;</span>"
+
+#: inc/widgets.php:119 inc/widgets.php:128
+msgid "0 <span class=\"reply\">comments &rarr;</span>"
+msgstr "0 개의<span class=\"reply\"> 댓글 &rarr;</span>"
+
+#: inc/widgets.php:74
+msgid "Ephemera"
+msgstr "하루살이"
+
+#: inc/widgets.php:23
+msgid "Twenty Eleven Ephemera"
+msgstr "Twenty Eleven 하루살이"
+
+#: inc/widgets.php:26
+msgid "Use this widget to list your recent Aside, Status, Quote, and Link posts"
+msgstr "이 위젯을 사용해서 최근 추가 정보, 상태, 인용, 그리고 링크 글을 나열하세요"
+
+#: inc/theme-options.php:611
+msgid "Layout"
+msgstr "레이아웃"
+
+#. translators: %s: Theme name.
+#: inc/theme-options.php:348
+msgid "%s Theme Options"
+msgstr "%s 테마 옵션"
+
+#. translators: %s: Link color.
+#: inc/theme-options.php:308
+msgid "Default color: %s"
+msgstr "기본 색상: %s"
+
+#: inc/theme-options.php:302
+msgid "Select a Color"
+msgstr "색상 선택"
+
+#: inc/theme-options.php:193
+msgid "One-column, no sidebar"
+msgstr "1개의 열, 사이드바 없음"
+
+#: inc/theme-options.php:188
+msgid "Content on right"
+msgstr "컨텐츠 우측 배열"
+
+#: inc/theme-options.php:183
+msgid "Content on left"
+msgstr "컨텐츠 좌측 배열"
+
+#: inc/theme-options.php:158
+msgid "Dark"
+msgstr "검정"
+
+#: inc/theme-options.php:152
+msgid "Light"
+msgstr "라이트"
+
+#: inc/theme-options.php:130
+msgid "Overview"
+msgstr "개요"
+
+#: inc/theme-options.php:122
+msgid "<a href=\"https://wordpress.org/support/forums/\" target=\"_blank\">Support forums</a>"
+msgstr "<a href=\"https://wordpress.org/support/forums/\" target=\"_blank\">지원 포럼</a>"
+
+#: inc/theme-options.php:120
+msgid "For more information:"
+msgstr "추가 정보:"
+
+#: inc/theme-options.php:118
+msgid "Remember to click \"Save Changes\" to save any changes you have made to the theme options."
+msgstr "어떤 테마 옵션의 변경사항도 저장하기 위해서는 \"변경사항 저장\" 클릭을 잊지 마세요."
+
+#: inc/theme-options.php:116
+msgid "<strong>Default Layout</strong>: You can choose if you want your site&#8217;s default layout to have a sidebar on the left, the right, or not at all."
+msgstr "<strong>기본 레이아웃</strong>: 사이트의 기본 레이아웃에 사이드바의 위치(좌나 우) 또는 아예 없음을 선택할 수 있습니다."
+
+#: inc/theme-options.php:115
+msgid "<strong>Link Color</strong>: You can choose the color used for text links on your site. You can enter the HTML color or hex code, or you can choose visually by clicking the \"Select a Color\" button to pick from a color wheel."
+msgstr "<strong>링크 색상</strong>: 사이트를 위해 텍스트 링크의 색상을 선택할 수 있습니다. HTML 색상 또는 HEX 코드를 입력하거나 \"색상 선택\" 버튼 클릭을 통해 선택할 수 있습니다."
+
+#: inc/theme-options.php:114
+msgid "<strong>Color Scheme</strong>: You can choose a color palette of \"Light\" (light background with dark text) or \"Dark\" (dark background with light text) for your site."
+msgstr "<strong>색상표</strong>: 사이트를 \"밝음\" (밝은 배경의 어두운 텍스트) 또는 \"어둠\" (어두운 배경의 밝은 텍스트) 의 색상을 선택할 수 있습니다."
+
+#: inc/theme-options.php:112
+msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, Twenty Eleven, provides the following Theme Options:"
+msgstr "일부 테마들은 테마 옵션 화면에  사용자 정의 옵션을 함께 그룹화시켜서 제공합니다. 만약 테마를 변경한다면, 옵션은 변경되거나 그 테마에 맞춤형인 것은 사라집니다. 현재 테마인 2011은 다음 테마 옵션을 제공합니다:"
+
+#: inc/theme-options.php:95 inc/theme-options.php:96
+msgid "Theme Options"
+msgstr "테마 옵션"
+
+#: inc/theme-options.php:63
+msgid "Default Layout"
+msgstr "기본 레이아웃"
+
+#: inc/theme-options.php:62 inc/theme-options.php:600
+msgid "Link Color"
+msgstr "링크 색상"
+
+#: inc/theme-options.php:56 inc/theme-options.php:575
+msgid "Color Scheme"
+msgstr "색상표"
+
+#. translators: 1: Time, 2: Date, 3: Image permalink, 4: Image width, 5: Image
+#. height, 6: Parent permalink, 7: Parent post title, 8: Parent post title.
+#: image.php:35
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Go to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "<a href=\"%6$s\" title=\"%7$s로 돌아가기\" rel=\"gallery\">%8$s</a>의 <a href=\"%3$s\" title=\"전체 사이즈 이미지로 링크\">%4$s &times; %5$s</a>에 <span class=\"meta-prep meta-prep-entry-date\">발행했습니다 </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span>"
+
+#: image.php:23
+msgid "Next &rarr;"
+msgstr "다음 &rarr;"
+
+#: image.php:22
+msgid "&larr; Previous"
+msgstr "&larr; 이전"
+
+#: image.php:21
+msgid "Image navigation"
+msgstr "이미지 네비게이션"
+
+#: functions.php:967
+msgid "Skip to secondary content"
+msgstr "두번째 컨텐츠로 뛰어넘기"
+
+#: functions.php:965
+msgid "Skip to primary content"
+msgstr "첫번째 컨텐츠로 뛰어넘기"
+
+#: header.php:139
+msgid "Main menu"
+msgstr "메인 메뉴"
+
+#. translators: %s: Page number.
+#: header.php:46
+msgid "Page %s"
+msgstr "페이지 %s"
+
+#. translators: 1: The permalink, 2: Time, 3: Date and time, 4: Date and time,
+#. 5: Author posts, 6: Author post link text, 7: Author display name.
+#: functions.php:840
+msgid "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "<span class=\"sep\">작성일자 </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> 글쓴이 </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: functions.php:813
+msgid "Reply <span>&darr;</span>"
+msgstr "댓글달기 <span>&darr;</span>"
+
+#: functions.php:792
+msgid "Your comment is awaiting moderation."
+msgstr "입력하신 댓글은 검토를 기다리고 있습니다."
+
+#. translators: 1: Date, 2: Time.
+#: functions.php:781
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+#. translators: 1: Comment author, 2: Date and time.
+#: functions.php:774
+msgid "%1$s on %2$s <span class=\"says\">said:</span>"
+msgstr "%2$s에 작성된 %1$s <span class=\"says\">님의 말:</span>"
+
+#: functions.php:754
+msgid "Pingback:"
+msgstr "핑백:"
+
+#: functions.php:649
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "다음 글 <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:648
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span>이전 글"
+
+#: functions.php:647 single.php:21
+msgid "Post navigation"
+msgstr "글 네비게이션"
+
+#: functions.php:621
+msgid "Footer Area Three"
+msgstr "푸터 영역 3"
+
+#: functions.php:609
+msgid "Footer Area Two"
+msgstr "푸터 영역 2"
+
+#: functions.php:599 functions.php:611 functions.php:623
+msgid "An optional widget area for your site footer"
+msgstr "사이트 푸터를 위한 추가적인 위젯 영역"
+
+#: functions.php:597
+msgid "Footer Area One"
+msgstr "푸터 영역 1"
+
+#: functions.php:587
+msgid "The sidebar for the optional Showcase Template"
+msgstr "추가적인 쇼케이스 템플릿을 위한 사이드바"
+
+#: functions.php:585
+msgid "Showcase Sidebar"
+msgstr "쇼케이스 사이드바"
+
+#: functions.php:574
+msgid "Main Sidebar"
+msgstr "메인 사이드바"
+
+#. translators: Header image description.
+#: functions.php:290
+msgid "Hanoi Plant"
+msgstr "하노이 공장"
+
+#. translators: Header image description.
+#: functions.php:284
+msgid "Willow"
+msgstr "버드나무"
+
+#. translators: Header image description.
+#: functions.php:278
+msgid "Lanterns"
+msgstr "초롱"
+
+#. translators: Header image description.
+#: functions.php:272
+msgid "Chessboard"
+msgstr "체스판"
+
+#. translators: Header image description.
+#: functions.php:266
+msgid "Pine Cone"
+msgstr "솔방울"
+
+#. translators: Header image description.
+#: functions.php:260
+msgid "Trolley"
+msgstr "손수레"
+
+#. translators: Header image description.
+#: functions.php:254
+msgid "Shore"
+msgstr "물가"
+
+#. translators: Header image description.
+#: functions.php:248
+msgid "Wheel"
+msgstr "바퀴"
+
+#: functions.php:154
+msgid "Primary Menu"
+msgstr "주 메뉴"
+
+#. translators: %s: WordPress
+#: footer.php:37
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: footer.php:34
+msgid "Semantic Personal Publishing Platform"
+msgstr "Semantic 개인 출판 플랫폼"
+
+#: content.php:16
+msgid "Featured"
+msgstr "추천"
+
+#: content-status.php:19
+msgid "Status"
+msgstr "상태"
+
+#. translators: %s: Author name.
+#: content-single.php:88
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "모든 글 보기 by %s <span class=\"meta-nav\">&rarr;</span>"
+
+#. translators: 1: Categories list, 2: Tag list, 3: Permalink, 4: Post title,
+#. 5: Author name, 6: Author URL.
+#: content-single.php:48
+msgid "This entry was posted by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "이 글은 <a href=\"%6$s\">%5$s</a>님에 의해 작성되었습니다. <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">고유주소</a> 북마크."
+
+#. translators: 1: Categories list, 2: Tag list, 3: Permalink, 4: Post title,
+#. 5: Author name, 6: Author URL.
+#: content-single.php:45
+msgid "This entry was posted in %1$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "이 글은 %1$s 카테고리에 분류되었고 <a href=\"%6$s\">%5$s</a>님에 의해 작성되었습니다. <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">고유주소</a> 북마크."
+
+#. translators: 1: Categories list, 2: Tag list, 3: Permalink, 4: Post title,
+#. 5: Author name, 6: Author URL.
+#: content-single.php:42
+msgid "This entry was posted in %1$s and tagged %2$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "이 글은 %1$s 카테고리에 분류되었고 %2$s 태그가 있으며 <a href=\"%6$s\">%5$s</a>님에 의해 작성되었습니다. <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">고유주소</a> 북마크."
+
+#: content-quote.php:15
+msgid "Quote"
+msgstr "인용"
+
+#: content-link.php:19
+msgid "Link"
+msgstr "링크"
+
+#. translators: %s: Author display name.
+#: content-image.php:51 functions.php:847
+msgid "View all posts by %s"
+msgstr "%s 의 모든 글 보기"
+
+#. translators: 1: The permalink, 2: Date and time, 3: Date and time, 4: Author
+#. link, 5: Author link title, 6: Author display name.
+#: content-image.php:45
+msgid "<a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%2$s\">%3$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
+msgstr "<a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%2$s\">%3$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
+
+#: content-image.php:18
+msgid "Image"
+msgstr "이미지"
+
+#. translators: 1: CSS classes, 2: List of tags.
+#. translators: 1: CSS classes, 2: Tag list.
+#: content-gallery.php:99 content-image.php:78 content-quote.php:75
+#: content.php:84
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">태그:</span> %2$s"
+
+#. translators: 1: CSS classes, 2: List of categories.
+#. translators: 1: CSS classes, 2: Category list.
+#: content-gallery.php:82 content-image.php:65 content-quote.php:58
+#: content.php:65
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">카테고리:</span> %2$s"
+
+#. translators: %s: Post title.
+#: content-gallery.php:52 showcase.php:138
+msgid "Permalink to %s"
+msgstr "%s의 고유주소"
+
+#. translators: 1: Link attributes, 2: Number of photos.
+#: content-gallery.php:50
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "갤러리는 <a %1$s>%2$s개의 사진</a>을 포함하고 있습니다."
+
+#: content-gallery.php:19
+msgid "Gallery"
+msgstr "갤러리"
+
+#. translators: 1: Category list, 3: Post permalink, 4: Post title.
+#: content-featured.php:42
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "이 글은 카테고리: %1$s에 포함되어 있습니다. <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">고유주소</a>를 북마크하세요."
+
+#. translators: 1: Category list, 2: Tag list, 3: Post permalink, 4: Post
+#. title.
+#: content-featured.php:39
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "이 글은 카테고리: %1$s에 포함되어 있으며 태그: %2$s (이)가 사용되었습니다. <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">고유주소</a>를 북마크하세요."
+
+#. translators: Used between list items, there is a space after the comma.
+#: functions.php:982
+msgid ", "
+msgstr ", "
+
+#: content-aside.php:53 content-featured.php:54 content-gallery.php:112
+#: content-image.php:88 content-intro.php:26 content-link.php:53
+#: content-page.php:28 content-quote.php:88 content-single.php:62
+#: content-status.php:66 content.php:98 functions.php:754 functions.php:786
+#: image.php:46
+msgid "Edit"
+msgstr "편집"
+
+#: content-aside.php:51 content-gallery.php:109 content-image.php:84
+#: content-link.php:51 content-quote.php:85 content-status.php:64
+#: content.php:95 showcase.php:229
+msgid "<b>%</b> Replies"
+msgstr "<b>%</b>개의 댓글"
+
+#: content-aside.php:51 content-gallery.php:109 content-image.php:84
+#: content-link.php:51 content-quote.php:85 content-status.php:64
+#: content.php:95 showcase.php:229
+msgid "<b>1</b> Reply"
+msgstr "<b>1</b>개의 댓글"
+
+#: content-aside.php:51 content-gallery.php:109 content-image.php:84
+#: content-link.php:51 content-quote.php:85 content-status.php:64
+#: content.php:95 showcase.php:229
+msgid "Leave a reply"
+msgstr "댓글 남기기"
+
+#: content-aside.php:39 content-featured.php:26 content-gallery.php:63
+#: content-image.php:33 content-intro.php:21 content-link.php:39
+#: content-page.php:21 content-quote.php:39 content-single.php:27
+#: content-status.php:52 content.php:45 image.php:123
+msgid "Pages:"
+msgstr "페이지:"
+
+#: content-aside.php:35 content-gallery.php:34 content-image.php:29
+#: content-link.php:35 content-quote.php:35 content-status.php:48
+#: content.php:41 functions.php:501
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "계속 읽기 <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-aside.php:24 content-image.php:23 content-link.php:24
+#: content-quote.php:24 content-status.php:24 content.php:30
+msgctxt "comments number"
+msgid "%"
+msgstr "%"
+
+#: content-aside.php:24 content-image.php:23 content-link.php:24
+#: content-quote.php:24 content-status.php:24 content.php:30
+msgctxt "comments number"
+msgid "1"
+msgstr "1"
+
+#: content-aside.php:24 content-image.php:23 content-link.php:24
+#: content-quote.php:24 content-status.php:24 content.php:30
+msgid "Reply"
+msgstr "응답"
+
+#: content-aside.php:19
+msgid "Aside"
+msgstr "추가 정보"
+
+#: comments.php:87
+msgid "Comments are closed."
+msgstr "댓글은 닫혔습니다."
+
+#: comments.php:55 comments.php:76
+msgid "Newer Comments &rarr;"
+msgstr "새 댓글 &rarr;"
+
+#: comments.php:54 comments.php:75
+msgid "&larr; Older Comments"
+msgstr "&larr; 이전 댓글"
+
+#: comments.php:53 comments.php:74
+msgid "Comment navigation"
+msgstr "댓글 네비게이션"
+
+#. translators: 1: The number of comments, 2: The post title.
+#: comments.php:43
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo;에 대한 %1$s개의 생각"
+
+#: comments.php:17
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "이 글은 비밀글입니다. 댓글을 보기 위해 비밀번호를 입력하세요."
+
+#. translators: %s: Category title.
+#: category.php:21
+msgid "Category Archives: %s"
+msgstr "카테고리 보관물: %s"
+
+#. translators: Author display name.
+#. translators: %s: Author name.
+#: author.php:70 content-single.php:80
+msgid "About %s"
+msgstr "%s에 대하여"
+
+#. translators: %s: Author display name.
+#: author.php:32
+msgid "Author Archives: %s"
+msgstr "글쓴이 보관물: %s"
+
+#: archive.php:71 author.php:106 category.php:70 index.php:44 tag.php:70
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "죄송합니다, 하지만 요청하신 보관물을 찾을 수 없습니다. 검색이 관련된 글을 찾는데 도움이 될 수도 있습니다."
+
+#: archive.php:67 author.php:102 category.php:66 index.php:40 search.php:52
+#: tag.php:66
+msgid "Nothing Found"
+msgstr "찾지 못함"
+
+#: archive.php:35
+msgid "Blog Archives"
+msgstr "블로그 보관물"
+
+#. translators: %s: Date.
+#: archive.php:33
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#. translators: %s: Date.
+#: archive.php:33
+msgid "Yearly Archives: %s"
+msgstr "년도별 글 목록: %s"
+
+#. translators: %s: Date.
+#: archive.php:30
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y년 M월"
+
+#. translators: %s: Date.
+#: archive.php:30
+msgid "Monthly Archives: %s"
+msgstr "월별 글 목록: %s"
+
+#. translators: %s: Date.
+#: archive.php:27
+msgid "Daily Archives: %s"
+msgstr "날짜별 글 목록: %s"
+
+#. translators: %s: Smilie.
+#: 404.php:46
+msgid "Try looking in the monthly archives. %s"
+msgstr "월간 아카이브에서 찾아보세요. %s"
+
+#: 404.php:28
+msgid "Most Used Categories"
+msgstr "가장 많이 사용된 카테고리"
+
+#: 404.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "찾고 있는 것을 찾지 못하는 것 같습니다. 아마도 검색을 통해서나 또는 아래의 링크 중 하나를 통해 도움을 얻을 수 있습니다."
+
+#: 404.php:17
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "이건 다소 당황스럽네요, 그렇지 않나요?"
+
+#. Author URI of the theme
+#: style.css footer.php:34
+#, gp-priority: low
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "the WordPress team"
+msgstr "워드프레스 팀"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://wordpress.org/themes/twentyeleven/"
+msgstr "https://wordpress.org/themes/twentyeleven/"

@@ -1,0 +1,2 @@
+<?php
+return ['project-id-version'=>'WP Frontend Admin 1.22.2-beta.1','report-msgid-bugs-to'=>'https://wordpress.org/support/plugin/wp-frontend-admin','last-translator'=>'','language-team'=>'French (France)','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','pot-creation-date'=>'2024-07-04T01:52:29+00:00','po-revision-date'=>'2025-06-16 12:01+0000','x-generator'=>'Loco https://localise.biz/','language'=>'fr_FR','plural-forms'=>'nplurals=2; plural=n > 1;','x-loco-version'=>'2.8.0; wp-6.7.2; php-8.3.19','messages'=>[]];

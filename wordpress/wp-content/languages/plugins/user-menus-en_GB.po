@@ -1,0 +1,247 @@
+# Copyright (C) 2023 user-menus
+# This file is distributed under the same license as the user-menus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: User Menus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: English (UK)\n"
+"POT-Creation-Date: 2023-07-19 07:48+0000\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/user-menus/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
+"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"PO-Revision-Date: 2025-06-23 21:37+0000\n"
+"Last-Translator: \n"
+"Language: en_GB\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.7.2; php-8.3.19"
+
+#: includes/classes/admin/reviews.php:244
+msgid "2 weeks"
+msgstr "2 weeks"
+
+#: includes/classes/admin/reviews.php:252
+msgid "3 months"
+msgstr "3 months"
+
+#: includes/classes/importer/menu.php:123
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+
+#: includes/classes/admin/menu-editor.php:167
+msgid "Add to Menu"
+msgstr "Add to Menu"
+
+#: includes/classes/importer/menu.php:294
+msgid "All done."
+msgstr "All done."
+
+#: includes/classes/user/codes.php:26
+msgid "Avatar"
+msgstr "Avatar"
+
+#: includes/classes/admin/menu-settings.php:46
+msgid "Avatar Size"
+msgstr "Avatar Size"
+
+#: includes/classes/importer/menu.php:134
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Choose a WXR (.xml) file to upload, then click Upload file and import."
+
+#: includes/classes/admin/menu-settings.php:147
+msgid "Choose which roles can see this link"
+msgstr "Choose which roles can see this link"
+
+#: includes/classes/admin/menu-settings.php:154
+msgid "Choose which roles won't see this link"
+msgstr "Choose which roles won't see this link"
+
+#: includes/classes/admin/menu-settings.php:65
+msgid "Current Page"
+msgstr "Current Page"
+
+#: includes/classes/admin/menu-settings.php:67
+msgid "Custom URL"
+msgstr "Custom URL"
+
+#: includes/classes/user/codes.php:30
+msgid "Display Name"
+msgstr "Display Name"
+
+#: includes/classes/user/codes.php:32
+msgid "Email"
+msgstr "Email"
+
+#: includes/classes/admin/menu-settings.php:93
+msgid "Enter a url user should be redirected to"
+msgstr "Enter a url user should be redirected to"
+
+#: includes/classes/admin/menu-settings.php:58
+msgid "Everyone"
+msgstr "Everyone"
+
+#: includes/classes/user/codes.php:27
+msgid "First Name"
+msgstr "First Name"
+
+#: includes/classes/importer/menu.php:294
+msgid "Have fun!"
+msgstr "Have fun!"
+
+#: includes/classes/admin/reviews.php:239
+msgid ""
+"Hi there! You've been using the User Menus plugin on your site for %s now - "
+"We hope it's been helpful. If you're enjoying the plugin, would you mind "
+"rating it 5-stars to help spread the word?"
+msgstr ""
+"Hi there! You've been using the User Menus plugin on your site for %s now - "
+"We hope it's been helpful. If you're enjoying the plugin, would you mind "
+"rating it 5-stars to help spread the word?"
+
+#: includes/classes/admin/menu-settings.php:66
+msgid "Home Page"
+msgstr "Home Page"
+
+#: includes/classes/admin/reviews.php:408
+msgid "I already did"
+msgstr "I already did"
+
+#: includes/classes/importer/menu.php:116
+msgid "Import Nav Menus"
+msgstr "Import Nav Menus"
+
+#: includes/classes/admin/menu-importer.php:46
+msgid ""
+"Import nav menus and other menu item meta skipped by the default importer"
+msgstr ""
+"Import nav menus and other menu item meta skipped by the default importer"
+
+#: includes/classes/admin/menu-editor.php:203
+msgid "Insert User Menu Codes"
+msgstr "Insert User Menu Codes"
+
+#: includes/classes/user/codes.php:28
+msgid "Last Name"
+msgstr "Last Name"
+
+#: includes/classes/admin/menu-settings.php:60
+msgid "Logged In Users"
+msgstr "Logged In Users"
+
+#: includes/classes/admin/menu-settings.php:59
+msgid "Logged Out Users"
+msgstr "Logged Out Users"
+
+#: includes/classes/admin/menu-editor.php:84
+msgid "Login"
+msgstr "Login"
+
+#: includes/classes/admin/menu-editor.php:92
+msgid "Logout"
+msgstr "Logout"
+
+#: includes/classes/user/codes.php:31
+msgid "Nickname"
+msgstr "Nickname"
+
+#: includes/classes/admin/reviews.php:403
+msgid "Nope, maybe later"
+msgstr "Nope, maybe later"
+
+#: includes/classes/admin/reviews.php:398
+msgid "Ok, you deserve it"
+msgstr "Ok, you deserve it"
+
+#: user-menus.php:238
+msgid "Plugin Activation Error"
+msgstr "Plugin Activation Error"
+
+#: includes/classes/admin/menu-editor.php:88
+msgid "Register"
+msgstr "Register"
+
+#. translators: 1: link to registration page, 2: closing link tag.
+#: includes/classes/admin/menu-editor.php:140
+msgid "Registration is %1$scurrently disabled%2$s on your site."
+msgstr "Registration is %1$scurrently disabled%2$s on your site."
+
+#: includes/classes/admin/menu-editor.php:161
+msgid "Select All"
+msgstr "Select All"
+
+#: includes/classes/importer/menu.php:154,
+#: includes/classes/importer/menu.php:149,
+#: includes/classes/importer/menu.php:164,
+#: includes/classes/importer/menu.php:225,
+#: includes/classes/importer/menu.php:236
+msgid "Sorry, there has been an error."
+msgstr "Sorry, there has been an error."
+
+#. translators: 1: Plugin Name, 2: Flagged software (PHP or WP), 3: PHP or WordPress version
+#: user-menus.php:235
+msgid "The %4$s %1$s %5$s plugin requires %2$s version %3$s or greater."
+msgstr "The %4$s %1$s %5$s plugin requires %2$s version %3$s or greater."
+
+#: includes/classes/importer/menu.php:155
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+
+#: includes/classes/importer/menu.php:226
+msgid "The file does not exist, please try again."
+msgstr "The file does not exist, please try again."
+
+#: includes/classes/importer/menu.php:173
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+
+#: includes/classes/importer/menu.php:133
+msgid ""
+"Upload your WordPress export (WXR) file and import the Nav Menus and any "
+"meta for the Nav Menu items."
+msgstr ""
+"Upload your WordPress export (WXR) file and import the Nav Menus and any "
+"meta for the Nav Menu items."
+
+#: includes/classes/menu/items.php:51
+msgid "User Link"
+msgstr "User Link"
+
+#: includes/classes/admin/menu-editor.php:70
+msgid "User Links"
+msgstr "User Links"
+
+#: includes/classes/user/codes.php:29
+msgid "Username"
+msgstr "Username"
+
+#: includes/classes/admin/menu-settings.php:75
+msgid "Where should users be taken afterwards?"
+msgstr "Where should users be taken afterwards?"
+
+#: includes/classes/admin/menu-settings.php:129,
+#: includes/classes/admin/menu-settings.php:105
+msgid "Who can see this link?"
+msgstr "Who can see this link?"
+
+#: includes/classes/admin/menu-importer.php:45
+msgid "WP Nav Menus"
+msgstr "WP Nav Menus"

@@ -1,0 +1,36 @@
+# wp-content baking strategy:
+# - Bake plugins/, themes/, languages/, mu-plugins/, jti-custom/, litespeed/, jetpack-waf/
+# - Exclude user uploads (mounted from Azure Files at runtime)
+# - Exclude runtime/cache directories that shouldn't ship in the image
+wordpress/wp-content/uploads
+wordpress/wp-content/uploads2
+wordpress/wp-content/updraft
+wordpress/wp-content/plugins-old
+wordpress/wp-content/upgrade
+wordpress/wp-content/upgrade-temp-backup
+# Dev workspace for jti-custom (the active plugin lives at plugins/jti-custom/)
+wordpress/wp-content/jti-custom
+wordpress/wp-content/debug.log
+wordpress/wp-content/**/*.log
+wordpress/wp-content/**/.DS_Store
+
+# Other things that shouldn't be in the build context
+.git
+.DS_Store
+*.sql
+*.zip
+*.tar
+*.tar.gz
+docker-compose.yml
+.env
+.env.example
+REVERT-PERF-EXPERIMENT.md
+
+# Backup/scratch files — must not be baked into the image
+wordpress/**/*.old
+wordpress/**/*.bk
+wordpress/**/*_bk_before_*
+wordpress/wp-config.php.old
+wordpress/.htaccess.bk
+wordpress/.htaccess_bk_before_multisite
+wordpress/dcbf3b82baf921901d2c93b269508e88.txt

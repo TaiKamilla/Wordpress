@@ -1,0 +1,77 @@
+# Translation of Plugins - User Switching - Stable (latest release) in Portuguese (Portugal)
+# This file is distributed under the same license as the Plugins - User Switching - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-08-13 18:45:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: pt\n"
+"Project-Id-Version: Plugins - User Switching - Stable (latest release)\n"
+
+#: user-switching.php:940
+msgctxt "verb"
+msgid "Sponsor"
+msgstr "Patrocinar"
+
+#. Plugin URI of the plugin
+#: user-switching.php
+msgid "https://wordpress.org/plugins/user-switching/"
+msgstr "https://pt.wordpress.org/plugins/user-switching/"
+
+#. Author of the plugin
+#: user-switching.php
+msgid "John Blackbourn"
+msgstr "John Blackbourn"
+
+#. Description of the plugin
+#: user-switching.php
+msgid "Instant switching between user accounts in WordPress"
+msgstr "Mudança instantânea entre contas de utilizador no WordPress"
+
+#. Plugin Name of the plugin
+#: user-switching.php
+msgid "User Switching"
+msgstr "User Switching"
+
+#. Translators: "switch off" means to temporarily log out
+#: user-switching.php:635
+msgid "Switch Off"
+msgstr "Terminar sessão temporariamente"
+
+#. Translators: 1: user display name; 2: username;
+#: user-switching.php:1076
+msgid "Switched back to %1$s (%2$s)."
+msgstr "Mudou de novo para %1$s (%2$s)."
+
+#. Translators: 1: user display name; 2: username;
+#: user-switching.php:1051
+msgid "Switch back to %1$s (%2$s)"
+msgstr "Voltar para %1$s (%2$s)"
+
+#. Translators: 1: user display name; 2: username;
+#: user-switching.php:1028
+msgid "Switched to %1$s (%2$s)."
+msgstr "Mudou para %1$s (%2$s)."
+
+#. Translators: "switch off" means to temporarily log out
+#: user-switching.php:305 user-switching.php:328
+msgid "Could not switch off."
+msgstr "Não foi possível terminar sessão temporariamente."
+
+#: user-switching.php:184 user-switching.php:194 user-switching.php:252
+#: user-switching.php:261 user-switching.php:266 user-switching.php:296
+msgid "Could not switch users."
+msgstr "Não foi possível mudar de utilizador."
+
+#: user-switching.php:138 user-switching.php:654 user-switching.php:845
+#: user-switching.php:891 user-switching.php:920 user-switching.php:1157
+msgid "Switch&nbsp;To"
+msgstr "Mudar&nbsp;para"
+
+#: user-switching.php:134
+msgctxt "User Switching title on user profile screen"
+msgid "User Switching"
+msgstr "Mudança de utilizador"

@@ -1,0 +1,2174 @@
+# Translation of Plugins - Content Views &#8211; Post Grid &amp; Filter, Recent Posts, Category Posts &#8230; (Shortcode, Blocks, and Elementor Widgets) - Stable (latest release) in Korean
+# This file is distributed under the same license as the Plugins - Content Views &#8211; Post Grid &amp; Filter, Recent Posts, Category Posts &#8230; (Shortcode, Blocks, and Elementor Widgets) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-06-11 05:10:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ko_KR\n"
+"Project-Id-Version: Plugins - Content Views &#8211; Post Grid &amp; Filter, Recent Posts, Category Posts &#8230; (Shortcode, Blocks, and Elementor Widgets) - Stable (latest release)\n"
+
+#: elementor/render.php:256
+msgid "Use it as the VIEW_ID in custom code"
+msgstr "사용자 지정 코드에서 VIEW_ID로 사용합니다."
+
+#: elementor/widget.php:2660
+msgid "Infinite Scroll, and Load More button"
+msgstr "무한 스크롤 및 더 로드 버튼"
+
+#: elementor/widget.php:2400
+msgid "Show custom fields"
+msgstr "사용자 정의 필드 표시"
+
+#: elementor/widget.php:1905
+msgid "Heading"
+msgstr "헤딩"
+
+#: elementor/widget.php:1698
+msgid "(demo)"
+msgstr "(데모)"
+
+#: elementor/widget.php:1347
+msgid "Others Item Columns"
+msgstr "기타 항목 열"
+
+#: elementor/widget.php:1281
+msgid "Hide posts that do not have this taxonomy"
+msgstr "이 분류가 없는 게시물 숨기기"
+
+#: elementor/widget.php:1185
+msgid "Change position of fields (<em>for example: show Title above Image</em>)"
+msgstr "필드 위치 변경(<em>예: 이미지 위에 제목 표시</em>)"
+
+#: elementor/widget.php:953
+msgid "Query by published date"
+msgstr "게시 날짜별 쿼리"
+
+#: elementor/widget.php:918
+msgid "Query by custom fields"
+msgstr "사용자 지정 필드로 쿼리"
+
+#: elementor/widget.php:906
+msgid "Select custom field to query"
+msgstr "쿼리할 사용자 지정 필드 선택"
+
+#: elementor/widget.php:828 block/build/index.js:1
+msgid "It will search in post title, excerpt, content."
+msgstr "글 제목, 발췌문, 콘텐츠로 검색합니다."
+
+#: elementor/widget.php:759
+msgid "Show sort options to visitors"
+msgstr "방문자에게 정렬 옵션 표시"
+
+#: elementor/widget.php:694
+msgid "Sort by custom fields, random order, comment count"
+msgstr "사용자 지정 필드, 임의 순서, 댓글 수로 정렬하기"
+
+#: elementor/widget.php:606 elementor/widget.php:615
+msgid "Type to search by post title"
+msgstr "글 제목으로 검색하려면 입력하세요."
+
+#: elementor/widget.php:594
+msgid "Select parent page to show its children"
+msgstr "자식을 표시할 상위 페이지 선택"
+
+#: elementor/widget.php:582
+msgid "Include/Exclude"
+msgstr "포함/제외"
+
+#: elementor/widget.php:573
+msgid "+ Query by custom taxonomy"
+msgstr "+ 사용자 지정 분류로 쿼리"
+
+#: elementor/widget.php:418
+msgid "Enable pagination to have multiple pages"
+msgstr "여러 페이지로 페이지 매김 사용"
+
+#: elementor/widget.php:375 elementor/widget.php:573 elementor/widget.php:694
+#: elementor/widget.php:918 elementor/widget.php:953 elementor/widget.php:1185
+#: elementor/widget.php:1321 elementor/widget.php:2400
+#: elementor/widget.php:2660
+msgid "get PRO"
+msgstr "프로 받기"
+
+#: elementor/widget.php:375
+msgid "Query custom post type (product, event, etc.) and media file"
+msgstr "사용자 지정 게시물 유형(제품, 이벤트 등) 및 미디어 파일 쿼리하기"
+
+#: elementor/widget.php:279
+msgid "Social Share"
+msgstr "소셜 공유"
+
+#: elementor/widget.php:278
+msgid "Show Advertisement"
+msgstr "광고 보기"
+
+#: elementor/widget.php:269
+msgid "Item"
+msgstr "아이템"
+
+#: elementor/widget.php:239
+msgid "Allow some HTML tags (a, br, strong, em, strike, i, ul, ol, li)"
+msgstr "일부 HTML 태그(a, br, strong, em, strike, i, ul, ol, li)를 허용합니다."
+
+#: elementor/widget.php:238
+msgid "Strip all HTML tags"
+msgstr "모든 HTML 태그 제거"
+
+#: elementor/widget.php:234
+msgid "Ignore manual excerpt"
+msgstr "수동 발췌 무시"
+
+#: elementor/widget.php:222
+msgid "Center"
+msgstr "가운데"
+
+#: elementor/widget.php:139
+msgid "General"
+msgstr "일반"
+
+#: elementor/widget.php:110
+msgid "Fields"
+msgstr "필드"
+
+#: elementor/widget.php:54
+msgid "Get access to advanced filters, frontend search, premium layouts with Content Views Pro"
+msgstr "Content Views 프로로 고급 필터, 프런트엔드 검색, 프리미엄 레이아웃에 액세스하세요."
+
+#: elementor/widget.php:53
+msgid "Unlock All Possibilities"
+msgstr "모든 가능성을 열어보세요"
+
+#: elementor/widget.php:48
+msgid "Please update PRO version to 7.0 to ensure all premium features work as expected"
+msgstr "모든 프리미엄 기능이 정상적으로 작동하려면 프로 버전을 7.0으로 업데이트하세요."
+
+#: elementor/widget.php:47
+msgid "Update PRO version"
+msgstr "프로 버전 업데이트"
+
+#: admin/views/view.php:158
+msgid "Filter custom post type (product, event, etc.) and media file"
+msgstr "사용자 지정 게시물 유형(제품, 이벤트 등) 및 미디어 파일 필터링하기"
+
+#. Description of the plugin
+#: content-views.php
+msgid "Display your posts, pages, custom posts, media files in beautiful Grid, List, Slider, and other layouts easily. With a powerful shortcode feature for the Classic Editor & page builders, 16 blocks & 76+ patterns for the Block Editor, and 16 widgets for the Elementor page builder."
+msgstr "글, 페이지, 맞춤 글, 미디어 파일을 아름다운 그리드, 목록, 슬라이더 및 기타 레이아웃으로 쉽게 표시할 수 있습니다. 클래식 편집기 및 페이지 빌더를 위한 강력한 쇼트코드 기능, 블록 편집기를 위한 16개 블록 및 76개 이상의 패턴, 엘리멘터 페이지 빌더를 위한 16개 위젯을 제공합니다."
+
+#: elementor/widget.php:2623 block/build/index.js:1
+msgid "this document"
+msgstr "이 문서"
+
+#: elementor/widget.php:2623 block/build/index.js:1
+msgid "To define your format, please check"
+msgstr "형식을 정의하려면 다음을 확인하세요."
+
+#: elementor/widget.php:390 block/build/index.js:1
+msgid "Leave empty to include all post types"
+msgstr "모든 글 유형을 포함하려면 비워둡니다."
+
+#: elementor/widget.php:1660 block/build/index.js:1
+msgid "Use rel=\"nofollow\" for item links"
+msgstr "항목 링크에 rel=\"nofollow\" 사용"
+
+#: elementor/widget.php:1923 includes/settings.php:1814 block/build/index.js:1
+msgid "Hide when no posts found"
+msgstr "글이 없을 때 숨기기"
+
+#: includes/settings.php:1773
+msgid "Heading here"
+msgstr "여기 제목"
+
+#: includes/settings.php:1767
+msgid "Text"
+msgstr "텍스트"
+
+#: includes/settings.php:1761
+msgid "Show custom text above the posts"
+msgstr "글 위에 사용자 정의 텍스트 표시"
+
+#: includes/settings.php:1734
+msgid "Heading text"
+msgstr "제목 텍스트"
+
+#: includes/settings.php:1668
+msgid "Show the default image if no thumbnail found"
+msgstr "썸네일이 없는 경우 기본 이미지 표시"
+
+#: includes/settings.php:1662
+msgid "Default image"
+msgstr "기본 이미지"
+
+#: elementor/widget.php:1677 includes/settings.php:278 block/build/index.js:1
+msgid "Enter your text here. Leave empty to hide it"
+msgstr "여기에 텍스트를 입력합니다. 숨기려면 비워 두세요."
+
+#: elementor/widget.php:1666 includes/settings.php:258 block/build/index.js:1
+msgid "When no posts found"
+msgstr "글이 없는 경우"
+
+#: includes/compatibility.php:474
+msgid "To ensure correct rendering in Elementor, please add this view shortcode to the HTML widget (which has &lt;/&gt; icon)"
+msgstr "엘리멘터에서 올바르게 렌더링되도록 하려면 이 보기 쇼트코드를 HTML 위젯(아이콘이 있는)에 추가하세요."
+
+#: elementor/widget.php:1644 block/build/index.js:1
+msgid "Leave empty to load whole page. To load specific part, please enter selector to identify it, for example: #content or #main or .post or .hentry or another value depends on the active Theme"
+msgstr "전체 페이지를 로드하려면 비워둡니다. 특정 부분을 로드하려면 예를 들어 선택기를 입력하여 식별하세요: #콘텐츠, #메인, .post, .헨트리 또는 다른 값은 활성 테마에 따라 다릅니다."
+
+#: elementor/widget.php:2506 block/build/index.js:1
+msgid "Separate tags by comma"
+msgstr "쉼표로 태그 구분"
+
+#: elementor/widget.php:2853 block/build/index.js:1
+msgid "Show sharing buttons"
+msgstr "공유 버튼 표시"
+
+#: elementor/widget.php:2474 block/build/index.js:1
+msgid "HTML Tags In Excerpt"
+msgstr "발췌문의 HTML 태그"
+
+#: elementor/widget.php:2463 block/build/index.js:1
+msgid "Manual excerpt"
+msgstr "수동 발췌"
+
+#: elementor/widget.php:2515 block/build/index.js:1
+msgid "Enable line breaks, translate, do shortcodes, apply filters in excerpt"
+msgstr "줄 바꿈 사용, 번역, 쇼트코드 수행, 발췌문에 필터 적용"
+
+#: elementor/widget.php:2494 block/build/index.js:1
+msgid "Exclude content of these HTML tags"
+msgstr "다음 HTML 태그의 콘텐츠 제외"
+
+#: elementor/widget.php:2485 block/build/index.js:1
+msgid "Remove \"...\" at the end of excerpt"
+msgstr "발췌문 끝에서 \"...\" 제거하기"
+
+#: elementor/widget.php:2244 block/build/index.js:1
+msgid "Length (letters)"
+msgstr "길이(글자)"
+
+#: elementor/widget.php:805 block/build/index.js:1
+msgid "For Logged In User"
+msgstr "로그인한 사용자의 경우"
+
+#: elementor/widget.php:649 block/build/index.js:1
+msgid "Sticky Post"
+msgstr "고정 글"
+
+#: elementor/widget.php:1642 block/build/index.js:1
+msgid "Which to load on lightbox"
+msgstr "라이트박스에 로드할 글"
+
+#: elementor/widget.php:1705 block/build/index.js:1
+msgid "Whole Overlay Clickable"
+msgstr "전체 오버레이 클릭 가능"
+
+#: includes/settings.php:1334
+msgid "Overlay Clickable"
+msgstr "오버레이 클릭 가능"
+
+#: elementor/widget.php:2676 block/build/index.js:1
+msgid "Disable scroll to top after changing page"
+msgstr "페이지 변경 후 상단으로 스크롤 비활성화"
+
+#: admin/content-views-admin.php:356
+msgctxt "post"
+msgid "Layout Library"
+msgstr "레이아웃 라이브러리"
+
+#: admin/content-views-admin.php:356
+msgid "Layout Library"
+msgstr "레이아웃 라이브러리"
+
+#: includes/values.php:521
+msgid "Big Post 2"
+msgstr "빅 포스트 2"
+
+#: includes/values.php:520
+msgid "Big Post 1"
+msgstr "큰 글 1"
+
+#: includes/values.php:519
+msgid "Overlay 8"
+msgstr "오버레이 8"
+
+#: includes/values.php:518
+msgid "Overlay 7"
+msgstr "오버레이 7"
+
+#: includes/values.php:517
+msgid "Overlay 6"
+msgstr "오버레이 6"
+
+#: includes/values.php:516
+msgid "Overlay 5"
+msgstr "오버레이 5"
+
+#: includes/values.php:515
+msgid "Overlay 4"
+msgstr "오버레이 4"
+
+#: includes/values.php:514
+msgid "Overlay 3"
+msgstr "오버레이 3"
+
+#: includes/values.php:513
+msgid "Overlay 2"
+msgstr "오버레이 2"
+
+#: includes/values.php:512
+msgid "Overlay 1"
+msgstr "오버레이 1"
+
+#: includes/values.php:511
+msgid "List"
+msgstr "목록"
+
+#: includes/values.php:510
+msgid "Grid 2"
+msgstr "그리드 2"
+
+#: includes/values.php:484
+msgid "One and others"
+msgstr "하나 및 기타"
+
+#: includes/values.php:483
+msgid "Glossary"
+msgstr "용어집"
+
+#: includes/values.php:482
+msgid "Timeline"
+msgstr "타임라인"
+
+#: includes/values.php:481
+msgid "Masonry"
+msgstr "Masonry"
+
+#: includes/values.php:480
+msgid "Pinterest"
+msgstr "핀터리스트"
+
+#: includes/settings.php:1682
+msgid "Thumbnail position (for other posts)"
+msgstr "썸네일 위치(다른 글의 경우)"
+
+#: elementor/widget.php:2222 includes/settings.php:1658
+msgid "Defer loading of images until they are needed, to improve page load time"
+msgstr "페이지 로드 시간을 개선하기 위해 필요할 때까지 이미지 로딩 지연"
+
+#: includes/settings.php:1646
+msgid "Lazy load"
+msgstr "지연 로드"
+
+#: elementor/widget.php:2174 includes/settings.php:1642 block/build/index.js:1
+msgid "If no featured image is added to a post, show the substitute option as thumbnail"
+msgstr "글에 추천 이미지가 추가되지 않은 경우 대체 옵션을 썸네일로 표시합니다."
+
+#: includes/settings.php:1630
+msgid "Substitute Option"
+msgstr "대체 옵션"
+
+#: includes/settings.php:1511
+msgid "Enable For Other Posts"
+msgstr "다른 글에 사용"
+
+#: includes/settings.php:1503
+msgid "Excerpt length for other posts"
+msgstr "다른 글의 발췌 길이"
+
+#: includes/settings.php:1459 includes/settings.php:1486
+#: includes/settings.php:1528
+msgid "For Other Posts"
+msgstr "다른 글의 경우"
+
+#: elementor/widget.php:272 elementor/widget.php:1134
+#: includes/settings.php:1406
+msgid "Top Meta"
+msgstr "상위 메타"
+
+#: includes/settings.php:1389
+msgid "Show Top Meta"
+msgstr "상위 메타 표시"
+
+#: includes/settings.php:1325
+msgid "On hover"
+msgstr "마우스오버 시"
+
+#: includes/settings.php:1324
+msgid "Always"
+msgstr "항상"
+
+#: includes/settings.php:1316
+msgid "Show Text"
+msgstr "텍스트 표시"
+
+#: includes/settings.php:1279
+msgid "Compound"
+msgstr "컴파운드"
+
+#: includes/settings.php:1278
+msgid "Overlay"
+msgstr "오버레이"
+
+#: includes/settings.php:1270
+msgid "Mode"
+msgstr "모드"
+
+#: includes/settings.php:1234
+msgid "Variant"
+msgstr "변형"
+
+#: includes/settings.php:1117
+msgid "This layout requires PRO version %s or higher"
+msgstr "이 레이아웃을 사용하려면 프로 버전 %s 이상이 필요합니다."
+
+#: includes/settings.php:1073
+msgid "This layout uses its own \"Limit\" and \"Items Per Page\" options"
+msgstr "이 레이아웃은 자체 \"제한\" 및 \"페이지당 항목\" 옵션을 사용합니다."
+
+#: includes/block_view.php:400
+msgid "Height (For Other Posts)"
+msgstr "높이(다른 글의 경우)"
+
+#: includes/block_view.php:399
+msgid "Width (For Other Posts)"
+msgstr "너비 (다른 포스트의 경우)"
+
+#: block/common.php:139
+msgid "Press OK/Enter to finish importing"
+msgstr "확인/입력을 눌러 가져오기를 완료합니다."
+
+#: admin/views/view.php:728
+msgid "Change color, font, size, alignment, border, padding, margin, etc. of any elements without writing CSS"
+msgstr "CSS를 작성하지 않고도 모든 요소의 색상, 글꼴, 크기, 정렬, 테두리, 패딩, 여백 등을 변경할 수 있습니다."
+
+#: admin/views/view.php:536 elementor/widget.php:1321
+msgid "Access to all PRO layouts"
+msgstr "모든 프로 레이아웃에 액세스"
+
+#: elementor/widget.php:2880 block/build/index.js:1
+msgid "Show share count"
+msgstr "공유 횟수 표시"
+
+#: elementor/widget.php:2872 block/build/index.js:1
+msgid "Use circle buttons"
+msgstr "원 버튼 사용"
+
+#: elementor/widget.php:2860 block/build/index.js:1
+msgid "Select Buttons"
+msgstr "버튼 선택"
+
+#: elementor/widget.php:2200 block/build/index.js:1
+msgid "Fetch content from page builder to find substitute"
+msgstr "페이지 빌더에서 콘텐츠를 가져와 대체 콘텐츠 찾기"
+
+#: elementor/widget.php:2178 block/build/index.js:1
+msgid "Select Custom Field"
+msgstr "사용자 지정 필드 선택"
+
+#: elementor/widget.php:2163 block/build/index.js:1
+msgid "Substitute With"
+msgstr "다음으로 대체"
+
+#: elementor/widget.php:794 block/build/index.js:1
+msgid "Author Not In"
+msgstr "작성자 없음"
+
+#: elementor/widget.php:783 block/build/index.js:1
+msgid "Author In"
+msgstr "작성자 입력"
+
+#: elementor/widget.php:591 block/build/index.js:1
+msgid "Parent Page"
+msgstr "상위 페이지"
+
+#: elementor/widget.php:400 block/build/index.js:1
+msgid "WooCommerce Hot Pick"
+msgstr "우커머스 핫픽"
+
+#: elementor/widget.php:640 block/build/index.js:1
+msgid "Exclude children posts"
+msgstr "자녀 글 제외하기"
+
+#: elementor/widget.php:631 block/build/index.js:1
+msgid "Exclude password protected posts"
+msgstr "비밀번호로 보호된 글 제외"
+
+#: elementor/widget.php:622 block/build/index.js:1
+msgid "Exclude current post"
+msgstr "현재 글 제외"
+
+#: elementor/widget.php:1569 block/build/index.js:1
+msgid "Use fixed structure (to simulate the Facebook Timeline item)"
+msgstr "고정 구조 사용(Facebook 타임라인 항목 시뮬레이션)"
+
+#: elementor/widget.php:1561 block/build/index.js:1
+msgid "Increase vertical space to ensure posts are shown in correct order"
+msgstr "글이 올바른 순서로 표시되도록 세로 공간 늘리기"
+
+#: elementor/widget.php:1553 block/build/index.js:1
+msgid "Remove the border between fields"
+msgstr "필드 사이의 테두리 제거"
+
+#: elementor/widget.php:1545 block/build/index.js:1
+msgid "Remove the box shadow"
+msgstr "상자 그림자 제거"
+
+#: elementor/widget.php:1536 block/build/index.js:1
+msgid "Open all items"
+msgstr "모든 항목 열기"
+
+#: elementor/widget.php:1493 block/build/index.js:1
+msgid "Show text below image"
+msgstr "이미지 아래에 텍스트 표시"
+
+#: block/common.php:461
+msgid "Out of stock products"
+msgstr "품절 제품"
+
+#: block/common.php:460
+msgid "Top rated products"
+msgstr "최고 평점 제품"
+
+#: block/common.php:459
+msgid "Featured products"
+msgstr "추천 제품"
+
+#: block/common.php:458
+msgid "Best selling products"
+msgstr "베스트셀러 제품"
+
+#: block/common.php:457
+msgid "Sale products"
+msgstr "판매 제품"
+
+#: block/common.php:456
+msgid "Recent products"
+msgstr "최근 제품"
+
+#: block/common.php:449
+msgid "Image (in custom field)"
+msgstr "이미지(사용자 정의 필드 내)"
+
+#: block/common.php:448
+msgid "Video / Audio (in post content)"
+msgstr "비디오/오디오(포스트 콘텐츠 내)"
+
+#: block/common.php:447
+msgid "Image (in post content)"
+msgstr "이미지(글 콘텐츠 내)"
+
+#: elementor/widget.php:762 elementor/widget.php:850 elementor/widget.php:882
+#: elementor/widget.php:1202 elementor/widget.php:2698
+#: elementor/widget.php:2856 block/build/index.js:1
+msgid "See Demo"
+msgstr "데모 보기"
+
+#: elementor/widget.php:753 block/build/index.js:1
+msgid "Customize texts of above options. Separate texts by comma"
+msgstr "위 옵션의 텍스트를 사용자 지정합니다. 텍스트를 쉼표로 구분"
+
+#: elementor/widget.php:2722 block/build/index.js:1
+msgid "Enter numbers (separate by comma, in increasing order) to set positions to show ads on each page. These numbers must be smaller than \"Posts Per Page\" value"
+msgstr "각 페이지에 광고를 표시할 위치를 설정하려면 숫자(쉼표로 구분, 증가하는 순서대로)를 입력합니다. 이 숫자는 \"페이지당 글 수\" 값보다 작아야 합니다."
+
+#: elementor/widget.php:546 block/build/index.js:1
+msgid "Live Filter"
+msgstr "라이브 필터"
+
+#: elementor/widget.php:1229 block/build/index.js:1
+msgid "Enter a space to remove label"
+msgstr "레이블을 제거하려면 공백을 입력하세요."
+
+#: elementor/widget.php:2741 block/build/index.js:1
+msgid "Repeat Ads"
+msgstr "광고 반복"
+
+#: elementor/widget.php:2730 block/build/index.js:1
+msgid "Ads Per Page"
+msgstr "페이지당 광고"
+
+#: elementor/widget.php:2720 block/build/index.js:1
+msgid "Manual Positions"
+msgstr "수동 위치"
+
+#: elementor/widget.php:2710 block/build/index.js:1
+msgid "Ads Positions"
+msgstr "광고 위치"
+
+#: elementor/widget.php:2702 block/build/index.js:1
+msgid "Execute shortcode in ad content"
+msgstr "광고 콘텐츠에 쇼트코드 실행"
+
+#: elementor/widget.php:2695 block/build/index.js:1
+msgid "Show ads in output"
+msgstr "출력에 광고 표시"
+
+#: elementor/widget.php:1273 block/build/index.js:1
+msgid "Hide values have no post"
+msgstr "글이 없는 경우 숨기기 값"
+
+#: elementor/widget.php:1265 block/build/index.js:1
+msgid "Show posts count"
+msgstr "글 수 표시"
+
+#: elementor/widget.php:1245 block/build/index.js:1
+msgid "Order By"
+msgstr "주문 기준"
+
+#: elementor/widget.php:1236 block/build/index.js:1
+msgid "The \"All\" text"
+msgstr "전체 텍스트"
+
+#: elementor/widget.php:1216 block/build/index.js:1
+msgid "Behavior"
+msgstr "동작"
+
+#: elementor/widget.php:1206 block/build/index.js:1
+msgid "Filter Type"
+msgstr "필터 유형"
+
+#: elementor/widget.php:1199 block/build/index.js:1
+msgid "Show as filters to visitors"
+msgstr "방문자에게 필터로 표시"
+
+#: elementor/widget.php:1007 block/build/index.js:1
+msgid "Select Month"
+msgstr "월 선택"
+
+#: elementor/widget.php:995 block/build/index.js:1
+msgid "Select Year"
+msgstr "연도 선택"
+
+#: elementor/widget.php:984 block/build/index.js:1
+msgid "To Date"
+msgstr "날짜까지"
+
+#: elementor/widget.php:973 block/build/index.js:1
+msgid "From Date"
+msgstr "날짜부터"
+
+#: elementor/widget.php:962 block/build/index.js:1
+msgid "Select Date"
+msgstr "날짜 선택"
+
+#: elementor/widget.php:927 block/build/index.js:1
+msgid "Published Date"
+msgstr "게시된 날짜"
+
+#: elementor/widget.php:836 block/build/index.js:1
+msgid "Live Filter (Search)"
+msgstr "라이브 필터(검색)"
+
+#: elementor/widget.php:869 block/build/index.js:1
+msgid "Placeholder"
+msgstr "플레이스홀더"
+
+#: elementor/widget.php:847 elementor/widget.php:879 block/build/index.js:1
+msgid "Show search field to visitors"
+msgstr "방문자에게 검색 필드 표시"
+
+#: elementor/widget.php:704 block/build/index.js:1
+msgid "Live Filter (Sort)"
+msgstr "라이브 필터(정렬)"
+
+#: elementor/widget.php:736 block/build/index.js:1
+msgid "Common Options"
+msgstr "공통 옵션"
+
+#: elementor/widget.php:726 block/build/index.js:1
+msgid "Change \"Default\" text"
+msgstr "기본값 텍스트 변경"
+
+#: elementor/widget.php:715 elementor/widget.php:857 elementor/widget.php:1227
+#: block/build/index.js:1
+msgid "Label"
+msgstr "레이블"
+
+#: block/common.php:431
+msgid "Custom year"
+msgstr "사용자 지정 연도"
+
+#: block/common.php:430
+msgid "Custom month"
+msgstr "사용자 지정 월"
+
+#: block/common.php:429
+msgid "Custom time (from - to)"
+msgstr "사용자 지정 시간(부터 -까지)"
+
+#: block/common.php:428
+msgid "Custom date"
+msgstr "사용자 지정 날짜"
+
+#: block/common.php:427
+msgid "This year"
+msgstr "금년"
+
+#: block/common.php:426
+msgid "This month"
+msgstr "이번 달"
+
+#: block/common.php:425
+msgid "This week"
+msgstr "이번 주"
+
+#: block/common.php:424
+msgid "1 year ago (to today)"
+msgstr "1년 전 (오늘까지)"
+
+#: block/common.php:423
+msgid "1 month ago (to today)"
+msgstr "1개월 전 (오늘)"
+
+#: block/common.php:422
+msgid "1 week ago (to today)"
+msgstr "1주 전 (오늘까지)"
+
+#: block/common.php:421
+msgid "Yesterday"
+msgstr "어제"
+
+#: block/common.php:420
+msgid "In the past"
+msgstr "과거"
+
+#: block/common.php:419
+msgid "Today in history"
+msgstr "역사 속의 오늘"
+
+#: block/common.php:418
+msgid "Today and future"
+msgstr "오늘과 미래"
+
+#: block/common.php:417
+msgid "Today"
+msgstr "오늘"
+
+#: elementor/widget.php:660 block/build/index.js:1
+msgid "Sort"
+msgstr "정렬"
+
+#: elementor/widget.php:2373 block/build/index.js:1
+msgid "Convert Date field to a new format"
+msgstr "날짜 필드를 새 형식으로 변환"
+
+#: elementor/widget.php:2368 block/build/index.js:1
+msgid "Fetch embed HTML in field value"
+msgstr "필드 값에 임베드 HTML 가져오기"
+
+#: elementor/widget.php:2363 block/build/index.js:1
+msgid "Enable line breaks in field value"
+msgstr "필드 값에 줄 바꿈 사용"
+
+#: elementor/widget.php:2358 block/build/index.js:1
+msgid "Execute shortcode in field value"
+msgstr "필드 값에 쇼트코드 실행"
+
+#: elementor/widget.php:2348 block/build/index.js:1
+msgid "Customize field name"
+msgstr "필드 이름 사용자 지정"
+
+#: elementor/widget.php:2343 block/build/index.js:1
+msgid "Show field name"
+msgstr "필드 이름 표시"
+
+#: elementor/widget.php:2338 block/build/index.js:1
+msgid "Hide field has empty value"
+msgstr "필드에 빈 값이 있음 숨기기"
+
+#: elementor/widget.php:2326 block/build/index.js:1
+msgid "Fields Per Row"
+msgstr "행별 필드"
+
+#: elementor/widget.php:2316 block/build/index.js:1
+msgid "Select Fields"
+msgstr "필드 선택"
+
+#: elementor/widget.php:1175 block/build/index.js:1
+msgid "Fields Position"
+msgstr "필드 위치"
+
+#: elementor/widget.php:1698 block/build/index.js:1
+msgid "Disable to use compound mode"
+msgstr "복합 모드 사용 안 함"
+
+#: block/common.php:409
+msgid "Woo - Extra Hooks"
+msgstr "Woo - 추가 후크"
+
+#: block/common.php:408
+msgid "Woo - Star Ratings"
+msgstr "Woo - 별점"
+
+#: block/common.php:407 elementor/widget.php:1141
+msgid "Woo - Add To Cart"
+msgstr "Woo - 장바구니 추가"
+
+#: block/common.php:406 elementor/widget.php:1140
+msgid "Woo - Price"
+msgstr "Woo - 가격"
+
+#: block/common.php:399 elementor/widget.php:276 elementor/widget.php:1138
+msgid "Bottom Meta"
+msgstr "하단 메타"
+
+#: block/common.php:404 elementor/widget.php:273 elementor/widget.php:894
+#: elementor/widget.php:1135 block/build/index.js:1
+msgid "Custom Field"
+msgstr "사용자 지정 필드"
+
+#: block/common.php:382
+msgid "Relevance to the searched keyword"
+msgstr "검색한 키워드와의 연관성"
+
+#: block/common.php:380
+msgid "Comment count"
+msgstr "댓글 수"
+
+#: block/common.php:379
+msgid "Random"
+msgstr "랜덤"
+
+#: block/common.php:378
+msgid "Post type"
+msgstr "글 유형"
+
+#: block/common.php:377
+msgid "Title (sort alphanumeric strings as human)"
+msgstr "제목(영숫자 문자열을 사람으로 정렬)"
+
+#: admin/includes/plugin.php:173
+msgid "CAUTION: please do NOT select this option if you use our View shortcode. Otherwise, you can't create/edit any View anymore."
+msgstr "주의: 보기 쇼트코드를 사용하는 경우 이 옵션을 선택하지 마세요. 그렇지 않으면 더 이상 보기를 만들거나 편집할 수 없습니다."
+
+#: includes/values.php:305
+msgid "Menu order"
+msgstr "메뉴 순서"
+
+#: includes/values.php:302
+msgid "Post slug"
+msgstr "글 슬러그"
+
+#: includes/settings.php:104
+msgid "Sort by drag & drop, custom field, random order, comment count"
+msgstr "드래그 앤 드롭, 사용자 정의 필드, 임의 순서, 댓글 수로 정렬"
+
+#: includes/settings.php:477 block/build/index.js:1
+msgid "Use the manual excerpt"
+msgstr "수동 발췌문 사용"
+
+#: elementor/widget.php:89 block/build/index.js:1
+msgid "Query"
+msgstr "쿼리"
+
+#: elementor/widget.php:2295 includes/settings.php:1448 block/build/index.js:1
+msgid "Position"
+msgstr "위치"
+
+#: elementor/widget.php:2613 block/build/index.js:1
+msgid "Date format"
+msgstr "날짜 형식"
+
+#: elementor/widget.php:2608 block/build/index.js:1
+msgid "Author Prefix"
+msgstr "작성자 접두사"
+
+#: elementor/widget.php:2603 block/build/index.js:1
+msgid "Author Avatar"
+msgstr "작성자 아바타"
+
+#: elementor/widget.php:2598 block/build/index.js:1
+msgid "Show icon"
+msgstr "아이콘 표시"
+
+#: elementor/widget.php:2591 block/build/index.js:1
+msgid "Separator"
+msgstr "구분 기호"
+
+#: elementor/widget.php:2578 block/build/index.js:1
+msgid "Select Others Item Meta"
+msgstr "기타 항목 메타 선택"
+
+#: elementor/widget.php:2276 elementor/widget.php:2569
+#: includes/settings.php:1419 block/build/index.js:1
+msgid "Select Meta"
+msgstr "메타 선택"
+
+#: elementor/widget.php:2268 elementor/widget.php:2561 block/build/index.js:1
+msgid "Others Item Meta"
+msgstr "기타 항목 메타"
+
+#: elementor/widget.php:2219 block/build/index.js:1
+msgid "Lazyload"
+msgstr "지연로드"
+
+#: elementor/widget.php:2214 block/build/index.js:1
+msgid "Responsive image (srcset, sizes)"
+msgstr "반응형 이미지(srcset, 크기)"
+
+#: elementor/widget.php:2208 block/build/index.js:1
+msgid "Show default image if no image set"
+msgstr "설정된 이미지가 없는 경우 기본 이미지 표시"
+
+#: elementor/widget.php:2156 includes/settings.php:1613 block/build/index.js:1
+msgid "Hover Effect"
+msgstr "마우스오버 효과"
+
+#: elementor/widget.php:2109 block/build/index.js:1
+msgid "Others Image Height"
+msgstr "기타 이미지 높이"
+
+#: elementor/widget.php:2089 block/build/index.js:1
+msgid "Others Image Width"
+msgstr "기타 이미지 너비"
+
+#: elementor/widget.php:2037 includes/block_view.php:396 block/build/index.js:1
+msgid "Height"
+msgstr "높이"
+
+#: elementor/widget.php:2017 includes/block_view.php:395 block/build/index.js:1
+msgid "Width"
+msgstr "폭"
+
+#: elementor/widget.php:2007 block/build/index.js:1
+msgid "Others Image Size"
+msgstr "기타 이미지 크기"
+
+#: elementor/widget.php:2000 block/build/index.js:1
+msgid "Image Size"
+msgstr "이미지 크기"
+
+#: elementor/widget.php:1990 block/build/index.js:1
+msgid "Others Thumbnail Position"
+msgstr "기타 썸네일 위치"
+
+#: elementor/widget.php:1948 block/build/index.js:1
+msgid "Thumbnail Position"
+msgstr "썸네일 위치"
+
+#: elementor/widget.php:2543 block/build/index.js:1
+msgid "Read more text"
+msgstr "더 많은 텍스트 읽기"
+
+#: elementor/widget.php:2535 block/build/index.js:1
+msgid "Others Item Read More"
+msgstr "기타 항목 자세히 보기"
+
+#: elementor/widget.php:2448 block/build/index.js:1
+msgid "Others Length"
+msgstr "기타 길이"
+
+#: elementor/widget.php:2432 block/build/index.js:1
+msgid "Length"
+msgstr "길이"
+
+#: elementor/widget.php:2425 block/build/index.js:1
+msgid "What to show"
+msgstr "표시할 내용"
+
+#: elementor/widget.php:2417 block/build/index.js:1
+msgid "Others Item Content"
+msgstr "기타 항목 콘텐츠"
+
+#: elementor/widget.php:1916 elementor/widget.php:2237 block/build/index.js:1
+msgid "HTML Tag"
+msgstr "HTML 태그"
+
+#: elementor/widget.php:268 elementor/widget.php:1129 elementor/widget.php:1903
+#: block/build/index.js:1
+msgid "Heading Text"
+msgstr "제목 텍스트"
+
+#: elementor/widget.php:1818 block/build/index.js:1
+msgid "Inside Padding"
+msgstr "내부 패딩"
+
+#: elementor/widget.php:1794 block/build/index.js:1
+msgid "Inside Background Color"
+msgstr "내부 배경색"
+
+#: elementor/style.php:937 block/build/index.js:1
+msgid "Active Background Color"
+msgstr "활성 배경색"
+
+#: elementor/style.php:174 elementor/style.php:341 elementor/style.php:470
+#: elementor/style.php:765 elementor/style.php:990 elementor/widget.php:1876
+#: block/build/index.js:1
+msgid "Border Radius"
+msgstr "테두리 반경"
+
+#: elementor/style.php:95 elementor/style.php:157 elementor/style.php:324
+#: elementor/style.php:453 elementor/style.php:748 elementor/style.php:973
+#: elementor/widget.php:1859 block/build/index.js:1
+msgid "Border Color"
+msgstr "테두리 색상"
+
+#: elementor/style.php:106 elementor/style.php:139 elementor/style.php:306
+#: elementor/style.php:435 elementor/style.php:730 elementor/style.php:955
+#: elementor/widget.php:1841 block/build/index.js:1
+msgid "Border Width"
+msgstr "테두리 너비"
+
+#: elementor/style.php:129 elementor/style.php:296 elementor/style.php:425
+#: elementor/style.php:720 elementor/style.php:945 elementor/widget.php:1831
+#: block/build/index.js:1
+msgid "Border Style"
+msgstr "테두리 스타일"
+
+#: elementor/style.php:77 elementor/style.php:190 elementor/style.php:278
+#: elementor/style.php:407 elementor/style.php:546 elementor/style.php:624
+#: elementor/style.php:702 elementor/style.php:841 elementor/style.php:919
+#: elementor/widget.php:1806 block/build/index.js:1
+msgid "Margin"
+msgstr "마진"
+
+#: elementor/style.php:69 elementor/style.php:270 elementor/style.php:399
+#: elementor/style.php:538 elementor/style.php:616 elementor/style.php:694
+#: elementor/style.php:833 elementor/style.php:911 block/build/index.js:1
+msgid "Hover Background Color"
+msgstr "마우스오버 배경색"
+
+#: elementor/style.php:61 elementor/style.php:262 elementor/style.php:391
+#: elementor/style.php:530 elementor/style.php:608 elementor/style.php:686
+#: elementor/style.php:825 elementor/style.php:903 elementor/widget.php:1783
+#: block/build/index.js:1
+msgid "Background Color"
+msgstr "배경 색상"
+
+#: elementor/style.php:53 elementor/style.php:254 elementor/style.php:383
+#: elementor/style.php:522 elementor/style.php:600 elementor/style.php:678
+#: elementor/style.php:817 elementor/style.php:895 block/build/index.js:1
+msgid "Hover Color"
+msgstr "마우스오버 색상"
+
+#: elementor/widget.php:444 block/build/index.js:1
+msgid "Offset"
+msgstr "오프셋"
+
+#: elementor/widget.php:414 block/build/index.js:1
+msgid "Posts per page"
+msgstr "페이지당 글 수"
+
+#: elementor/widget.php:613 block/build/index.js:1
+msgid "Posts Exclude"
+msgstr "글 제외"
+
+#: elementor/widget.php:604 block/build/index.js:1
+msgid "Posts Include Only"
+msgstr "글만 포함"
+
+#: elementor/widget.php:461 block/build/index.js:1
+msgid "Taxonomy Relation"
+msgstr "분류 관계"
+
+#: elementor/widget.php:1630 block/build/index.js:1
+msgid "Lightbox Height (%)"
+msgstr "라이트박스 높이 (%)"
+
+#: elementor/widget.php:1618 block/build/index.js:1
+msgid "Lightbox Width (%)"
+msgstr "라이트박스 너비(%)"
+
+#: elementor/widget.php:1606 block/build/index.js:1
+msgid "Window Height (PX)"
+msgstr "창 높이 (PX)"
+
+#: elementor/widget.php:1594 block/build/index.js:1
+msgid "Window Width (PX)"
+msgstr "창 너비 (PX)"
+
+#: elementor/widget.php:1587 block/build/index.js:1
+msgid "Open Item In"
+msgstr "항목 열기 위치"
+
+#: elementor/style.php:28 elementor/style.php:219 elementor/style.php:497
+#: elementor/style.php:575 elementor/style.php:653 elementor/style.php:792
+#: elementor/style.php:870 elementor/widget.php:1577 block/build/index.js:1
+msgid "Alignment"
+msgstr "정렬"
+
+#: elementor/widget.php:1502 block/build/index.js:1
+msgid "Automatic cycle"
+msgstr "자동 주기"
+
+#: elementor/widget.php:1485 block/build/index.js:1
+msgid "Show indicator"
+msgstr "표시기 표시"
+
+#: elementor/widget.php:1477 block/build/index.js:1
+msgid "Show navigation"
+msgstr "탐색 표시"
+
+#: elementor/widget.php:1462 includes/settings.php:1172 block/build/index.js:1
+msgid "Big Item Width"
+msgstr "큰 항목 너비"
+
+#: elementor/widget.php:1453 includes/settings.php:1158 block/build/index.js:1
+msgid "Swap Position"
+msgstr "스왑 위치"
+
+#: elementor/widget.php:1419 includes/settings.php:1129 block/build/index.js:1
+msgid "Gap"
+msgstr "간격"
+
+#: elementor/widget.php:1375 includes/settings.php:1143 block/build/index.js:1
+msgid "Row Height"
+msgstr "행 높이"
+
+#: elementor/style.php:86 elementor/style.php:199 elementor/style.php:287
+#: elementor/style.php:416 elementor/style.php:555 elementor/style.php:633
+#: elementor/style.php:711 elementor/style.php:850 elementor/style.php:928
+#: elementor/widget.php:1770 elementor/widget.php:1806 block/build/index.js:1
+msgid "Padding"
+msgstr "패딩"
+
+#: elementor/widget.php:1750 block/build/index.js:1
+msgid "Overlay Opacity"
+msgstr "오버레이 불투명도"
+
+#: includes/settings.php:1301 block/build/index.js:1
+msgid "Overlay Type"
+msgstr "오버레이 유형"
+
+#: elementor/widget.php:1725 includes/settings.php:1287 block/build/index.js:1
+msgid "Text Position"
+msgstr "텍스트 위치"
+
+#: elementor/widget.php:1715 block/build/index.js:1
+msgid "Show Text On Hover"
+msgstr "마우스오버 시 텍스트 표시"
+
+#: elementor/widget.php:1695 block/build/index.js:1
+msgid "Enable Overlay"
+msgstr "오버레이 사용"
+
+#: elementor/widget.php:1359 block/build/index.js:1
+msgid "Rows"
+msgstr "행"
+
+#: elementor/widget.php:1347 block/build/index.js:1
+msgid "Columns"
+msgstr "열"
+
+#: elementor/widget.php:1327 block/build/index.js:1
+msgid "Slides"
+msgstr "슬라이드"
+
+#: elementor/widget.php:1310 block/build/index.js:1
+msgid "Select Layout"
+msgstr "레이아웃 선택"
+
+#: includes/hooks.php:625 includes/settings.php:1808 block/build/index.js:1
+msgid "Visibility"
+msgstr "가시성"
+
+#: includes/hooks.php:587
+msgid "Load more button"
+msgstr "더 로드 버튼"
+
+#: includes/hooks.php:586
+msgid "Infinite scrolling"
+msgstr "무한 스크롤"
+
+#: includes/hooks.php:576
+msgid "All / Multi post types"
+msgstr "전체/다중 글 유형"
+
+#: includes/hooks.php:575
+msgid "Media"
+msgstr "미디어"
+
+#: block/common.php:255
+msgid "To use this Pro block, please %s"
+msgstr "이 프로 블록을 사용하려면 %s"
+
+#: block/common.php:210
+msgid "Custom Format"
+msgstr "사용자 지정 형식"
+
+#: block/common.php:209
+msgid "Saturday, November 6th, 2010"
+msgstr "2010년 11월 6일 토요일"
+
+#: block/common.php:208
+msgid "November 6, 2010 12:50 am"
+msgstr "2010년 11월 6일 12:50 오전"
+
+#: block/common.php:207
+msgid "November 6, 2010"
+msgstr "2010년 11월 6일 토요일"
+
+#: block/common.php:206
+msgid "2010-11-06"
+msgstr "2010-11-06"
+
+#: block/common.php:205
+msgid "2010/11/06"
+msgstr "2010/11/06"
+
+#: block/common.php:204
+msgid "12:50 am"
+msgstr "오전 12:50"
+
+#: block/common.php:362
+msgid "On Image (Center)"
+msgstr "이미지 위(가운데)"
+
+#: block/common.php:361
+msgid "On Image (Bottom Right)"
+msgstr "이미지(오른쪽 하단)"
+
+#: block/common.php:360
+msgid "On Image (Top Right)"
+msgstr "이미지 위(오른쪽 위)"
+
+#: block/common.php:359
+msgid "On Image (Bottom Left)"
+msgstr "이미지 위(왼쪽 하단)"
+
+#: block/common.php:358
+msgid "On Image (Top Left)"
+msgstr "이미지 위(왼쪽 위)"
+
+#: block/common.php:357
+msgid "Below Title"
+msgstr "제목 아래"
+
+#: block/common.php:356
+msgid "Above Title"
+msgstr "제목 위에"
+
+#: block/common.php:341 elementor/widget.php:212
+msgid "Middle"
+msgstr "가운데"
+
+#: block/common.php:334
+msgid "Gradient"
+msgstr "그라데이션"
+
+#: block/common.php:333 elementor/style.php:45 elementor/style.php:246
+#: elementor/style.php:375 elementor/style.php:514 elementor/style.php:592
+#: elementor/style.php:670 elementor/style.php:809 elementor/style.php:887
+#: block/build/index.js:1
+msgid "Color"
+msgstr "색상"
+
+#: block/common.php:326
+msgid "Move right"
+msgstr "오른쪽으로 이동"
+
+#: block/common.php:325
+msgid "Move left"
+msgstr "왼쪽으로 이동"
+
+#: block/common.php:324
+msgid "Move down"
+msgstr "아래로 이동"
+
+#: block/common.php:323
+msgid "Move up"
+msgstr "위로 이동"
+
+#: block/common.php:322
+msgid "Zoom out"
+msgstr "축소"
+
+#: block/common.php:321
+msgid "Zoom in"
+msgstr "줌인"
+
+#: block/common.php:320
+msgid "Darken"
+msgstr "어둡게"
+
+#: block/common.php:313
+msgid "Heading 6"
+msgstr "제목 6"
+
+#: block/common.php:312
+msgid "Heading 5"
+msgstr "제목 5"
+
+#: block/common.php:311
+msgid "Heading 4"
+msgstr "제목 4"
+
+#: block/common.php:310
+msgid "Heading 3"
+msgstr "제목 3"
+
+#: block/common.php:309
+msgid "Heading 2"
+msgstr "제목 2"
+
+#: block/common.php:308
+msgid "Heading 1"
+msgstr "제목 1"
+
+#: block/common.php:183
+msgid "Outset"
+msgstr "아웃셋"
+
+#: block/common.php:182
+msgid "Inset"
+msgstr "삽입"
+
+#: block/common.php:181
+msgid "Ridge"
+msgstr "정상"
+
+#: block/common.php:180
+msgid "Groove"
+msgstr "그루브"
+
+#: block/common.php:179
+msgid "Double"
+msgstr "더블"
+
+#: block/common.php:178
+msgid "Dashed"
+msgstr "대시"
+
+#: block/common.php:177
+msgid "Dotted"
+msgstr "점선"
+
+#: block/common.php:176
+msgid "Solid"
+msgstr "솔리드"
+
+#: block/common.php:175 block/common.php:194 block/common.php:319
+#: block/common.php:332 block/common.php:446 block/build/index.js:1
+msgid "None"
+msgstr "없음"
+
+#: block/common.php:138 includes/block_view.php:74
+msgid "Content Views Library"
+msgstr "콘텐츠 뷰 라이브러리"
+
+#: block/common.php:137 block/common.php:246 elementor/widget.php:56
+msgid "Upgrade Now"
+msgstr "지금 업그레이드"
+
+#: block/common.php:20
+msgid "Content Views - Post Grid & Filter"
+msgstr "콘텐츠 뷰 - 포스트 그리드 및 필터"
+
+#: block/blocks/pinterest.php:40
+msgid "This layout uses Javascript to render. Please view the page to see final output"
+msgstr "이 레이아웃은 자바스크립트를 사용하여 렌더링합니다. 최종 결과물을 보려면 페이지를 확인하세요."
+
+#: admin/includes/plugin.php:181
+msgid "Hide 'Content Views Library' button at the top toolbar in the Block Editor"
+msgstr "블록 편집기 상단 도구 모음에서 '콘텐츠 뷰 라이브러리' 버튼 숨기기"
+
+#: admin/includes/plugin.php:173
+msgid "Hide Content Views sub-menus relate to View (shortcode)"
+msgstr "콘텐츠 뷰 숨기기 하위 메뉴는 보기(쇼트코드)와 관련이 있습니다."
+
+#: admin/includes/plugin.php:121
+msgid "Block Editor"
+msgstr "블록 편집기"
+
+#: admin/includes/plugin.php:117
+msgid "Classic Editor"
+msgstr "클래식 편집기"
+
+#: admin/content-views-admin.php:367
+msgid "Dashboard"
+msgstr "대시보드"
+
+#: admin/content-views-admin.php:341
+msgid "Content Views Dashboard"
+msgstr "콘텐츠 뷰 대시보드"
+
+#: includes/settings.php:929
+msgid "Increase columns and rows in each slide, automatically cycle"
+msgstr "각 슬라이드에서 열과 행을 늘리고 자동으로 순환합니다."
+
+#: block/old/main.php:122
+msgid "Select a View"
+msgstr "보기 선택"
+
+#: block/common.php:107 block/old/main.php:70 block/build/index.js:1
+msgid "post"
+msgstr "게시물"
+
+#: block/common.php:105 block/old/main.php:68
+msgid "content"
+msgstr "콘텐츠"
+
+#: block/common.php:104 block/old/main.php:67 block/build/index.js:1
+msgid "grid"
+msgstr "그리드"
+
+#: block/common.php:101 block/old/main.php:64
+msgid "Select and display one of your views."
+msgstr "보기 중 하나를 선택하여 표시합니다."
+
+#: admin/views/view.php:722
+msgid "Style Settings"
+msgstr "스타일 설정"
+
+#: admin/views/view.php:484
+msgid "Replace Layout"
+msgstr "레이아웃 바꾸기"
+
+#: admin/views/view.php:291
+msgid "Filter by custom field, published date"
+msgstr "사용자 정의 필드, 게시 날짜별로 필터링"
+
+#: admin/views/view.php:490
+msgid "Show this grid view on the Blog, Category, Tag, Search pages and replace the default layout"
+msgstr "블로그, 카테고리, 태그, 검색 페이지에 이 그리드 보기를 표시하고 기본 레이아웃을 바꿉니다."
+
+#: admin/views/view.php:292
+msgid "Allow visitors to filter, search, and sort in the front end"
+msgstr "방문자가 프런트엔드에서 필터링, 검색 및 정렬할 수 있도록 허용"
+
+#: includes/settings.php:219
+msgid "Advanced pagination styles: Infinite scrolling, Load more button"
+msgstr "고급 페이지 매김 스타일: 무한 스크롤, 더 로드 버튼"
+
+#: admin/content-views-admin.php:219
+msgid "Color value"
+msgstr "색상 값"
+
+#: admin/content-views-admin.php:218
+msgid "Select Color"
+msgstr "색상 선택"
+
+#: admin/content-views-admin.php:217
+msgid "Select default color"
+msgstr "기본 색상 선택"
+
+#: admin/content-views-admin.php:216 block/common.php:203
+#: elementor/widget.php:203 block/build/index.js:1
+msgid "Default"
+msgstr "기본값"
+
+#: admin/content-views-admin.php:215
+msgid "Clear color"
+msgstr "색상 지우기"
+
+#: admin/content-views-admin.php:214
+msgid "Clear"
+msgstr "지우기"
+
+#: admin/views/view.php:243
+msgid "Leaving it empty might cause performance issues. You should enable pagination (on the next tab) in this case."
+msgstr "비워두면 성능 문제가 발생할 수 있습니다. 이 경우 페이지 매김(다음 탭에서)을 활성화해야 합니다."
+
+#: includes/settings.php:753
+msgid "If thumbnail looks blurry, check this option, and select a bigger size option above"
+msgstr "썸네일이 흐릿하게 보이는 경우 이 옵션을 선택하고 위의 더 큰 크기 옵션을 선택합니다."
+
+#: includes/settings.php:413
+msgid "Balancing tag prevents unmatched elements. But it does not work for all cases.<br> Check this option to show original content"
+msgstr "밸런싱 태그는 일치하지 않는 요소를 방지합니다. 하지만 모든 경우에 적용되는 것은 아닙니다.<br> 원본 콘텐츠를 표시하려면 이 옵션을 선택합니다."
+
+#: includes/settings.php:411
+msgid "Do not attempt to balance HTML tags in content"
+msgstr "콘텐츠에서 HTML 태그의 균형을 맞추려고 시도하지 않기"
+
+#: admin/views/view.php:619
+msgid "It requires enough horizontal space. You might reduce <code>Items Per Row</code> above if available, or select smaller thumbnail size below"
+msgstr "충분한 가로 공간이 필요합니다. 가능한 경우 위의 <code>행당 항목 수</code>를 줄이거나 아래에서 더 작은 썸네일 크기를 선택할 수 있습니다."
+
+#: admin/content-views-admin.php:341
+msgctxt "Plugin name. Do not translate"
+msgid "Content Views"
+msgstr "콘텐츠 뷰"
+
+#: includes/settings.php:520
+msgid "To change color of this button, <a href=\"%s\" target=\"_blank\"> please check this document </a>"
+msgstr "이 버튼의 색상을 변경하려면 <a href=\"%s\" target=\"_blank\"> 이 문서를 확인하세요.</a>"
+
+#: admin/views/view.php:637
+msgid "Do not wrap text around image"
+msgstr "이미지 주위에 텍스트 감싸기 금지"
+
+#: includes/settings.php:1007 includes/settings.php:1794
+msgid "HTML tag"
+msgstr "HTML 태그"
+
+#: includes/functions.php:732
+msgid "[Preview only] Pagination is disabled when there is only 1 page, because of"
+msgstr "[미리보기 전용] 페이지가 1페이지만 있는 경우 페이지 매김이 비활성화됩니다."
+
+#: includes/functions.php:731
+msgid "is less than or equal to (&le;) the <b>Items per page</b> value"
+msgstr "가 <b>페이지당 항목 수</b> 값보다 작거나 같으면 (&le;)"
+
+#: includes/functions.php:731
+msgid "the <b>Limit</b> value"
+msgstr "<b>한도</b> 값을 설정합니다."
+
+#: includes/functions.php:731
+msgid "the number of results"
+msgstr "결과 수"
+
+#: public/content-views.php:246
+msgid "See View"
+msgstr "보기 보기"
+
+#: includes/values.php:114
+msgid "AND - show posts which match ALL selected terms"
+msgstr "AND - 선택한 모든 용어와 일치하는 글 표시"
+
+#: includes/values.php:113
+msgid "NOT IN - show posts which DO NOT match ANY selected terms"
+msgstr "해당 없음 - 선택한 용어와 일치하지 않는 글 표시"
+
+#: includes/values.php:112
+msgid "IN - show posts which match ANY selected terms"
+msgstr "에 - 선택한 모든 용어와 일치하는 글 표시"
+
+#: elementor/widget.php:2666 block/build/index.js:1
+msgid "Load more text"
+msgstr "텍스트 더 로드"
+
+#: admin/views/view.php:366
+msgid "The logical relationship between above taxonomies"
+msgstr "위 분류 사이의 논리적 관계"
+
+#: public/content-views.php:241
+msgctxt "add new on admin bar"
+msgid "Content View"
+msgstr "콘텐츠 뷰"
+
+#: includes/values.php:363
+msgid "Show thumbnail on the left/right of text"
+msgstr "텍스트 왼쪽/오른쪽에 썸네일 표시"
+
+#: includes/values.php:362
+msgid "Show thumbnail & text vertically"
+msgstr "썸네일 및 텍스트 세로로 표시"
+
+#: admin/views/view.php:578 includes/hooks.php:96
+msgid "Format"
+msgstr "형식"
+
+#: admin/views/view.php:539
+msgid "Responsive"
+msgstr "반응형"
+
+#: admin/views/view.php:508 elementor/widget.php:100 includes/hooks.php:91
+#: includes/hooks.php:115 block/build/index.js:1
+msgid "Layout"
+msgstr "레이아웃"
+
+#: admin/views/view.php:256
+msgid "Advance"
+msgstr "고급"
+
+#: admin/views/view.php:163
+msgid "Common"
+msgstr "공통"
+
+#: includes/settings.php:318
+msgid "Show Custom Fields, show Title above Thumbnail ..."
+msgstr "사용자 정의 필드 표시, 썸네일 위에 제목 표시 ..."
+
+#: includes/functions.php:634
+msgid "Error: View %s may not exist"
+msgstr "오류가 발생했습니다: 보기 %s가 존재하지 않을 수 있습니다."
+
+#: admin/views/view.php:472
+msgid "It will search keyword in title, excerpt, content of posts"
+msgstr "글의 제목, 발췌문, 내용에서 키워드를 검색합니다."
+
+#: includes/settings.php:975
+msgid "get Pro version"
+msgstr "프로 버전 받기"
+
+#: admin/views/view.php:656
+msgid "Disable this format on small screens (less than 481 pixels)"
+msgstr "작은 화면(481픽셀 미만)에서 이 형식 사용 안 함"
+
+#: admin/content-views-admin.php:239
+msgid "If post excerpt contains shortcode of theme or another plugin, please save this View, paste its shortcode to a page, then view that page"
+msgstr "글 발췌문에 테마 또는 다른 플러그인의 쇼트코드가 포함되어 있는 경우 이 보기를 저장하고 해당 쇼트코드를 페이지에 붙여넣은 다음 해당 페이지를 확인합니다."
+
+#: includes/functions.php:315
+msgctxt "Word count type. Do not translate!"
+msgid "words"
+msgstr "단어"
+
+#: includes/values.php:303
+msgid "Published date"
+msgstr "게시된 날짜"
+
+#: includes/html.php:122
+msgid "Loading..."
+msgstr "로드 중..."
+
+#: admin/views/view.php:560
+msgid "Mobile"
+msgstr "모바일"
+
+#: admin/views/view.php:547
+msgid "Tablet"
+msgstr "태블릿"
+
+#: includes/values.php:426
+msgid "Full Size"
+msgstr "전체 크기"
+
+#: block/common.php:416 block/common.php:455 includes/values.php:299
+msgid "Select"
+msgstr "선택"
+
+#: elementor/widget.php:1528 includes/settings.php:907 block/build/index.js:1
+msgid "Open the first item by default"
+msgstr "기본적으로 첫 번째 항목 열기"
+
+#: includes/settings.php:822 includes/values.php:245
+msgid "Tags"
+msgstr "태그"
+
+#: includes/settings.php:822 includes/values.php:245
+msgid "Categories"
+msgstr "카테고리"
+
+#: includes/settings.php:822
+msgid "Show Taxonomies (%s, %s...)"
+msgstr "분류 표시(%s, %s...)"
+
+#: block/common.php:394 elementor/widget.php:270 elementor/widget.php:1132
+msgid "Featured Image"
+msgstr "추천 이미지"
+
+#: includes/settings.php:703
+msgid "Comment"
+msgstr "댓글"
+
+#: includes/settings.php:703
+msgid "Show Meta Fields"
+msgstr "메타 필드 표시"
+
+#: includes/settings.php:540
+msgid "Meta fields"
+msgstr "메타 필드"
+
+#: block/common.php:396 elementor/widget.php:274 elementor/widget.php:1136
+#: includes/settings.php:365
+msgid "Content"
+msgstr "콘텐츠"
+
+#: includes/settings.php:346
+msgid "Thumbnail"
+msgstr "썸네일"
+
+#: includes/settings.php:171
+msgid "If value of the %s setting is not empty, this value should be smaller than that"
+msgstr "%s 설정 값이 비어 있지 않은 경우 이 값은 이보다 작아야 합니다."
+
+#: block/init.php:559 elementor/widget.php:2545 includes/html.php:1000
+#: includes/settings.php:519
+msgid "Read more..."
+msgstr "더 읽기..."
+
+#: admin/views/view.php:706
+msgid "Others"
+msgstr "기타"
+
+#: admin/views/view.php:450
+msgid "Select post status"
+msgstr "글 상태 선택"
+
+#: admin/views/view.php:416
+msgid "Not by author"
+msgstr "작성자가 아님"
+
+#: admin/views/view.php:400
+msgid "By author"
+msgstr "작성자별"
+
+#: admin/views/view.php:374 admin/views/view.php:377 elementor/widget.php:717
+#: includes/settings.php:92 includes/values.php:247
+msgid "Sort by"
+msgstr "정렬 기준"
+
+#: admin/views/view.php:314
+msgid "Select taxonomy"
+msgstr "분류 선택"
+
+#: admin/views/view.php:310 block/common.php:348 elementor/widget.php:452
+#: elementor/widget.php:2284 includes/settings.php:703
+#: includes/settings.php:1433 includes/values.php:245 block/build/index.js:1
+msgid "Taxonomy"
+msgstr "분류"
+
+#: admin/views/view.php:310 admin/views/view.php:397 admin/views/view.php:432
+#: admin/views/view.php:457
+msgid "Filter by %s"
+msgstr "필터 기준 %s"
+
+#: admin/views/view.php:68
+msgid "To see live output, please click %s button"
+msgstr "실시간 출력을 보려면 %s 버튼을 클릭하세요."
+
+#: admin/content-views-admin.php:351 admin/content-views-admin.php:424
+#: admin/content-views-admin.php:518 public/content-views.php:242
+msgctxt "post"
+msgid "Add New"
+msgstr "새로 추가"
+
+#: admin/views/view.php:215
+msgid "Enter ID of parent page to show its children"
+msgstr "자식을 표시할 상위 페이지의 ID를 입력합니다."
+
+#: includes/settings.php:730
+msgid "Size"
+msgstr "크기"
+
+#: elementor/widget.php:144 elementor/widget.php:1909 elementor/widget.php:2648
+#: includes/settings.php:207 includes/settings.php:1780 block/build/index.js:1
+msgid "Style"
+msgstr "스타일"
+
+#: elementor/widget.php:2641 includes/settings.php:179 block/build/index.js:1
+msgid "Type"
+msgstr "유형"
+
+#: admin/views/view.php:232
+msgid "Total number of posts to show. Leave empty to show all found posts"
+msgstr "표시할 총 글 수입니다. 검색된 모든 게시물을 표시하려면 비워 둡니다."
+
+#: admin/views/view.php:185
+msgid "List of post IDs to show (comma-separated values, for example: 1,2,3)"
+msgstr "표시할 글 ID 목록(쉼표로 구분된 값, 예: 1,2,3)"
+
+#: includes/settings.php:751
+msgid "Disable responsive image of WordPress"
+msgstr "워드프레스의 반응형 이미지 비활성화"
+
+#: includes/values.php:220
+msgid "Descending"
+msgstr "내림차순"
+
+#: includes/values.php:219
+msgid "Ascending"
+msgstr "오름차순"
+
+#: admin/views/view.php:332
+msgid "Filter by custom taxonomy"
+msgstr "사용자 정의 분류로 필터링"
+
+#: admin/views/view.php:178
+msgid "Include only"
+msgstr "포함만"
+
+#: elementor/widget.php:235
+msgid "Use manual excerpt"
+msgstr "수동 발췌 사용"
+
+#. Author URI of the plugin
+#: content-views.php
+msgid "http://profiles.wordpress.org/pt-guy"
+msgstr "http://profiles.wordpress.org/pt-guy"
+
+#. Plugin URI of the plugin
+#: content-views.php
+msgid "http://wordpress.org/plugins/content-views-query-and-display-post-page/"
+msgstr "http://wordpress.org/plugins/content-views-query-and-display-post-page/"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: content-views.php
+msgid "Content Views"
+msgstr "콘텐츠 뷰"
+
+#: public/content-views.php:251
+msgid "No views found in Trash."
+msgstr "휴지통에 조회수가 없습니다."
+
+#: public/content-views.php:250
+msgid "No views found."
+msgstr "조회 수가 없습니다."
+
+#: public/content-views.php:249
+msgid "Parent Views:"
+msgstr "상위 뷰:"
+
+#: public/content-views.php:248
+msgid "Search Views"
+msgstr "뷰 검색"
+
+#: public/content-views.php:244
+msgid "New View"
+msgstr "새 보기"
+
+#: public/content-views.php:240
+msgctxt "admin menu"
+msgid "Views"
+msgstr "보기"
+
+#: public/content-views.php:239
+msgctxt "post type singular name"
+msgid "View"
+msgstr "보기"
+
+#: public/content-views.php:238
+msgctxt "post type general name"
+msgid "Views"
+msgstr "보기"
+
+#: elementor/widget.php:226 includes/values.php:450
+msgid "Right"
+msgstr "오른쪽"
+
+#: block/common.php:342 elementor/widget.php:213
+msgid "Bottom"
+msgstr "바닥"
+
+#: elementor/widget.php:218 includes/values.php:449
+msgid "Left"
+msgstr "왼쪽"
+
+#: block/common.php:340 elementor/widget.php:211
+msgid "Top"
+msgstr "상단"
+
+#: includes/values.php:378
+msgid "New tab"
+msgstr "새 탭"
+
+#: includes/values.php:377
+msgid "Current tab"
+msgstr "현재 탭"
+
+#: includes/values.php:323
+msgid "Scrollable List"
+msgstr "스크롤 가능한 목록"
+
+#: includes/values.php:322
+msgid "Collapsible List"
+msgstr "접을 수 있는 목록"
+
+#: includes/values.php:321
+msgid "Grid"
+msgstr "그리드"
+
+#: includes/values.php:304
+msgid "Modified date"
+msgstr "수정된 날짜"
+
+#: admin/views/view.php:102 block/common.php:395 elementor/widget.php:271
+#: elementor/widget.php:1133 includes/settings.php:323 includes/values.php:301
+msgid "Title"
+msgstr "제목"
+
+#: includes/values.php:300
+msgid "ID"
+msgstr "ID"
+
+#: elementor/widget.php:859 block/build/index.js:1
+msgid "Search"
+msgstr "검색"
+
+#: includes/values.php:204
+msgid "Numbered pagination"
+msgstr "번호 매기기"
+
+#: includes/values.php:189 block/build/index.js:1
+msgid "Normal"
+msgstr "보통"
+
+#: includes/values.php:188
+msgid "Ajax"
+msgstr "Ajax"
+
+#: elementor/widget.php:1154
+msgid "Hide"
+msgstr "숨기기"
+
+#: elementor/widget.php:1153
+msgid "Show"
+msgstr "보이기"
+
+#: includes/values.php:172
+msgid "No"
+msgstr "아니오"
+
+#: includes/values.php:171
+msgid "Yes"
+msgstr "네"
+
+#: includes/values.php:102
+msgid "OR"
+msgstr "OR"
+
+#: includes/values.php:101
+msgid "AND"
+msgstr "AND"
+
+#: includes/settings.php:841
+msgid "Show Comment Count"
+msgstr "댓글 수 표시"
+
+#: includes/settings.php:803
+msgid "Show Author"
+msgstr "작성자 표시"
+
+#: includes/settings.php:784
+msgid "Show Date"
+msgstr "날짜 표시"
+
+#: includes/settings.php:684
+msgid "Show Content"
+msgstr "콘텐츠 표시"
+
+#: includes/settings.php:665
+msgid "Show Title"
+msgstr "제목 표시"
+
+#: includes/settings.php:646
+msgid "Show Thumbnail"
+msgstr "썸네일 표시"
+
+#: includes/settings.php:613
+msgid "Thumbnail position"
+msgstr "썸네일 위치"
+
+#: includes/settings.php:491 block/build/index.js:1
+msgid "Allow HTML tags (a, br, strong, em, strike, i, ul, ol, li) in excerpt"
+msgstr "발췌문에서 HTML 태그(a, br, strong, em, strike, i, ul, ol, li) 허용"
+
+#: includes/settings.php:465
+msgid "Generate excerpt by selecting the first X words of post content"
+msgstr "글 콘텐츠의 첫 X 단어를 선택하여 발췌문 생성하기"
+
+#: includes/settings.php:456
+msgid "Excerpt settings"
+msgstr "발췌 설정"
+
+#: includes/values.php:466
+msgid "Show Excerpt"
+msgstr "발췌문 표시"
+
+#: includes/values.php:465
+msgid "Show Full Content"
+msgstr "전체 콘텐츠 표시"
+
+#: includes/settings.php:251
+msgid "How to open item when click on Title, Thumbnail, Read-more button"
+msgstr "제목, 썸네일, 자세히 보기 버튼을 클릭할 때 항목을 여는 방법"
+
+#: includes/settings.php:243
+msgid "Open item in"
+msgstr "다음에서 항목 열기"
+
+#: includes/settings.php:150 includes/settings.php:506
+#: includes/settings.php:1164 includes/settings.php:1341
+#: includes/settings.php:1366 includes/settings.php:1653
+#: includes/settings.php:1759
+msgid "Enable"
+msgstr "활성화"
+
+#: admin/views/view.php:689 elementor/widget.php:277 elementor/widget.php:1130
+#: includes/hooks.php:107
+msgid "Pagination"
+msgstr "페이지 처리"
+
+#: elementor/widget.php:679 includes/settings.php:108 block/build/index.js:1
+msgid "Order"
+msgstr "주문"
+
+#: includes/settings.php:62 block/build/index.js:1
+msgid "Operator"
+msgstr "연산자"
+
+#: includes/settings.php:46
+msgid "Select terms"
+msgstr "용어 선택"
+
+#: includes/html.php:896
+msgid "Go to page"
+msgstr "페이지로 이동"
+
+#: includes/html.php:895
+msgid "Current page is"
+msgstr "현재 페이지는"
+
+#: includes/html.php:894
+msgid "Go to last page"
+msgstr "마지막 페이지로 이동"
+
+#: includes/html.php:893
+msgid "Go to next page"
+msgstr "다음 페이지로 이동"
+
+#: includes/html.php:892
+msgid "Go to previous page"
+msgstr "이전 페이지로 이동"
+
+#: includes/html.php:891
+msgid "Go to first page"
+msgstr "첫 페이지로 이동"
+
+#: block/common.php:397 elementor/widget.php:275 elementor/widget.php:1137
+#: includes/html.php:996 includes/settings.php:500
+msgid "Read More"
+msgstr "더 읽기"
+
+#: admin/views/view.php:547 admin/views/view.php:560 includes/hooks.php:115
+#: includes/settings.php:867 includes/settings.php:1080
+msgid "Items per row"
+msgstr "행당 항목 수"
+
+#: includes/hooks.php:107 includes/settings.php:158
+msgid "Items per page"
+msgstr "페이지당 항목 수"
+
+#: includes/hooks.php:76
+msgid "Please set value in"
+msgstr "값을 설정하세요."
+
+#: includes/hooks.php:75
+msgid "Please select an option in"
+msgstr "다음에서 옵션을 선택하세요."
+
+#: includes/html.php:257
+msgid "No posts found."
+msgstr "게시물을 찾을 수 없습니다."
+
+#: includes/functions.php:538 includes/html.php:423
+msgid "(no title)"
+msgstr "(제목 없음)"
+
+#: block/common.php:106 block/old/main.php:69
+msgid "view"
+msgstr "보기"
+
+#: admin/views/view.php:671 includes/hooks.php:101
+msgid "Fields settings"
+msgstr "필드 설정"
+
+#: admin/views/view.php:472 elementor/widget.php:828 block/build/index.js:1
+msgid "Enter keyword to searching for posts"
+msgstr "글 검색을 위한 키워드 입력"
+
+#: admin/views/view.php:457 elementor/widget.php:816 includes/values.php:248
+#: block/build/index.js:1
+msgid "Keyword"
+msgstr "키워드"
+
+#: admin/views/view.php:432 includes/values.php:246
+msgid "Status"
+msgstr "상태"
+
+#: elementor/widget.php:669 block/build/index.js:1
+msgid "Order by"
+msgstr "주문 기준"
+
+#: admin/views/view.php:357
+msgid "Relation"
+msgstr "연관성"
+
+#: admin/views/view.php:224 includes/settings.php:171
+msgid "Limit"
+msgstr "제한"
+
+#: admin/views/view.php:208
+msgid "Parent page"
+msgstr "상위 페이지"
+
+#: admin/views/view.php:200
+msgid "List of post IDs to exclude (comma-separated values, for example: 1,2,3)"
+msgstr "제외할 글 ID 목록(쉼표로 구분된 값, 예: 1,2,3)"
+
+#: admin/views/view.php:193
+msgid "Exclude"
+msgstr "제외"
+
+#: admin/views/view.php:146 elementor/widget.php:360 includes/hooks.php:86
+#: block/build/index.js:1
+msgid "Content type"
+msgstr "콘텐츠 유형"
+
+#: admin/views/view.php:131 includes/hooks.php:80
+msgid "Display Settings"
+msgstr "표시 설정"
+
+#: admin/views/view.php:127 includes/hooks.php:79
+msgid "Filter Settings"
+msgstr "필터 설정"
+
+#: admin/views/view.php:120 admin/views/view.php:750
+msgid "Save"
+msgstr "저장"
+
+#: admin/views/view.php:109
+msgid "Enter a name to identify your views easily"
+msgstr "보기를 쉽게 식별할 수 있는 이름을 입력하세요."
+
+#: admin/views/view.php:61 block/build/index.js:1
+msgid "Preview"
+msgstr "미리보기"
+
+#: admin/views/view.php:40 block/old/main.php:72 public/content-views.php:245
+msgid "Edit View"
+msgstr "보기 편집"
+
+#: includes/settings.php:943
+msgid "There is no option"
+msgstr "옵션이 없습니다."
+
+#: admin/content-views-admin.php:478 block/common.php:350
+#: includes/settings.php:703
+msgid "Date"
+msgstr "날짜"
+
+#: admin/content-views-admin.php:477 admin/views/view.php:397
+#: block/common.php:349 block/common.php:381 elementor/widget.php:774
+#: includes/settings.php:703 includes/values.php:249 block/build/index.js:1
+msgid "Author"
+msgstr "작성자"
+
+#: admin/content-views-admin.php:476
+msgid "Shortcode"
+msgstr "쇼트코드"
+
+#: admin/content-views-admin.php:458 admin/content-views-admin.php:518
+msgid "Edit"
+msgstr "편집"
+
+#: admin/content-views-admin.php:360 admin/content-views-admin.php:423
+msgid "Settings"
+msgstr "설정"
+
+#: admin/content-views-admin.php:351 public/content-views.php:243
+msgid "Add New View"
+msgstr "새 보기 추가"
+
+#: admin/content-views-admin.php:347 public/content-views.php:247
+msgid "All Views"
+msgstr "모든 보기"
+
+#: admin/content-views-admin.php:360
+msgid "Content Views Settings"
+msgstr "콘텐츠 뷰 설정"
+
+#: admin/content-views-admin.php:245
+msgid "Update Preview"
+msgstr "업데이트 미리보기"
+
+#: admin/content-views-admin.php:244
+msgid "Hide Preview"
+msgstr "미리보기 숨기기"
+
+#: admin/content-views-admin.php:243 admin/views/view.php:68
+#: admin/views/view.php:78
+msgid "Show Preview"
+msgstr "미리보기 표시"
+
+#: admin/content-views-admin.php:238 elementor/widget.php:481
+msgid "There is no taxonomy for selected content type"
+msgstr "선택한 콘텐츠 유형에 대한 분류가 없습니다."

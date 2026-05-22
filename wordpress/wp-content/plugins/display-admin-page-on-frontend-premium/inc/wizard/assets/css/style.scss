@@ -1,0 +1,773 @@
+
+//Estilos relacionado a app 
+$title-color-text: #333333;
+$bg-color-step-gray: #F0F0F2;
+$primary-color-wpfa: #1565D8;
+$border-radious-wpfa: 6px;
+$color-gray-text: #959595;
+$color-black-text: #3c434a;
+$color-green-wpfa: #00BB7B;
+
+
+$desktop: 1024px;
+$desktop-medium: 1100px;
+$desktop-large: 1300px;
+$desktop-large-xl: 1600px;
+
+#wpfa-app-initial-wizard.vue-app-wpfa{
+    display: none;
+}
+.container-wpfa-main-app{
+    padding: 35px 70px;
+    background: #fff;
+
+    @media screen and (max-width: $desktop-large) {
+        padding: 35px;
+    }
+    @media screen and (max-width: $desktop-medium) {
+        padding: 35px;
+    }
+    @media screen and (max-width: $desktop) {
+        padding: 35px 20px;
+    }
+
+    .button-primary:disabled {
+        background: #2271b1 !important;
+        border-color: #2271b1 !important;
+        color: #fff !important;;
+        text-decoration: none;
+        text-shadow: none;
+        opacity: 0.7 !important;;
+    }
+
+    .header-app{
+        text-align: center;
+
+        .logo-wp-frontend-admin{
+            max-width: 335px;
+        }
+
+        .title-section{
+            font-weight: bold;
+            font-size: 30px;
+            color: $title-color-text;
+        }
+    }
+
+    .img-logo-plugin{
+        .logo-wp-frontend-admin{
+            max-width: 200px;
+        }
+    }
+
+    .container-animation-loading-menu-items{
+        display: flex;
+        justify-content: center;
+
+        .lds-ellipsis {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+        .lds-ellipsis div {
+            position: absolute;
+            top: 33px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #c1c3c5;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+        .lds-ellipsis div:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+        @keyframes lds-ellipsis1 {
+            0% {
+              transform: scale(0);
+            }
+            100% {
+              transform: scale(1);
+            }
+        }
+        @keyframes lds-ellipsis3 {
+            0% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(0);
+            }
+        }
+        @keyframes lds-ellipsis2 {
+            0% {
+              transform: translate(0, 0);
+            }
+            100% {
+              transform: translate(24px, 0);
+            }
+        }
+    }
+    
+    .wpfa-body-steps{
+        display: flex;
+
+        .wpfa-menu-steps{
+            width: 20%;
+            border-right: 3px solid #E6E9E8;
+
+            @media screen and (max-width: $desktop-large-xl) {
+                width: 25%;
+            }
+            @media screen and (max-width: $desktop-large) {
+                width: 30%;
+            }
+            @media screen and (max-width: $desktop-medium) {
+                width: 35%;
+            }
+            @media screen and (max-width: $desktop) {
+                width: 35%;
+            }
+        }
+        .wpfa-container-current-view-step{
+            width: 80%;
+            
+            @media screen and (max-width: $desktop-large-xl) {
+                padding-left: 35px;
+                width: 75%;
+            }
+            @media screen and (max-width: $desktop-large) {
+                padding-left: 35px;
+                width: 60%;
+            }
+            @media screen and (max-width: $desktop-medium) {
+                width: 65%;
+                padding-left: 35px;
+            }
+            @media screen and (max-width: $desktop) {
+                width: 65%;
+                padding-left: 25px;
+            }
+            padding-left: 75px;
+        }
+        .btn-wpfa-wizard{
+            margin-top: 40px;
+            padding: 10px 35px;
+            cursor: pointer;
+            border: none;
+            border-radius: $border-radious-wpfa;
+
+            &.button-step-next-wizard{
+                margin-right: 20px;
+            }
+            &.wpfa-color-primary{
+                background: $primary-color-wpfa;
+                color: #fff;
+            }
+            &.wpfa-color-secondary{
+                border: 1px solid $primary-color-wpfa;
+                background: transparent;
+                color: $primary-color-wpfa;
+            }
+        }
+        .wpfa-title-steps-component{
+            color: $title-color-text;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .wpfa-description-steps-component{
+            margin-bottom: 0px;
+            color: $color-black-text;
+            margin-top: 0px;
+        }
+        .wpfa-description-note-footer-required-plugins{
+            margin-top: 20px;
+        }
+
+        //Estilos de componente: required-plugins
+        .wpfa-container-component-required-plugins{
+            .wpfa-actions-required-plugins{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media screen and (max-width: $desktop-large) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .wpfa-actions-buttons{
+                    margin-top: 15px;
+                }
+            }
+            .wpfa-container-list-plugins{
+                margin-top: 35px;
+
+                .wpfa-row-list-plugins{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-content: center;
+                    flex-wrap: wrap;
+
+                    @media screen and (max-width: $desktop-large-xl) {
+                        justify-content: center;
+                    }
+                   
+                    .wpfa-item-plugin{
+                        background: #7F54B3;
+                        max-width: 295px;
+                        border-radius: $border-radious-wpfa;
+                        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                        margin-bottom: 10px;
+                        height: 330px;
+                        margin-left: 6px;
+                        
+
+                        @media screen and (max-width: $desktop-large) {
+                            margin: auto;
+                            margin-bottom: 10px;
+                        }
+                        @media screen and (max-width: $desktop-medium) {
+                            margin: auto;
+                            margin-bottom: 10px;
+                        }
+                        @media screen and (max-width: $desktop) {
+                            margin: auto;
+                            margin-bottom: 10px;
+                        }
+
+                        .wpfa-content-animation-button{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .loader {
+                                width: 20px;
+                                height: 20px;
+                                border: 2px dotted #FFF;
+                                border-radius: 50%;
+                                display: inline-block;
+                                position: relative;
+                                box-sizing: border-box;
+                                animation: rotation 2s linear infinite;
+                              }
+                              
+                            @keyframes rotation {
+                                0% {
+                                  transform: rotate(0deg);
+                                }
+                                100% {
+                                  transform: rotate(360deg);
+                                }
+                            } 
+                        }
+
+                        .wpfa-container-plugin{
+                            margin-top: 65px;
+                            height: calc( 100% - 65px);
+
+                            .wpfa-plugin-logo-required{
+                                position: relative;
+                                top: -15px;
+                                width: 62px;
+                                height: 62px;
+                                border-radius: $border-radious-wpfa;
+                                border: 1px solid #fff;
+                                left: 16px;
+                            }
+                            .wpfa-content-plugin{
+                                background: #fff;
+                                padding: 35px 15px 15px 15px;
+                                border-bottom-left-radius: $border-radious-wpfa;
+                                border-bottom-right-radius: $border-radious-wpfa;
+                                height: calc( 100% - 68px);
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-top: -50px;
+
+                                .wpfa-title-plugin-required{
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    color: $title-color-text;
+                                    margin: 0px;
+                                }
+                                .wpfa-link-plugin-required{
+                                    margin-top: 0px;
+                                }
+                                .wpfa-link-plugin-required,
+                                .wpfa-description-plugin-required{
+                                    font-size: 12px;
+                                }
+                                .wpfa-actions-footer-plugin{
+                                    //margin-top: 40px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    font-size: 13px;
+
+                                    .wpfa-installation-details-plugin-required{
+                                        color: $color-green-wpfa;
+
+                                        svg{
+                                            fill: $color-green-wpfa;
+                                            width: 16px;
+                                            height: 16px;
+                                            position: relative;
+                                            top: 3px;
+                                        }
+                                        img{
+                                            position: relative;
+                                            top: 3px;
+                                        }
+                                    }
+                                    .wpfa-not-installation-details-plugin-required{
+                                        color: $color-gray-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //Estilos de componente: dashboard-site
+        .wpfa-container-component-dashboard-site{
+            .wpfa-select-dashboard-site{
+                max-width: 540px;
+                margin-top: 25px;
+
+                .multiselect__input{
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    min-height: 20px;
+                    margin-bottom: 8px;
+                    padding: 0 0 0 5px;
+                    line-height: 20px;
+                }
+                .multiselect__tags{
+                    border-radius: $border-radious-wpfa;
+                }
+            }
+        }
+
+
+        //Estilos de componente: dashboard-design
+        .wpfa-container-component-dashboard-design{
+            .wpfa-lightbox-templates{
+                position: fixed;
+                z-index: 10000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wpfa-modal-content-lightbox{
+                    position: relative;
+                    margin: auto;
+                    padding: 0;
+                    width: 90%;
+                    max-width: 1400px;
+
+                    .wpfa-close-lightbox{
+                        display: block;
+                        margin-left: auto;
+                        margin-bottom: 5px;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .wpfa-container-list-templates{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 35px;
+
+                .wpfa-item-list-template{
+                    max-width: 500px;
+                    width: 50%;
+                    margin-bottom: 55px;
+                    text-align: center;
+
+
+                    @media screen and (min-width: $desktop-large-xl) {
+                        width: 47%;
+                        padding: 0px 10px;
+                    }
+                    @media screen and (max-width: $desktop-large-xl) {
+                        width: 100%;
+                    }
+                    @media screen and (max-width: $desktop-large) {
+                        width: 100%;
+                    }
+                    @media screen and (max-width: $desktop-medium) {
+                        width: 100%;
+                    }
+                    @media screen and (max-width: $desktop) {
+                        width: 100%;
+                    }
+
+                    &.wpfa-select-template-design{
+                        img{
+                            width: 100%;
+                            box-shadow: 0px 0px 10px rgba(21, 101, 216, 0.5);
+                        }
+                        .wpfa-color-secondary{
+                            background: $primary-color-wpfa;
+                            color: #fff;
+                        }
+                        .wpfa-title-template{
+                            color: $primary-color-wpfa;
+                        }
+                    }
+
+                    .wpfa-title-template{
+                        font-weight: bold;
+                        font-size: 18px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: $title-color-text;
+                    }
+                    img{
+                        width: 100%;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        //Estilos de componente: dashboard-menu
+        .wpfa-container-component-dashboard-menu{
+            .wpfa-list-menu-site{
+                margin-top: 35px;
+
+                .wpfa-container-item-menu-site{
+                   
+                    .wpfa-item-menu-site{
+                        border-radius: $border-radious-wpfa;
+                        border: 1px solid #DCDCDC;
+                        padding: 2px 20px;
+                        margin-bottom: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .wpfa-item-menu-info{
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .wpfa-item-menu-actions{
+                            .wpfa-toggle-item-menu{
+                                padding: 0px 15px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background: transparent;
+                                border: none;
+                                font-size: 20px;
+                                color: $color-gray-text;
+                                margin-top: -5px;
+                                cursor: pointer;
+
+                                img{
+                                    width: 14px;
+                                    position: relative;
+                                    top: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .wpfa-item-child-menu{
+                        margin-left: 55px;
+                        justify-content: flex-start;
+                    }
+
+                    .wpfa-field-item-menu{
+                        margin-right: 15px;
+                        margin-left: 30px;
+                        padding: 10px 0px;
+                        
+                        .wpfa-text-item-menu{
+                            color: $title-color-text;
+                            font-size: 17px;                     
+                        }
+                        input{
+                            display: none;
+                        }
+                    }
+
+                    .button-actions-childs-items{
+                        margin-left: 10px;
+                    }
+
+                    .wpfa-link-item-menu{
+                        font-size: 17px;
+                        color: $title-color-text;
+
+                        img{
+                            width: 16px;
+                            position: relative;
+                            top: 2px;
+                        }
+                    }
+
+                    .wpfa-text-item-menu{
+                        &:before{
+                            content: '';
+                            display: inline-block;
+                            width: 1.1rem;
+                            height: 1.1rem;
+                            border-radius: 4px;
+                            margin-right: 12px;
+                            border: 2px solid #d4d9dd;
+                            background: transparent;
+                            margin-left: -25px !important;
+                            position: relative;
+                            top: 2px;
+                            box-sizing: border-box;
+                        }
+                    }
+                    input:checked+span.wpfa-text-item-menu:before{
+                        border: none;
+                        background-color: $primary-color-wpfa;
+                        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%0D%0A%09%3Cpath%20fill%3D%27%23FFFFFF%27%20d%3D%27M7%2C11c-0.3%2C0-0.5-0.1-0.7-0.3l-3-3c-0.4-0.4-0.4-1%2C0-1.4s1-0.4%2C1.4%2C0l2.2%2C2.2l4.3-5.2%0D%0A%09%09c0.4-0.4%2C1-0.5%2C1.4-0.1c0.4%2C0.4%2C0.5%2C1%2C0.1%2C1.4l-5%2C6C7.6%2C10.9%2C7.3%2C11%2C7%2C11C7%2C11%2C7%2C11%2C7%2C11z%27%2F%3E%0D%0A%3C%2Fsvg%3E");
+                        background-repeat: none;
+                        background-position: center 1px;
+                    }
+                   
+                }
+            }
+        }
+
+        //Estilos de componente: done
+        .wpfa-container-component-done{
+            .wpfa-container-steps-completed{
+                border-radius: $border-radious-wpfa;
+                padding: 20px;
+                background: $bg-color-step-gray;
+                text-align: center;
+
+                svg{
+                    width: 50px;
+                    fill: $primary-color-wpfa;
+                }
+
+                p{
+                    margin: 8px;
+                    font-size: 16px;
+                }
+                .btn-wpfa-wizard{
+                    margin-top: 10px;
+                }
+            }
+            .wpfa-done-progress-bar{
+                margin-top: 50px;
+                text-align: center;
+
+                .btn-wpfa-wizard{
+                    margin-top: 10px;
+                }
+                .wpfa-title-progress-bar{
+                    font-weight: bold;
+                    font-size: 17px;
+                    text-align: center;
+                    color: $title-color-text;
+                }
+                .wpfa-container-progress-bar{
+                    max-width: 900px;
+                    margin: auto;
+                    
+
+                    .wpfa-container-progress-bar-div{
+                        position: relative;
+                        display: inline-block;
+                        background: #eee;
+                        height: 10px;
+                        border-radius: 50px;
+                        overflow: hidden;
+                        width: 100%;
+                       
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 0%;
+                            background: $primary-color-wpfa;
+                        }
+    
+                        progress{
+                            width: 100%;
+                            opacity: 0;
+                        }
+                    }
+                }
+                .wpfa-description-progress-bar{
+                    text-align: center;
+                    color: $color-gray-text;
+                }
+            }
+        }
+    }
+    
+    //Estilos de wizard menu
+    .wpfa-menu-steps{    
+        .list-vertical-steps{
+            max-width: 218px;
+            position: sticky;
+            top: 120px;
+    
+            .item-menu-vertical-step{
+                display: flex;
+                border: none;
+                position: relative;
+                padding-bottom: 60px;
+                cursor: pointer;
+                
+                &:last-child{
+                    &::before{
+                        display: none;
+                    }
+                }
+
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 2px;
+                    height: 100%;
+                    background: $bg-color-step-gray;
+                    left: 22px;
+                    top: 5px;
+                    position: absolute;
+                    z-index: 1;
+                }
+
+
+                .circle{
+                    width: 48px;
+                    height: 48px;
+                    background: $bg-color-step-gray;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2;
+
+                    i{
+                        font-size: 14px;
+                        color: $color-gray-text;
+                    }
+                    svg{
+                        fill: $color-gray-text;
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+    
+                .content-item-step{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 20px;
+                    text-align: left;
+    
+                    .title-step,
+                    .id-step{
+                        display: block;
+                        width: 100%;
+
+                    }
+                    .title-step{
+                        font-weight: bold;
+                        font-size: 16px;
+                        color: $color-gray-text;
+                    }
+                    .id-step{
+                        font-size: 11px;
+                        color: #C2C2C2;
+                    }
+                }
+
+                &.active-step-wizard{
+                    .circle{
+                        background: $primary-color-wpfa;
+                        color: #fff;
+
+                        i{
+                            color: #fff;
+                        }
+                        svg{
+                            fill: #fff;
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                    .id-step{
+                        color: $primary-color-wpfa;
+                    }
+                    .title-step{
+                        color: $title-color-text;
+                    }
+                }
+
+                &.completed-step-wizard{
+                    &::before{
+                        background: $primary-color-wpfa;
+                    }
+                    .circle{
+                        background: $primary-color-wpfa;
+                        color: #fff;
+
+                        i{
+                            color: #fff;
+                        }
+                        svg{
+                            fill: #fff;
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                    .title-step{
+                        color: $primary-color-wpfa;
+                    }
+                    .id-step{
+                        color: $color-green-wpfa;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+

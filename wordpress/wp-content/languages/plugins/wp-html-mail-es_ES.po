@@ -1,0 +1,261 @@
+# Translation of Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-13 15:54:06+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release)\n"
+
+#: includes/class-template-designer.php:399
+msgid "If you don't use a child theme and need an update save place to store your email template you can also copy the template file from the plugin to <strong>wp-content/uploads/wp-html-mail/template.html</strong>."
+msgstr "Si no usas un tema hijo y necesitas un lugar de actualización seguro para almacenar tu plantilla de correo electrónico, también puedes copiar el archivo de la plantilla desde el plugin a «<strong>wp-content/uploads/wp-html-mail/template.html</strong>»."
+
+#. Author URI of the plugin
+#: wp-html-mail.php
+msgid "https://codemiq.com"
+msgstr "https://codemiq.com"
+
+#. Author of the plugin
+#: wp-html-mail.php
+msgid "Hannes Etzelstorfer // codemiq"
+msgstr "Hannes Etzelstorfer // codemiq"
+
+#. Plugin URI of the plugin
+#: wp-html-mail.php
+msgid "https://codemiq.com/en/plugins/wp-html-mail-email-templates/"
+msgstr "https://codemiq.com/en/plugins/wp-html-mail-email-templates/"
+
+#: includes/class-mailbuilder.php:325
+msgid "show / hide footer for this email"
+msgstr "mostrar/ocultar el pie de página para este correo electrónico"
+
+#: includes/class-mailbuilder.php:315
+msgid "show / hide header for this email"
+msgstr "mostrar/ocultar la cabecera para este correo electrónico"
+
+#: includes/class-haet-mail.php:1101
+msgid "<strong>Warning:</strong> WP HTML Mail – Email test mode is enabled. All emails are redirected to <strong>%1$s</strong>."
+msgstr "<strong>Advertencia:</strong> WP HTML Mail – El modo de pruebas del correo electrónico está activado. Todos los correos electrónicos se redirigen a <strong>%1$s</strong>."
+
+#: includes/class-template-designer.php:398
+msgid "<strong>Only use this feature if you know what you are doing!</strong><br>From this point you have to continue your work in HTML and CSS code."
+msgstr "<strong>Usa esta función solamente si sabes lo que estás haciendo</strong><br>A partir de este punto debes continuar tu trabajo con código HTML y CSS."
+
+#: includes/class-template-designer.php:407
+msgid "Are you sure you want to write your own code?"
+msgstr "¿Seguro que quieres escribir tu propio código?"
+
+#: includes/class-template-designer.php:376
+msgid "Delete ALL settings"
+msgstr "Borrar TODOS los ajustes"
+
+#: includes/class-template-designer.php:370
+msgid "Delete design settings"
+msgstr "Borrar ajustes de diseño"
+
+#: includes/class-template-designer.php:373
+#: includes/class-template-designer.php:379
+msgid "Are you sure? This can not be undone!"
+msgstr "¿Estás seguro? ¡Esto no se puede deshacer!"
+
+#: includes/class-mailbuilder.php:398
+msgid "Done"
+msgstr "Hecho"
+
+#: includes/class-mailbuilder.php:393
+msgid "CSS changes are not shown live. Please save the email to see your changes."
+msgstr "Los cambios de CSS no se muestran en directo. Guarda el correo electrónico para ver tus cambios."
+
+#: includes/class-mailbuilder.php:384
+msgid "Mobile CSS"
+msgstr "CSS móvil"
+
+#: includes/class-mailbuilder.php:333 includes/class-mailbuilder.php:373
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: includes/class-haet-mail.php:1088
+msgid "Settings"
+msgstr "Ajustes"
+
+#: includes/class-haet-mail.php:211 includes/class-haet-mail.php:220
+msgid "Settings deleted."
+msgstr "Ajustes borrados."
+
+#: includes/class-mailbuilder.php:383
+msgid "WP HTML Mail converts all desktop styling to inline CSS code for better support in webmail clients. Mobile CSS stays in the head, so please don't write @media queries to the field above but use the mobil CSS field below"
+msgstr "WP HTML Mail convierte todos los estilos del escritorio en código CSS integrado para una mejor compatibilidad en los clientes web de correo electrónico. El CSS para móviles está en la cabecera, por lo que, por favor, no escribas las consultas @media en el campo anterior, hazlo en el siguiente campo de CSS para móviles"
+
+#: includes/class-mailbuilder.php:160
+msgid "Update"
+msgstr "Actualizar"
+
+#: includes/class-contenttype.php:166
+msgid "Padding mobile"
+msgstr "Relleno en móvil"
+
+#: includes/class-contenttype.php:139
+msgid "Padding desktop"
+msgstr "Relleno en escritorio"
+
+#: includes/class-contenttype.php:127
+msgid "Content Element Settings"
+msgstr "Ajustes del contenido de elemento"
+
+#: includes/class-mailbuilder.php:139
+msgid "Attach files"
+msgstr "Adjuntar archivos"
+
+#: includes/class-mailbuilder.php:187 template-designer/build/index.js:1
+msgid "Add attachments"
+msgstr "Añadir adjuntos"
+
+#: wp-html-mail.php:56
+msgid "<strong>Warning:</strong> To use WP HTML Mail please update your PHP version to 7.2 or higher in your hosting admin panel."
+msgstr "<strong>Advertencia:</strong> Para usar WP HTML Mail, por favor, actualiza tu versión de PHP a la 7.2 o superior en el panel de administración de tu alojamiento."
+
+#. Description of the plugin
+#: wp-html-mail.php
+msgid "Create your own professional email design for all your outgoing WordPress emails"
+msgstr "Crea tu propio diseño de correo electrónico profesional para todos los correos que envíes en WordPress"
+
+#: includes/class-haet-mail.php:74
+msgid "Your message has been sent."
+msgstr "Su mensaje ha sido enviado."
+
+#: views/admin/settings.php:77 views/admin/settings.php:80
+msgid "Send a test mail"
+msgstr "Enviar un correo de prueba"
+
+#: views/admin/settings.php:53 template-designer/build/index.js:1
+msgid "Save and Preview"
+msgstr "Guardar y abrir vista previa"
+
+#: includes/class-contenttype.php:132 template-designer/build/index.js:1
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: includes/class-template-designer.php:397
+msgid "Customize your mail template as far as you can. Then click this button to export the template to your theme directory for further modifications.<br>The template will be created in <strong>wp-content/YOUR-THEME/wp-html-mail/template.html</strong>"
+msgstr "Personaliza tu plantilla de correo todo lo que puedas. Luego haz clic en este botón para exportar la plantilla al directorio de tu tema para más modificaciones.<br>Se creará la plantilla en <strong>wp-content/YOUR-THEME/wp-html-mail/template.html</strong>"
+
+#: includes/class-template-designer.php:396
+msgid "WARNING: Your theme directory is not writable by the server. Please change the permission to allow us to create the mail template."
+msgstr "ADVERTENCIA: El servidor no puede sobre el directorio de tu tema. Por favor cambia los permisos para poder crear la plantilla de correo."
+
+#: includes/class-template-designer.php:392
+msgid "You already have a custom template. If you create a new one the existing template will be backed up."
+msgstr "Ya tienes una plantilla personalizada. Si creas una nueva, se guardará una copia de la plantilla existente."
+
+#: includes/class-template-designer.php:404
+msgid "create template file in my theme folder"
+msgstr "crear archivo de plantilla en la carpeta de mi tema"
+
+#: includes/class-mailbuilder.php:509
+msgid "Add Content Element"
+msgstr "Agregar elemento de contenido"
+
+#: includes/class-contenttype.php:200 includes/class-mailbuilder.php:367
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: includes/class-contenttype.php:196 includes/class-mailbuilder.php:363
+msgid "Apply"
+msgstr "Aplicar"
+
+#: includes/class-mailbuilder.php:130
+msgid "Email Content Builder"
+msgstr "Generador de contenido de correo electrónico"
+
+#: includes/class-mailbuilder.php:122
+msgid "Email Subject"
+msgstr "Asunto del correo electrónico"
+
+#: includes/class-mailbuilder.php:114
+msgid "Message"
+msgstr "Mensaje"
+
+#: includes/class-mailbuilder.php:77
+msgid "Custom Emails"
+msgstr "Correos electrónicos personalizados"
+
+#: includes/class-mailbuilder.php:76
+msgid "Parent Custom Email:"
+msgstr "Correo electrónico personalizado original:"
+
+#: includes/class-mailbuilder.php:75
+msgid "No Custom Emails found in Trash"
+msgstr "No se han encontrado correos electrónicos personalizados en la Papelera"
+
+#: includes/class-mailbuilder.php:74
+msgid "No Custom Emails found"
+msgstr "No se han encontrado correos electrónicos personalizados"
+
+#: includes/class-mailbuilder.php:73
+msgid "Search Custom Emails"
+msgstr "Buscar correos electrónicos personalizados"
+
+#: includes/class-mailbuilder.php:72
+msgid "View Custom Email"
+msgstr "Ver correo personalizado"
+
+#: includes/class-mailbuilder.php:71
+msgid "New Custom Email"
+msgstr "Nuevo correo personalizado"
+
+#: includes/class-mailbuilder.php:70
+msgid "Edit Custom Email"
+msgstr "Editar correo personalizado"
+
+#: includes/class-mailbuilder.php:68 includes/class-mailbuilder.php:69
+msgid "Add New Custom Email"
+msgstr "Añadir nuevo correo personalizado"
+
+#: includes/class-mailbuilder.php:67
+msgid "custom email"
+msgstr "Correo electrónico personalizado"
+
+#: includes/class-mailbuilder.php:66
+msgid "custom emails"
+msgstr "Correos electrónicos personalizados"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:13
+msgid "The administrator has unlocked your file"
+msgstr "El administrador ha desbloqueado tu archivo"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:11
+msgid "Order Pending: Payment Required"
+msgstr "Pedido pendiente: pago no realizado"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:10
+msgid "Purchase Receipt"
+msgstr "Recibo de compra"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:9
+msgid "Transaction Report"
+msgstr "Informe de transacción"
+
+#: includes/class-haet-mail.php:247
+msgid "Settings Updated."
+msgstr "Ajustes Actualizados."
+
+#: includes/class-haet-mail.php:195
+msgid "Email template"
+msgstr "Plantilla de correo electrónico"
+
+#: includes/class-haet-mail.php:195
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: includes/class-contenttype-twocol.php:48
+msgid "Two Columns"
+msgstr "Dos columnas"
+
+#: includes/class-contenttype-text.php:64
+msgid "Text"
+msgstr "Texto"

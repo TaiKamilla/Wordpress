@@ -1,0 +1,242 @@
+# Translation of Plugins - User Menus &#8211; Nav Menu Visibility - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - User Menus &#8211; Nav Menu Visibility - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-06-16 11:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: fr_FR\n"
+"Project-Id-Version: Plugins - User Menus &#8211; Nav Menu Visibility - "
+"Stable (latest release)\n"
+"Language-Team: French (France)"
+
+#: includes/classes/admin/reviews.php:244
+msgid "2 weeks"
+msgstr "2 semaines"
+
+#: includes/classes/admin/reviews.php:252
+msgid "3 months"
+msgstr "3 mois"
+
+#: includes/classes/importer/menu.php:123
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+"Une nouvelle version de cet outil d’importation est disponible. Veuillez "
+"faire la mise à jour vers la version %s pour assurer la compatibilité des "
+"nouveaux fichiers d’exportation."
+
+#: includes/classes/admin/menu-editor.php:167
+msgid "Add to Menu"
+msgstr "Ajouter au menu"
+
+#: includes/classes/importer/menu.php:294
+msgid "All done."
+msgstr "Terminé."
+
+#: includes/classes/user/codes.php:26
+msgid "Avatar"
+msgstr "Avatar"
+
+#: includes/classes/admin/menu-settings.php:46
+msgid "Avatar Size"
+msgstr "Taille de l’avatar"
+
+#: includes/classes/importer/menu.php:134
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+"Choisissez un fichier WXR (.xml) à téléverser, puis cliquez sur « Téléverser "
+"le fichier et importer »."
+
+#: includes/classes/admin/menu-settings.php:147
+msgid "Choose which roles can see this link"
+msgstr "Choisissez quels rôles peuvent voir ce lien"
+
+#: includes/classes/admin/menu-settings.php:154
+msgid "Choose which roles won't see this link"
+msgstr "Choisissez quels rôles ne verront pas ce lien"
+
+#: includes/classes/admin/menu-settings.php:65
+msgid "Current Page"
+msgstr "Page actuelle"
+
+#: includes/classes/admin/menu-settings.php:67
+msgid "Custom URL"
+msgstr "URL personnalisée"
+
+#: includes/classes/user/codes.php:30
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#: includes/classes/user/codes.php:32
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/classes/admin/menu-settings.php:93
+msgid "Enter a url user should be redirected to"
+msgstr "Saisissez une URL vers laquelle l’utilisateur doit être redirigé"
+
+#: includes/classes/admin/menu-settings.php:58
+msgid "Everyone"
+msgstr "Tout le monde"
+
+#: includes/classes/user/codes.php:27
+msgid "First Name"
+msgstr "Prénom"
+
+#: includes/classes/importer/menu.php:294
+msgid "Have fun!"
+msgstr "Amusez-vous !"
+
+#: includes/classes/admin/reviews.php:239
+msgid ""
+"Hi there! You've been using the User Menus plugin on your site for %s now - "
+"We hope it's been helpful. If you're enjoying the plugin, would you mind "
+"rating it 5-stars to help spread the word?"
+msgstr ""
+"Bonjour ! Vous avez utilisé l’extension User Menus sur votre site depuis %s "
+"maintenant - Nous espérons qu’elle est très utile. Si vous l’appréciez, "
+"merci de nous donner une évaluation 5 étoiles pour nous aider et nous "
+"motiver ?"
+
+#: includes/classes/admin/menu-settings.php:66
+msgid "Home Page"
+msgstr "Page d’accueil"
+
+#: includes/classes/admin/reviews.php:408
+msgid "I already did"
+msgstr "Je l’ai déjà fait"
+
+#: includes/classes/importer/menu.php:116
+msgid "Import Nav Menus"
+msgstr "Import des menus de navigation"
+
+#: includes/classes/admin/menu-importer.php:46
+msgid ""
+"Import nav menus and other menu item meta skipped by the default importer"
+msgstr ""
+"Importer les menus de navigation et autres métas d’élément de menu ignorés "
+"par l’outil d’importation par défaut"
+
+#: includes/classes/admin/menu-editor.php:203
+msgid "Insert User Menu Codes"
+msgstr "Insérer des codes User Menu"
+
+#: includes/classes/user/codes.php:28
+msgid "Last Name"
+msgstr "Nom"
+
+#: includes/classes/admin/menu-settings.php:60
+msgid "Logged In Users"
+msgstr "Utilisateurs connectés"
+
+#: includes/classes/admin/menu-settings.php:59
+msgid "Logged Out Users"
+msgstr "Utilisateurs déconnectés"
+
+#: includes/classes/admin/menu-editor.php:84
+msgid "Login"
+msgstr "Connexion"
+
+#: includes/classes/admin/menu-editor.php:92
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: includes/classes/user/codes.php:31
+msgid "Nickname"
+msgstr "Pseudonyme"
+
+#: includes/classes/admin/reviews.php:403
+msgid "Nope, maybe later"
+msgstr "Non, peut-être ultérieurement"
+
+#: includes/classes/admin/reviews.php:398
+msgid "Ok, you deserve it"
+msgstr "Ok, vous le méritez"
+
+#: user-menus.php:238
+msgid "Plugin Activation Error"
+msgstr "Erreur d’activation de l’extension"
+
+#: includes/classes/admin/menu-editor.php:88
+msgid "Register"
+msgstr "S’inscrire"
+
+#. translators: 1: link to registration page, 2: closing link tag.
+#: includes/classes/admin/menu-editor.php:140
+msgid "Registration is %1$scurrently disabled%2$s on your site."
+msgstr "L’enregistrement est %1$sactuellement désactivé%2$s sur votre site."
+
+#: includes/classes/admin/menu-editor.php:161
+msgid "Select All"
+msgstr "Tout sélectionner"
+
+#: includes/classes/importer/menu.php:154,
+#: includes/classes/importer/menu.php:149,
+#: includes/classes/importer/menu.php:164,
+#: includes/classes/importer/menu.php:225,
+#: includes/classes/importer/menu.php:236
+msgid "Sorry, there has been an error."
+msgstr "Désolé, une erreur est survenue."
+
+#. translators: 1: Plugin Name, 2: Flagged software (PHP or WP), 3: PHP or WordPress version
+#: user-menus.php:235
+msgid "The %4$s %1$s %5$s plugin requires %2$s version %3$s or greater."
+msgstr "L’extension %4$s %1$s %5$s nécessite %2$s version %3$s ou supérieure."
+
+#: includes/classes/importer/menu.php:155
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+"Le fichier d’exportation est introuvable dans <code>%s</code>. Cela semble "
+"venir d’un problème de droits."
+
+#: includes/classes/importer/menu.php:226
+msgid "The file does not exist, please try again."
+msgstr "Le fichier n’existe pas, veuillez réessayer."
+
+#: includes/classes/importer/menu.php:173
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+"Ce fichier WXR (version %s) n’est peut-être pas pris en charge par cette "
+"version de l’outil d’importation. Veuillez penser à le mettre à jour."
+
+#: includes/classes/importer/menu.php:133
+msgid ""
+"Upload your WordPress export (WXR) file and import the Nav Menus and any "
+"meta for the Nav Menu items."
+msgstr ""
+"Téléversez votre fichier d’exportation WordPress (WXR) et importez les menus "
+"de navigation et toute méta pour les éléments du menu de navigation."
+
+#: includes/classes/menu/items.php:51
+msgid "User Link"
+msgstr "Lien utilisateur"
+
+#: includes/classes/admin/menu-editor.php:70
+msgid "User Links"
+msgstr "Liens utilisateur"
+
+#: includes/classes/user/codes.php:29
+msgid "Username"
+msgstr "Identifiant"
+
+#: includes/classes/admin/menu-settings.php:75
+msgid "Where should users be taken afterwards?"
+msgstr "Où les utilisateurs doivent-ils être emmenés par la suite ?"
+
+#: includes/classes/admin/menu-settings.php:129,
+#: includes/classes/admin/menu-settings.php:105
+msgid "Who can see this link?"
+msgstr "Qui peut voir ce lien ?"
+
+#: includes/classes/admin/menu-importer.php:45
+msgid "WP Nav Menus"
+msgstr "WP Nav Menus"

@@ -1,0 +1,2528 @@
+# Translation of Plugins - Polylang - Stable (latest release) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - Polylang - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-04-27 09:57:26+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - Polylang - Stable (latest release)\n"
+
+#: settings/settings-url.php:70
+msgid "Some themes or plugins may not be fully compatible with the language defined by domains."
+msgstr "某些佈景主題或外掛可能無法與依據網域定義的語言完全相容。"
+
+#: modules/wizard/view-wizard-step-licenses.php:21
+msgid "Please enter your license keys:"
+msgstr "請輸入專屬授權金鑰:"
+
+#. translators: %s is a URL slug: `/language/`.
+#: modules/site-health/admin-site-health.php:138 settings/settings-url.php:175
+msgid "Keep %s in pretty permalinks"
+msgstr "保留易於辨識的永久連結中的 %s"
+
+#. translators: %s is a URL slug: `/language/`.
+#: modules/site-health/admin-site-health.php:131 settings/settings-url.php:160
+msgid "Remove %s in pretty permalinks"
+msgstr "移除易於辨識的永久連結中的 %s"
+
+#: modules/REST/V1/Settings.php:161
+msgid "Sorry, you are not allowed to edit options."
+msgstr "很抱歉，目前的登入身分沒有編輯選項的權限。"
+
+#: modules/REST/V1/Languages.php:788
+msgid "Invalid language identifier"
+msgstr "無效的語言識別碼。"
+
+#: modules/REST/V1/Languages.php:777
+msgid "Invalid language slug"
+msgstr "無效的語言代稱。"
+
+#: modules/REST/V1/Languages.php:754
+msgid "Invalid language ID"
+msgstr "無效的語言 ID。"
+
+#: modules/REST/V1/Languages.php:687 modules/REST/V1/Languages.php:710
+msgid "The locale is invalid."
+msgstr "無效的地區語言。"
+
+#: modules/REST/V1/Languages.php:623
+msgid "Number of items of this type of content in this language."
+msgstr "這個語言的這個內容類型的項目數量。"
+
+#. translators: %s is the name of the term property (`term_id` or
+#. `term_taxonomy_id`).
+#: modules/REST/V1/Languages.php:612 modules/REST/V1/Languages.php:618
+msgid "The %s of the language term for this translatable entity."
+msgstr "這個可翻譯實體的語言分類法清單的 %s。"
+
+#: modules/REST/V1/Languages.php:597
+msgid "Tells whether the default category must be created when creating a new language."
+msgstr "告知建立新語言時是否必須建立預設分類。"
+
+#: modules/REST/V1/Languages.php:590
+msgid "Language properties."
+msgstr "語言內容。"
+
+#: modules/REST/V1/Languages.php:579
+msgid "List of language locale fallbacks."
+msgstr "地區語言的後援語言清單。"
+
+#: modules/REST/V1/Languages.php:572
+msgid "Identifier of the page for posts in this language."
+msgstr "這個語言的文章頁面識別碼。"
+
+#: modules/REST/V1/Languages.php:565
+msgid "Page on front ID in this language."
+msgstr "這個語言的首頁 ID。"
+
+#: modules/REST/V1/Languages.php:558
+msgid "Host for this language."
+msgstr "這個語言的主機。"
+
+#: modules/REST/V1/Languages.php:551
+msgid "Search URL in this language."
+msgstr "這個語言的搜尋網址。"
+
+#: modules/REST/V1/Languages.php:544
+msgid "Home URL in this language."
+msgstr "這個語言的首頁網址。"
+
+#: modules/REST/V1/Languages.php:538
+msgid "Tells whether the language is active."
+msgstr "告知語言是否為使用中的語言。"
+
+#: modules/REST/V1/Languages.php:532
+msgid "Tells whether the language is the default one."
+msgstr "告知語言是否為預設語言。"
+
+#: modules/REST/V1/Languages.php:526
+msgid "HTML tag for the custom flag."
+msgstr "自訂旗幟的 HTML 標籤。"
+
+#: modules/REST/V1/Languages.php:519
+msgid "Custom flag URL."
+msgstr "自訂旗幟網址。"
+
+#: modules/REST/V1/Languages.php:513
+msgid "HTML tag for the flag."
+msgstr "旗幟的 HTML 標籤。"
+
+#: modules/REST/V1/Languages.php:506
+msgid "Flag URL."
+msgstr "旗幟網址。"
+
+#: modules/REST/V1/Languages.php:501
+msgid "Flag code corresponding to ISO 3166-1 (for example: us for the United States flag)."
+msgstr "與 ISO 3166-1 對應的旗幟代碼 (例如 tw 代表台灣旗幟)。"
+
+#: modules/REST/V1/Languages.php:496
+msgid "Position of the language in the language switcher."
+msgstr "語言在語言切換器中的位置。"
+
+#. translators: %s is a value.
+#: modules/REST/V1/Languages.php:489
+msgid "Text direction. %s for right-to-left."
+msgstr "文字方向。設定為 %s 代表從右至左。"
+
+#: modules/REST/V1/Languages.php:481
+msgid "Facebook Locale for the language (for example: en_US)."
+msgstr "Facebook 的地區語言代碼 (例如 zh_TW)。"
+
+#: modules/REST/V1/Languages.php:475
+msgid "W3C Locale for the language (for example: en-US)."
+msgstr "W3C 的地區語言代碼 (例如 zh-TW)。"
+
+#: modules/REST/V1/Languages.php:468
+msgid "WordPress Locale for the language (for example: en_US)."
+msgstr "WordPress 的地區語言代碼 (例如 zh_TW)。"
+
+#: modules/REST/V1/Languages.php:394
+msgid "Sorry, you are not allowed to delete this language."
+msgstr "很抱歉，目前的登入身分沒有刪除這個語言的權限。"
+
+#: modules/REST/V1/Languages.php:372
+msgid "Sorry, you are not allowed to edit this language."
+msgstr "很抱歉，目前的登入身分沒有編輯這個語言的權限。"
+
+#: modules/REST/V1/Languages.php:335
+msgid "Sorry, you are not allowed to create a language."
+msgstr "很抱歉，目前的登入身分沒有建立語言的權限。"
+
+#: modules/REST/V1/Languages.php:313
+msgid "Sorry, you are not allowed to edit languages."
+msgstr "很抱歉，目前的登入身分沒有編輯語言的權限。"
+
+#: modules/REST/V1/Languages.php:168
+msgid "Cannot create existing language."
+msgstr "無法建立已存在的語言。"
+
+#: modules/REST/V1/Languages.php:120 modules/REST/V1/Languages.php:462
+msgid "Language code - preferably 2-letters ISO 639-1 (for example: en)."
+msgstr "語言代碼 - 建議使用 ISO 639-1 的 2 字元語言代碼 (例如 zh)。"
+
+#: modules/REST/V1/Languages.php:94 modules/REST/V1/Languages.php:449
+msgid "Unique identifier for the language."
+msgstr "語言的唯一識別碼。"
+
+#: include/translated-term.php:424
+msgid "Empty Term."
+msgstr "空白分類法詞彙。"
+
+#: include/translated-term.php:327
+msgid "Language taxonomy properties for terms."
+msgstr "分類法詞彙的語言分類法內容。"
+
+#: include/translated-post.php:553
+msgid "Invalid post ID."
+msgstr "無效的文章 ID。"
+
+#: include/translated-post.php:476
+msgid "Language taxonomy properties for post types."
+msgstr "內容類型的語言分類法內容。"
+
+#. translators: %s is the name of a database table.
+#: include/translatable-object.php:550
+msgid "Language taxonomy properties for table %s."
+msgstr "資料表 %s 的語言分類法內容。"
+
+#: include/Options/Options.php:338
+msgid "Polylang options"
+msgstr "Polylang 選項"
+
+#. translators: %s is a list of option names.
+#: include/Options/Options.php:289
+msgid "Unknown option keys %s."
+msgstr "未知的選項索引碼「%s」。"
+
+#. translators: %s is an option name.
+#. translators: %s is the name of an option.
+#: include/Options/Options.php:286 include/Options/Options.php:393
+msgid "Unknown option key %s."
+msgstr "未知的選項索引碼「%s」。"
+
+#: include/Options/Business/Version.php:39
+msgid "Polylang's version."
+msgstr "Polylang 的版本。"
+
+#: include/Options/Business/Taxonomies.php:52
+msgid "List of taxonomies to translate."
+msgstr "需要翻譯的分類法清單。"
+
+#: include/Options/Business/Sync.php:66
+msgid "List of data to synchronize."
+msgstr "需要同步的日期清單。"
+
+#. translators: %1$s is a URL slug: `/language/`. %2$s and %3$s are
+#. "true/false" values.
+#: include/Options/Business/Rewrite.php:54
+msgid "Remove %1$s in pretty permalinks: %2$s to remove, %3$s to keep."
+msgstr "移除易於辨識的永久連結中的 %1$s: 設定為 %2$s 代表移除，設定為 %3$s 代表保留。"
+
+#. translators: %1$s and %2$s are "true/false" values.
+#: include/Options/Business/Redirect_Lang.php:43
+msgid "Remove the page name or page ID from the URL of the front page: %1$s to remove, %2$s to keep."
+msgstr "移除首頁網站中的頁面名稱或頁面 ID: 設定為 %1$s 代表移除，設定為 %2$s 代表保留。"
+
+#: include/Options/Business/Previous_Version.php:37
+msgid "Polylang's previous version."
+msgstr "Polylang 的之前版本。"
+
+#: include/Options/Business/Post_Types.php:51
+msgid "List of post types to translate."
+msgstr "需要翻譯的內容類型清單。"
+
+#: include/Options/Business/Nav_Menus.php:153
+msgid "Translated navigation menus for each theme."
+msgstr "個別佈景主題的已翻譯導覽選單。"
+
+#. translators: %1$s and %2$s are "true/false" values.
+#: include/Options/Business/Media_Support.php:42
+msgid "Translate media: %1$s to translate, %2$s otherwise."
+msgstr "翻譯媒體: 設定為 %1$s 代表翻譯，設定為 %2$s 代表不翻譯。"
+
+#: include/Options/Business/Language_Taxonomies.php:55
+msgid "List of language taxonomies used for custom DB tables."
+msgstr "用於自訂資料庫資料表的語言分類法清單。"
+
+#. translators: %1$s and %2$s are "true/false" values.
+#: include/Options/Business/Hide_Default.php:75
+msgid "Remove the language code in URL for the default language: %1$s to hide, %2$s to display."
+msgstr "移除預設語言網址中的語言代碼: 設定為 %1$s 代表隱藏，設定為 %2$s 代表顯示。"
+
+#: include/Options/Business/Force_Lang.php:66
+msgid "Determine how the current language is defined."
+msgstr "請設定目前語言的定義方式。"
+
+#: include/Options/Business/First_Activation.php:70
+msgid "Time of first activation of Polylang."
+msgstr "首次啟用 Polylang 的時間。"
+
+#: include/Options/Business/Domains.php:186
+msgid "Domains used when the language is set from different domains."
+msgstr "語言依據不同網域進行判斷時使用的網域"
+
+#. translators: %s is a list of URLs.
+#: include/Options/Business/Domains.php:164
+msgid "Polylang was unable to access the %s URLs. Please check that the URLs are valid."
+msgstr "Polylang 無法存取網址 %s。請檢查網址是否有效。"
+
+#. translators: %s is a list of native language names.
+#: include/Options/Business/Domains.php:133
+msgid "Please enter valid URLs for %s."
+msgstr "請輸入有效的 [%s] 網址。"
+
+#: include/Options/Business/Default_Lang.php:58
+msgid "Slug of the default language."
+msgstr "預設語言的代稱。"
+
+#. translators: %1$s and %2$s are "true/false" values.
+#: include/Options/Business/Browser.php:66
+msgid "Detect preferred browser language on front page: %1$s to detect, %2$s to not detect."
+msgstr "在首頁偵測瀏覽器偏好語言: 設定為 %1$s 表示偵測，設定為 %2$s 表示不偵測。"
+
+#. translators: %s is a list of language slugs.
+#: include/Options/Abstract_Option.php:263
+msgid "The languages %s are unknown and have been discarded."
+msgstr "「%s」是未知語言，已捨棄不用。"
+
+#. translators: %s is a language slug.
+#: include/Options/Abstract_Option.php:260
+msgid "The language %s is unknown and has been discarded."
+msgstr "「%s」是未知語言，已捨棄不用。"
+
+#: include/api.php:570 include/api.php:605 include/translated-post.php:558
+#: include/translated-term.php:432
+msgid "Please provide a valid language."
+msgstr "請提供有效的語言。"
+
+#: admin/admin-notices.php:291
+msgid "Translations matching the original string are shown as empty in the table. Untranslated content remains unchanged."
+msgstr "與原文字串相符的譯文會在資料表中顯示為空值。未翻譯的內容則保持不變。"
+
+#. translators: %1$s placeholder is the language name, %2$s is the language
+#. code
+#: modules/site-health/admin-site-health.php:302
+msgid "Language: %1$s - %2$s"
+msgstr "語言: %1$s - %2$s"
+
+#: modules/machine-translation/settings-preview-machine-translation.php:40
+msgid "Allows linkage to DeepL Translate."
+msgstr "允許這個網站連結至 DeepL Translate。"
+
+#: modules/machine-translation/settings-preview-machine-translation.php:39
+msgid "Machine Translation"
+msgstr "機器翻譯"
+
+#: include/Model/Languages.php:263
+msgid "The language does not seem to exist."
+msgstr "這個語言不存在。"
+
+#. translators: 1 is a post type or taxonomy label, 2 is a post type or
+#. taxonomy key.
+#: settings/settings-cpt.php:115 settings/settings-cpt.php:146
+msgctxt "content type setting choice"
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: modules/site-health/admin-site-health.php:183
+msgid "Synchronization disabled"
+msgstr "[同步處理] 已停用"
+
+#: modules/site-health/admin-site-health.php:178
+msgid "The media are translated"
+msgstr "媒體檔案已翻譯"
+
+#: modules/site-health/admin-site-health.php:175
+msgid "The media are not translated"
+msgstr "媒體檔案尚未翻譯"
+
+#: modules/site-health/admin-site-health.php:170
+msgid "The front page URL contains the page name or page id instead of the language code"
+msgstr "首頁網址包含的是頁面名稱或頁面 ID，而不是語言代碼"
+
+#: modules/site-health/admin-site-health.php:147
+msgid "Display URL language information for default language"
+msgstr "顯示預設語言的網址語言資訊"
+
+#: modules/site-health/admin-site-health.php:125
+msgid "Detect browser language activated"
+msgstr "[偵測瀏覽器偏好語言設定] 已啟用。"
+
+#: modules/site-health/admin-site-health.php:122
+msgid "Detect browser language deactivated"
+msgstr "[偵測瀏覽器偏好語言設定] 已停用。"
+
+#. translators: placeholder is the plugin name
+#: modules/site-health/admin-site-health.php:449
+msgid "%s information"
+msgstr "%s 資訊"
+
+#: modules/site-health/admin-site-health.php:441
+msgid "Not loaded. Contact your host provider."
+msgstr "沒有載入。請聯絡這個網站的主機服務提供商。"
+
+#: modules/site-health/admin-site-health.php:440
+msgid "PHP SimpleXML extension"
+msgstr "PHP SimpleXML 擴充功能"
+
+#: install/plugin-updater.php:338
+msgid "Update now."
+msgstr "立即更新"
+
+#. translators: 1. and 4. are opening anchor tags 2. the new plugin version 3.
+#. and 5. are closing anchor tags.
+#: install/plugin-updater.php:327
+msgid "%1$sView version %2$s details%3$s or %4$supdate now%5$s."
+msgstr "%1$s檢視 %2$s 版詳細資料%3$s或%4$s立即更新%5$s。"
+
+#. translators: 1. opening anchor tag, do not translate 2. the new plugin
+#. version 3. closing anchor tag, do not translate.
+#: install/plugin-updater.php:318
+msgid "%1$sView version %2$s details%3$s."
+msgstr "%1$s檢視 %2$s 版詳細資料%3$s。"
+
+#: install/plugin-updater.php:313
+msgid "Contact your network administrator to install the update."
+msgstr "聯絡多站網路管理員以安裝更新。"
+
+#. translators: the plugin name.
+#: install/plugin-updater.php:307
+msgid "There is a new version of %1$s available."
+msgstr "%1$s 已有新版本可供下載安裝。"
+
+#: settings/settings-url.php:56
+msgid "Some themes or plugins may not be fully compatible with the language defined by the content or by domains."
+msgstr "某些佈景主題或外掛可能無法與依據內容或網域定義的語言完全相容。"
+
+#: settings/settings-media.php:32
+msgid "Activate languages and translations for media only if you need to translate the text attached to the media: the title, the alternative text, the caption, the description... Note that the file is not duplicated."
+msgstr "僅在需要翻譯媒體附加文字 (標題、替代文字、媒體說明文字、內容說明) 時才啟用媒體的語言及翻譯功能。請注意，媒體檔案不會因為啟用這項功能而不斷再製。"
+
+#: settings/settings-browser.php:35
+msgid "When the front page is visited, redirects to itself in the browser preferred language. As this doesn't work if it is cached, Polylang will attempt to disable the front page cache for known cache plugins."
+msgstr "使用者瀏覽網站首頁時，依據其瀏覽器偏好語言設定重新導向至對應的語言。由於這個功能無法在網站有快取的狀況下正確執行，因此 Polylang 會嘗試停用已知快取外掛對網站首頁的快取。"
+
+#: modules/site-health/admin-site-health.php:429
+msgid "Terms without language"
+msgstr "沒有指派語言的分類法詞彙"
+
+#: modules/site-health/admin-site-health.php:422
+msgid "Posts without language"
+msgstr "沒有指派語言的文章"
+
+#: modules/site-health/admin-site-health.php:401
+msgid "The homepage is not translated in all languages"
+msgstr "首頁尚未翻譯為全部語言"
+
+#: modules/site-health/admin-site-health.php:391
+msgid "It is mandatory to translate the static front page in all languages."
+msgstr "將靜態首頁翻譯為全部語言為強制性要求。"
+
+#: modules/site-health/admin-site-health.php:383
+msgid "All languages have a translated homepage"
+msgstr "全部語言均有已翻譯的首頁"
+
+#: modules/site-health/admin-site-health.php:367
+msgid "Homepage translated"
+msgstr "首頁已翻譯"
+
+#: modules/site-health/admin-site-health.php:352
+msgid "Undefined"
+msgstr "未定義"
+
+#. translators: placeholder is the flag image
+#: modules/site-health/admin-site-health.php:304
+msgid "Flag used in the language switcher: %s"
+msgstr "用於語言切換器中的旗幟: %s"
+
+#. translators: placeholder is the plugin name
+#: modules/site-health/admin-site-health.php:259
+msgid "%s options"
+msgstr "%s 選項"
+
+#: include/widget-calendar.php:319
+msgid "Previous and next months"
+msgstr "上個月及下個月"
+
+#. translators: %s: is the translated label of the 'Ignore' button
+#: modules/wizard/view-wizard-step-languages.php:130
+msgid "%s: stay at this step"
+msgstr "%s: 停留在這個步驟"
+
+#. translators: %s: is the translated label of the 'No' button
+#: modules/wizard/view-wizard-step-languages.php:121
+msgid "%s: don't add this language and continue to the next step"
+msgstr "%s: 不要新增這個語言並繼續下一步"
+
+#. translators: %s: is the translated label of the 'Yes' button
+#: modules/wizard/view-wizard-step-languages.php:112
+msgid "%s: add this language and continue to the next step"
+msgstr "%s: 新增這個語言並繼續下一步"
+
+#: modules/wizard/view-wizard-step-languages.php:105
+msgid "Do you want to add this language before continuing to the next step?"
+msgstr "在繼續下一步前，是否要新增這個語言？"
+
+#. translators: %1$s: is a language flag image, %2$s: is a language native name
+#: modules/wizard/view-wizard-step-languages.php:98
+msgid "You selected %1$s %2$s but you didn't add it to the list before continuing to the next step."
+msgstr "已選取 %1$s %2$s，但在繼續下一步前，尚未將其新增至清單中。"
+
+#: modules/wizard/view-wizard-step-languages.php:75
+msgid "Languages already defined"
+msgstr "語言已完成定義"
+
+#: modules/wizard/view-wizard-step-languages.php:63
+msgid "Remove"
+msgstr "移除"
+
+#: modules/wizard/view-wizard-step-languages.php:32
+msgid "Select a language to be added"
+msgstr "選取語言以新增"
+
+#: modules/wizard/view-wizard-step-languages.php:26
+msgid "First we are going to define the languages that you will use on your website."
+msgstr "首先，請設定要使用於這個網站上的語言。"
+
+#: modules/wizard/view-wizard-step-languages.php:23
+msgid "This wizard will help you configure your Polylang settings, and get you started quickly with your multilingual website."
+msgstr "這個設定精靈會協助使用者組態這個網站的 Polylang 設定，讓使用者可以儘快開始使用多語系內容網站。"
+
+#: modules/wizard/html-wizard-notice.php:47
+msgid "Skip setup"
+msgstr "略過設定"
+
+#: modules/wizard/html-wizard-notice.php:41
+msgid "Run the Setup Wizard"
+msgstr "執行設定精靈"
+
+#: modules/wizard/html-wizard-notice.php:33
+msgid "You&lsquo;re almost ready to translate your contents!"
+msgstr "這個網站的內容已接近可進行翻譯。"
+
+#. translators: %s is the plugin name
+#: modules/wizard/html-wizard-notice.php:26
+msgid "Welcome to %s"
+msgstr "歡迎使用 %s"
+
+#: modules/wizard/view-wizard-step-licenses.php:28
+msgid "There is an error with a license key."
+msgstr "啟用授權金鑰時發生錯誤。"
+
+#: modules/wizard/view-wizard-step-licenses.php:19
+msgid "Please enter your license key:"
+msgstr "請輸入專屬授權金鑰:"
+
+#: modules/wizard/view-wizard-step-licenses.php:16
+msgid "You are using plugins which require a license key."
+msgstr "這個網站正在使用需要授權金鑰的外掛。"
+
+#: modules/wizard/view-wizard-page.php:117
+msgid "Not right now"
+msgstr "現在不要"
+
+#: modules/wizard/view-wizard-page.php:105
+msgid "Continue"
+msgstr "繼續"
+
+#. translators: %s is the plugin name
+#: modules/wizard/view-wizard-page.php:42
+msgid "%s &rsaquo; Setup"
+msgstr "%s &rsaquo; 設定"
+
+#: modules/wizard/view-wizard-step-media.php:52
+msgid "Help"
+msgstr "使用說明"
+
+#: modules/wizard/view-wizard-step-media.php:43
+msgid "Allow Polylang to translate media"
+msgstr "允許 Polylang 翻譯媒體檔案中繼資料"
+
+#: modules/wizard/view-wizard-step-media.php:26
+msgid "You must activate media translation if you want to translate the title, the alternative text, the caption, or the description. Otherwise you can safely deactivate it."
+msgstr "如果要翻譯媒體檔案的標題、替代文字、媒體說明文字或內容說明，就必須啟用媒體翻譯功能，反之則可安心停用這項功能。"
+
+#: modules/wizard/view-wizard-step-media.php:23
+msgid "When you want to insert media in a post, only the media in the language of the current post will be displayed."
+msgstr "使用者在內容中插入媒體檔案後，僅會顯示該篇內容所對應語言的媒體中繼資料。"
+
+#: modules/wizard/view-wizard-step-media.php:22
+msgid "When you translate a media, the file is not duplicated on your disk, however you will see one entry per language in the media library."
+msgstr "使用者翻譯媒體檔案中繼資料時，不會在儲存空間再製一份檔案，但使用者會在媒體庫中看到每個語言都有該項目。"
+
+#: modules/wizard/view-wizard-step-media.php:21
+msgid "Polylang allows you to translate the text attached to your media, for example the title, the alternative text, the caption, or the description."
+msgstr "Polylang 能讓使用者翻譯媒體檔案的附加文字，例如標題、替代文字、媒體說明文字或內容說明。"
+
+#: modules/wizard/view-wizard-step-last.php:107
+msgid "Return to the Dashboard"
+msgstr "返回 [控制台]"
+
+#: modules/wizard/view-wizard-step-last.php:89
+msgid "Polylang Business Pack"
+msgstr "Polylang Business Pack"
+
+#. translators: %s is the name of Polylang Business Pack product
+#: modules/wizard/view-wizard-step-last.php:88
+msgid "We have noticed that you are using Polylang with WooCommerce. To ensure a better compatibility, we recommend you use %s which includes both Polylang Pro and Polylang For WooCommerce."
+msgstr "系統偵測到這個網站的 WooCommerce 正在搭配使用 Polylang。為了確保更好的相容性，建議使用包含 Polylang Pro 及 Polylang for WooCommerce 的 %s。"
+
+#: modules/wizard/view-wizard-step-last.php:83
+msgid "Purchase Polylang Business Pack"
+msgstr "購買 Polylang Business Pack"
+
+#: modules/wizard/view-wizard-step-last.php:82
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: modules/wizard/view-wizard-step-last.php:73
+#: modules/wizard/view-wizard-step-last.php:97
+msgid "Buy now"
+msgstr "立即購買"
+
+#: modules/wizard/view-wizard-step-last.php:67
+msgid "Thank you for activating Polylang. If you want more advanced features - duplication, synchronization, REST API support, integration with other plugins, etc. - or further help provided by our Premium support, we recommend you upgrade to Polylang Pro."
+msgstr "感謝啟用 Polylang。如果這個網站需要再製、同步處理、REST API 支援、與其他外掛整合等進階功能，或需要由我們優質技術支援所提供的協助，建議升級至 Polylang Pro。"
+
+#: modules/wizard/view-wizard-step-last.php:65
+msgid "Upgrade to Polylang Pro"
+msgstr "升級至 Polylang Pro"
+
+#: modules/wizard/view-wizard-step-last.php:64
+msgid "Polylang Pro"
+msgstr "Polylang Pro"
+
+#: modules/wizard/view-wizard-step-last.php:56
+msgid "View pages"
+msgstr "檢視頁面"
+
+#: modules/wizard/view-wizard-step-last.php:51
+msgid "You're ready to translate the posts on your website."
+msgstr "這個網站的內容已可進行翻譯。"
+
+#: modules/wizard/view-wizard-step-last.php:50
+msgid "Translate some pages"
+msgstr "翻譯頁面"
+
+#: modules/wizard/view-wizard-step-last.php:36
+msgid "To get your website ready, there are still two steps you need to perform manually: add menus in each language, and add a language switcher to allow your visitors to select their preferred language."
+msgstr "為了要讓這個網站準備就緒，目前仍有 2 個步驟需要網站管理員手動執行；請為每個語言新增選單及語言切換器，這能讓這個網站的訪客選取他們所偏好的語言。"
+
+#: modules/wizard/view-wizard-step-last.php:34
+msgid "Create menus"
+msgstr "建立選單"
+
+#: modules/wizard/view-wizard-step-last.php:33
+#: modules/wizard/view-wizard-step-last.php:49
+msgid "Next step"
+msgstr "下一步"
+
+#: modules/wizard/view-wizard-step-last.php:24
+#: modules/wizard/view-wizard-step-last.php:42
+msgid "Read documentation"
+msgstr "閱讀線上說明"
+
+#: modules/wizard/view-wizard-step-last.php:16
+msgid "You're now able to translate your contents such as posts, pages, categories and tags. You can learn how to use Polylang by reading the documentation."
+msgstr "這個網站的內容現在已可進行翻譯，例如文章、頁面、分類及標籤。閱讀線上說明便能進一步了解 Polylang 的使用方式。"
+
+#: modules/wizard/view-wizard-step-last.php:13
+msgid "You're ready to translate your contents!"
+msgstr "這個網站的內容已可進行翻譯。"
+
+#: modules/wizard/view-wizard-step-home-page.php:97
+msgid "If you add a new language, don't forget to translate your homepage."
+msgstr "如果為這個網站新增語言，請記得以新語言翻譯網站首頁。"
+
+#: modules/wizard/view-wizard-step-home-page.php:93
+msgid "One language is well defined and assigned to your home page."
+msgstr "語言已正確設定並指派給這個網站的首頁。"
+
+#: modules/wizard/view-wizard-step-home-page.php:87
+msgid "We are going to prepare this page in"
+msgstr "這個頁面目前準備進行的譯文語言"
+
+#: modules/wizard/view-wizard-step-home-page.php:49
+msgid "Your static homepage is already translated in"
+msgstr "這個網站的靜態首頁完成的譯文語言"
+
+#: modules/wizard/view-wizard-step-home-page.php:43
+msgid "After the pages is created, it is up to you to put the translated content in each page linked to each language."
+msgstr "建立指定頁面後，便能依據需求將每個頁面已完成翻譯的內容連結至各個語言。"
+
+#: modules/wizard/view-wizard-step-home-page.php:40
+msgid "For your site to work correctly, this page must be translated in all available languages."
+msgstr "為了讓這個網站運作正確，這個頁面必須翻譯為目前網站上提供的全部語言。"
+
+#. translators: %s is the language of the front page ( flag, native name and
+#. locale )
+#: modules/wizard/view-wizard-step-home-page.php:35
+msgid "Its language is : %s."
+msgstr "靜態首頁的語言: %s。"
+
+#. translators: %s is the post title of the front page
+#: modules/wizard/view-wizard-step-home-page.php:27
+msgid "You defined this page as your static homepage: %s."
+msgstr "網站管理員指定頁面定義為這個網站的靜態首頁: %s。"
+
+#: modules/wizard/wizard.php:853
+msgid "Ready!"
+msgstr "準備就緒！"
+
+#: modules/wizard/view-wizard-step-home-page.php:22
+#: modules/wizard/wizard.php:742 modules/wizard/wizard.php:793
+msgid "Homepage"
+msgstr "首頁"
+
+#: modules/wizard/wizard.php:678
+msgid "Content"
+msgstr "內容"
+
+#: modules/wizard/wizard.php:504
+msgid "Remove this language"
+msgstr "移除這個語言"
+
+#: modules/wizard/view-wizard-step-languages.php:131
+#: modules/wizard/wizard.php:503
+msgid "Ignore"
+msgstr "忽略"
+
+#: modules/wizard/view-wizard-step-languages.php:122
+#: modules/wizard/wizard.php:502
+msgid "No"
+msgstr "否"
+
+#: modules/wizard/view-wizard-step-languages.php:113
+#: modules/wizard/wizard.php:501
+msgid "Yes"
+msgstr "是"
+
+#: modules/wizard/wizard.php:500
+msgid "A language wasn't added."
+msgstr "語言並未新增。"
+
+#: modules/wizard/wizard.php:493
+msgid "You selected a language, however, to be able to continue, you need to add it."
+msgstr "已選取一個語言。如需繼續，必須新增已選取的語言。"
+
+#: modules/wizard/wizard.php:492
+msgid "You need to add at least one language."
+msgstr "必須新增至少一個語言。"
+
+#: modules/wizard/wizard.php:491
+msgid "You already added this language."
+msgstr "這個語言已新增。"
+
+#: modules/wizard/wizard.php:490
+msgid "You need to select a language to be added."
+msgstr "必須選取語言以新增。"
+
+#: modules/wizard/view-wizard-step-licenses.php:25
+#: modules/wizard/wizard.php:387
+msgid "Licenses"
+msgstr "使用授權"
+
+#: modules/wizard/wizard.php:203
+msgid "Sorry, you are not allowed to manage options for this site."
+msgstr "很抱歉，目前的登入身分沒有為這個網站管理設定的權限。"
+
+#: modules/wizard/wizard.php:145
+msgid "Setup"
+msgstr "設定精靈"
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:23
+msgid "Choose the language to be assigned"
+msgstr "選取要指派的語言"
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:20
+msgid "The selected language below will be applied to all your content without an assigned language."
+msgstr "在下方選取的語言會套用至尚未指派語言的全部內容。"
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:19
+msgid "For your site to work correctly, you need to assign a language to all your contents."
+msgstr "為了讓這個網站運作正確，必須將語言指派至這個網站的全部內容。"
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:16
+msgid "Content without language"
+msgstr "沒有指派語言的內容"
+
+#: include/license.php:286
+msgid "Your license key has been disabled."
+msgstr "這個網站的授權金鑰已停用。"
+
+#: admin/admin-filters.php:122
+msgid "Privacy Policy Page"
+msgstr "隱私權政策頁面"
+
+#. translators: 1: Plugin name 2: Current WordPress version 3: Required
+#. WordPress version
+#: install/install.php:77
+msgid "%1$s has deactivated itself because you are using an old version of WordPress. You are using using WordPress %2$s. %1$s requires at least WordPress %3$s."
+msgstr "由於這個網站執行的 WordPress 版本太舊，因此 %1$s 已停用。這個網站執行的是 WordPress %2$s，而 %1$s 需要 WordPress %3$s 或更新版本。"
+
+#. translators: 1: Plugin name 2: Current PHP version 3: Required PHP version
+#: install/install.php:53
+msgid "%1$s has deactivated itself because you are using an old version of PHP. You are using using PHP %2$s. %1$s requires PHP %3$s."
+msgstr "由於這個網站執行的 PHP 版本太舊，因此 %1$s 已停用。這個網站執行的是 PHP %2$s，而 %1$s 需要 PHP %3$s 或更新版本。"
+
+#: settings/flags.php:159
+msgid "North Macedonia"
+msgstr "北馬其頓"
+
+#. translators: %1$s is a date, %2$s is link start tag, %3$s is link end tag.
+#: include/license.php:334
+msgid "Your license key will expire soon! Precisely, it will expire on %1$s. %2$sRenew your license key today!%3$s"
+msgstr "這個網站的授權金鑰即將到期，到期日期為 %1$s。立即%2$s續訂授權金鑰%3$s！"
+
+#: settings/settings-module.php:348
+msgid "To enable this feature, you need Polylang Pro."
+msgstr "如需啟用這個功能，必須使用 Polylang Pro 授權金鑰。"
+
+#: admin/admin-classic-editor.php:366
+msgid "If you attempt to modify them anyway, your changes will not be saved."
+msgstr "如果嘗試修改相關項目，所做變更不會儲存。"
+
+#: admin/admin-classic-editor.php:364
+msgid "Some taxonomies or metadata may be synchronized with existing translations that you are not allowed to modify."
+msgstr "某些分類法或中繼資料會與目前的登入身分沒有權限修改的現有譯文同步。"
+
+#. translators: %s is a comma separated list of native language names
+#: admin/admin-static-pages.php:144
+msgid "You must translate your static front page in %s."
+msgstr "必須將這個網站的靜態首頁翻譯為 [%s]。"
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: admin/admin-notices.php:269
+msgid "We have noticed that you have been using Polylang for some time. We hope you love it, and we would really appreciate it if you would %1$sgive us a 5 stars rating%2$s."
+msgstr "系統偵測到這個網站使用 Polylang 已有一段時間。如果這個外掛對網站有所幫助，請留下 %1$s5 星評等%2$s，開發團隊在此先行致謝。"
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: admin/admin-notices.php:244
+msgid "We have noticed that you are using Polylang with WooCommerce. To ensure compatibility, we recommend you use %1$sPolylang for WooCommerce%2$s."
+msgstr "系統偵測到這個網站的 WooCommerce 正在搭配使用 Polylang。為了確保相容性，建議使用 %1$sPolylang for WooCommerce%2$s。"
+
+#. translators: %1$s and %2$s are Polylang version numbers
+#: install/upgrade.php:94
+msgid "Before upgrading to %2$s, please upgrade to %1$s."
+msgstr "在升級至 %2$s 前，請先升級至 %1$s。"
+
+#. Author of the plugin
+#: polylang.php
+msgid "WP SYNTEX"
+msgstr "WP SYNTEX"
+
+#. translators: accessibility text
+#: admin/admin-notices.php:225 modules/wizard/wizard.php:383
+#: modules/wizard/wizard.php:484 modules/wizard/wizard.php:675
+#: settings/settings.php:327
+msgid "Dismiss this notice."
+msgstr "關閉這項通知"
+
+#: include/filters.php:432
+msgid "User"
+msgstr "使用者"
+
+#. translators: %s is a language native name
+#: include/filters.php:423
+msgid "User description - %s"
+msgstr "使用者自傳資訊 - %s"
+
+#: include/filters.php:399
+msgid "Translated user descriptions"
+msgstr "翻譯使用者自傳資訊"
+
+#: settings/flags.php:234
+msgid "Tibet"
+msgstr "西藏"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: polylang.php
+msgid "https://polylang.pro"
+msgstr "https://polylang.pro"
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: settings/view-about.php:23
+msgid "Support and extra features are available to %1$sPolylang Pro%2$s users."
+msgstr "技術支援及進階功能僅供 %1$sPolylang Pro%2$s 使用者使用。"
+
+#: settings/settings-module.php:350
+msgid "Upgrade now."
+msgstr "立即升級"
+
+#. translators: %s is a date
+#: include/license.php:342
+msgid "Your license key expires on %s."
+msgstr "這個網站的授權金鑰會於 %s過期。"
+
+#: include/license.php:329
+msgid "The license key never expires."
+msgstr "這個授權金鑰永不過期。"
+
+#. translators: %1$s is link start tag, %2$s is link end tag
+#: include/license.php:317
+msgid "Your license key has reached its activation limit. %1$sView possible upgrades%2$s now."
+msgstr "這個網站的授權金鑰啟用次數已達上限。立即%1$s查看可用的升級方案%2$s。"
+
+#. translators: %s is a product name
+#: include/license.php:311
+msgid "This is not a %s license key."
+msgstr "這不是有效的 %s 授權金鑰。"
+
+#. translators: %1$s is a product name, %2$s is link start tag, %3$s is link
+#. end tag.
+#: include/license.php:302
+msgid "Your %1$s license key is not active for this URL. Please %2$svisit your account page%3$s to manage your license key URLs."
+msgstr "這個 %1$s 授權金鑰無法在這個網址啟用。請前往%2$s帳號頁面%3$s管理授權金鑰對應的網址。"
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: include/license.php:292
+msgid "Invalid license. Please %1$svisit your account page%2$s and verify it."
+msgstr "無效的使用授權。請前往%1$s帳號頁面%2$s取得授權金鑰並完成驗證。"
+
+#. translators: %1$s is a date, %2$s is link start tag, %3$s is link end tag.
+#: include/license.php:277
+msgid "Your license key expired on %1$s. Please %2$srenew your license key%3$s."
+msgstr "這個網站的授權金鑰會於 %1$s過期。請%2$s續訂授權金鑰%3$s。"
+
+#: settings/settings-licenses.php:39
+msgid "Manage licenses for Polylang Pro and add-ons."
+msgstr "管理 Polylang Pro 的使用授權及附加元件。"
+
+#: settings/settings-licenses.php:38
+msgid "License keys"
+msgstr "授權金鑰"
+
+#: modules/translate-slugs/settings-preview-translate-slugs.php:54
+msgid "Allows to translate custom post types and taxonomies slugs in URLs."
+msgstr "允許翻譯網址中的自訂內容類型及分類法代稱。"
+
+#: modules/translate-slugs/settings-preview-translate-slugs.php:38
+msgid "Translate slugs"
+msgstr "翻譯代稱"
+
+#: modules/share-slug/settings-preview-share-slug.php:54
+msgid "Allows to share the same URL slug across languages for posts and terms."
+msgstr "允許不同語言的文章及分類法詞彙共用相同網址代稱。"
+
+#: modules/share-slug/settings-preview-share-slug.php:38
+msgid "Share slugs"
+msgstr "共用代稱"
+
+#: install/plugin-updater.php:573
+msgid "Error"
+msgstr "錯誤"
+
+#: install/plugin-updater.php:573
+msgid "You do not have permission to install plugin updates"
+msgstr "目前的登入身分沒有安裝外掛更新的權限。"
+
+#. translators: Post calendar label. %s: Date.
+#: include/widget-calendar.php:292
+msgid "Posts published on %s"
+msgstr "文章發佈於 %s"
+
+#: include/widget-calendar.php:290
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "Y 年 n 月 j 日"
+
+#: settings/view-tab-lang.php:140
+msgid "Choose a flag for the language."
+msgstr "選取這個語言的旗幟。"
+
+#. translators: accessibility text
+#: settings/table-string.php:346
+msgid "Filter by group"
+msgstr "依據群組篩選"
+
+#. translators:  accessibility text, %s is a string potentially in any language
+#: settings/table-string.php:102
+msgid "Select %s"
+msgstr "選取 [%s]"
+
+#: settings/table-settings.php:149
+msgid "Description"
+msgstr "內容說明"
+
+#: settings/table-settings.php:148
+msgid "Module"
+msgstr "模組"
+
+#: settings/settings-module.php:170
+msgid "Save Changes"
+msgstr "儲存設定"
+
+#: settings/settings-module.php:169 js/build/block-editor.js:79
+#: js/build/classic-editor.js:79
+msgid "Cancel"
+msgstr "取消"
+
+#: settings/table-languages.php:211
+msgid "Delete this language and all its associated data"
+msgstr "刪除這個語言及與其相關的全部資料"
+
+#. translators: accessibility text, %s is a native language name
+#: settings/table-languages.php:117
+msgid "Choose %s as default language"
+msgstr "選取 [%s] 作為預設語言"
+
+#: settings/table-languages.php:114
+msgid "Select as default language"
+msgstr "設定為預設語言"
+
+#: settings/table-languages.php:93 settings/table-languages.php:205
+msgid "Edit this language"
+msgstr "編輯這個語言"
+
+#: settings/settings.php:345
+msgid "You can set them all to the default language."
+msgstr "使用者可以將預設語言指派給這些項目"
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:18
+#: settings/settings.php:343
+msgid "There are posts, pages, categories or tags without language."
+msgstr "這個網站的文章、頁面、分類或標籤均尚未指派語言。"
+
+#. translators: %s is a URL.
+#: include/Options/Business/Domains.php:161
+msgid "Polylang was unable to access the %s URL. Please check that the URL is valid."
+msgstr "Polylang 無法存取網址 %s。請檢查網址是否有效。"
+
+#. translators: %s is a native language name.
+#: include/Options/Business/Domains.php:130
+msgid "Please enter a valid URL for %s."
+msgstr "請輸入有效的 [%s] 網址。"
+
+#: settings/settings-url.php:39
+msgid "Decide how your URLs will look like."
+msgstr "設定這個網站網址的組成方式。"
+
+#: settings/settings-module.php:165
+msgid "Deactivated"
+msgstr "已停用"
+
+#: settings/settings-module.php:160
+msgid "Activate this module"
+msgstr "啟用這個模組"
+
+#: include/license.php:326 settings/settings-module.php:156
+msgid "Deactivate"
+msgstr "停用"
+
+#: settings/settings-module.php:154
+msgid "Deactivate this module"
+msgstr "停用這個模組"
+
+#: settings/settings-module.php:148
+msgid "Configure this module"
+msgstr "組態這個模組"
+
+#: settings/settings-cpt.php:60
+msgid "Activate languages and translations management for the custom post types and the taxonomies."
+msgstr "啟用自訂內容類型及分類法的語言及譯文管理。"
+
+#: settings/settings-cpt.php:59
+msgid "Custom post types and Taxonomies"
+msgstr "自訂內容類型及分類法"
+
+#: settings/flags.php:266
+msgid "Zimbabwe"
+msgstr "辛巴威"
+
+#: settings/flags.php:265
+msgid "Zambia"
+msgstr "尚比亞"
+
+#: settings/flags.php:264
+msgid "South Africa"
+msgstr "南非"
+
+#: settings/flags.php:263
+msgid "Mayotte"
+msgstr "馬約特島"
+
+#: settings/flags.php:262
+msgid "Yemen"
+msgstr "葉門"
+
+#: settings/flags.php:261
+msgid "Western Samoa"
+msgstr "西薩摩亞"
+
+#: settings/flags.php:260
+msgid "Wallis and Futuna"
+msgstr "瓦利斯及福杜納"
+
+#: settings/flags.php:259
+msgid "Wales"
+msgstr "威爾斯"
+
+#: settings/flags.php:258
+msgid "Vanuatu"
+msgstr "萬那杜"
+
+#: settings/flags.php:257
+msgid "Vietnam"
+msgstr "越南"
+
+#: settings/flags.php:256
+msgid "United States Virgin Islands"
+msgstr "美屬維爾京群島"
+
+#: settings/flags.php:255
+msgid "British Virgin Islands"
+msgstr "英屬維爾京群島"
+
+#: settings/flags.php:254
+msgid "Veneto"
+msgstr "威內托"
+
+#: settings/flags.php:253
+msgid "Venezuela"
+msgstr "委內瑞拉"
+
+#: settings/flags.php:252
+msgid "Saint Vincent and the Grenadines"
+msgstr "聖文森及格瑞那丁"
+
+#: settings/flags.php:251
+msgid "Vatican"
+msgstr "梵蒂岡"
+
+#: settings/flags.php:250
+msgid "Uzbekistan"
+msgstr "烏茲別克"
+
+#: settings/flags.php:249
+msgid "Uruguay"
+msgstr "烏拉圭"
+
+#: settings/flags.php:248
+msgid "United States"
+msgstr "美國"
+
+#: settings/flags.php:247
+msgid "Uganda"
+msgstr "烏干達"
+
+#: settings/flags.php:246
+msgid "Ukraine"
+msgstr "烏克蘭"
+
+#: settings/flags.php:245
+msgid "Tanzania"
+msgstr "坦尚尼亞"
+
+#: settings/flags.php:244
+msgid "Taiwan"
+msgstr "台灣"
+
+#: settings/flags.php:243
+msgid "Tuvalu"
+msgstr "吐瓦魯"
+
+#: settings/flags.php:242
+msgid "Trinidad and Tobago"
+msgstr "千里達及托巴哥"
+
+#: settings/flags.php:241
+msgid "Turkey"
+msgstr "土耳其"
+
+#: settings/flags.php:240
+msgid "Tonga"
+msgstr "東加"
+
+#: settings/flags.php:239
+msgid "Tunisia"
+msgstr "突尼西亞"
+
+#: settings/flags.php:238
+msgid "Turkmenistan"
+msgstr "土庫曼"
+
+#: settings/flags.php:237
+msgid "Timor-Leste"
+msgstr "東帝汶"
+
+#: settings/flags.php:236
+msgid "Tokelau"
+msgstr "托克勞群島"
+
+#: settings/flags.php:235
+msgid "Tajikistan"
+msgstr "塔吉克"
+
+#: settings/flags.php:233
+msgid "Thailand"
+msgstr "泰國"
+
+#: settings/flags.php:232
+msgid "Togo"
+msgstr "多哥"
+
+#: settings/flags.php:231
+msgid "French Southern Territories"
+msgstr "法屬南半球領土"
+
+#: settings/flags.php:230
+msgid "Chad"
+msgstr "查德"
+
+#: settings/flags.php:229
+msgid "Turks and Caicos Islands"
+msgstr "土克斯及開科斯群島"
+
+#: settings/flags.php:228
+msgid "Swaziland"
+msgstr "史瓦濟蘭"
+
+#: settings/flags.php:227
+msgid "Syria"
+msgstr "敘利亞"
+
+#: settings/flags.php:226
+msgid "El Salvador"
+msgstr "薩爾瓦多"
+
+#: settings/flags.php:225
+msgid "São Tomé and Príncipe"
+msgstr "聖多美及普林西比"
+
+#: settings/flags.php:224
+msgid "South Sudan"
+msgstr "南蘇丹"
+
+#: settings/flags.php:223
+msgid "Suriname"
+msgstr "蘇利南"
+
+#: settings/flags.php:222
+msgid "Somalia"
+msgstr "索馬利亞"
+
+#: settings/flags.php:221
+msgid "Senegal"
+msgstr "塞內加爾"
+
+#: settings/flags.php:220
+msgid "San Marino"
+msgstr "聖馬利諾"
+
+#: settings/flags.php:219
+msgid "Sierra Leone"
+msgstr "獅子山"
+
+#: settings/flags.php:218
+msgid "Slovakia"
+msgstr "斯洛伐克"
+
+#: settings/flags.php:217
+msgid "Slovenia"
+msgstr "斯洛維尼亞"
+
+#: settings/flags.php:216
+msgid "Saint Helena"
+msgstr "聖赫勒拿島"
+
+#: settings/flags.php:215
+msgid "Singapore"
+msgstr "新加坡"
+
+#: settings/flags.php:214
+msgid "Sweden"
+msgstr "瑞典"
+
+#: settings/flags.php:213
+msgid "Sudan"
+msgstr "蘇丹"
+
+#: settings/flags.php:212
+msgid "Scotland"
+msgstr "蘇格蘭"
+
+#: settings/flags.php:211
+msgid "Seychelles"
+msgstr "塞席爾"
+
+#: settings/flags.php:210
+msgid "Solomon Islands"
+msgstr "索羅門群島"
+
+#: settings/flags.php:209
+msgid "Saudi Arabia"
+msgstr "沙烏地阿拉伯"
+
+#: settings/flags.php:208
+msgid "Rwanda"
+msgstr "盧安達"
+
+#: settings/flags.php:207
+msgid "Russia"
+msgstr "俄羅斯"
+
+#: settings/flags.php:206
+msgid "Serbia"
+msgstr "塞爾維亞"
+
+#: settings/flags.php:205
+msgid "Romania"
+msgstr "羅馬尼亞"
+
+#: settings/flags.php:204
+msgid "Quebec"
+msgstr "魁北克"
+
+#: settings/flags.php:203
+msgid "Qatar"
+msgstr "卡達"
+
+#: settings/flags.php:202
+msgid "Paraguay"
+msgstr "巴拉圭"
+
+#: settings/flags.php:201
+msgid "Belau"
+msgstr "帛琉"
+
+#: settings/flags.php:200
+msgid "Portugal"
+msgstr "葡萄牙"
+
+#: settings/flags.php:199
+msgid "Palestinian Territory"
+msgstr "巴勒斯坦領土"
+
+#: settings/flags.php:198
+msgid "Puerto Rico"
+msgstr "波多黎各"
+
+#: settings/flags.php:197
+msgid "Pitcairn"
+msgstr "皮特康群島"
+
+#: settings/flags.php:196
+msgid "Saint Pierre and Miquelon"
+msgstr "聖匹島"
+
+#: settings/flags.php:195
+msgid "Poland"
+msgstr "波蘭"
+
+#: settings/flags.php:194
+msgid "Pakistan"
+msgstr "巴基斯坦"
+
+#: settings/flags.php:193
+msgid "Philippines"
+msgstr "菲律賓"
+
+#: settings/flags.php:192
+msgid "Papua New Guinea"
+msgstr "巴布亞紐幾內亞"
+
+#: settings/flags.php:191
+msgid "French Polynesia"
+msgstr "法屬玻里尼西亞"
+
+#: settings/flags.php:190
+msgid "Peru"
+msgstr "祕魯"
+
+#: settings/flags.php:189
+msgid "Panama"
+msgstr "巴拿馬"
+
+#: settings/flags.php:188
+msgid "Oman"
+msgstr "阿曼"
+
+#: settings/flags.php:187
+msgid "Occitania"
+msgstr "奧克西塔尼亞"
+
+#: settings/flags.php:186
+msgid "New Zealand"
+msgstr "紐西蘭"
+
+#: settings/flags.php:185
+msgid "Niue"
+msgstr "紐威島"
+
+#: settings/flags.php:184
+msgid "Nauru"
+msgstr "諾魯"
+
+#: settings/flags.php:183
+msgid "Nepal"
+msgstr "尼泊爾"
+
+#: settings/flags.php:182
+msgid "Norway"
+msgstr "挪威"
+
+#: settings/flags.php:181
+msgid "Netherlands"
+msgstr "荷蘭"
+
+#: settings/flags.php:180
+msgid "Nicaragua"
+msgstr "尼加拉瓜"
+
+#: settings/flags.php:179
+msgid "Nigeria"
+msgstr "奈及利亞"
+
+#: settings/flags.php:178
+msgid "Norfolk Island"
+msgstr "諾福克島"
+
+#: settings/flags.php:177
+msgid "Niger"
+msgstr "尼日"
+
+#: settings/flags.php:176
+msgid "New Caledonia"
+msgstr "新喀里多尼亞群島"
+
+#: settings/flags.php:175
+msgid "Namibia"
+msgstr "納米比亞"
+
+#: settings/flags.php:174
+msgid "Mozambique"
+msgstr "莫三比克"
+
+#: settings/flags.php:173
+msgid "Malaysia"
+msgstr "馬來西亞"
+
+#: settings/flags.php:172
+msgid "Mexico"
+msgstr "墨西哥"
+
+#: settings/flags.php:171
+msgid "Malawi"
+msgstr "馬拉威"
+
+#: settings/flags.php:170
+msgid "Maldives"
+msgstr "馬爾地夫"
+
+#: settings/flags.php:169
+msgid "Mauritius"
+msgstr "模里西斯"
+
+#: settings/flags.php:168
+msgid "Malta"
+msgstr "馬爾他"
+
+#: settings/flags.php:167
+msgid "Montserrat"
+msgstr "蒙特色拉特島"
+
+#: settings/flags.php:166
+msgid "Mauritania"
+msgstr "茅利塔尼亞"
+
+#: settings/flags.php:165
+msgid "Martinique"
+msgstr "馬丁尼克"
+
+#: settings/flags.php:164
+msgid "Northern Mariana Islands"
+msgstr "北馬里安納群島"
+
+#: settings/flags.php:163
+msgid "Macao"
+msgstr "澳門"
+
+#: settings/flags.php:162
+msgid "Mongolia"
+msgstr "蒙古"
+
+#: settings/flags.php:161
+msgid "Myanmar"
+msgstr "緬甸"
+
+#: settings/flags.php:160
+msgid "Mali"
+msgstr "馬利"
+
+#: settings/flags.php:158
+msgid "Marshall Islands"
+msgstr "馬紹爾群島"
+
+#: settings/flags.php:157
+msgid "Madagascar"
+msgstr "馬達加斯加"
+
+#: settings/flags.php:156
+msgid "Montenegro"
+msgstr "蒙特內哥羅"
+
+#: settings/flags.php:155
+msgid "Moldova"
+msgstr "摩爾多瓦"
+
+#: settings/flags.php:154
+msgid "Monaco"
+msgstr "摩納哥"
+
+#: settings/flags.php:153
+msgid "Morocco"
+msgstr "摩洛哥"
+
+#: settings/flags.php:152
+msgid "Libya"
+msgstr "利比亞"
+
+#: settings/flags.php:151
+msgid "Latvia"
+msgstr "拉脫維亞"
+
+#: settings/flags.php:150
+msgid "Luxembourg"
+msgstr "盧森堡"
+
+#: settings/flags.php:149
+msgid "Lithuania"
+msgstr "立陶宛"
+
+#: settings/flags.php:148
+msgid "Lesotho"
+msgstr "賴索托"
+
+#: settings/flags.php:147
+msgid "Liberia"
+msgstr "賴比瑞亞"
+
+#: settings/flags.php:146
+msgid "Sri Lanka"
+msgstr "斯里蘭卡"
+
+#: settings/flags.php:145
+msgid "Liechtenstein"
+msgstr "列支敦斯登"
+
+#: settings/flags.php:144
+msgid "Saint Lucia"
+msgstr "聖露西亞"
+
+#: settings/flags.php:143
+msgid "Lebanon"
+msgstr "黎巴嫩"
+
+#: settings/flags.php:142
+msgid "Laos"
+msgstr "寮國"
+
+#: settings/flags.php:141
+msgid "Kazakhstan"
+msgstr "哈薩克"
+
+#: settings/flags.php:140
+msgid "Cayman Islands"
+msgstr "開曼群島"
+
+#: settings/flags.php:139
+msgid "Kuwait"
+msgstr "科威特"
+
+#: settings/flags.php:138
+msgid "Kurdistan"
+msgstr "庫德斯坦"
+
+#: settings/flags.php:137
+msgid "South Korea"
+msgstr "南韓"
+
+#: settings/flags.php:136
+msgid "North Korea"
+msgstr "北韓"
+
+#: settings/flags.php:135
+msgid "Saint Kitts and Nevis"
+msgstr "聖克里斯多福及尼維斯"
+
+#: settings/flags.php:134
+msgid "Comoros"
+msgstr "葛摩"
+
+#: settings/flags.php:133
+msgid "Kiribati"
+msgstr "吉里巴斯"
+
+#: settings/flags.php:132
+msgid "Cambodia"
+msgstr "柬埔寨"
+
+#: settings/flags.php:131
+msgid "Kyrgyzstan"
+msgstr "吉爾吉斯"
+
+#: settings/flags.php:130
+msgid "Kenya"
+msgstr "肯亞"
+
+#: settings/flags.php:129
+msgid "Japan"
+msgstr "日本"
+
+#: settings/flags.php:128
+msgid "Jordan"
+msgstr "約旦"
+
+#: settings/flags.php:127
+msgid "Jamaica"
+msgstr "牙買加"
+
+#: settings/flags.php:126
+msgid "Italy"
+msgstr "義大利"
+
+#: settings/flags.php:125
+msgid "Iceland"
+msgstr "冰島"
+
+#: settings/flags.php:124
+msgid "Iran"
+msgstr "伊朗"
+
+#: settings/flags.php:123
+msgid "Iraq"
+msgstr "伊拉克"
+
+#: settings/flags.php:122
+msgid "British Indian Ocean Territory"
+msgstr "英屬印度洋領土"
+
+#: settings/flags.php:121
+msgid "India"
+msgstr "印度"
+
+#: settings/flags.php:120
+msgid "Israel"
+msgstr "以色列"
+
+#: settings/flags.php:119
+msgid "Republic of Ireland"
+msgstr "愛爾蘭共和國"
+
+#: settings/flags.php:118
+msgid "Indonesia"
+msgstr "印尼"
+
+#: settings/flags.php:117
+msgid "Hungary"
+msgstr "匈牙利"
+
+#: settings/flags.php:116
+msgid "Haiti"
+msgstr "海地"
+
+#: settings/flags.php:115
+msgid "Croatia"
+msgstr "克羅埃西亞"
+
+#: settings/flags.php:114
+msgid "Honduras"
+msgstr "宏都拉斯"
+
+#: settings/flags.php:113
+msgid "Heard Island and McDonald Islands"
+msgstr "赫德島及麥當勞群島"
+
+#: settings/flags.php:112
+msgid "Hong Kong"
+msgstr "香港"
+
+#: settings/flags.php:111
+msgid "Guyana"
+msgstr "蓋亞那"
+
+#: settings/flags.php:110
+msgid "Guinea-Bissau"
+msgstr "幾內亞比索"
+
+#: settings/flags.php:109
+msgid "Guam"
+msgstr "關島"
+
+#: settings/flags.php:108
+msgid "Guatemala"
+msgstr "瓜地馬拉"
+
+#: settings/flags.php:107
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "南喬治亞及南三明治群島"
+
+#: settings/flags.php:106
+msgid "Greece"
+msgstr "希臘"
+
+#: settings/flags.php:105
+msgid "Equatorial Guinea"
+msgstr "赤道幾內亞"
+
+#: settings/flags.php:104
+msgid "Guadeloupe"
+msgstr "瓜地洛普"
+
+#: settings/flags.php:103
+msgid "Guinea"
+msgstr "幾內亞"
+
+#: settings/flags.php:102
+msgid "Gambia"
+msgstr "甘比亞"
+
+#: settings/flags.php:101
+msgid "Greenland"
+msgstr "格陵蘭"
+
+#: settings/flags.php:100
+msgid "Gibraltar"
+msgstr "直布羅陀"
+
+#: settings/flags.php:99
+msgid "Ghana"
+msgstr "迦納"
+
+#: settings/flags.php:98
+msgid "Georgia"
+msgstr "喬治亞"
+
+#: settings/flags.php:97
+msgid "Grenada"
+msgstr "格瑞那達"
+
+#: settings/flags.php:96
+msgid "United Kingdom"
+msgstr "英國"
+
+#: settings/flags.php:95
+msgid "Galicia"
+msgstr "加里斯亞"
+
+#: settings/flags.php:94
+msgid "Gabon"
+msgstr "加彭"
+
+#: settings/flags.php:93
+msgid "France"
+msgstr "法國"
+
+#: settings/flags.php:92
+msgid "Faroe Islands"
+msgstr "法羅群島"
+
+#: settings/flags.php:91
+msgid "Micronesia"
+msgstr "密克羅尼西亞"
+
+#: settings/flags.php:90
+msgid "Falkland Islands"
+msgstr "福克蘭群島"
+
+#: settings/flags.php:89
+msgid "Fiji"
+msgstr "斐濟"
+
+#: settings/flags.php:88
+msgid "Finland"
+msgstr "芬蘭"
+
+#: settings/flags.php:87
+msgid "Ethiopia"
+msgstr "衣索比亞"
+
+#: settings/flags.php:86
+msgid "Esperanto"
+msgstr "世界文"
+
+#: settings/flags.php:85
+msgid "Spain"
+msgstr "西班牙"
+
+#: settings/flags.php:84
+msgid "Eritrea"
+msgstr "厄利垂亞"
+
+#: settings/flags.php:83
+msgid "England"
+msgstr "英國英格蘭"
+
+#: settings/flags.php:82
+msgid "Western Sahara"
+msgstr "西撒哈拉"
+
+#: settings/flags.php:81
+msgid "Egypt"
+msgstr "埃及"
+
+#: settings/flags.php:80
+msgid "Estonia"
+msgstr "愛沙尼亞"
+
+#: settings/flags.php:79
+msgid "Ecuador"
+msgstr "厄瓜多爾"
+
+#: settings/flags.php:78
+msgid "Algeria"
+msgstr "阿爾及利亞"
+
+#: settings/flags.php:77
+msgid "Dominican Republic"
+msgstr "多明尼加共和國"
+
+#: settings/flags.php:76
+msgid "Dominica"
+msgstr "多明尼加"
+
+#: settings/flags.php:75
+msgid "Denmark"
+msgstr "丹麥"
+
+#: settings/flags.php:74
+msgid "Djibouti"
+msgstr "吉布地"
+
+#: settings/flags.php:73
+msgid "Germany"
+msgstr "德國"
+
+#: settings/flags.php:72
+msgid "Czech Republic"
+msgstr "捷克共和國"
+
+#: settings/flags.php:71
+msgid "Cyprus"
+msgstr "賽普勒斯"
+
+#: settings/flags.php:70
+msgid "Christmas Island"
+msgstr "聖誕島"
+
+#: settings/flags.php:69
+msgid "Cape Verde"
+msgstr "維德角"
+
+#: settings/flags.php:68
+msgid "Cuba"
+msgstr "古巴"
+
+#: settings/flags.php:67
+msgid "Costa Rica"
+msgstr "哥斯大黎加"
+
+#: settings/flags.php:66
+msgid "Colombia"
+msgstr "哥倫比亞"
+
+#: settings/flags.php:65
+msgid "China"
+msgstr "中國"
+
+#: settings/flags.php:64
+msgid "Cameroon"
+msgstr "喀麥隆"
+
+#: settings/flags.php:63
+msgid "Chile"
+msgstr "智利"
+
+#: settings/flags.php:62
+msgid "Cook Islands"
+msgstr "柯克群島"
+
+#: settings/flags.php:61
+msgid "Ivory Coast"
+msgstr "象牙海岸"
+
+#: settings/flags.php:60
+msgid "Switzerland"
+msgstr "瑞士"
+
+#: settings/flags.php:59
+msgid "Congo"
+msgstr "剛果"
+
+#: settings/flags.php:58
+msgid "Central African Republic"
+msgstr "中非共和國"
+
+#: settings/flags.php:57
+msgid "Democratic Republic of the Congo"
+msgstr "剛果民主共和國"
+
+#: settings/flags.php:56
+msgid "Cocos"
+msgstr "可可斯群島"
+
+#: settings/flags.php:55
+msgid "Catalonia"
+msgstr "加泰羅尼亞"
+
+#: settings/flags.php:54
+msgid "Canada"
+msgstr "加拿大"
+
+#: settings/flags.php:53
+msgid "Belize"
+msgstr "貝里斯"
+
+#: settings/flags.php:52
+msgid "Belarus"
+msgstr "白羅斯"
+
+#: settings/flags.php:51
+msgid "Botswana"
+msgstr "波札那"
+
+#: settings/flags.php:50
+msgid "Bhutan"
+msgstr "不丹"
+
+#: settings/flags.php:49
+msgid "Bahamas"
+msgstr "巴哈馬"
+
+#: settings/flags.php:48
+msgid "Brazil"
+msgstr "巴西"
+
+#: settings/flags.php:47
+msgid "Bolivia"
+msgstr "玻利維亞"
+
+#: settings/flags.php:46
+msgid "Brunei"
+msgstr "汶萊"
+
+#: settings/flags.php:45
+msgid "Bermuda"
+msgstr "百慕達"
+
+#: settings/flags.php:44
+msgid "Benin"
+msgstr "貝南"
+
+#: settings/flags.php:43
+msgid "Burundi"
+msgstr "蒲隆地"
+
+#: settings/flags.php:42
+msgid "Bahrain"
+msgstr "巴林"
+
+#: settings/flags.php:41
+msgid "Bulgaria"
+msgstr "保加利亞"
+
+#: settings/flags.php:40
+msgid "Burkina Faso"
+msgstr "布吉納法索"
+
+#: settings/flags.php:39
+msgid "Belgium"
+msgstr "比利時"
+
+#: settings/flags.php:38
+msgid "Bangladesh"
+msgstr "孟加拉"
+
+#: settings/flags.php:37
+msgid "Barbados"
+msgstr "巴貝多"
+
+#: settings/flags.php:36
+msgid "Basque Country"
+msgstr "巴斯克自治區"
+
+#: settings/flags.php:35
+msgid "Bosnia and Herzegovina"
+msgstr "波士尼亞與赫塞哥維納"
+
+#: settings/flags.php:34
+msgid "Azerbaijan"
+msgstr "亞塞拜然"
+
+#: settings/flags.php:33
+msgid "Åland Islands"
+msgstr "奧蘭群島"
+
+#: settings/flags.php:32
+msgid "Aruba"
+msgstr "阿路巴"
+
+#: settings/flags.php:31
+msgid "Australia"
+msgstr "澳洲"
+
+#: settings/flags.php:30
+msgid "Austria"
+msgstr "奧地利"
+
+#: settings/flags.php:29
+msgid "American Samoa"
+msgstr "美屬薩摩亞"
+
+#: settings/flags.php:28
+msgid "Arab league"
+msgstr "阿拉伯國家聯盟"
+
+#: settings/flags.php:27
+msgid "Argentina"
+msgstr "阿根廷"
+
+#: settings/flags.php:26
+msgid "Angola"
+msgstr "安哥拉"
+
+#: settings/flags.php:25
+msgid "Netherlands Antilles"
+msgstr "荷屬安地列斯"
+
+#: settings/flags.php:24
+msgid "Armenia"
+msgstr "亞美尼亞"
+
+#: settings/flags.php:23
+msgid "Albania"
+msgstr "阿爾巴尼亞"
+
+#: settings/flags.php:22
+msgid "Anguilla"
+msgstr "安圭拉"
+
+#: settings/flags.php:21
+msgid "Antigua and Barbuda"
+msgstr "安地卡及巴布達"
+
+#: settings/flags.php:20
+msgid "Afghanistan"
+msgstr "阿富汗"
+
+#: settings/flags.php:19
+msgid "United Arab Emirates"
+msgstr "阿拉伯聯合大公國"
+
+#: settings/flags.php:18
+msgid "Andorra"
+msgstr "安道爾"
+
+#. translators: accessibility text
+#: admin/view-translations-post.php:61 admin/view-translations-term.php:80
+msgid "Translation"
+msgstr "譯文"
+
+#: admin/admin-static-pages.php:56
+msgid "Posts Page"
+msgstr "文章頁面"
+
+#: admin/admin-static-pages.php:52
+msgid "Front Page"
+msgstr "首頁"
+
+#: admin/admin-nav-menu.php:82
+msgid "Add to Menu"
+msgstr "新增至選單"
+
+#: include/Model/Languages.php:877 modules/wizard/wizard.php:499
+msgid "The flag does not exist"
+msgstr "這個旗幟不存在。"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-links.php:27
+msgid "Add a translation in %s"
+msgstr "新增 [%s] 譯文"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-filters-columns.php:194 admin/admin-filters-columns.php:327
+msgid "This item is in %s"
+msgstr "這個項目是 [%s]"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-filters-columns.php:175 admin/admin-filters-columns.php:313
+#: admin/admin-links.php:54
+msgid "Edit the translation in %s"
+msgstr "編輯 [%s] 譯文"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-filters-columns.php:171 admin/admin-filters-columns.php:309
+msgid "Edit this item in %s"
+msgstr "編輯這個項目的 [%s] 譯文"
+
+#. Description of the plugin
+#: polylang.php
+msgid "Adds multilingual capability to WordPress"
+msgstr "為 WordPress 新增多語系內容。"
+
+#. Plugin Name of the plugin
+#: polylang.php
+msgid "Polylang"
+msgstr "Polylang"
+
+#: settings/settings-module.php:162
+msgid "Activate"
+msgstr "啟用"
+
+#: settings/settings-module.php:164
+msgid "Activated"
+msgstr "已啟用"
+
+#: settings/settings-licenses.php:43
+msgid "Close"
+msgstr "關閉"
+
+#: install/upgrade.php:91
+msgid "Polylang has been deactivated because you upgraded from a too old version."
+msgstr "由於這個網站從過舊的版本升級，因此 Polylang 已停用。"
+
+#: include/widget-languages.php:154
+msgid "Title:"
+msgstr "標題:"
+
+#: include/widget-languages.php:34
+msgid "Displays a language switcher"
+msgstr "顯示語言切換器"
+
+#. translators: Calendar caption: 1: Month name, 2: 4-digit year.
+#: include/widget-calendar.php:219
+msgctxt "calendar caption"
+msgid "%1$s %2$s"
+msgstr "%2$s 年 %1$s"
+
+#: include/switcher.php:46
+msgid "Displays as a dropdown"
+msgstr "顯示為下拉式選單"
+
+#: include/switcher.php:51
+msgid "Hides languages with no translation"
+msgstr "隱藏沒有譯文的語言"
+
+#: include/switcher.php:50
+msgid "Hides the current language"
+msgstr "隱藏目前語言"
+
+#: include/switcher.php:49
+msgid "Forces link to front page"
+msgstr "強制連結至首頁"
+
+#: include/switcher.php:48
+msgid "Displays flags"
+msgstr "顯示旗幟"
+
+#: include/switcher.php:47
+msgid "Displays language names"
+msgstr "顯示語言名稱"
+
+#: integrations/wp-importer/wordpress-importer.php:45
+msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
+msgstr "從 WordPress 的資料匯出檔中匯入<strong>文章、頁面、留言、自訂欄位、分類及標籤</strong>。"
+
+#: include/default-term.php:132
+msgid "Uncategorized"
+msgstr "未分類"
+
+#. translators: Hidden accessibility text.
+#: frontend/frontend-filters-search.php:122
+#: frontend/frontend-filters-search.php:124
+msgid "Search"
+msgstr "搜尋"
+
+#: settings/view-tab-strings.php:21
+msgid "Use this to remove unused strings from database, for example after a plugin has been uninstalled."
+msgstr "使用這個功能以移除資料庫中不再使用的字串 (例如移除外掛後所遺留的字串)。"
+
+#: settings/view-tab-strings.php:19
+msgid "Clean strings translation database"
+msgstr "清除資料庫中的字串譯文"
+
+#: settings/view-tab-strings.php:16
+msgid "Search translations"
+msgstr "搜尋譯文"
+
+#: modules/sync/settings-sync.php:32
+msgid "The synchronization options allow to maintain exact same values (or translations in the case of taxonomies and page parent) of meta content between the translations of a post or page."
+msgstr "同步處理功能允許同一篇文章或頁面的不同語言譯文版本間保持完全相同的中繼資料內容 (或分類法與上層頁面的不同語言譯文)。"
+
+#: modules/sync/settings-sync.php:31
+msgid "Synchronization"
+msgstr "同步處理"
+
+#: settings/settings-cpt.php:156
+msgid "Activate languages and translations for custom taxonomies."
+msgstr "為自訂分類法啟用語言與譯文。"
+
+#: settings/settings-cpt.php:131
+msgid "Custom taxonomies"
+msgstr "自訂分類法"
+
+#: settings/settings-cpt.php:125
+msgid "Activate languages and translations for custom post types."
+msgstr "為自訂內容類型啟用語言與譯文。"
+
+#: settings/settings-cpt.php:100
+msgid "Custom post types"
+msgstr "自訂內容類型"
+
+#: modules/wizard/view-wizard-step-media.php:19 modules/wizard/wizard.php:620
+#: settings/settings-media.php:31
+msgid "Media"
+msgstr "媒體"
+
+#: settings/settings-browser.php:34
+msgid "Detect browser language"
+msgstr "偵測瀏覽器偏好語言設定"
+
+#. translators: %1$s example url when the option is active. %2$s example url
+#. when the option is not active
+#: settings/settings-url.php:211
+msgid "Example: %1$s instead of %2$s"
+msgstr "範例: 以 %1$s 取代 %2$s"
+
+#: modules/site-health/admin-site-health.php:167 settings/settings-url.php:199
+msgid "The front page URL contains the language code instead of the page name or page id"
+msgstr "首頁網址包含的是語言代碼，而不是頁面名稱或頁面 ID"
+
+#: modules/site-health/admin-site-health.php:144 settings/settings-url.php:136
+msgid "Hide URL language information for default language"
+msgstr "隱藏預設語言的網址語言資訊"
+
+#: modules/site-health/admin-site-health.php:161 settings/settings-url.php:101
+msgid "The language is set from different domains"
+msgstr "語言依據不同網域進行判斷"
+
+#: modules/site-health/admin-site-health.php:158 settings/settings-url.php:90
+msgid "The language is set from the subdomain name in pretty permalinks"
+msgstr "語言依據易於辨識的永久連結中的子網域名稱進行判斷"
+
+#: settings/settings-url.php:83 settings/settings-url.php:94
+#: settings/settings-url.php:166 settings/settings-url.php:181
+msgid "Example:"
+msgstr "範例:"
+
+#: settings/settings-url.php:79
+msgid "The language is set from the code in the URL"
+msgstr "語言依據網址中的語言代碼進行判斷"
+
+#: modules/site-health/admin-site-health.php:155 settings/settings-url.php:79
+msgid "The language is set from the directory name in pretty permalinks"
+msgstr "語言依據易於辨識的永久連結中的目錄名稱進行判斷"
+
+#: settings/settings-url.php:66
+msgid "Posts, pages, categories and tags URLs will not be modified."
+msgstr "不會修改文章、頁面、分類及標籤的網址。"
+
+#: modules/site-health/admin-site-health.php:152 settings/settings-url.php:62
+msgid "The language is set from content"
+msgstr "語言依據內容進行判斷"
+
+#: settings/settings-url.php:38
+msgid "URL modifications"
+msgstr "網址修改"
+
+#. translators: accessibility text
+#: modules/wizard/view-wizard-step-home-page.php:69
+#: modules/wizard/view-wizard-step-home-page.php:83
+#: modules/wizard/view-wizard-step-home-page.php:114
+#: modules/wizard/view-wizard-step-languages.php:71
+#: modules/wizard/view-wizard-step-languages.php:86
+#: settings/table-languages.php:133 settings/table-languages.php:152
+msgid "Default language"
+msgstr "預設語言"
+
+#: settings/view-tab-lang.php:172
+msgid "Update"
+msgstr "更新"
+
+#: settings/view-tab-lang.php:151
+msgid "Position of the language in the language switcher"
+msgstr "這個語言在語言切換器中的位置。"
+
+#: settings/view-tab-lang.php:120
+msgid "Choose the text direction for the language"
+msgstr "選取這個語言的文字方向。"
+
+#: settings/view-tab-lang.php:117
+msgid "right to left"
+msgstr "從右至左"
+
+#: settings/view-tab-lang.php:112
+msgid "left to right"
+msgstr "從左至右"
+
+#: settings/view-tab-lang.php:107
+msgid "Text direction"
+msgstr "文字方向"
+
+#: settings/view-tab-lang.php:103
+msgid "Language code - preferably 2-letters ISO 639-1  (for example: en)"
+msgstr "語言代碼 - 建議使用 ISO 639-1 的 2 字元語言代碼 (例如 zh)。"
+
+#: settings/view-tab-lang.php:96
+msgid "Language code"
+msgstr "語言代碼"
+
+#: settings/view-tab-lang.php:92
+msgid "WordPress Locale for the language (for example: en_US). You will need to install the .mo file for this language."
+msgstr "WordPress 的地區語言代碼 (例如 zh_TW)。網站管理員必須安裝這個語言的 .mo 檔案。"
+
+#: modules/REST/V1/Languages.php:456 settings/view-tab-lang.php:81
+msgid "The name is how it is displayed on your site (for example: English)."
+msgstr "顯示於這個網站上的名稱 (例如「繁體中文 (台灣)」)。"
+
+#: settings/view-tab-lang.php:70
+msgid "You can choose a language in the list or directly edit it below."
+msgstr "請選取清單中的語言或直接在下方編輯。"
+
+#: include/widget-languages.php:88 settings/view-tab-lang.php:53
+msgid "Choose a language"
+msgstr "選取語言"
+
+#: modules/wizard/view-wizard-step-languages.php:50
+#: modules/wizard/view-wizard-step-languages.php:54
+#: settings/view-tab-lang.php:32 settings/view-tab-lang.php:172
+msgid "Add new language"
+msgstr "新增語言"
+
+#: settings/view-tab-lang.php:32
+msgid "Edit language"
+msgstr "編輯語言"
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: settings/view-about.php:15
+msgid "Polylang is provided with an extensive %1$sdocumentation%2$s (in English). It includes information on how to set up your multilingual site and use it on a daily basis; FAQs, and documentation for developers to adapt their plugins and themes."
+msgstr "Polylang 提供內容豐富的%1$s線上說明%2$s (目前僅有英文版)，其中包含設定多語系網站及日常使用的相關資訊、常見問題集及供開發者調整外掛及佈景主題的技術文件。"
+
+#: settings/table-string.php:365
+msgid "Filter"
+msgstr "篩選"
+
+#: settings/table-string.php:352
+msgid "View all groups"
+msgstr "檢視全部群組"
+
+#: admin/admin-base.php:128 admin/view-translations-media.php:15
+#: admin/view-translations-post.php:14 admin/view-translations-term.php:17
+#: admin/view-translations-term.php:24 settings/table-string.php:164
+msgid "Translations"
+msgstr "譯文"
+
+#: settings/table-string.php:163
+msgid "Group"
+msgstr "群組"
+
+#: settings/table-string.php:162
+msgid "Name"
+msgstr "名稱"
+
+#: settings/table-string.php:161
+msgid "String"
+msgstr "字串"
+
+#: settings/table-languages.php:155
+msgid "Posts"
+msgstr "內容數量"
+
+#: settings/table-languages.php:154 settings/view-tab-lang.php:124
+msgid "Flag"
+msgstr "旗幟"
+
+#: settings/table-languages.php:153 settings/view-tab-lang.php:144
+msgid "Order"
+msgstr "順序"
+
+#: settings/table-languages.php:151
+msgid "Code"
+msgstr "語言代碼"
+
+#: settings/table-languages.php:150 settings/view-tab-lang.php:85
+msgid "Locale"
+msgstr "地區語言"
+
+#: settings/table-languages.php:149 settings/view-tab-lang.php:74
+msgid "Full name"
+msgstr "完整名稱"
+
+#: settings/table-languages.php:214 settings/table-string.php:314
+msgid "Delete"
+msgstr "刪除"
+
+#: settings/table-languages.php:213
+msgid "You are about to permanently delete this language. Are you sure?"
+msgstr "即將永久刪除這個語言，確定要繼續操作嗎？"
+
+#: modules/sync/settings-sync.php:113
+msgid "Featured image"
+msgstr "精選圖片"
+
+#: modules/sync/settings-sync.php:112
+msgid "Page order"
+msgstr "頁面順序"
+
+#: modules/sync/settings-sync.php:111
+msgid "Page template"
+msgstr "頁面範本"
+
+#: modules/sync/settings-sync.php:110
+msgid "Page parent"
+msgstr "上層頁面"
+
+#: modules/sync/settings-sync.php:109
+msgid "Post format"
+msgstr "文章格式"
+
+#: modules/sync/settings-sync.php:108
+msgid "Published date"
+msgstr "發佈日期"
+
+#: modules/sync/settings-sync.php:107
+msgid "Sticky posts"
+msgstr "置頂文章"
+
+#: modules/sync/settings-sync.php:106
+msgid "Ping status"
+msgstr "內容更新通知狀態"
+
+#: modules/sync/settings-sync.php:105
+msgid "Comment status"
+msgstr "留言狀態"
+
+#: modules/sync/settings-sync.php:104
+msgid "Custom fields"
+msgstr "自訂欄位"
+
+#: modules/sync/settings-sync.php:103
+msgid "Taxonomies"
+msgstr "分類法"
+
+#: settings/settings-licenses.php:113 settings/settings-module.php:288
+msgid "Settings saved."
+msgstr "設定已儲存。"
+
+#: settings/table-string.php:426
+msgid "Translations updated."
+msgstr "譯文已更新。"
+
+#: settings/settings.php:149
+msgid "Strings translations"
+msgstr "字串譯文"
+
+#: settings/settings.php:119
+msgid "About Polylang"
+msgstr "關於 Polylang"
+
+#: settings/settings.php:194
+msgid "The language was created, but the WordPress language file was not downloaded. Please install it manually."
+msgstr "語言已建立，但是尚未下載 WordPress 語言套件檔案，請手動安裝對應的語言套件。"
+
+#: admin/admin-base.php:461 admin/admin-base.php:479
+msgid "Filters content by language"
+msgstr "依據語言篩選內容"
+
+#: admin/admin-base.php:452
+msgid "Show all languages"
+msgstr "顯示全部語言"
+
+#: admin/admin-base.php:131 admin/admin.php:104
+#: settings/settings-module.php:150
+msgid "Settings"
+msgstr "設定"
+
+#: admin/admin-strings.php:70
+msgid "Widget text"
+msgstr "小工具文字"
+
+#: admin/admin-strings.php:69
+msgid "Widget title"
+msgstr "小工具標題"
+
+#: admin/admin-nav-menu.php:49 include/nav-menu.php:74
+#: include/widget-languages.php:32
+msgid "Language switcher"
+msgstr "語言切換器"
+
+#: include/Model/Languages.php:865 modules/wizard/wizard.php:498
+msgid "The language must have a name"
+msgstr "這個語言必須有語言名稱。"
+
+#: include/Model/Languages.php:858 modules/wizard/wizard.php:497
+msgid "The language code must be unique"
+msgstr "語言代碼必須是唯一的項目。"
+
+#: include/Model/Languages.php:852 modules/wizard/wizard.php:496
+msgid "The language code contains invalid characters"
+msgstr "語言代碼包含無效字元。"
+
+#: include/Model/Languages.php:847 modules/wizard/wizard.php:495
+msgid "Enter a valid WordPress locale"
+msgstr "輸入有效的 WordPress 地區語言"
+
+#: settings/settings.php:222
+msgid "Language updated."
+msgstr "語言已更新。"
+
+#: settings/settings.php:209
+msgid "Language deleted."
+msgstr "語言已刪除。"
+
+#: settings/settings.php:187
+msgid "Language added."
+msgstr "語言已新增。"
+
+#: include/Model/Languages.php:188 modules/wizard/wizard.php:494
+msgid "Impossible to add the language."
+msgstr "無法新增這個語言。"
+
+#: include/filters-widgets-options.php:53
+msgid "All languages"
+msgstr "全部語言"
+
+#: include/filters-widgets-options.php:68
+msgid "The widget is displayed for:"
+msgstr "這個小工具的顯示位置:"
+
+#: admin/admin-filters-term.php:467
+msgid "None"
+msgstr "無"
+
+#: admin/admin-filters-term.php:142 admin/admin-filters-term.php:215
+msgid "Sets the language"
+msgstr "設定語言"
+
+#: settings/table-languages.php:207
+msgid "Edit"
+msgstr "編輯"
+
+#: admin/admin-classic-editor.php:245
+msgid "(no parent)"
+msgstr "(無上層項目)"
+
+#: admin/admin-base.php:124 admin/admin-base.php:148
+#: admin/admin-classic-editor.php:77 admin/admin-nav-menu.php:72
+#: admin/admin-nav-menu.php:75 admin/admin-nav-menu.php:108
+#: admin/admin-notices.php:114 admin/admin-notices.php:187
+#: include/nav-menu.php:73 modules/wizard/view-wizard-step-languages.php:28
+#: modules/wizard/wizard.php:510 settings/settings.php:129
+msgid "Languages"
+msgstr "語言"
+
+#: admin/admin-classic-editor.php:129 admin/admin-filters-columns.php:232
+#: admin/admin-filters-media.php:60 admin/admin-filters-term.php:140
+#: admin/admin-filters-term.php:213
+#: modules/wizard/view-wizard-step-languages.php:62
+msgid "Language"
+msgstr "語言"
+
+#: admin/admin-filters-columns.php:218
+msgid "&mdash; No Change &mdash;"
+msgstr "&mdash; 不變更 &mdash;"

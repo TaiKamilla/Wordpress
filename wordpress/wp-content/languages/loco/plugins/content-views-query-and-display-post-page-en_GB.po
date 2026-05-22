@@ -1,0 +1,695 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Content Views\n"
+"POT-Creation-Date: 2017-04-07 16:29+0700\n"
+"PO-Revision-Date: 2025-06-13 17:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (UK)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n\n"
+"X-Poedit-Basepath: D:\\Git\\content-views\\\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: code\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.8.0; wp-6.7.2; php-8.3.19"
+
+#: code/admin/content-views-admin.php:223
+msgid "There is no taxonomy for selected content type"
+msgstr "There is no taxonomy for selected content type"
+
+#: code/admin/content-views-admin.php:224
+msgid ""
+"If post excerpt contains shortcode of theme or another plugin, please save "
+"this View, paste its shortcode to a page, then view that page"
+msgstr ""
+"If post excerpt contains shortcode of theme or another plugin, please save "
+"this View, paste its shortcode to a page, then view that page"
+
+#: code/admin/content-views-admin.php:228 code/admin/views/view.php:63
+#: code/admin/views/view.php:73
+msgid "Show Preview"
+msgstr "Show Preview"
+
+#: code/admin/content-views-admin.php:229
+msgid "Hide Preview"
+msgstr "Hide Preview"
+
+#: code/admin/content-views-admin.php:230
+msgid "Update Preview"
+msgstr "Update Preview"
+
+#: code/admin/content-views-admin.php:309
+#: code/admin/content-views-admin.php:321
+msgid "Content Views Settings"
+msgstr "Content Views Settings"
+
+#: code/admin/content-views-admin.php:309
+msgid "Content Views"
+msgstr "Content Views"
+
+#: code/admin/content-views-admin.php:313 code/public/content-views.php:260
+msgid "All Views"
+msgstr "All Views"
+
+#: code/admin/content-views-admin.php:317 code/public/content-views.php:256
+msgid "Add New View"
+msgstr "Add New View"
+
+#: code/admin/content-views-admin.php:317
+#: code/admin/content-views-admin.php:375
+#: code/admin/content-views-admin.php:469 code/public/content-views.php:255
+msgid "Add New"
+msgstr "Add New"
+
+#: code/admin/content-views-admin.php:321
+#: code/admin/content-views-admin.php:374
+msgid "Settings"
+msgstr "Settings"
+
+#: code/admin/content-views-admin.php:409
+#: code/admin/content-views-admin.php:469
+msgid "Edit"
+msgstr "Edit"
+
+#: code/admin/content-views-admin.php:427
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: code/admin/content-views-admin.php:428 code/admin/views/view.php:379
+#: code/includes/settings.php:602 code/includes/values.php:240
+msgid "Author"
+msgstr "Author"
+
+#: code/admin/content-views-admin.php:429 code/includes/settings.php:602
+msgid "Date"
+msgstr "Date"
+
+#: code/admin/views/view.php:35 code/public/content-views.php:258
+msgid "Edit View"
+msgstr "Edit View"
+
+#: code/admin/views/view.php:56
+msgid "Preview"
+msgstr "Preview"
+
+#: code/admin/views/view.php:63
+#, php-format
+msgid "To see live output, please click %s button"
+msgstr "To see live output, please click %s button"
+
+#: code/admin/views/view.php:96 code/includes/settings.php:290
+#: code/includes/values.php:286
+msgid "Title"
+msgstr "Title"
+
+#: code/admin/views/view.php:103
+msgid "Enter a name to identify your views easily"
+msgstr "Enter a name to identify your views easily"
+
+#: code/admin/views/view.php:114 code/admin/views/view.php:667
+msgid "Save"
+msgstr "Save"
+
+#: code/admin/views/view.php:121 code/includes/hooks.php:58
+msgid "Filter Settings"
+msgstr "Filter Settings"
+
+#: code/admin/views/view.php:125 code/includes/hooks.php:59
+msgid "Display Settings"
+msgstr "Display Settings"
+
+#: code/admin/views/view.php:140 code/includes/hooks.php:65
+msgid "Content type"
+msgstr "Content type"
+
+#: code/admin/views/view.php:152
+msgid "Filter custom post type (product, event...)"
+msgstr "Filter custom post type (product, event...)"
+
+#: code/admin/views/view.php:157
+msgid "Common"
+msgstr "Common"
+
+#: code/admin/views/view.php:172
+msgid "Include only"
+msgstr "Include only"
+
+#: code/admin/views/view.php:179
+msgid "List of post IDs to show (comma-separated values, for example: 1,2,3)"
+msgstr "List of post IDs to show (comma-separated values, for example: 1,2,3)"
+
+#: code/admin/views/view.php:187
+msgid "Exclude"
+msgstr "Exclude"
+
+#: code/admin/views/view.php:194
+msgid ""
+"List of post IDs to exclude (comma-separated values, for example: 1,2,3)"
+msgstr ""
+"List of post IDs to exclude (comma-separated values, for example: 1,2,3)"
+
+#: code/admin/views/view.php:203
+msgid "Parent page"
+msgstr "Parent page"
+
+#: code/admin/views/view.php:210
+msgid "Enter ID of parent page to show its children"
+msgstr "Enter ID of parent page to show its children"
+
+#: code/admin/views/view.php:219 code/includes/settings.php:167
+msgid "Limit"
+msgstr "Limit"
+
+#: code/admin/views/view.php:227
+msgid "Total number of posts to show. Leave empty to show all found posts"
+msgstr "Total number of posts to show. Leave empty to show all found posts"
+
+#: code/admin/views/view.php:239
+msgid "Advance"
+msgstr "Advance"
+
+#: code/admin/views/view.php:291 code/admin/views/view.php:379
+#: code/admin/views/view.php:414 code/admin/views/view.php:439
+#, php-format
+msgid "Filter by %s"
+msgstr "Filter by %s"
+
+#: code/admin/views/view.php:291 code/includes/settings.php:602
+#: code/includes/values.php:236
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#: code/admin/views/view.php:295
+msgid "Select taxonomy"
+msgstr "Select taxonomy"
+
+#: code/admin/views/view.php:313
+msgid "Filter by custom taxonomies"
+msgstr "Filter by custom taxonomies"
+
+#: code/admin/views/view.php:338
+msgid "Relation"
+msgstr "Relation"
+
+#: code/admin/views/view.php:347
+msgid "The logical relationship between above taxonomies"
+msgstr "The logical relationship between above taxonomies"
+
+#: code/admin/views/view.php:351
+#, php-format
+msgid ""
+"In this lite version, when you select any term above, it will not replace "
+"posts layout in term page (for example: %s) with layout of this View"
+msgstr ""
+"In this lite version, when you select any term above, it will not replace "
+"posts layout in term page (for example: %s) with layout of this View"
+
+#: code/admin/views/view.php:356 code/admin/views/view.php:359
+#: code/includes/settings.php:88 code/includes/values.php:238
+msgid "Sort by"
+msgstr "Sort by"
+
+#: code/admin/views/view.php:382
+msgid "By author"
+msgstr "By author"
+
+#: code/admin/views/view.php:398
+msgid "Not by author"
+msgstr "Not by author"
+
+#: code/admin/views/view.php:414 code/includes/values.php:237
+msgid "Status"
+msgstr "Status"
+
+#: code/admin/views/view.php:432
+msgid "Select post status"
+msgstr "Select post status"
+
+#: code/admin/views/view.php:439 code/includes/values.php:239
+msgid "Keyword"
+msgstr "Keyword"
+
+#: code/admin/views/view.php:454
+msgid "Enter keyword to searching for posts"
+msgstr "Enter keyword to searching for posts"
+
+#: code/admin/views/view.php:454
+msgid "It will search keyword in title, excerpt, content of posts"
+msgstr "It will search keyword in title, excerpt, content of posts"
+
+#: code/admin/views/view.php:477 code/includes/hooks.php:70
+#: code/includes/hooks.php:94
+msgid "Layout"
+msgstr "Layout"
+
+#: code/admin/views/view.php:504
+msgid "More amazing layouts (Pinterest, Timeline...)"
+msgstr "More amazing layouts (Pinterest, Timeline...)"
+
+#: code/admin/views/view.php:507
+msgid "Responsive"
+msgstr "Responsive"
+
+#: code/admin/views/view.php:515 code/admin/views/view.php:528
+#: code/includes/hooks.php:94 code/includes/settings.php:772
+msgid "Items per row"
+msgstr "Items per row"
+
+#: code/admin/views/view.php:515
+msgid "Tablet"
+msgstr "Tablet"
+
+#: code/admin/views/view.php:528
+msgid "Mobile"
+msgstr "Mobile"
+
+#: code/admin/views/view.php:546 code/includes/hooks.php:75
+msgid "Format"
+msgstr "Format"
+
+#: code/admin/views/view.php:588
+msgid "Disable this format on small screens (less than 481 pixels)"
+msgstr "Disable this format on small screens (less than 481 pixels)"
+
+#: code/admin/views/view.php:601 code/includes/hooks.php:80
+msgid "Fields settings"
+msgstr "Fields settings"
+
+#: code/admin/views/view.php:619 code/includes/hooks.php:86
+msgid "Pagination"
+msgstr "Pagination"
+
+#: code/admin/views/view.php:636
+msgid "Others"
+msgstr "Others"
+
+#: code/includes/functions.php:297
+msgid "words"
+msgstr "words"
+
+#: code/includes/functions.php:521 code/includes/html.php:395
+msgid "(no title)"
+msgstr "(no title)"
+
+#: code/includes/functions.php:587
+msgid "Cheatin&#8217; uh?"
+msgstr "Cheatin&#8217; uh?"
+
+#: code/includes/functions.php:626
+#, php-format
+msgid "Error: View %s may not exist"
+msgstr "Error: View %s may not exist"
+
+#: code/includes/functions.php:745
+msgid "the number of results"
+msgstr "the number of results"
+
+#: code/includes/functions.php:745
+msgid "the <b>Limit</b> value"
+msgstr "the <b>Limit</b> value"
+
+#: code/includes/functions.php:745
+msgid "is less than or equal to (&le;) the <b>Items per page</b> value"
+msgstr "is less than or equal to (&le;) the <b>Items per page</b> value"
+
+#: code/includes/functions.php:746
+msgid ""
+"[Preview only] Pagination is disabled when there is only 1 page, because of"
+msgstr ""
+"[Preview only] Pagination is disabled when there is only 1 page, because of"
+
+#: code/includes/hooks.php:54
+msgid "Please select an option in"
+msgstr "Please select an option in"
+
+#: code/includes/hooks.php:55
+msgid "Please set value in"
+msgstr "Please set value in"
+
+#: code/includes/hooks.php:86 code/includes/settings.php:154
+msgid "Items per page"
+msgstr "Items per page"
+
+#: code/includes/html.php:118
+msgid "Loading..."
+msgstr "Loading..."
+
+#: code/includes/html.php:250
+msgid "No posts found."
+msgstr "No posts found."
+
+#: code/includes/html.php:749
+msgid "Go to first page"
+msgstr "Go to first page"
+
+#: code/includes/html.php:750
+msgid "Go to previous page"
+msgstr "Go to previous page"
+
+#: code/includes/html.php:751
+msgid "Go to next page"
+msgstr "Go to next page"
+
+#: code/includes/html.php:752
+msgid "Go to last page"
+msgstr "Go to last page"
+
+#: code/includes/html.php:753
+msgid "Current page is"
+msgstr "Current page is"
+
+#: code/includes/html.php:754
+msgid "Go to page"
+msgstr "Go to page"
+
+#: code/includes/html.php:854
+msgid "Read More"
+msgstr "Read More"
+
+#: code/includes/html.php:858 code/includes/settings.php:422
+msgid "Read more..."
+msgstr "Read more..."
+
+#: code/includes/settings.php:42
+msgid "Select terms"
+msgstr "Select terms"
+
+#: code/includes/settings.php:58
+msgid "Operator"
+msgstr "Operator"
+
+#: code/includes/settings.php:100
+msgid "Sort by drag & drop, custom field, slug, random order, menu order"
+msgstr "Sort by drag & drop, custom field, slug, random order, menu order"
+
+#: code/includes/settings.php:104
+msgid "Order"
+msgstr "Order"
+
+#: code/includes/settings.php:146
+msgid "Enable"
+msgstr "Enable"
+
+#: code/includes/settings.php:167
+#, php-format
+msgid ""
+"If value of the %s setting is not empty, this value should be smaller than "
+"that"
+msgstr ""
+"If value of the %s setting is not empty, this value should be smaller than "
+"that"
+
+#: code/includes/settings.php:175
+msgid "Type"
+msgstr "Type"
+
+#: code/includes/settings.php:203
+msgid "Style"
+msgstr "Style"
+
+#: code/includes/settings.php:238
+msgid "Open item in"
+msgstr "Open item in"
+
+#: code/includes/settings.php:246
+msgid "How to open item when click on Title, Thumbnail, Read-more button"
+msgstr "How to open item when click on Title, Thumbnail, Read-more button"
+
+#: code/includes/settings.php:285
+msgid "Show Custom Fields, show Title above Thumbnail..."
+msgstr "Show Custom Fields, show Title above Thumbnail..."
+
+#: code/includes/settings.php:312
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: code/includes/settings.php:331
+msgid "Content"
+msgstr "Content"
+
+#: code/includes/settings.php:343
+msgid "Show Full Content"
+msgstr "Show Full Content"
+
+#: code/includes/settings.php:344
+msgid "Show Excerpt"
+msgstr "Show Excerpt"
+
+#: code/includes/settings.php:384
+msgid "Excerpt settings"
+msgstr "Excerpt settings"
+
+#: code/includes/settings.php:393
+msgid "Generate excerpt by selecting the first X words of post content"
+msgstr "Generate excerpt by selecting the first X words of post content"
+
+#: code/includes/settings.php:398
+msgid "Use manual excerpt (in the Excerpt field under the post edit box)"
+msgstr "Use manual excerpt (in the Excerpt field under the post edit box)"
+
+#: code/includes/settings.php:408
+msgid "Allow HTML tags (a, br, strong, em, strike, i, ul, ol, li) in excerpt"
+msgstr "Allow HTML tags (a, br, strong, em, strike, i, ul, ol, li) in excerpt"
+
+#: code/includes/settings.php:416
+msgid "Read More text"
+msgstr "Read More text"
+
+#: code/includes/settings.php:440
+msgid "Meta fields"
+msgstr "Meta fields"
+
+#: code/includes/settings.php:512
+msgid "Thumbnail position"
+msgstr "Thumbnail position"
+
+#: code/includes/settings.php:544
+msgid "Show Thumbnail"
+msgstr "Show Thumbnail"
+
+#: code/includes/settings.php:564
+msgid "Show Title"
+msgstr "Show Title"
+
+#: code/includes/settings.php:583
+msgid "Show Content"
+msgstr "Show Content"
+
+#: code/includes/settings.php:602
+msgid "Show Meta Fields"
+msgstr "Show Meta Fields"
+
+#: code/includes/settings.php:602
+msgid "Comment"
+msgstr "Comment"
+
+#: code/includes/settings.php:627
+msgid "Size"
+msgstr "Size"
+
+#: code/includes/settings.php:653
+msgid "Disable responsive image of WordPress"
+msgstr "Disable responsive image of WordPress"
+
+#: code/includes/settings.php:655
+msgid "Check this option if thumbnail looks blurry"
+msgstr "Check this option if thumbnail looks blurry"
+
+#: code/includes/settings.php:660
+#, php-format
+msgid "In this lite version, thumbnail is only shown if the post has %s"
+msgstr "In this lite version, thumbnail is only shown if the post has %s"
+
+#: code/includes/settings.php:660
+msgid "Featured Image"
+msgstr "Featured Image"
+
+#: code/includes/settings.php:688
+msgid "Show Date"
+msgstr "Show Date"
+
+#: code/includes/settings.php:707
+msgid "Show Author"
+msgstr "Show Author"
+
+#: code/includes/settings.php:726
+#, php-format
+msgid "Show Taxonomies (%s, %s...)"
+msgstr "Show Taxonomies (%s, %s...)"
+
+#: code/includes/settings.php:726 code/includes/values.php:236
+msgid "Categories"
+msgstr "Categories"
+
+#: code/includes/settings.php:726 code/includes/values.php:236
+msgid "Tags"
+msgstr "Tags"
+
+#: code/includes/settings.php:746
+msgid "Show Comment Count"
+msgstr "Show Comment Count"
+
+#: code/includes/settings.php:812
+msgid "Open the first item by default"
+msgstr "Open the first item by default"
+
+#: code/includes/settings.php:848
+msgid "There is no option"
+msgstr "There is no option"
+
+#: code/includes/settings.php:880
+msgid "get Pro version"
+msgstr "get Pro version"
+
+#: code/includes/settings.php:895
+msgid "Notice"
+msgstr "Notice"
+
+#: code/includes/settings.php:914
+msgid "HTML tag"
+msgstr "HTML tag"
+
+#: code/includes/values.php:94
+msgid "AND"
+msgstr "AND"
+
+#: code/includes/values.php:95
+msgid "OR"
+msgstr "OR"
+
+#: code/includes/values.php:105
+msgid "IN - show posts which match ANY selected terms"
+msgstr "IN - show posts which match ANY selected terms"
+
+#: code/includes/values.php:106
+msgid "NOT IN - show posts which DO NOT match ANY selected terms"
+msgstr "NOT IN - show posts which DO NOT match ANY selected terms"
+
+#: code/includes/values.php:107
+msgid "AND - show posts which match ALL selected terms"
+msgstr "AND - show posts which match ALL selected terms"
+
+#: code/includes/values.php:162
+msgid "Yes"
+msgstr "Yes"
+
+#: code/includes/values.php:163
+msgid "No"
+msgstr "No"
+
+#: code/includes/values.php:179
+msgid "Ajax"
+msgstr "Ajax"
+
+#: code/includes/values.php:180
+msgid "Normal"
+msgstr "Normal"
+
+#: code/includes/values.php:195
+msgid "Numbered pagination"
+msgstr "Numbered pagination"
+
+#: code/includes/values.php:210
+msgid "Ascending"
+msgstr "Ascending"
+
+#: code/includes/values.php:211
+msgid "Descending"
+msgstr "Descending"
+
+#: code/includes/values.php:284
+msgid "Select"
+msgstr "Select"
+
+#: code/includes/values.php:285
+msgid "ID"
+msgstr "ID"
+
+#: code/includes/values.php:287
+msgid "Published date"
+msgstr "Published date"
+
+#: code/includes/values.php:288
+msgid "Modified date"
+msgstr "Modified date"
+
+#: code/includes/values.php:304
+msgid "Grid"
+msgstr "Grid"
+
+#: code/includes/values.php:305
+msgid "Collapsible List"
+msgstr "Collapsible List"
+
+#: code/includes/values.php:306
+msgid "Scrollable List"
+msgstr "Scrollable List"
+
+#: code/includes/values.php:345
+msgid "Show thumbnail & text vertically"
+msgstr "Show thumbnail & text vertically"
+
+#: code/includes/values.php:346
+msgid "Show thumbnail on the left/right of text"
+msgstr "Show thumbnail on the left/right of text"
+
+#: code/includes/values.php:360
+msgid "Current tab"
+msgstr "Current tab"
+
+#: code/includes/values.php:361
+msgid "New tab"
+msgstr "New tab"
+
+#: code/includes/values.php:409
+msgid "Full Size"
+msgstr "Full Size"
+
+#: code/includes/values.php:432
+msgid "Left"
+msgstr "Left"
+
+#: code/includes/values.php:433
+msgid "Right"
+msgstr "Right"
+
+#: code/public/content-views.php:251 code/public/content-views.php:253
+msgid "Views"
+msgstr "Views"
+
+#: code/public/content-views.php:252
+msgid "View"
+msgstr "View"
+
+#: code/public/content-views.php:254
+msgid "Content View"
+msgstr "Content View"
+
+#: code/public/content-views.php:257
+msgid "New View"
+msgstr "New View"
+
+#: code/public/content-views.php:259
+msgid "See View"
+msgstr "See View"
+
+#: code/public/content-views.php:261
+msgid "Search Views"
+msgstr "Search Views"
+
+#: code/public/content-views.php:262
+msgid "Parent Views:"
+msgstr "Parent Views:"
+
+#: code/public/content-views.php:263
+msgid "No views found."
+msgstr "No views found."
+
+#: code/public/content-views.php:264
+msgid "No views found in Trash."
+msgstr "No views found in Trash."

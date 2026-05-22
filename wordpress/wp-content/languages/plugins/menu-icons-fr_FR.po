@@ -1,0 +1,229 @@
+# Translation of Plugins - Menu Icons by ThemeIsle - Development (trunk) in French (France)
+# This file is distributed under the same license as the Plugins - Menu Icons by ThemeIsle - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-08-12 06:00:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Menu Icons by ThemeIsle - Development (trunk)\n"
+
+#. Author URI of the plugin
+#: menu-icons.php
+msgid "https://themeisle.com"
+msgstr "https://themeisle.com"
+
+#. Author of the plugin
+#: menu-icons.php
+msgid "ThemeIsle"
+msgstr "ThemeIsle"
+
+#. Plugin URI of the plugin
+#: menu-icons.php
+msgid "https://github.com/Codeinwp/wp-menu-icons"
+msgstr "https://github.com/Codeinwp/wp-menu-icons"
+
+#: includes/settings.php:778
+msgid "the customizer"
+msgstr "l’outil de personnalisation"
+
+#: menu-icons.php:175
+msgid "Looks like Menu Icons was installed via Composer. Please activate Icon Picker first."
+msgstr "On dirait que des icônes de menu ont été installés via Composer. Veuillez d’abord activer Icône Picker."
+
+#: includes/settings.php:769
+msgid "Change"
+msgstr "Modifier"
+
+#: includes/settings.php:585
+msgid "SVG Width"
+msgstr "Largeur SVG"
+
+#: includes/picker.php:74
+msgid "Type"
+msgstr "Genre"
+
+#. Description of the plugin
+#: menu-icons.php
+msgid "Spice up your navigation menus with pretty icons, easily."
+msgstr "Ajoutez du dynamisme à vos menus de navigation avec de jolies icônes."
+
+#. Plugin Name of the plugin
+#: menu-icons.php
+msgid "Menu Icons"
+msgstr "Menu Icons"
+
+#: menu-icons.php:146
+msgid "Menu Icons: No registered icon types found."
+msgstr "Menu Icons : aucun type d’icône enregistré trouvé."
+
+#: includes/settings.php:596
+msgid "Image Size"
+msgstr "Taille d&rsquo;image"
+
+#: includes/library/functions.php:82
+msgid "Full Size"
+msgstr "Taille réelle"
+
+#: includes/library/functions.php:81
+msgid "Large"
+msgstr "Grand"
+
+#: includes/library/functions.php:80
+msgid "Medium"
+msgstr "Moyen"
+
+#: includes/library/functions.php:79
+msgid "Thumbnail"
+msgstr "Miniature"
+
+#: includes/library/font-awesome/font-awesome.php:116
+msgid "Deselect"
+msgstr "Desélectionner "
+
+#: includes/settings.php:567
+msgid "Sub"
+msgstr "Sous"
+
+#: includes/settings.php:563
+msgid "Bottom"
+msgstr "En bas"
+
+#: includes/settings.php:559
+msgid "Text Bottom"
+msgstr "Bas de texte"
+
+#: includes/settings.php:555
+msgid "Baseline"
+msgstr "Base"
+
+#: includes/settings.php:551
+msgid "Middle"
+msgstr "Milieu"
+
+#: includes/settings.php:547
+msgid "Text Top"
+msgstr "Haut de texte"
+
+#: includes/settings.php:543
+msgid "Top"
+msgstr "En haut"
+
+#: includes/settings.php:539
+msgid "Super"
+msgstr "Super"
+
+#: includes/settings.php:534
+msgid "Vertical Align"
+msgstr "Aligner verticalement"
+
+#: includes/settings.php:574
+msgid "Font Size"
+msgstr "Taille de police"
+
+#: includes/settings.php:418
+msgid "Save Settings"
+msgstr "Enregistrer les réglages"
+
+#: includes/settings.php:409
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: includes/settings.php:408
+msgid "Discard all changes and reset to default state"
+msgstr "Ignorer toutes les modifications et rétablir l’état par défaut"
+
+#: includes/settings.php:476
+msgid "\"%s\" menu settings"
+msgstr "\"%s\" paramètres"
+
+#: includes/settings.php:474
+msgid "Current Menu"
+msgstr "Menu actuel"
+
+#: includes/settings.php:451
+msgid "Icon Types"
+msgstr "Types d’icônes"
+
+#: includes/settings.php:446
+msgid "Global settings"
+msgstr "Paramètres globaux"
+
+#: includes/settings.php:445
+msgid "Global"
+msgstr "Global"
+
+#: includes/settings.php:527
+msgid "After"
+msgstr "Après"
+
+#: includes/settings.php:523
+msgid "Before"
+msgstr "Avant"
+
+#: includes/settings.php:518
+msgid "Position"
+msgstr "Position"
+
+#: includes/settings.php:511
+msgid "Yes"
+msgstr "Oui"
+
+#: includes/settings.php:507
+msgid "No"
+msgstr "Non"
+
+#: includes/settings.php:502
+msgid "Hide Label"
+msgstr "Masquer le libellé"
+
+#: includes/settings.php:301
+msgid "Menu Icons Settings"
+msgstr "Paramètres du \"Menu Icônes\""
+
+#: includes/settings.php:336
+msgid "<strong>Menu Icons Settings</strong> have been successfully reset."
+msgstr "<strong>Les paramètres des icônes de menu</strong> ont bien été réinitialiser."
+
+#: includes/settings.php:335
+msgid "<strong>Menu Icons Settings</strong> have been successfully updated."
+msgstr "<strong>Les réglages de Menu Icônes</strong>ont bien été mis à jour."
+
+#: includes/library/form-fields.php:152
+msgid "%1$s: Type %2$s is not supported, reverting to text."
+msgstr "%1$s : Type %2$s n’est pas supporté, retour au texte."
+
+#: includes/picker.php:79 includes/picker.php:177
+msgid "Icon"
+msgstr "Icône"
+
+#: includes/picker.php:129 includes/settings.php:768
+msgid "Remove"
+msgstr "Retirer"
+
+#: includes/picker.php:127
+msgid "Icon:"
+msgstr "Icônes"
+
+#: includes/settings.php:771
+msgid "Preview"
+msgstr "Aperçu"
+
+#: includes/settings.php:770
+msgid "All"
+msgstr "Tous"
+
+#: includes/picker.php:128 includes/settings.php:767
+msgid "Select"
+msgstr "Sélectionner"
+
+#: includes/settings.php:766
+msgid "Select Icon"
+msgstr "Sélectionnez une icône"
+
+#: includes/library/form-fields.php:528
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Sélectionner &mdash;"

@@ -1,0 +1,107 @@
+/**
+Material theme
+*/
+body[class*="material"]:not(.wp-customizer):not(.vc_editor) #wpbody-content {
+	margin: 0;
+}
+@media only screen and (max-width: 1223px) and (min-width: 783px){
+	body[class*="material"]:not(.wp-customizer) #wpbody-content, 
+	body[class*="material"] #screen-meta-links {
+		width: 100%!important;
+	}
+}
+body[class*="material"] div#parallax-main-block {
+	display: none;
+}
+/*WPForms*/
+@media screen and (max-width: 782px){
+	.vgfa-page-wpforms-entries .wp-list-table tr:not(.inline-edit-row):not(.no-items) td[class*="wpforms_field"]:nth-child(-n+4) {
+		display: inline-block !important;
+
+	}
+	.vgfa-page-wpforms-entries .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+		left: -43px;
+	}
+}
+/*GiveWP*/
+/*Remove logo*/
+.give_forms_page_give-subscriptions #give-subscription-details-h1:before, .give_forms_page_give-subscriptions #give-subscription-list-h1:before, .give_forms_page_give-subscriptions .wp-heading-inline:before, .post-type-give_forms #give-subscription-details-h1:before, .post-type-give_forms #give-subscription-list-h1:before, .post-type-give_forms .wp-heading-inline:before {
+    display: none;
+}
+#give-admin-donation-forms-root > article > div > svg {
+    display: none;
+}
+.give_forms_page_give-subscriptions #wpbody:after, 
+.post-type-give_forms #wpbody:after {
+    display: none;
+}
+/*FIX. TinyMCE editors show tooltips when hovering over some toolbar icons, but the tooltips make the page a little taller causing the iframe to flicker
+so we will hide the tooltips so the iframe won't change height and won't flicker anymore*/
+.mce-widget.mce-tooltip.mce-tooltip-n {
+	display: none !important;
+}
+
+/*FIX. The Gutenberg editor doesn't show the publish button in the prepublish sidebar on iPhone +7 because the top bar of Gutenberg is fixed on top*/
+body.mobile .edit-post-layout.is-sidebar-opened .interface-interface-skeleton__header {
+    display: none;
+}
+/*FIX. The plugin "AI Engine: ChatGPT, GPT3 Content & Image Generator, Playground" uses min-height: 100vh causing an ever-growing div"*/
+main.mantine-AppShell-main {
+    min-height: 800px !important;
+}
+/*FIX. BookingPress. Some screens have ever-growing content height*/
+.bpa-general-settings-tabs--pb__card {
+    min-height: 1200px;
+}
+.bpa-reports__body .bpa-tabs--vertical__left-side .el-tabs__header.is-left {
+    height: 1200px;
+}
+/*FIX. The WC Customers page shows the activity sidebar always, causing a horizontal scroll in the front end*/
+.vgca-only-admin-content .woocommerce-layout__activity-panel-wrapper {
+    display: none !important;
+}
+.vgca-only-admin-content .woocommerce-layout__activity-panel-wrapper.is-open {
+    display: block !important;
+}
+.vgca-only-admin-content .woocommerce-admin-page #wpcontent, 
+.vgca-only-admin-content .woocommerce-admin-page.woocommerce_page_wc-admin #wpbody-content {
+    min-height: 700px !important;
+}
+
+.vgca-only-admin-content button.wpfa-back-button .dashicons {
+    line-height: 28px;
+}
+/*FluentCRM - The email editor has ever-increasing height*/
+.vgca-only-admin-content .fc_skin_simple .block-editor-writing-flow,
+.vgca-only-admin-content .fce-sidebar {
+    max-height: 1500px;
+}
+.vgca-only-admin-content div#fluentcrm_block_editor_x {
+    max-height: 1500px;
+}
+.vgca-only-admin-content .fluentcrm_visual_editor iframe#fc_visual_frame {
+    min-height: 1500px !important;
+    max-height: 1500px !important;
+}
+
+.vgca-only-admin-content .woocommerce-layout__primary {
+    margin: 0;
+}
+/*FluentBoard*/
+.vgca-only-admin-content .fbs_board_section_view .fbs_tasks_layout_grid,
+.vgca-only-admin-content .fbs_board_section_view .el-row.h-full,
+.vgca-only-admin-content #fbs_tasks_wrapper,
+.vgca-only-admin-content .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board,
+.vgca-only-admin-content .fluentboards_databox {
+    max-height: 800px !important;
+min-height: 800px !important;
+}
+.vgca-only-admin-content .fbs_board_title_bar {
+    padding-left: 30px;
+}
+/* Prevent ever-growing height on mobile for WC admin pages */
+@media(max-width: 782px) {
+    .woocommerce-admin-page #wpbody-content,.woocommerce-admin-page #wpcontent {
+        min-height: calc(100px - 46px) !important;
+    }
+}

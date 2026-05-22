@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and fill in real values.
+# terraform.tfvars is gitignored — don't commit it.
+
+apim_publisher_email = "jti.shared@gmail.com"
+apim_sku_name        = "Consumption_0"  # cheapest
+
+# Pin WP version for prod
+wordpress_image = "wordpress:6.5-apache"
+
+# MySQL credentials — strongly prefer setting via env var:
+#   export TF_VAR_mysql_admin_password='<strong password>'
+mysql_admin_username = "wpadmin"
+# mysql_admin_password = "..."   # do NOT put real password in this file

@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars and fill in real values.
+
+apim_publisher_email = "jti.shared@gmail.com"
+apim_sku_name        = "Consumption_0"
+
+wordpress_image = "wordpress:6.5-apache"
+
+mysql_admin_username = "wpadmin"
+# Set via env var: export TF_VAR_mysql_admin_password='...'

@@ -1,0 +1,1078 @@
+# Translation of Plugins - User Role Editor - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - User Role Editor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-11-30 14:48:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - User Role Editor - Stable (latest release)\n"
+
+#: includes/classes/screen-help.php:85
+msgid "Super administrator only may create, edit and delete users under WordPress multi-site by default."
+msgstr "Nur Superadministratoren können in einer WordPress-Multisite standardmäßig Benutzer erstellen, bearbeiten und löschen."
+
+#: includes/classes/screen-help.php:68
+msgid "in order to be assigned to the new registered users."
+msgstr "um den neu registrierten Benutzern zugewiesen zu werden."
+
+#: includes/classes/screen-help.php:67
+msgid "Note for multisite environment: take into account that other default roles should exist at the site,"
+msgstr "Hinweis für Multisite-Umgebungen: Berücksichtige, dass andere Standardrollen an der Website vorhanden sein sollten,"
+
+#: includes/classes/grant-roles.php:191
+msgid "Error: Role not revoked"
+msgstr "Fehler: Rolle wurde nicht widerrufen"
+
+#. translators: template %d is a quantity of users to whom role was added
+#: includes/classes/grant-roles.php:188
+msgid "Role revoked from %d user(s)."
+msgstr "Rolle wurde bei %d Benutzer(n) widerrufen."
+
+#: includes/classes/grant-roles.php:107
+msgid "Error: Role not added"
+msgstr "Fehler: Rolle wurde nicht hinzugefügt"
+
+#. translators: template %d is a quantity of users to whom role was added
+#: includes/classes/grant-roles.php:104
+msgid "Role added to %d user(s)."
+msgstr "Rolle wurde zu %d Benutzer(n) hinzugefügt."
+
+#: includes/classes/grant-roles.php:86 includes/classes/grant-roles.php:167
+msgid "Invalid role"
+msgstr "Die Rolle ist ungültig"
+
+#: includes/classes/grant-roles.php:74 includes/classes/grant-roles.php:155
+msgid "Empty users list"
+msgstr "Die Benutzerliste ist leer"
+
+#: includes/classes/capability.php:90
+msgid "Wrong Request"
+msgstr "Fehlerhafte Anfrage"
+
+#: includes/classes/editor.php:1291
+msgid "Wrong role ID"
+msgstr "Fehlerhafte Rollen-ID"
+
+#: includes/classes/editor.php:1263
+msgid "There are no roles for deletion"
+msgstr "Es gibt keine Rollen zum Löschen"
+
+#: includes/classes/grant-roles.php:491
+msgid "Revoke"
+msgstr "Zurückziehen"
+
+#: includes/classes/grant-roles.php:485 includes/classes/grant-roles.php:487
+msgid "Revoke role&hellip;"
+msgstr "Rolle zurückziehen &hellip;"
+
+#: includes/classes/grant-roles.php:483
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: includes/classes/grant-roles.php:477 includes/classes/grant-roles.php:479
+msgid "Add role&hellip;"
+msgstr "Rolle hinzufügen &hellip;"
+
+#: includes/classes/editor.php:1335
+msgid "Wrong request. Default role can not be empty"
+msgstr "Fehlerhafte Anfrage. Die Standard-Rolle kann nicht leer sein."
+
+#: includes/classes/editor.php:1331
+msgid "This method is only for a single site of WordPress multisite installation."
+msgstr "Diese Methode ist nur für eine einzelne Website einer WordPress-Multisite-Installation geeignet."
+
+#: includes/classes/editor.php:1237
+msgid "You can not delete role"
+msgstr "Du kannst die Rolle nicht löschen"
+
+#: includes/classes/editor.php:1233
+msgid "Role does not exist"
+msgstr "Rolle existiert nicht"
+
+#: includes/classes/screen-help.php:19
+msgid "automatically converts capability names from the technical form for internal use like \"edit_others_posts\" to more user friendly form, e.g. \"Edit others posts\"."
+msgstr "konvertiert Namen von Berechtigungen von der technischen Bezeichnung für interne Verwendung wie „edit_others_posts“ in eine menschenlesbare Form, z.&nbsp;B. „Beiträge anderer Benutzer verwalten“"
+
+#: includes/classes/editor.php:232
+msgid "Wrong request!"
+msgstr "Fehlerhafte Anfrage!"
+
+#: includes/classes/capability.php:51
+msgid "Error: this word is used by WordPress as a role ID"
+msgstr "Fehler: Dieses Wort wird von WordPress als Rollen-ID benutzt"
+
+#: includes/settings-template.php:107
+msgid "columns"
+msgstr "Spalten"
+
+#: includes/settings-template.php:101
+msgid "Show capabilities in"
+msgstr "Berechtigungen anzeigen in"
+
+#: includes/settings-template.php:42
+msgid "Tools"
+msgstr "Werkzeuge"
+
+#: includes/classes/view.php:338
+msgid "Columns:"
+msgstr "Spalten:"
+
+#: includes/classes/view.php:335
+msgid "Granted Only"
+msgstr "Nur zugewiesene"
+
+#: includes/classes/view.php:319
+msgid "Granted"
+msgstr "Zugewiesen"
+
+#: includes/classes/view.php:319
+msgid "Total"
+msgstr "Gesamt"
+
+#: includes/classes/view.php:319
+msgid "Group"
+msgstr "Gruppe"
+
+#: includes/classes/user-view.php:59
+msgid "Switch&nbsp;To"
+msgstr "Wechseln&nbsp;zu"
+
+#: includes/classes/user-role-editor.php:810
+msgid "If any plugins (such as WooCommerce, S2Member and many others) have changed user roles and capabilities during installation, all those changes will be LOST!"
+msgstr "Falls Benutzerrollen und -berechtigungen durch Plugins (wie WooCommerce, S2Member und viele andere) während der Installation verändert wurden, werden all diese Änderungen VERLOREN GEHEN!"
+
+#: includes/classes/user-role-editor.php:809
+msgid " Resetting will restore default user roles and capabilities from WordPress core."
+msgstr "Das Zurücksetzen wird die Standard-Benutzerrollen und -berechtigungen des WordPress Cores wiederherstellen."
+
+#: includes/classes/user-role-editor.php:808
+msgid "DANGER!"
+msgstr "GEFAHR!"
+
+#: includes/classes/user-role-editor.php:760
+#: includes/classes/user-role-editor.php:806
+msgid "No"
+msgstr "Nein"
+
+#: includes/classes/user-role-editor.php:759
+#: includes/classes/user-role-editor.php:805
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/classes/user-role-editor.php:758
+#: includes/classes/user-role-editor.php:804
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: includes/classes/user-role-editor.php:295
+msgid "To:"
+msgstr "Zu:"
+
+#: includes/classes/tools.php:40
+msgid "Reset Roles to its original state"
+msgstr "Rollen zum Originalzustand zurücksetzen"
+
+#: includes/classes/tools.php:32
+msgid "If checked, then apply action to ALL sites. Main site only is affected in other case."
+msgstr "Wählen, um die Aktion auf ALLE Websites anzuwenden. Nur in anderen Fällen ist die Haupt-Website betroffen."
+
+#: includes/classes/tools.php:24
+msgid "For more information on how to undo undesired changes and restore plugins capabilities in case you lost them by mistake go to: "
+msgstr "Mehr Informationen darüber, wie du Änderungen rückgängig machst und versehentlich verlorene Plugin-Berechtigungen zurücksetzt, findest du unter:"
+
+#: includes/classes/tools.php:23
+msgid "If any plugins (such as WooCommerce, S2Member and many others) have changed user roles and capabilities during installation, those changes will be LOST!"
+msgstr "Falls Benutzerrollen und -berechtigungen durch Plugins (wie WooCommerce, S2Member und viele andere) während der Installation verändert wurden, werden diese Änderungen VERLOREN GEHEN!"
+
+#: includes/classes/tools.php:22
+msgid "Resetting will setup default user roles and capabilities from WordPress core."
+msgstr "Das Zurücksetzen wird die Standard-Benutzerrollen und -berechtigungen des WordPress Cores einrichten."
+
+#: includes/classes/tools.php:20
+msgid "WARNING!"
+msgstr "WARNUNG!"
+
+#: includes/classes/tools.php:64
+msgid "Tools: Reset: User Roles were initialized"
+msgstr "Werkzeuge: Zurücksetzen: Benutzerrollen wurden vorbereitet"
+
+#: includes/classes/screen-help.php:25
+msgid "Show confirmation dialog before save changes made to a current role."
+msgstr "Bestätigungsdialog anzeigen, bevor Änderungen an einer aktuellen Rolle gespeichert werden."
+
+#: includes/classes/screen-help.php:24 includes/settings-template.php:86
+msgid "Confirm role update"
+msgstr "Aktualisierung der Rolle bestätigen"
+
+#: includes/classes/role-additional-options.php:113
+msgid "Additional Options"
+msgstr "Zusätzliche Optionen"
+
+#: includes/classes/role-additional-options.php:53
+msgid "Hide admin bar"
+msgstr "Adminleiste ausblenden"
+
+#: includes/classes/grant-roles.php:525
+msgid "Select role(s) which you wish to grant!"
+msgstr "Rolle(n) auswählen, die du zuweisen möchtest!"
+
+#: includes/classes/grant-roles.php:524
+msgid "Select users to which you wish to grant roles!"
+msgstr "Benutzer auswählen, denen du Rollen zuweisen möchtest!"
+
+#: includes/classes/grant-roles.php:523
+msgid "Grant roles to selected users"
+msgstr "Ausgewählten Benutzern Rollen zuweisen"
+
+#: includes/classes/view.php:288
+msgid "Working..."
+msgstr "Wird verarbeitet …"
+
+#: includes/classes/grant-roles.php:475
+msgid "Grant Roles"
+msgstr "Rollen zuweisen"
+
+#: includes/classes/grant-roles.php:429
+msgid "Other Roles: "
+msgstr "Andere Rollen:"
+
+#: includes/classes/grant-roles.php:409
+msgid "Primary Role: "
+msgstr "Primäre Rolle:"
+
+#: includes/classes/grant-roles.php:386
+msgid "Requested user does not exist"
+msgstr "Angeforderter Benutzer existiert nicht"
+
+#: includes/classes/grant-roles.php:380
+msgid "Wrong request, valid user ID was missed"
+msgstr "Fehlerhafte Anfrage, keine gültige Benutzer-ID angegeben"
+
+#: includes/classes/grant-roles.php:363
+msgid "Roles were granted to users successfully"
+msgstr "Rollen wurden Benutzern erfolgreich zugewiesen"
+
+#: includes/classes/grant-roles.php:354
+msgid "Invalid data at the other roles list"
+msgstr "Ungültige Daten in der Liste anderer Rollen"
+
+#: includes/classes/grant-roles.php:341
+msgid "Invalid primary role"
+msgstr "Ungültige primäre Rolle"
+
+#: includes/classes/grant-roles.php:79 includes/classes/grant-roles.php:160
+#: includes/classes/grant-roles.php:333
+msgid "Can not edit user or invalid data at the users list"
+msgstr "Kann Benutzer nicht bearbeiten oder ungültige Daten in der Benutzerliste"
+
+#: includes/classes/grant-roles.php:69 includes/classes/grant-roles.php:150
+#: includes/classes/grant-roles.php:327 includes/classes/grant-roles.php:373
+msgid "Not enough permissions"
+msgstr "Keine ausreichenden Berechtigungen"
+
+#: includes/classes/capability.php:229
+msgid "capabilities were removed successfully"
+msgstr "Berechtigungen wurden erfolgreich entfernt"
+
+#: includes/classes/capability.php:213 includes/classes/capability.php:218
+msgid "There are no capabilities available for deletion!"
+msgstr "Es gibt keine Berechtigungen zum Löschen!"
+
+#: includes/classes/capability.php:43
+msgid "Error: this capability is used internally by WordPress"
+msgstr "Fehler: Diese Berechtigung wird intern von WordPress benutzt"
+
+#: includes/classes/capabilities-groups-manager.php:194
+msgid "Deprecated"
+msgstr "Veraltet"
+
+#: includes/classes/capabilities-groups-manager.php:165
+msgid "Users"
+msgstr "Benutzer"
+
+#: includes/classes/capabilities-groups-manager.php:160
+msgid "Plugins"
+msgstr "Plugins"
+
+#: includes/classes/capabilities-groups-manager.php:155
+msgid "Pages"
+msgstr "Seiten"
+
+#: includes/classes/capabilities-groups-manager.php:150
+msgid "Posts"
+msgstr "Beiträge"
+
+#: includes/classes/capabilities-groups-manager.php:145
+msgid "Themes"
+msgstr "Themes"
+
+#: includes/classes/capabilities-groups-manager.php:130
+msgid "All"
+msgstr "Alle"
+
+#: includes/classes/capabilities-groups-manager.php:108
+#: includes/classes/capabilities-groups-manager.php:135
+msgid "Core"
+msgstr "Core"
+
+#: includes/classes/capabilities-groups-manager.php:103
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: includes/classes/capabilities-groups-manager.php:45
+msgid "Custom Post Types"
+msgstr "Individuelle Inhaltstypen"
+
+#. Author of the plugin
+#: user-role-editor.php
+msgid "Vladimir Garagulya"
+msgstr "Vladimir Garagulya"
+
+#. Description of the plugin
+#: user-role-editor.php
+msgid "Change/add/delete WordPress user roles and capabilities."
+msgstr "Ergänze, ändere und lösche WordPress-Benutzerrollen und –rechte."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: user-role-editor.php
+msgid "https://www.role-editor.com"
+msgstr "https://www.role-editor.com"
+
+#: includes/classes/user-view.php:195
+msgid "Other Roles:"
+msgstr "Andere Rollen:"
+
+#: includes/classes/user-view.php:186
+msgid "bbPress Role:"
+msgstr "bbPress-Rolle:"
+
+#: includes/classes/user-view.php:180
+msgid "Primary Role:"
+msgstr "Primäre Rolle:"
+
+#: includes/classes/user-view.php:142
+msgid "Change capabilities for user"
+msgstr "Berechtigungen ändern für Benutzer"
+
+#: includes/classes/user-view.php:71
+msgid "Network Super Admin"
+msgstr "Netzwerk-Super-Admin"
+
+#: includes/classes/capabilities-groups-manager.php:201
+msgid "Custom capabilities"
+msgstr "Individuelle Berechtigungen:"
+
+#: includes/classes/view.php:332
+msgid "Quick filter:"
+msgstr "Schnellfilter:"
+
+#: includes/classes/role-view.php:382 includes/classes/tools.php:31
+msgid "Apply to All Sites"
+msgstr "Auf alle Websites anwenden"
+
+#: includes/classes/role-view.php:369
+msgid "If checked, then apply action to ALL sites of this Network"
+msgstr "Wählen, um die Aktion auf ALLE Websites in diesem Netzwerk anzuwenden"
+
+#: includes/classes/role-view.php:355 includes/classes/user-view.php:159
+msgid "Show capabilities in human readable form"
+msgstr "Anzeige der Berechtigungen in allgemeinverständlicher Form"
+
+#: includes/classes/role-view.php:399
+msgid "Select Role and change its capabilities:"
+msgstr "Eine Rolle auswählen und ihre Berechtigungen ändern:"
+
+#: includes/settings-template.php:207
+msgid "Allow non super administrators to create, edit, and delete users"
+msgstr "Nicht-Super-Administratoren das Erstellen, Bearbeiten und Löschen von Benutzern erlauben"
+
+#: includes/settings-template.php:181
+msgid "Note for multisite environment: take into account that other default roles should exist at the site, in order to be assigned to the new registered users."
+msgstr "Hinweis für Multisite-Umgebungen: bitte beachte, dass andere Standard-Rollen auf der Website existieren sollten, um sie neu registrierten Benutzern zuweisen zu können."
+
+#: includes/settings-template.php:175
+msgid "Other default roles for new registered user: "
+msgstr "Andere Standard-Rolle für neuen Benutzer:"
+
+#: includes/settings-template.php:168
+msgid "Primary default role: "
+msgstr "Primäre Standardrolle:"
+
+#: includes/settings-template.php:121 includes/settings-template.php:156
+#: includes/settings-template.php:188 includes/settings-template.php:220
+msgid "Save"
+msgstr "Speichern"
+
+#: includes/settings-template.php:46
+msgid "About"
+msgstr "Über"
+
+#: includes/settings-template.php:16
+msgid "User Role Editor - Options"
+msgstr "User Role Editor – Einstellungen"
+
+#: includes/classes/user-role-editor.php:779
+msgid " Capability name (ID) must contain latin characters, digits, hyphens or underscore only!"
+msgstr " Der Name der Berechtigung (ID) darf nur Buchstaben, Ziffern, Bindestriche oder Unterstriche enthalten!"
+
+#: includes/classes/user-role-editor.php:778
+msgid " Capability name (ID) can not be empty!"
+msgstr "Name der Berechtigung (ID) darf nicht leer sein!"
+
+#: includes/classes/user-role-editor.php:777
+msgid "Warning! Be careful - removing critical capability could crash some plugin or other custom code"
+msgstr "Achtung! Sei vorsichtig – das Löschen kritischer Berechtigungen könnte Plugin- oder angepassten Code zum Absturz bringen"
+
+#: includes/classes/user-role-editor.php:775
+msgid "Set New Default Role"
+msgstr "Als neue Standard-Rolle setzen"
+
+#: includes/classes/user-role-editor.php:774
+msgid "Default Role"
+msgstr "Standard-Rolle"
+
+#: includes/classes/user-role-editor.php:813
+msgid "Continue?"
+msgstr "Weitermachen?"
+
+#: includes/classes/user-role-editor.php:811
+msgid "For more information on how to undo undesired changes and restore plugin capabilities go to"
+msgstr "Mehr Informationen darüber, wie du Änderungen rückgängig machst und Plugin-Berechtigungen zurücksetzt, findest du unter"
+
+#: includes/classes/tools.php:40 includes/classes/user-role-editor.php:807
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: includes/classes/user-role-editor.php:773
+#: includes/classes/user-role-editor.php:776
+msgid "Delete Capability"
+msgstr "Berechtigung entfernen"
+
+#: includes/classes/user-role-editor.php:772
+msgid "Add Capability"
+msgstr "Neue Berechtigung hinzufügen"
+
+#: includes/classes/user-role-editor.php:771
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: includes/classes/user-role-editor.php:770
+msgid "Delete Role"
+msgstr "Rolle löschen"
+
+#: includes/classes/user-role-editor.php:768
+msgid "Add Role"
+msgstr "Rolle hinzufügen"
+
+#: includes/classes/user-role-editor.php:767
+msgid " WordPress does not support numeric Role name (ID). Add latin characters to it."
+msgstr "WordPress unterstützt keinen numerischen Rollen-Namen (IDs). Füge Buchstaben hinzu."
+
+#: includes/classes/user-role-editor.php:766
+msgid " Role name (ID) must contain latin characters, digits, hyphens or underscore only!"
+msgstr "Fehler: Der Rollen-Name (ID) darf nur Buchstaben, Ziffern, Bindestrich oder Unterstrich enthalten!"
+
+#: includes/classes/user-role-editor.php:765
+msgid " Role name (ID) can not be empty!"
+msgstr "Der Rollen-Name (ID) darf nicht leer sein!"
+
+#: includes/classes/user-role-editor.php:764
+#: includes/classes/user-role-editor.php:769
+msgid "Rename Role"
+msgstr "Rolle umbenennen"
+
+#: includes/classes/user-role-editor.php:763
+msgid "Add New Role"
+msgstr "Neue Rolle hinzufügen"
+
+#: includes/classes/user-role-editor.php:762
+msgid "Please confirm permissions update"
+msgstr "Bitte bestätige die Aktualisierung der Rechte"
+
+#: includes/classes/user-role-editor.php:761
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: includes/classes/user-role-editor.php:636
+msgid "You do not have sufficient permissions to manage options for User Role Editor."
+msgstr "Du hast keine ausreichenden Rechte, um die Einstellungen für User Role Editor zu ändern."
+
+#: includes/classes/settings.php:120
+msgid "Default Roles are updated"
+msgstr "Standard-Rollen wurden aktualisiert"
+
+#: includes/classes/settings.php:70 includes/classes/settings.php:90
+#: includes/classes/settings.php:140
+msgid "User Role Editor options are updated"
+msgstr "Die Einstellungen von User Role Editor wurden aktualisiert"
+
+#: includes/classes/capabilities-groups-manager.php:187
+#: includes/classes/user-role-editor.php:577 includes/settings-template.php:36
+msgid "Multisite"
+msgstr "Multisite"
+
+#: includes/classes/user-role-editor.php:571 includes/settings-template.php:31
+msgid "Default Roles"
+msgstr "Standard-Rollen"
+
+#: includes/classes/user-role-editor.php:565 includes/settings-template.php:26
+msgid "Additional Modules"
+msgstr "Zusätzliche Module"
+
+#: includes/classes/capabilities-groups-manager.php:140
+#: includes/classes/user-role-editor.php:559 includes/settings-template.php:20
+msgid "General"
+msgstr "Allgemein"
+
+#: includes/classes/user-role-editor.php:510
+#: includes/classes/user-role-editor.php:523
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/classes/user-role-editor.php:374
+#: includes/classes/user-role-editor.php:376
+msgid "You do not have permission to edit this user."
+msgstr "Du bist nicht berechtigt, diesen Benutzer zu bearbeiten."
+
+#: includes/classes/user-role-editor.php:297
+msgid "Provide new role"
+msgstr "Neue Rolle vergeben"
+
+#: includes/classes/user-role-editor.php:296
+msgid "No rights"
+msgstr "Keine Rechte"
+
+#: includes/classes/user-role-editor.php:294
+msgid "Change role for users without role"
+msgstr "Rolle für Benutzer ohne Rolle ändern"
+
+#: includes/classes/user-other-roles.php:311
+msgid "Additional Capabilities"
+msgstr "Zusätzliche Berechtigungen"
+
+#: includes/classes/user-other-roles.php:247
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: includes/classes/user-other-roles.php:240
+#: includes/classes/user-role-editor.php:402
+msgid "Capabilities"
+msgstr "Berechtigungen"
+
+#: includes/classes/user-other-roles.php:125
+msgid "Select additional roles for this user"
+msgstr "Zusätzliche Rollen für diesen Benutzer auswählen"
+
+#: includes/classes/user-other-roles.php:124
+#: includes/classes/user-other-roles.php:261
+msgid "Other Roles"
+msgstr "Andere Rollen"
+
+#: includes/classes/screen-help.php:84
+msgid "Allow non super-administrators to create, edit and delete users"
+msgstr "Nicht-Super-Admins erlauben, andere Benutzer anzulegen, zu bearbeiten und zu löschen."
+
+#: includes/classes/screen-help.php:65
+msgid "Other default roles for new registered user"
+msgstr "Andere Standard-Rolle für neuen Benutzer"
+
+#: includes/classes/screen-help.php:46 includes/settings-template.php:141
+msgid "Count users without role"
+msgstr "Benutzer ohne Rolle zählen"
+
+#: includes/classes/screen-help.php:26 includes/settings-template.php:94
+msgid "Edit user capabilities"
+msgstr "Benutzerrechte bearbeiten:"
+
+#: includes/classes/role-view.php:365 includes/classes/screen-help.php:20
+#: includes/classes/user-view.php:169 includes/settings-template.php:78
+msgid "Show deprecated capabilities"
+msgstr "Veraltete Rechtebezeichnungen anzeigen"
+
+#: includes/classes/screen-help.php:18 includes/settings-template.php:70
+msgid "Show capabilities in the human readable form"
+msgstr "Berechtigungen in allgemeinverständlicher Form anzeigen"
+
+#: includes/classes/screen-help.php:15 includes/settings-template.php:61
+msgid "Show Administrator role at User Role Editor"
+msgstr "Administratoren-Rolle in User Role Editor anzeigen"
+
+#: includes/classes/screen-help.php:12 includes/classes/screen-help.php:42
+#: includes/classes/screen-help.php:62 includes/classes/screen-help.php:81
+msgid "User Role Editor Options page help"
+msgstr "Hilfe zur Einstellungs-Seite von User Role Editor"
+
+#. translators: placeholder %s is replaced by denied user capability id string
+#. value
+#: includes/classes/user-other-roles.php:225
+msgid "Denied: %s"
+msgstr "Verweigert: %s"
+
+#: includes/classes/grant-roles.php:415 includes/classes/user-view.php:96
+msgid "&mdash; No role for this site &mdash;"
+msgstr "&ndash; Keine Rolle für diese Website &ndash;"
+
+#: includes/classes/role-view.php:66
+msgid "None"
+msgstr "Nichts"
+
+#: includes/classes/role-view.php:98
+msgid "Delete All Unused Roles"
+msgstr "Alle unbenutzten Rollen löschen"
+
+#: includes/classes/lib.php:393
+msgid "FAQ"
+msgstr "FAQ"
+
+#: includes/classes/lib.php:392 includes/classes/user-role-editor.php:536
+msgid "Changelog"
+msgstr "Änderungsprotokoll"
+
+#: includes/classes/lib.php:391
+msgid "Plugin download"
+msgstr "Plugin-Download"
+
+#: includes/classes/lib.php:390
+msgid "Plugin webpage"
+msgstr "Webseite des Plugins"
+
+#: includes/classes/lib.php:389
+msgid "Author's website"
+msgstr "Webseite des Autors"
+
+#: includes/classes/lib.php:388
+msgid "Version:"
+msgstr "Version:"
+
+#. translators: placeholder %s is replaced by removed user capability id string
+#. value
+#: includes/classes/capability.php:225
+msgid "Capability %s was removed successfully"
+msgstr "Berechtigung %s wurde erfolgreich entfernt"
+
+#. translators: placeholder %s is replaced by existed user capability id string
+#. value
+#: includes/classes/capability.php:114
+msgid "Capability %s exists already"
+msgstr "Berechtigung %s existiert bereits"
+
+#. translators: placeholder %s is replaced by added user capability id string
+#. value
+#: includes/classes/capability.php:111
+msgid "Capability %s was added successfully"
+msgstr "Berechtigung %s wurde erfolgreich hinzugefügt"
+
+#: includes/classes/capability.php:33
+msgid "Error: Capability name must contain latin characters and digits only!"
+msgstr "Fehler: Der Name der Berechtigung darf nur Buchstaben und Ziffern enthalten!"
+
+#: includes/classes/editor.php:1626
+msgid "Export"
+msgstr "Export"
+
+#: includes/classes/editor.php:1625
+msgid "Delete themes"
+msgstr "Themes löschen"
+
+#: includes/classes/editor.php:1624
+msgid "Edit theme options"
+msgstr "Theme-Optionen bearbeiten"
+
+#: includes/classes/editor.php:1623
+msgid "Promote users"
+msgstr "Benutzer vorschlagen"
+
+#: includes/classes/editor.php:1622
+msgid "Add users"
+msgstr "Benutzer hinzufügen"
+
+#: includes/classes/editor.php:1621
+msgid "Remove users"
+msgstr "Benutzer entfernen"
+
+#: includes/classes/editor.php:1620
+msgid "List users"
+msgstr "Benutzer auflisten"
+
+#: includes/classes/editor.php:1619
+msgid "Update core"
+msgstr "WordPress aktualisieren"
+
+#: includes/classes/editor.php:1618
+msgid "Install themes"
+msgstr "Themes installieren"
+
+#: includes/classes/editor.php:1617
+msgid "Update themes"
+msgstr "Themes aktualisieren"
+
+#: includes/classes/editor.php:1616
+msgid "Install plugins"
+msgstr "Plugins installieren"
+
+#: includes/classes/editor.php:1615
+msgid "Delete plugins"
+msgstr "Plugins löschen"
+
+#: includes/classes/editor.php:1614
+msgid "Update plugins"
+msgstr "Plugins aktualisieren"
+
+#: includes/classes/editor.php:1613
+msgid "Edit dashboard"
+msgstr "Dashboard bearbeiten"
+
+#: includes/classes/editor.php:1612
+msgid "Unfiltered upload"
+msgstr "Ungefiltertes Hochladen"
+
+#: includes/classes/editor.php:1611
+msgid "Create users"
+msgstr "Benutzer erstellen"
+
+#: includes/classes/editor.php:1610
+msgid "Delete users"
+msgstr "Benutzer löschen"
+
+#: includes/classes/editor.php:1609
+msgid "Read private pages"
+msgstr "Private Seiten lesen"
+
+#: includes/classes/editor.php:1608
+msgid "Edit private pages"
+msgstr "Private Seiten bearbeiten"
+
+#: includes/classes/editor.php:1607
+msgid "Delete private pages"
+msgstr "Private Seiten löschen"
+
+#: includes/classes/editor.php:1606
+msgid "Read private posts"
+msgstr "Private Beiträge lesen"
+
+#: includes/classes/editor.php:1605
+msgid "Edit private posts"
+msgstr "Private Beiträge bearbeiten"
+
+#: includes/classes/editor.php:1604
+msgid "Delete private posts"
+msgstr "Private Beiträge löschen"
+
+#: includes/classes/editor.php:1603
+msgid "Delete published posts"
+msgstr "Veröffentlichte Beiträge löschen"
+
+#: includes/classes/editor.php:1602
+msgid "Delete others posts"
+msgstr "Beiträge anderer Benutzer löschen"
+
+#: includes/classes/editor.php:1601
+msgid "Delete posts"
+msgstr "Beiträge löschen"
+
+#: includes/classes/editor.php:1600
+msgid "Delete published pages"
+msgstr "Veröffentlichte Seiten löschen"
+
+#: includes/classes/editor.php:1599
+msgid "Delete others pages"
+msgstr "Seiten anderer Benutzer löschen"
+
+#: includes/classes/editor.php:1598
+msgid "Delete pages"
+msgstr "Seiten löschen"
+
+#: includes/classes/editor.php:1597
+msgid "Publish pages"
+msgstr "Seiten veröffentlichen"
+
+#: includes/classes/editor.php:1596
+msgid "Edit published pages"
+msgstr "Veröffentlichte Seiten bearbeiten"
+
+#: includes/classes/editor.php:1595
+msgid "Edit others pages"
+msgstr "Seiten anderer Benutzer bearbeiten"
+
+#: includes/classes/editor.php:1594
+msgid "Level 0"
+msgstr "Level 0"
+
+#: includes/classes/editor.php:1593
+msgid "Level 1"
+msgstr "Level 1"
+
+#: includes/classes/editor.php:1592
+msgid "Level 2"
+msgstr "Level 2"
+
+#: includes/classes/editor.php:1591
+msgid "Level 3"
+msgstr "Level 3"
+
+#: includes/classes/editor.php:1590
+msgid "Level 4"
+msgstr "Level 4"
+
+#: includes/classes/editor.php:1589
+msgid "Level 5"
+msgstr "Level 5"
+
+#: includes/classes/editor.php:1588
+msgid "Level 6"
+msgstr "Level 6"
+
+#: includes/classes/editor.php:1587
+msgid "Level 7"
+msgstr "Level 7"
+
+#: includes/classes/editor.php:1586
+msgid "Level 8"
+msgstr "Level 8"
+
+#: includes/classes/editor.php:1585
+msgid "Level 9"
+msgstr "Level 9"
+
+#: includes/classes/editor.php:1584
+msgid "Level 10"
+msgstr "Level 10"
+
+#: includes/classes/editor.php:1583
+msgid "Read"
+msgstr "Lesen"
+
+#: includes/classes/editor.php:1582
+msgid "Edit pages"
+msgstr "Seiten bearbeiten"
+
+#: includes/classes/editor.php:1581
+msgid "Publish posts"
+msgstr "Beiträge veröffentlichen"
+
+#: includes/classes/editor.php:1580
+msgid "Edit published posts"
+msgstr "Veröffentlichte Beiträge bearbeiten"
+
+#: includes/classes/editor.php:1579
+msgid "Edit others posts"
+msgstr "Beiträge anderer Benutzer verwalten"
+
+#: includes/classes/editor.php:1578
+msgid "Edit posts"
+msgstr "Beiträge verwalten"
+
+#: includes/classes/editor.php:1577
+msgid "Unfiltered html"
+msgstr "Ungefiltertes HTML"
+
+#: includes/classes/editor.php:1576
+msgid "Import"
+msgstr "Import"
+
+#: includes/classes/editor.php:1575
+msgid "Upload files"
+msgstr "Dateien hochladen"
+
+#: includes/classes/editor.php:1574
+msgid "Manage links"
+msgstr "Links verwalten"
+
+#: includes/classes/editor.php:1573
+msgid "Manage categories"
+msgstr "Kategorien verwalten"
+
+#: includes/classes/editor.php:1572
+msgid "Moderate comments"
+msgstr "Kommentare moderieren"
+
+#: includes/classes/editor.php:1571
+msgid "Manage options"
+msgstr "Optionen verwalten"
+
+#: includes/classes/editor.php:1570
+msgid "Edit files"
+msgstr "Dateien bearbeiten"
+
+#: includes/classes/editor.php:1569
+msgid "Edit users"
+msgstr "Benutzer bearbeiten"
+
+#: includes/classes/editor.php:1568
+msgid "Edit plugins"
+msgstr "Plugins bearbeiten"
+
+#: includes/classes/editor.php:1567
+msgid "Activate plugins"
+msgstr "Plugins aktivieren"
+
+#: includes/classes/editor.php:1566
+msgid "Edit themes"
+msgstr "Themes bearbeiten"
+
+#: includes/classes/editor.php:1565
+msgid "Switch themes"
+msgstr "Themes wechseln"
+
+#: includes/classes/editor.php:1563
+msgid "Subscriber"
+msgstr "Abonnent"
+
+#: includes/classes/editor.php:1562
+msgid "Contributor"
+msgstr "Mitarbeiter"
+
+#: includes/classes/editor.php:1561
+msgid "Author"
+msgstr "Autor"
+
+#: includes/classes/editor.php:1560
+msgid "Editor"
+msgstr "Redakteur"
+
+#: includes/classes/editor.php:1355
+msgid "This role does not exist - "
+msgstr "Diese Rolle existiert nicht –"
+
+#: includes/classes/editor.php:1353
+msgid "Can not set Administrator role as a default one"
+msgstr "Administrator-Rolle kann nicht als Standard gesetzt werden."
+
+#. translators: placeholder %s is replaced by default user role name
+#: includes/classes/editor.php:1348
+msgid "Default role for new users is set to %s successfully"
+msgstr "Standard-Rolle für neue Benutzer erfolgreich auf %s gesetzt"
+
+#: includes/classes/editor.php:1350
+msgid "Error encountered during default role change operation"
+msgstr "Beim Ändern der Standard-Rolle ist ein Fehler aufgetreten"
+
+#. translators: placeholder %s is replaced by not deleted user role id string
+#. value
+#: includes/classes/editor.php:1303
+msgid "Role %s is deleted successfully"
+msgstr "Rolle %s wurde erfolgreich gelöscht"
+
+#: includes/classes/editor.php:1300
+msgid "Unused roles are deleted successfully"
+msgstr "Unbenutzte Rollen wurde erfolgreich gelöscht"
+
+#. translators: placeholder %s is replaced by not existed user role id string
+#. value
+#: includes/classes/editor.php:1154
+msgid "Role %s does not exists"
+msgstr "Die Rolle %s existiert nicht."
+
+#: includes/classes/editor.php:1146
+msgid "Error: Empty role display name is not allowed."
+msgstr "Fehler: Ein leerer Anzeigenname ist nicht erlaubt."
+
+#: includes/classes/editor.php:981
+msgid "Error: Role ID is empty!"
+msgstr "Fehler: Rollen-ID ist leer!"
+
+#. translators: placeholder %s is replaced by created user role id string value
+#: includes/classes/editor.php:1061
+msgid "Role %s is created successfully"
+msgstr "Rolle %s wurde erfolgreich erstellt"
+
+#: includes/classes/editor.php:1053
+msgid "Error is encountered during new role create operation"
+msgstr "Beim Erstellen der neuen Rolle ist ein Fehler aufgetreten"
+
+#. translators: placeholder %s is replaced by existed user role id string value
+#: includes/classes/editor.php:1032
+msgid "Role %s exists already"
+msgstr "Rolle %s existiert bereits"
+
+#: includes/classes/editor.php:997
+msgid "Error: WordPress does not support numeric Role name (ID). Add latin characters to it."
+msgstr "Fehler: WordPress unterstützt keine numerischen Rollen-Namen. Bitte ergänze lateinische Zeichen."
+
+#: includes/classes/editor.php:991
+msgid "Error: Role ID must contain latin characters, digits, hyphens or underscore only!"
+msgstr "Fehler: Der Rollen-Name darf nur aus lateinischen Zeichen, Ziffern, Bindestrichen oder Unterstrichen bestehen!"
+
+#: includes/classes/capability.php:84 includes/classes/capability.php:206
+#: includes/classes/editor.php:948 includes/classes/editor.php:1018
+#: includes/classes/editor.php:1073 includes/classes/editor.php:1134
+#: includes/classes/editor.php:1282 includes/classes/editor.php:1325
+#: includes/classes/user-role-editor.php:669
+msgid "Insufficient permissions to work with User Role Editor"
+msgstr "Ungenügende Zugriffsrechte, um mit User Role Editor zu arbeiten."
+
+#: includes/classes/editor.php:1400
+msgid "User Roles are restored to WordPress default values. "
+msgstr "Benutzerrollen werden auf die WordPress-Standardwerte zurückgesetzt."
+
+#: includes/classes/editor.php:911
+msgid "Error occurred during user update"
+msgstr "Bei der Aktualisierung des Benutzers ist ein Fehler aufgetreten."
+
+#: includes/classes/editor.php:909
+msgid "User capabilities are updated successfully"
+msgstr "Benutzerrechte wurden erfolgreich aktualisiert"
+
+#: includes/classes/editor.php:905
+msgid "Error occurred during role(s) update"
+msgstr "Bei der Aktualisierung der Rolle(n) ist ein Fehler aufgetreten."
+
+#: includes/classes/editor.php:902
+msgid "Roles are updated for all network"
+msgstr "Rollen werden für das ganze Netzwerk aktualisiert"
+
+#: includes/classes/editor.php:900
+msgid "Role is updated successfully"
+msgstr "Rolle wurde erfolgreich aktualisiert"
+
+#: includes/classes/editor.php:235
+msgid "does not exist"
+msgstr "existiert nicht"
+
+#: includes/classes/editor.php:234
+msgid "Role"
+msgstr "Rolle"
+
+#: includes/classes/editor.php:232 includes/classes/editor.php:234
+msgid "Error: "
+msgstr "Fehler: "
+
+#. Plugin Name of the plugin
+#: user-role-editor.php includes/classes/capabilities-groups-manager.php:84
+#: includes/classes/editor.php:1490 includes/classes/user-role-editor.php:590
+#: includes/classes/user-role-editor.php:591
+#: includes/classes/user-role-editor.php:603
+#: includes/classes/user-role-editor.php:604
+#: includes/classes/user-role-editor.php:619
+#: includes/classes/user-role-editor.php:620
+msgid "User Role Editor"
+msgstr "User Role Editor"
+
+#: includes/classes/role-view.php:243
+msgid "Capability name (ID): "
+msgstr "Name der Berechtigung (ID):"
+
+#: includes/classes/role-view.php:218
+msgid "Select Role:"
+msgstr "Eine Rolle auswählen:"
+
+#: includes/classes/role-view.php:202
+msgid "Make copy of: "
+msgstr "Erstelle Kopie von:"
+
+#: includes/classes/role-view.php:200 includes/classes/role-view.php:211
+msgid "Display Role Name: "
+msgstr "Rollenname anzeigen:"
+
+#: includes/classes/role-view.php:198 includes/classes/role-view.php:209
+msgid "Role name (ID): "
+msgstr "Rollen-Name (ID):"
+
+#: includes/classes/editor.php:1531
+msgid "Error: wrong request"
+msgstr "Fehler: falsche Anfrage"

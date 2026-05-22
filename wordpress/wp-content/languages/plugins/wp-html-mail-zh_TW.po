@@ -1,0 +1,430 @@
+# Translation of Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-11-26 08:42:24+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - Email Template Designer &#8211; WP HTML Mail - Stable (latest release)\n"
+
+#: views/admin/settings.php:12
+msgid "The only true all-in-one email template solution"
+msgstr "唯一真正全方位電子郵件範本解決方案"
+
+#: views/admin/settings-webfonts-sales-page.php:49
+#: template-designer/build/index.js:1
+msgid "This may be one of the reasons for our ★★★★★ ratings."
+msgstr "這可能是我們得到 5 星評分的理由之一。"
+
+#: views/admin/settings-webfonts-sales-page.php:47
+#: template-designer/build/index.js:1
+msgid "You are a user of our product so we do not want you to buy something you can't use as expected."
+msgstr "我們不希望我們產品的使用者購買了不如預期的產品。"
+
+#: includes/class-haet-mail.php:271
+msgid "Main settings"
+msgstr "主要設定"
+
+#: includes/class-haet-mail.php:227
+msgid "Template has been created in your theme folder."
+msgstr "範本已在這個網站的佈景主題資料夾中建立。"
+
+#: includes/class-content-editor.php:176
+msgid "start writing your email content"
+msgstr "開始撰寫電子郵件內容"
+
+#: includes/class-content-editor.php:175
+msgid "Add title"
+msgstr "新增標題"
+
+#: includes/class-content-editor.php:155
+msgid "Full Size"
+msgstr "完整尺寸"
+
+#: includes/class-content-editor.php:154
+msgid "Large"
+msgstr "大型尺寸"
+
+#: includes/class-content-editor.php:153
+msgid "Medium"
+msgstr "中型尺寸"
+
+#: includes/class-content-editor.php:152
+msgid "Thumbnail"
+msgstr "縮圖尺寸"
+
+#: includes/class-mailbuilder.php:374
+msgid "Warning: You are adding custom code here which is sent to your site visitors. Wrong code can destroy your emails or can even be a security risk. Only use this feature if you know what you are doing here!"
+msgstr "警告: 在這裡輸入的自訂程式碼會傳送給網站訪客。錯誤的程式碼會破壞電子郵件，或造成安全性風險。請務必了解這項功能的使用結果，才使用這項功能！"
+
+#: includes/class-haet-mail.php:61
+msgid "This doesn't seem to be a valid email address."
+msgstr "請輸入有效的電子郵件地址。"
+
+#: views/admin/settings-webfonts-sales-page.php:63
+#: template-designer/build/index.js:1
+msgid "get the webfonts extension"
+msgstr "取得網頁字型擴充功能"
+
+#: views/admin/settings-webfonts-sales-page.php:60
+#: template-designer/build/index.js:1
+msgid "Works with our BuddyPress extension."
+msgstr "能與我們提供的 BuddyPress 擴充功能搭配使用。"
+
+#: views/admin/settings-webfonts-sales-page.php:58
+#: template-designer/build/index.js:1
+msgid "Works with our Easy Digital Downloads extension."
+msgstr "能與我們提供的 Easy Digital Downloads 擴充功能搭配使用。"
+
+#: views/admin/settings-webfonts-sales-page.php:56
+#: template-designer/build/index.js:1
+msgid "Works with our WooCommerce extension."
+msgstr "能與我們提供的 WooCommerce 擴充功能搭配使用。"
+
+#: views/admin/settings-webfonts-sales-page.php:54
+#: template-designer/build/index.js:1
+msgid "Most requested feature by our users."
+msgstr "我們的使用者最常要求的功能。"
+
+#: views/admin/settings-webfonts-sales-page.php:52
+#: template-designer/build/index.js:1
+msgid "Use more than 1000 Google fonts."
+msgstr "可以使用超過 1000 種 Google Fonts 網頁字型。"
+
+#: views/admin/settings-webfonts-sales-page.php:45
+#: template-designer/build/index.js:1
+msgid "Not the sales pitch you expected?"
+msgstr "非預期的行銷提案？"
+
+#: views/admin/settings-webfonts-sales-page.php:38
+#: template-designer/build/index.js:1
+msgid "See our own tests here"
+msgstr "查看我們的測試結果"
+
+#: views/admin/settings-webfonts-sales-page.php:36
+#: template-designer/build/index.js:1
+msgid "Test your emails in multiple email clients to make sure they look either great or at least ok and not completely different than expected."
+msgstr "使用多個電子郵件用戶端測試電子郵件範本，能確保這些郵件範本的外觀看起來美觀，或至少可以接受，而不會與預期完全不同。"
+
+#: views/admin/settings-webfonts-sales-page.php:34
+#: template-designer/build/index.js:1
+msgid "Test, test, test"
+msgstr "測試、測試、再測試"
+
+#: views/admin/settings-webfonts-sales-page.php:29
+#: template-designer/build/index.js:1
+msgid "caniemail.com statistics"
+msgstr "caniemail.com 統計資料"
+
+#: views/admin/settings-webfonts-sales-page.php:27
+#: template-designer/build/index.js:1
+msgid "If you already know how many of your recipients use Outlook, Gmail, Apple Mail, Thunderbird, ... check the stats on whether or not it even makes sense to use non standard fonts."
+msgstr "如果網站管理員已經知道有多少收件者使用 Outlook、Gmail、Apple Mail、Thunderbird 等收件用戶端，請參考他們是否支援使用非標準字型的統計資料。"
+
+#: views/admin/settings-webfonts-sales-page.php:25
+#: template-designer/build/index.js:1
+msgid "Know your recipients"
+msgstr "了解目標收件者"
+
+#: views/admin/settings-webfonts-sales-page.php:21
+#: template-designer/build/index.js:1
+msgid "Those users whose email clients do not support webfonts will see an alternative font so use webfonts that can be replaced easily by a standard font without destroying your complete email design."
+msgstr "使用不支援網頁字型電子郵件用戶端的使用者會看到替代字型，因此使用可以輕鬆取代標準字型的網頁字型，不會破壞完整的電子郵件設計。"
+
+#: views/admin/settings-webfonts-sales-page.php:19
+#: template-designer/build/index.js:1
+msgid "Choose fonts with suitable fallbacks"
+msgstr "選取適合遞補的字型"
+
+#: views/admin/settings-webfonts-sales-page.php:15
+#: template-designer/build/index.js:1
+msgid "To be honest, this is a really bad value! So what does it mean for us?"
+msgstr "事實上，這是一個非常不好的狀況！那這對想在電子郵件內容中使用網頁字型的我們來說，代表了什麼呢？"
+
+#: views/admin/settings-webfonts-sales-page.php:13
+#: template-designer/build/index.js:1
+msgid "According to caniemail.com webfonts in emails work for just around 52% of users."
+msgstr "根據 caniemail.com 的調查，在電子郵件內容中使用網頁字型，只適用於大約 52% 的使用者。"
+
+#: views/admin/settings-webfonts-sales-page.php:11
+#: template-designer/build/index.js:1
+msgid "The facts"
+msgstr "需要面對的事實"
+
+#: views/admin/settings.php:101
+msgid "Please select a language in your admin bar at the top of the page to show the preview."
+msgstr "請在頁面頂端的工具列選取其中一個語言以顯示預覽。"
+
+#. Plugin Name of the plugin
+#: wp-html-mail.php
+msgid "WP HTML Mail - Email Template Designer"
+msgstr "WP HTML Mail - 電子郵件範本設計程式"
+
+#: views/admin/settings.php:67 views/admin/settings.php:97
+msgid "Preview"
+msgstr "預覽"
+
+#: includes/class-haet-mail.php:1034
+msgid "Uppercase"
+msgstr "全部字元大寫"
+
+#: views/admin/settings.php:111
+msgid "Translation settings for this field are updated."
+msgstr "這個欄位的本地化設定已儲存。"
+
+#: views/admin/settings.php:109
+msgid "Please wait"
+msgstr "請稍候..."
+
+#: includes/class-template-designer.php:399
+msgid "If you don't use a child theme and need an update save place to store your email template you can also copy the template file from the plugin to <strong>wp-content/uploads/wp-html-mail/template.html</strong>."
+msgstr "如果這個網站並未使用子佈景主題，而且需要一個儲存電子郵件範本更新的位置，網站管理員可以將電子郵件範本檔案從外掛目錄複製至 <strong>wp-content/uploads/wp-html-mail/template.html</strong>。"
+
+#. Author URI of the plugin
+#: wp-html-mail.php
+msgid "https://codemiq.com"
+msgstr "https://codemiq.com"
+
+#. Author of the plugin
+#: wp-html-mail.php
+msgid "Hannes Etzelstorfer // codemiq"
+msgstr "Hannes Etzelstorfer // codemiq"
+
+#. Plugin URI of the plugin
+#: wp-html-mail.php
+msgid "https://codemiq.com/en/plugins/wp-html-mail-email-templates/"
+msgstr "https://codemiq.com/en/plugins/wp-html-mail-email-templates/"
+
+#: includes/class-mailbuilder.php:325
+msgid "show / hide footer for this email"
+msgstr "顯示/隱藏這個電子郵件範本的頁尾"
+
+#: includes/class-mailbuilder.php:315
+msgid "show / hide header for this email"
+msgstr "顯示/隱藏這個電子郵件範本的頁首"
+
+#: includes/class-haet-mail.php:1101
+msgid "<strong>Warning:</strong> WP HTML Mail – Email test mode is enabled. All emails are redirected to <strong>%1$s</strong>."
+msgstr "<strong>警告:</strong> WP HTML Mail – [電子郵件測試模式] 已啟用，全部電子郵件會重新導向至 <strong>%1$s</strong>。"
+
+#: includes/class-template-designer.php:398
+msgid "<strong>Only use this feature if you know what you are doing!</strong><br>From this point you have to continue your work in HTML and CSS code."
+msgstr "<strong>請務必了解這項功能的使用結果，才使用這項功能！</strong>之後如需編輯自訂範本，請直接編輯範本中的 HTML 及 CSS 程式碼。"
+
+#: includes/class-template-designer.php:407
+msgid "Are you sure you want to write your own code?"
+msgstr "確定要寫入自有程式碼嗎？"
+
+#: includes/class-template-designer.php:376
+msgid "Delete ALL settings"
+msgstr "刪除全部設定"
+
+#: includes/class-template-designer.php:370
+msgid "Delete design settings"
+msgstr "刪除設計設定"
+
+#: includes/class-template-designer.php:373
+#: includes/class-template-designer.php:379
+msgid "Are you sure? This can not be undone!"
+msgstr "這項操作無法復原，確定要繼續操作嗎？"
+
+#: includes/class-mailbuilder.php:398
+msgid "Done"
+msgstr "完成"
+
+#: includes/class-mailbuilder.php:393
+msgid "CSS changes are not shown live. Please save the email to see your changes."
+msgstr "CSS 的變更並不會即時顯示，請於儲存後檢視這些變更。"
+
+#: includes/class-mailbuilder.php:384
+msgid "Mobile CSS"
+msgstr "行動版 CSS"
+
+#: includes/class-mailbuilder.php:383
+msgid "WP HTML Mail converts all desktop styling to inline CSS code for better support in webmail clients. Mobile CSS stays in the head, so please don't write @media queries to the field above but use the mobil CSS field below"
+msgstr "WP HTML Mail 能將桌面版樣式轉換為內嵌的 CSS 程式碼，以便對網頁郵件用戶端提供更佳的支援。行動版 CSS 仍會保留在最上方，因此請不要在上方欄位中撰寫 @media 查詢，請改用下方的 [行動版 CSS] 欄位。"
+
+#: includes/class-mailbuilder.php:333 includes/class-mailbuilder.php:373
+msgid "Custom CSS"
+msgstr "自訂 CSS"
+
+#: includes/class-haet-mail.php:1088
+msgid "Settings"
+msgstr "設定"
+
+#: includes/class-haet-mail.php:211 includes/class-haet-mail.php:220
+msgid "Settings deleted."
+msgstr "設定已刪除。"
+
+#: includes/class-mailbuilder.php:160
+msgid "Update"
+msgstr "儲存"
+
+#: includes/class-contenttype.php:166
+msgid "Padding mobile"
+msgstr "行動版邊框間距"
+
+#: includes/class-contenttype.php:139
+msgid "Padding desktop"
+msgstr "桌面版邊框間距"
+
+#: includes/class-contenttype.php:127
+msgid "Content Element Settings"
+msgstr "內容元素設定"
+
+#: includes/class-mailbuilder.php:187 template-designer/build/index.js:1
+msgid "Add attachments"
+msgstr "新增附件"
+
+#: includes/class-mailbuilder.php:139
+msgid "Attach files"
+msgstr "附加檔案"
+
+#: wp-html-mail.php:56
+msgid "<strong>Warning:</strong> To use WP HTML Mail please update your PHP version to 7.2 or higher in your hosting admin panel."
+msgstr "<strong>警告:</strong> 在使用 WP HTML Mail  前，請先在主機管理面板中，將這個網站的主機環境更新至 PHP 7.2 或更新版本。"
+
+#. Description of the plugin
+#: wp-html-mail.php
+msgid "Create your own professional email design for all your outgoing WordPress emails"
+msgstr "為 WordPress 網站全部的外寄電子郵件建立專屬的專業外觀設計。"
+
+#: includes/class-haet-mail.php:74
+msgid "Your message has been sent."
+msgstr "訊息已成功傳送。"
+
+#: views/admin/settings.php:77 views/admin/settings.php:80
+msgid "Send a test mail"
+msgstr "傳送測試電子郵件"
+
+#: views/admin/settings.php:53 template-designer/build/index.js:1
+msgid "Save and Preview"
+msgstr "儲存並預覽"
+
+#: includes/class-contenttype.php:132 template-designer/build/index.js:1
+msgid "Background color"
+msgstr "背景色彩"
+
+#: includes/class-template-designer.php:397
+msgid "Customize your mail template as far as you can. Then click this button to export the template to your theme directory for further modifications.<br>The template will be created in <strong>wp-content/YOUR-THEME/wp-html-mail/template.html</strong>"
+msgstr "請盡情揮灑創意，建立專屬於這個網站的電子郵件自訂範本。範本建立後，點擊上方按鈕便能將範本匯出至佈景主題的目錄中，以便進行進一步的修改。<br>範本會儲存為 <strong>wp-content/themes/使用中的佈景主題名稱/wp-html-mail/template.html</strong>。"
+
+#: includes/class-template-designer.php:396
+msgid "WARNING: Your theme directory is not writable by the server. Please change the permission to allow us to create the mail template."
+msgstr "警告: 外掛無法對目前使用中的佈景主題的目錄進行寫入。請變更對應目錄的權限，讓外掛可以建立電子郵件自訂範本。"
+
+#: includes/class-template-designer.php:392
+msgid "You already have a custom template. If you create a new one the existing template will be backed up."
+msgstr "這個網站已有電子郵件自訂範本。如果建立了新的範本，外掛會為現有的範本進行備份。"
+
+#: includes/class-template-designer.php:404
+msgid "create template file in my theme folder"
+msgstr "在使用中的佈景主題的資料夾中建立範本"
+
+#: includes/class-mailbuilder.php:509
+msgid "Add Content Element"
+msgstr "新增內容元素"
+
+#: includes/class-contenttype.php:200 includes/class-mailbuilder.php:367
+msgid "Cancel"
+msgstr "取消"
+
+#: includes/class-contenttype.php:196 includes/class-mailbuilder.php:363
+msgid "Apply"
+msgstr "套用"
+
+#: includes/class-mailbuilder.php:130
+msgid "Email Content Builder"
+msgstr "電子郵件輔助設計工具"
+
+#: includes/class-mailbuilder.php:122
+msgid "Email Subject"
+msgstr "電子郵件主旨"
+
+#: includes/class-mailbuilder.php:114
+msgid "Message"
+msgstr "訊息"
+
+#: includes/class-mailbuilder.php:77
+msgid "Custom Emails"
+msgstr "自訂電子郵件"
+
+#: includes/class-mailbuilder.php:76
+msgid "Parent Custom Email:"
+msgstr "上層自訂電子郵件:"
+
+#: includes/class-mailbuilder.php:75
+msgid "No Custom Emails found in Trash"
+msgstr "在回收桶中找不到符合條件的自訂電子郵件"
+
+#: includes/class-mailbuilder.php:74
+msgid "No Custom Emails found"
+msgstr "找不到符合條件的自訂電子郵件"
+
+#: includes/class-mailbuilder.php:73
+msgid "Search Custom Emails"
+msgstr "搜尋自訂電子郵件"
+
+#: includes/class-mailbuilder.php:72
+msgid "View Custom Email"
+msgstr "檢視自訂電子郵件"
+
+#: includes/class-mailbuilder.php:71
+msgid "New Custom Email"
+msgstr "新增自訂電子郵件"
+
+#: includes/class-mailbuilder.php:70
+msgid "Edit Custom Email"
+msgstr "編輯自訂電子郵件"
+
+#: includes/class-mailbuilder.php:68 includes/class-mailbuilder.php:69
+msgid "Add New Custom Email"
+msgstr "新增自訂電子郵件"
+
+#: includes/class-mailbuilder.php:67
+msgid "custom email"
+msgstr "自訂電子郵件"
+
+#: includes/class-mailbuilder.php:66
+msgid "custom emails"
+msgstr "自訂電子郵件"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:13
+msgid "The administrator has unlocked your file"
+msgstr "管理員已將你的檔案解除鎖定"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:11
+msgid "Order Pending: Payment Required"
+msgstr "訂單待處理: 必須完成付款"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:10
+msgid "Purchase Receipt"
+msgstr "訂購收據"
+
+#: includes/class-haet-sender-plugin-wp-e-commerce.php:9
+msgid "Transaction Report"
+msgstr "交易報告"
+
+#: includes/class-haet-mail.php:247
+msgid "Settings Updated."
+msgstr "設定已更新。"
+
+#: includes/class-haet-mail.php:195
+msgid "Email template"
+msgstr "電子郵件範本"
+
+#: includes/class-haet-mail.php:195
+msgid "Email"
+msgstr "電子郵件"
+
+#: includes/class-contenttype-twocol.php:48
+msgid "Two Columns"
+msgstr "兩欄"
+
+#: includes/class-contenttype-text.php:64
+msgid "Text"
+msgstr "文字"

@@ -1,5 +1,57 @@
-wordpress
-
+# ---- OS / editor ----
 .DS_Store
+.vscode/
+.idea/
 
+# ---- Local env (real values never committed; use .env.example as the template) ----
+.env
+
+# ---- Backup / scratch files (NEVER commit — wp-config.php.old etc. carry old secrets) ----
+*.old
+*.bk
+*.bak
+*.orig
+*.save
+*.swp
+*_bk_before_*
+# Domain-verification token dropped at webroot (env-specific junk)
+wordpress/dcbf3b82baf921901d2c93b269508e88.txt
+
+# ---- Big / generated artifacts ----
 *.sql
+*.zip
+*.tar
+*.tar.gz
+
+# Perf experiment scratch note (local only)
+REVERT-PERF-EXPERIMENT.md
+
+# ---- WordPress ----
+# Track WP core + default/third-party plugins + themes + mu-plugins + languages.
+# Exclude the things that must NOT live in this repo:
+
+# User uploads — served from Azure Files at runtime, not baked
+wordpress/wp-content/uploads/
+wordpress/wp-content/uploads2/
+
+# The JTI custom plugin lives in its OWN repo
+wordpress/wp-content/plugins/jti-custom/
+wordpress/wp-content/jti-custom/
+
+# Runtime / backup / cache directories (regenerated at runtime)
+wordpress/wp-content/updraft/
+wordpress/wp-content/plugins-old/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/upgrade-temp-backup/
+wordpress/wp-content/litespeed/
+wordpress/wp-content/jetpack-waf/
+
+# Logs
+wordpress/wp-content/debug.log
+wordpress/wp-content/**/*.log
+
+# NOTE: Terraform state and *.tfvars are ignored by infra/.gitignore (nested,
+# git honors it). Secrets never enter version control.
+
+# Misplaced media dump (hash-named images) — does NOT belong in plugins/
+wordpress/wp-content/plugins/uploads2/

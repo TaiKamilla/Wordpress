@@ -1,0 +1,276 @@
+# Translation of Plugins - WP Mail SMTP by WPForms &#8211; The Most Popular SMTP and Email Log Plugin - Stable (latest release) in Chinese (Hong Kong)
+# This file is distributed under the same license as the Plugins - WP Mail SMTP by WPForms &#8211; The Most Popular SMTP and Email Log Plugin - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-11-29 18:52:26+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: zh_HK\n"
+"Project-Id-Version: Plugins - WP Mail SMTP by WPForms &#8211; The Most Popular SMTP and Email Log Plugin - Stable (latest release)\n"
+
+#: assets/languages/wp-mail-smtp-vue.php:588
+#: src/Providers/OptionsAbstract.php:307
+msgid "Auto TLS"
+msgstr "自動 TLS"
+
+#: assets/languages/wp-mail-smtp-vue.php:609
+#: src/Providers/OptionsAbstract.php:285
+msgid "For most servers TLS is the recommended option. If your SMTP provider offers both SSL and TLS options, we recommend using TLS."
+msgstr "對多數的伺服器來說，TLS 是建議設定。如果 SMTP 服務提供商同時提供了 SSL 及 TLS 設定，建議採用 TLS。"
+
+#. translators: %s - SendGrid access level.
+#: src/Providers/Sendgrid/Options.php:105
+msgid "To send emails you will need only a %s access level for this API key."
+msgstr "僅需取得 %s 存取層級的 API 金鑰，便能傳送郵件。"
+
+#: src/Providers/Sendgrid/Options.php:97
+msgid "Create API Key"
+msgstr "建立 API 金鑰"
+
+#. translators: %s - API key link.
+#: src/Providers/Sendgrid/Options.php:95
+msgid "Follow this link to get an API Key from SendGrid: %s."
+msgstr "請依照《%s》(英文) 中的指示，從 SendGrid 取得 API 金鑰。"
+
+#: assets/languages/wp-mail-smtp-vue.php:289
+#: src/Providers/ElasticEmail/Options.php:93
+#: src/Providers/MailerSend/Options.php:88 src/Providers/Mailjet/Options.php:93
+#: src/Providers/PepipostAPI/Options.php:96
+#: src/Providers/Sendgrid/Options.php:68
+#: src/Providers/Sendinblue/Options.php:112
+#: src/Providers/Sendlayer/Options.php:102 src/Providers/SMTP2GO/Options.php:94
+#: src/Providers/SMTPcom/Options.php:107 src/Providers/SparkPost/Options.php:88
+msgid "API Key"
+msgstr "API 金鑰"
+
+#: src/Providers/Sendgrid/Options.php:30
+msgid "SendGrid"
+msgstr "SendGrid"
+
+#: src/Providers/SMTP/Options.php:28
+msgid "Other SMTP"
+msgstr "其他 SMTP"
+
+#: src/Providers/PepipostAPI/Options.php:63
+msgid "Pepipost"
+msgstr "Pepipost"
+
+#. translators: %1$s - Provider name; %2$s - PHP version required by Provider;
+#. %3$s - current PHP version.
+#: src/Providers/OptionsAbstract.php:478
+msgid "%1$s requires PHP %2$s to work and does not support your current PHP version %3$s. Please contact your host and request a PHP upgrade to the latest one."
+msgstr "%1$s 須要 PHP %2$s (或更新版本) 才能正確執行，它不支援這台主機目前所使用的 PHP %3$s。請聯絡你的主機服務商，並提出將 PHP 升級至最新版的要求。"
+
+#: assets/languages/wp-mail-smtp-vue.php:606
+#: src/Providers/OptionsAbstract.php:362
+msgid "SMTP Password"
+msgstr "SMTP 密碼"
+
+#: assets/languages/wp-mail-smtp-vue.php:603
+#: src/Providers/OptionsAbstract.php:348
+msgid "SMTP Username"
+msgstr "SMTP 使用者名稱"
+
+#: src/Helpers/UI.php:38
+msgid "Off"
+msgstr "停用"
+
+#: src/Helpers/UI.php:37
+msgid "On"
+msgstr "啟用"
+
+#: assets/languages/wp-mail-smtp-vue.php:618
+#: src/Providers/OptionsAbstract.php:281
+msgid "TLS"
+msgstr "TLS"
+
+#: assets/languages/wp-mail-smtp-vue.php:615
+#: src/Providers/OptionsAbstract.php:272
+msgid "SSL"
+msgstr "SSL"
+
+#: assets/languages/wp-mail-smtp-vue.php:612
+#: src/Admin/Pages/SettingsTab.php:371 src/Providers/OptionsAbstract.php:263
+msgid "None"
+msgstr "無"
+
+#: src/Providers/Mailgun/Options.php:120
+msgid "Get a Domain Name"
+msgstr "取得網域名稱"
+
+#. translators: %s - Domain Name link.
+#: src/Providers/Mailgun/Options.php:118
+msgid "Follow this link to get a Domain Name from Mailgun: %s."
+msgstr "請依照《%s》(英文) 中的指示，從 Mailgun 取得網域名稱。"
+
+#: assets/languages/wp-mail-smtp-vue.php:223
+#: src/Providers/Mailgun/Options.php:106
+msgid "Domain Name"
+msgstr "網域名稱"
+
+#: assets/languages/wp-mail-smtp-vue.php:220
+msgid "Private API Key"
+msgstr "私密 API 金鑰"
+
+#: src/Providers/Mailgun/Options.php:29
+msgid "Mailgun"
+msgstr "Mailgun"
+
+#: src/Providers/Mail/Options.php:26
+msgid "Default (none)"
+msgstr "預設 (無)"
+
+#: src/Providers/Gmail/Options.php:211
+msgid "Click the button above to confirm authorization."
+msgstr "按一下上方按鈕以確認授權。"
+
+#: src/Providers/Gmail/Options.php:208
+msgid "Allow plugin to send emails using your Google account"
+msgstr "授予這個外掛使用你的 Google 帳戶傳送電子郵件的權限"
+
+#: src/Providers/Gmail/Options.php:166
+msgid "Copy URL to clipboard"
+msgstr "複製網址至剪貼簿"
+
+#: src/Providers/Gmail/Options.php:158
+msgid "Authorized redirect URI"
+msgstr "已授權的重新導向 URI"
+
+#: assets/languages/wp-mail-smtp-vue.php:461
+#: src/Providers/Gmail/Options.php:128
+msgid "Client Secret"
+msgstr "用戶端密碼"
+
+#: assets/languages/wp-mail-smtp-vue.php:458
+#: src/Providers/Gmail/Options.php:113
+msgid "Client ID"
+msgstr "用戶端 ID"
+
+#. translators: %s - email address a test email will be sent to.
+#: src/Admin/Pages/TestTab.php:332 src/Admin/Pages/TestTab.php:339
+msgid "Test email to %s"
+msgstr "傳送給 %s 的測試電子郵件"
+
+#: src/Admin/Pages/TestTab.php:320
+msgid "Test failed. Please use a valid email address and try to resend the test email."
+msgstr "測試失敗。請輸入有效的電子郵件地址並重新傳送測試電子郵件。"
+
+#: src/Admin/Pages/TestTab.php:218
+msgid "Send Email"
+msgstr "傳送電子郵件"
+
+#: src/Admin/Pages/AlertsTab.php:153 src/Admin/Pages/TestTab.php:158
+msgid "Send To"
+msgstr "收件者"
+
+#: src/Admin/Pages/TestTab.php:113
+msgid "Email Test"
+msgstr "電子郵件測試"
+
+#: src/Admin/Pages/DebugEventsTab.php:377 src/Admin/Pages/MiscTab.php:539
+#: src/Admin/Pages/SettingsTab.php:440
+msgid "Settings were successfully saved."
+msgstr "設定已成功儲存。"
+
+#: src/Admin/Area.php:526 src/Admin/PageAbstract.php:192
+msgid "Save Settings"
+msgstr "儲存設定"
+
+#: src/Admin/Area.php:393 src/Admin/Area.php:399
+#: src/Admin/Pages/SettingsTab.php:38
+msgid "General"
+msgstr "一般"
+
+#: src/Admin/Pages/MiscTab.php:40
+msgid "Misc"
+msgstr "雜項"
+
+#: src/Admin/Area.php:174
+msgid "There was an error while processing the authentication request. Please make sure that you have Client ID and Client Secret both valid and saved."
+msgstr "處理驗證要求時發生錯誤，請確認你填寫的用戶端 ID 及用戶端密碼均為有效且已正確儲存。"
+
+#: assets/languages/wp-mail-smtp-vue.php:781 src/Admin/Area.php:167
+msgid "There was an error while processing the authentication request. Please try again."
+msgstr "處理驗證要求時發生錯誤，請稍後再試。"
+
+#. translators: %s - error code, returned by Google API.
+#: src/Admin/Area.php:160
+msgid "There was an error while processing the authentication request: %s. Please try again."
+msgstr "處理 %s 的驗證要求時發生錯誤，請稍後再試。"
+
+#: src/Admin/Pages/MiscTab.php:174
+msgid "Hide Announcements"
+msgstr "隱藏通知"
+
+#: src/Admin/Pages/AboutTab.php:279 src/Admin/Pages/SmartRoutingTab.php:278
+msgid "WPForms"
+msgstr "WPForms"
+
+#: src/Admin/ConnectionSettings.php:193
+msgid "Return Path indicates where non-delivery receipts - or bounce messages - are to be sent."
+msgstr "傳回路徑會指出未傳送的收件者或退回的郵件會傳送至何處。"
+
+#: src/Admin/Area.php:318 src/Admin/Area.php:319 src/Admin/Area.php:1285
+msgid "Settings"
+msgstr "設定"
+
+#: assets/languages/wp-mail-smtp-vue.php:530 src/Admin/Pages/TestTab.php:253
+#: src/SiteHealth.php:352
+msgid "Send a Test Email"
+msgstr "傳送測試郵件"
+
+#: src/Admin/DashboardWidget.php:583
+msgid "Save Changes"
+msgstr "儲存變更"
+
+#: assets/languages/wp-mail-smtp-vue.php:597
+#: src/Providers/OptionsAbstract.php:329
+msgid "Authentication"
+msgstr "驗證"
+
+#: assets/languages/wp-mail-smtp-vue.php:582
+#: src/Providers/OptionsAbstract.php:253
+msgid "Encryption"
+msgstr "加密方式"
+
+#: assets/languages/wp-mail-smtp-vue.php:585
+#: src/Providers/OptionsAbstract.php:293
+msgid "SMTP Port"
+msgstr "SMTP 通訊埠"
+
+#: assets/languages/wp-mail-smtp-vue.php:579
+#: src/Providers/OptionsAbstract.php:239
+msgid "SMTP Host"
+msgstr "SMTP 主機"
+
+#: src/Admin/ConnectionSettings.php:177
+msgid "Return Path"
+msgstr "傳回路徑"
+
+#: assets/languages/wp-mail-smtp-vue.php:648
+#: src/Admin/ConnectionSettings.php:202 src/Admin/Pages/ExportTab.php:125
+msgid "Mailer"
+msgstr "郵件程式"
+
+#: assets/languages/wp-mail-smtp-vue.php:243
+#: src/Admin/ConnectionSettings.php:127 src/Admin/Pages/ExportTab.php:111
+msgid "From Name"
+msgstr "寄件者名稱"
+
+#: assets/languages/wp-mail-smtp-vue.php:252
+#: src/Admin/ConnectionSettings.php:70 src/Admin/Pages/SmartRoutingTab.php:180
+#: src/Admin/Pages/SmartRoutingTab.php:210
+msgid "From Email"
+msgstr "寄件者電子郵件"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: wp_mail_smtp.php src/Admin/Area.php:307 src/Admin/Area.php:308
+#: src/Admin/Area.php:365 src/Admin/Area.php:366
+#: src/Admin/DashboardWidget.php:172 src/Admin/DashboardWidget.php:575
+#: src/Providers/Outlook/Provider.php:57 src/SiteHealth.php:43
+msgid "WP Mail SMTP"
+msgstr "WP Mail SMTP"

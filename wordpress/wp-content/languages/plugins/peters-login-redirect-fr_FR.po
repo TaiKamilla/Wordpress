@@ -1,0 +1,70 @@
+# Translation of Plugins - LoginWP (Formerly Peter&#039;s Login Redirect) - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - LoginWP (Formerly Peter&#039;s Login Redirect) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-09-07 06:33:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - LoginWP (Formerly Peter&#039;s Login Redirect) - Stable (latest release)\n"
+
+#: src/core/src/Functions.php:22
+msgid "Site Admin"
+msgstr "Administrateur du site"
+
+#: src/core/src/Admin/RedirectWPList.php:221
+#: src/core/src/Admin/views/view.redirect-urls.php:18
+msgid "Login URL"
+msgstr "URL de connexion"
+
+#: src/core/src/Admin/RedirectWPList.php:222
+#: src/core/src/Admin/views/view.redirect-urls.php:26
+msgid "Logout URL"
+msgstr "URL à la déconnexion"
+
+#: src/core/src/Admin/RedirectWPList.php:142
+#: src/core/src/Admin/RedirectWPList.php:252
+#: src/core/src/Admin/views/include.view.php:61
+msgid "Delete"
+msgstr "Supprimer"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:92
+#: src/core/src/Admin/views/view.bottom-settings.php:107
+msgid "Yes"
+msgstr "Oui"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:93
+#: src/core/src/Admin/views/view.bottom-settings.php:108
+msgid "No"
+msgstr "Non"
+
+#: src/core/src/MoAdminNotice.php:95
+msgid "Dismiss this notice"
+msgstr "Ignorer cette notification"
+
+#: src/core/src/Functions.php:17
+msgid "Register"
+msgstr "Inscription"
+
+#: src/core/src/Admin/RedirectWPList.php:141
+msgid "Edit"
+msgstr "Modifier"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:64
+msgid "URL:"
+msgstr "URL :"
+
+#: src/core/src/Admin/views/view.condition-rule.php:49
+msgid "Order"
+msgstr "Trier"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:38
+msgid "Logout URL:"
+msgstr "URL à la déconnexion :"
+
+#: src/core/src/Admin/views/view.bottom-settings.php:101
+msgid "Allow a POST or GET &#34;redirect_to&#34; logout variable to take redirect precedence"
+msgstr "Autoriser une variable POST ou GET de déconnexion « redirect_to » à imposer la redirection"
