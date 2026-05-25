@@ -9,17 +9,18 @@ FROM wordpress:${WORDPRESS_VERSION}-php${PHP_VERSION}-apache
 # Install system dependencies.
 #   - libssl-dev: required by phpredis to negotiate TLS with Azure Cache for
 #     Redis (6380/SSL only).
-#   - inotify-tools + rsync: required by the wp-content persistence overlay
-#     (docker/persist-watcher.sh). Watches /var/www/html/wp-content and rsyncs
-#     changes to /persist (Azure Files) so admin-installed plugins/themes
-#     survive container restarts.
+#   - rsync: required by the wp-content persistence overlay
+#     (docker/entrypoint-persist.sh). Polls bidirectional sync between
+#     /var/www/html/wp-content and /persist (Azure Files) every 30 s so
+#     admin-installed plugins/themes survive container restarts and
+#     Storage Explorer uploads land in the running site.
+#   - apache2-utils: needed for htpasswd (HTTP Basic Auth on staging).
 RUN apt-get update && apt-get install -y \
   unzip \
   libzip-dev \
   libssl-dev \
   git \
   nano \
-  inotify-tools \
   rsync \
   apache2-utils \
   && rm -rf /var/lib/apt/lists/*
@@ -41,6 +42,18 @@ RUN git config --global --add safe.directory /var/www/html
 # Copy the current wordpress folder files to the container.
 # Note: includes the object-cache.php drop-in (Phase 2.1) when present.
 COPY wordpress/ /var/www/html/
+
+# Backdate image-baseline mtimes to 1970-01-02 so the persistence overlay's
+# bidirectional rsync (`-au`, see docker/entrypoint-persist.sh) always prefers
+# anything on the /persist share — every real edit (admin update, Storage
+# Explorer drop, file edit) carries a real mtime which is by definition newer.
+# Without this, `:latest` image rebuilds (mtime ≈ build time, always "newer"
+# than older admin updates on the share) silently clobber admin work via the
+# wp-content → /persist leg of the poller.
+# `uploads/` is the symlink target — exclude from the touch (it's pruned).
+RUN find /var/www/html/wp-content \
+      -path /var/www/html/wp-content/uploads -prune -o \
+      -exec touch -t 197001020000 {} +
 
 # Enable Apache rewrite
 RUN a2enmod rewrite
@@ -72,11 +85,11 @@ RUN a2enmod auth_basic authn_file
 COPY docker/php-opcache.ini /usr/local/etc/php/conf.d/zz-opcache-prod.ini
 
 # wp-content persistence overlay (single script):
-#   - Mounts: AzFiles share `wp-content` at /persist (share root mirrors wp-content)
-#   - Boot: symlink /wp-content/uploads → /persist/uploads (direct write); seed
-#     /persist on first boot, or restore /persist → /wp-content otherwise
-#   - Runtime: backgrounded inotify watcher debounce-rsyncs /wp-content → /persist
-#     (excludes uploads + caches + logs)
+#   - Mount: AzFiles share `wp-content` at /persist (share root mirrors wp-content)
+#   - Boot: symlink wp-content/uploads → /persist/uploads; rsync /persist → wp-content
+#     (-au, no --delete; image-only files survive)
+#   - Runtime: backgrounded 30s poller, bidirectional rsync wp-content ↔ /persist
+#     (excludes uploads only; everything else syncs both ways)
 #   - Then exec the upstream WP docker-entrypoint.sh
 COPY docker/entrypoint-persist.sh /usr/local/bin/entrypoint-persist.sh
 RUN chmod +x /usr/local/bin/entrypoint-persist.sh

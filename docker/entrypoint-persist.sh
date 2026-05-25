@@ -1,24 +1,41 @@
 #!/bin/bash
-# JTI WordPress entrypoint: persist wp-content to Azure Files.
+# JTI WordPress entrypoint: rsync overlay between image-baked wp-content and
+# the AzFiles share mounted at /persist.
 #
 # Mount: AzFiles share `wp-content` → /persist  (share root mirrors wp-content)
 # Layout:
 #     /persist/
-#     ├── plugins/        ← overlay (rsync-managed; fast PHP includes from local)
-#     ├── themes/         ← overlay
-#     ├── languages/      ← overlay
-#     ├── mu-plugins/     ← overlay
-#     └── uploads/        ← symlink target (direct write, no rsync window)
+#     ├── uploads/        ← symlink target (direct write, no sync window)
+#     └── everything else ← bidirectional rsync overlay, polled every 30 s
 #
-# On boot: symlink uploads, seed-or-restore the overlay, start watcher,
-# exec upstream WP entrypoint. Persist always wins on overlay conflict.
+# Design notes:
+#   - uploads/ is symlinked (not rsync'd). Storage Explorer / PHP writes land
+#     directly on the share and are immediately visible. uploads/ is also
+#     allowed to grow without bound — keeping it out of the rsync avoids
+#     paying for boot-time scans of GBs of media.
+#   - Everything else (plugins/themes/mu-plugins/languages/cache/…) is rsync'd
+#     both directions every 30 s with `-u` (skip if dest is newer) and no
+#     `--delete`. Semantics: last-mtime-wins on write; deletions don't
+#     propagate (delete on both sides if you really mean it).
+#   - inotify on the CIFS mount was considered; SMB doesn't reliably deliver
+#     cross-client change notifications to local inotify (confirmed 2026-05-25
+#     with a 90 s recursive watch on 4179 dirs catching 0 events while a
+#     parallel Storage Explorer upload landed on the share). Polling is
+#     simpler and correct.
+#   - First boot with an empty /persist: the boot rsync is a no-op (source
+#     empty); the first poll cycle copies the image baseline (wp-content) →
+#     /persist. No seed-marker logic needed.
 
 set -uo pipefail
-
 PERSIST=/persist
 WP=/var/www/html/wp-content
-DEBOUNCE=10
+POLL_INTERVAL=30
 
+# Sync excludes. uploads/ is the symlink target (rsync would loop).
+# The rest are excluded because they're either huge (updraft backups can be
+# GBs), churny (cache files), or pure noise (logs, swap files) — syncing them
+# across SMB on every boot makes the boot rsync exceed App Service's 230 s
+# container-start timeout. Reintroduced 2026-05-25 after a boot timeout.
 EXCLUDES=(
   --exclude=uploads/
   --exclude=cache/
@@ -33,69 +50,53 @@ EXCLUDES=(
   --exclude='*~'
   --exclude='*.tmp'
 )
-# inotify-tools regex (POSIX ERE on full path) — must match EXCLUDES above
-INOTIFY_EXCLUDE='/wp-content/(uploads|cache|litespeed|jetpack-waf|updraft|plugins-old|upgrade|upgrade-temp-backup)(/|$)|\.(log|swp|tmp)$|~$'
 
 log() { echo "[wp-persist $(date '+%H:%M:%S')] $*"; }
 
 # Bail-out if /persist isn't mounted: site still starts, just without
-# persistence (admin updates will be wiped on next restart). Fail loud, not fatal.
+# persistence. Fail loud in the log, not fatal.
 if ! mountpoint -q "$PERSIST" 2>/dev/null; then
   log "WARN: $PERSIST not mounted — admin updates will NOT persist."
   exec /usr/local/bin/docker-entrypoint.sh "$@"
 fi
 
-# Uploads: symlink so writes go directly to AzFiles (zero data-loss window).
+# uploads/: symlink so writes go directly to AzFiles (zero data-loss window).
 mkdir -p "$PERSIST/uploads"
 rm -rf "$WP/uploads"
 ln -sfT "$PERSIST/uploads" "$WP/uploads"
 log "symlinked $WP/uploads → $PERSIST/uploads"
 
-# Overlay: seed /persist on first boot, otherwise restore /persist → /wp-content.
+# Background boot sync: pull /persist into wp-content. Runs in parallel with
+# Apache startup so the container makes its 230 s start-probe window even if
+# the SMB walk is slow. During the first ~30-60 s after boot, the site may
+# serve image-baseline content for files that /persist would later override.
+# Acceptable trade — admin-side updates surface within one poll cycle.
 #
-# Seed completion is tracked by a marker file (.seed-complete) so an
-# interrupted seed (e.g. App Service container-start timeout) doesn't leave
-# /persist in a half-populated state that the next boot mistakes for "ready".
-#
-# Restore intentionally does NOT use --delete: image-only files (e.g. a theme
-# added in a new image but not yet in /persist) stay alive. Admin deletions
-# via wp-admin don't persist across restart this way — that's a deliberate
-# trade against the catastrophic case where a partial /persist would prune
-# the live wp-content. The watcher pushes deletions to /persist, but on
-# restart the image's baseline is restored on top.
-SEED_MARKER="$PERSIST/.seed-complete"
-
-if [ -f "$SEED_MARKER" ]; then
-  log "restoring $WP from $PERSIST (no --delete: image-only files preserved)"
-  rsync -a "${EXCLUDES[@]}" "$PERSIST/" "$WP/" \
-    && log "restore complete" \
-    || log "WARN: restore rsync exited non-zero (continuing)"
-else
-  log "no seed marker — seeding $PERSIST from image"
-  if rsync -a "${EXCLUDES[@]}" "$WP/" "$PERSIST/"; then
-    touch "$SEED_MARKER"
-    log "seed complete (marker created)"
-  else
-    log "WARN: seed rsync exited non-zero — marker NOT created, will re-seed next boot"
-  fi
-fi
-chown -R www-data:www-data "$WP" 2>/dev/null || true
-
-# Background watcher: debounced rsync of wp-content → /persist on change.
+# -u: skip if wp-content version is newer. Combined with the image baseline
+#     being touched to mtime 1970 in the Dockerfile, /persist always wins for
+#     any file that has been touched on the share (real mtime > 1970).
+# no --delete: image-only files survive a partial /persist.
 (
-  while true; do
-    inotifywait -r -q -e create,modify,delete,move \
-        --exclude "$INOTIFY_EXCLUDE" "$WP" >/dev/null 2>&1 \
-      || { sleep 5; continue; }
-    # Drain follow-up events for DEBOUNCE seconds — a plugin install touches
-    # dozens of files; we want one rsync at the end, not dozens.
-    while inotifywait -r -q -t "$DEBOUNCE" -e create,modify,delete,move \
-        --exclude "$INOTIFY_EXCLUDE" "$WP" >/dev/null 2>&1; do : ; done
-    rsync -a --delete "${EXCLUDES[@]}" "$WP/" "$PERSIST/" \
-      && log "synced to /persist" \
-      || log "WARN: sync rsync failed (will retry on next event)"
+  log "boot sync /persist → wp-content (background)"
+  if rsync -au "${EXCLUDES[@]}" "$PERSIST/" "$WP/" 2>/dev/null; then
+    log "boot sync done"
+  else
+    log "WARN: boot sync exited non-zero"
+  fi
+  chown -R www-data:www-data "$WP" 2>/dev/null || true
+) &
+log "boot sync backgrounded (PID $!)"
+
+# Periodic poller: every POLL_INTERVAL seconds, sync both directions.
+# wp-content → /persist runs first (push container-side writes — admin
+# updates), then /persist → wp-content (pull share-side writes — Storage
+# Explorer drops). Both -u so neither direction overwrites a newer dest.
+(
+  while sleep "$POLL_INTERVAL"; do
+    rsync -au "${EXCLUDES[@]}" "$WP/"      "$PERSIST/" 2>/dev/null || true
+    rsync -au "${EXCLUDES[@]}" "$PERSIST/" "$WP/"      2>/dev/null || true
   done
 ) &
-log "watcher backgrounded (PID $!)"
+log "poller backgrounded (PID $!, interval ${POLL_INTERVAL}s)"
 
 exec /usr/local/bin/docker-entrypoint.sh "$@"

@@ -307,42 +307,28 @@ bake-into-image migration, this fix lives in the image** — verify it's
 there by checking
 `wordpress-image/wordpress/wp-content/plugins/jti-custom/jti-custom.php`.
 
-### Gotcha #9 — Partial seed + `--delete` rsync wipes baked code
+### Gotcha #9 — (Historical) Partial seed wiped baked code
 
-**Symptom:** after a successful first deploy of the persistence overlay
-(see §5.1), the second container boot starts and the site loads but with
-the wrong themes / missing mu-plugins / "Elementor not found" / random PHP
-fatals about classes that absolutely exist in the image.
+> **No longer applies** after the entrypoint redesign on 2026-05-25 — kept
+> here as a record of how the previous overlay failed. Today's boot sync
+> uses `-au --no-delete`, has no `.seed-complete` marker, and no first-boot
+> vs. restore branching, so the failure mode below cannot occur.
 
-**Cause:** the overlay's "first-boot seed" path is a `~700 MB` rsync from
-the image into `/persist`. On a slow / contended SMB share this can run
-past the App Service container-start timeout (~230 s default). If the
-container is killed mid-seed, `/persist` is in a partial state but the
-boot script didn't get to create its `.seed-complete` marker. On the next
-boot the script thinks `/persist` is "previously seeded" and takes the
-**restore** path (rsync `/persist/ → wp-content/`). If that restore uses
-`--delete`, it wipes everything the image baked that's missing from the
-partial seed.
+**Symptom (previous design):** after a successful first deploy, the second
+container boot started fine but with the wrong themes / missing mu-plugins
+/ random PHP fatals about classes that exist in the image.
 
-**Fix (already in the entrypoint):**
-- Restore path runs **without `--delete`** so image-baked files survive a
-  partial restore.
-- `.seed-complete` marker is touched *only after* the seed rsync returns 0.
-- Excludes (`uploads`, `cache`, `litespeed`, `jetpack-waf`, `updraft`,
-  `plugins-old`, `upgrade*`) keep the seed under the timeout in steady state.
+**Cause:** the old entrypoint had a "first-boot seed" path (full ~700 MB
+rsync image → /persist) gated by a `.seed-complete` marker file. If the
+seed was killed mid-stream by App Service's container-start timeout, the
+marker was never written but /persist was in a partial state. On the next
+boot the "restore" path ran `rsync --delete /persist/ → wp-content/`,
+wiping baked files that the partial seed didn't yet contain.
 
-**If you ever hit this anyway** (e.g. you wiped `.seed-complete` by hand):
-delete everything in the share except `uploads/` and let the entrypoint
-re-seed cleanly on next boot:
-
-```bash
-# Server-side delete every non-uploads top-level dir from the share.
-# Use Storage Explorer or:
-az storage file delete-batch \
-  --account-name stwpjtistagingfuml --account-key "$KEY" \
-  --source wp-content --pattern 'plugins/*'
-# repeat for themes/, mu-plugins/, languages/ as needed
-```
+**Fix:** the redesigned entrypoint (§5.1) has no marker, no branching, no
+`--delete`, and no full seed — the first boot is just `rsync -au` of
+whatever is on /persist (which may be empty), and the 30 s poller copies
+the image baseline → /persist on its first cycle. Idempotent and safe.
 
 ### Gotcha #10 — `az webapp restart` does NOT always pull a new image
 
@@ -680,45 +666,76 @@ post-XXX.css>` after a reshuffle?" (because we forced it inline — §5.3).
 The container's entrypoint is **not** Apache directly. It is a small shell
 script that:
 
-1. Symlinks `wp-content/uploads → /persist/uploads` so file uploads always
-   land on the share (single source of truth, no rsync churn for ~10 GB of
-   media).
-2. Decides between **seed** (first boot) and **restore** (every boot
-   after) based on the presence of `/persist/.seed-complete`:
-   - **Seed**: `rsync -a wp-content/ → /persist/` (excluding uploads, cache,
-     litespeed, jetpack-waf, updraft, plugins-old, upgrade*); on success
-     `touch /persist/.seed-complete`.
-   - **Restore**: `rsync -a /persist/ → wp-content/` **without `--delete`**
-     so image-baked files survive even if the share is missing things (see
-     Gotcha #9).
-3. Starts a backgrounded `inotifywait` watcher on `wp-content` that rsyncs
-   admin-side changes back into `/persist` on a short debounce, so a plugin
-   auto-update or a manual file edit in the admin is captured **without
-   mounting wp-content over SMB**.
+1. **Symlinks `wp-content/uploads → /persist/uploads`.** All media uploads —
+   from WP admin, PHP, or Azure Storage Explorer — land directly on the
+   share with zero sync window. uploads/ is also excluded from the rsync
+   below (it's the symlink target — rsync would loop) so the boot scan
+   doesn't touch GBs of media.
+2. **Background boot sync:** `rsync -au /persist/ → wp-content/` runs in
+   parallel with Apache startup, NOT blocking. Without this, the full
+   SMB walk exceeds App Service's 230 s container-start-probe timeout
+   and the container is killed and reverted. Trade-off: for the first
+   ~1–4 min after boot the site may serve image-baseline content for
+   files /persist would otherwise win — admin-side updates surface after
+   one poll cycle completes.
+3. **Background poller**, every 30 s, runs two rsyncs:
+   - `rsync -au --exclude=uploads/ wp-content/ → /persist/` (catches
+     admin-side changes — plugin updates, file edits in the container)
+   - `rsync -au --exclude=uploads/ /persist/ → wp-content/` (catches
+     direct writes to the share — Storage Explorer uploads, hot-fixes)
 4. `exec`s the upstream `docker-entrypoint.sh apache2-foreground`.
 
-Why this exists: the naive alternative (mount the whole `wp-content` over
-SMB) is fatally slow (~30-50 s TTFB — see Gotcha #5). The overlay gives us
-local-FS read speed *and* persistence-across-redeploy, by paying SMB cost
-only during the (rare) write event.
+The two rsyncs don't ping-pong because `-a` preserves mtimes and `-u`
+skips when dest mtime ≥ source mtime — once a file lands on both sides
+with the same mtime, neither rsync touches it again.
 
-What's NOT persisted (intentional excludes): `cache/`, `litespeed/`,
-`jetpack-waf/`, `updraft/`, `plugins-old/`, `upgrade*/`. These are
-ephemeral / regenerable / huge.
+**The mtime backdating trick (Dockerfile)**
 
-**To re-seed** (force the next boot to copy image → /persist again, e.g.
-after a major Elementor or WordPress core upgrade): delete the marker.
+After `COPY wordpress/`, the Dockerfile runs:
 
-```bash
-KEY=$(az storage account keys list \
-  --account-name stwpjtistagingfuml --resource-group rg-jti-staging \
-  --query "[0].value" -o tsv)
-az storage file delete \
-  --account-name stwpjtistagingfuml --account-key "$KEY" \
-  --share-name wp-content --path .seed-complete
-az webapp stop  --name app-jti-staging-fuml --resource-group rg-jti-staging
-az webapp start --name app-jti-staging-fuml --resource-group rg-jti-staging
+```dockerfile
+RUN find /var/www/html/wp-content \
+      -path /var/www/html/wp-content/uploads -prune -o \
+      -exec touch -t 197001020000 {} +
 ```
+
+Every image-baked file gets mtime `1970-01-02`. Any real edit (admin
+update, Storage Explorer drop, file edit) carries a current mtime, which
+is by definition newer. Result: the poller's `-u` flag reliably keeps
+share-side changes alive across image rebuilds. Without this trick, a
+fresh image (build-time mtime = "now") would silently clobber older
+admin updates on the share via the wp-content → /persist leg of the
+sync.
+
+Why this design (vs. inotify or mounting wp-content over SMB):
+- **Mount wp-content directly over SMB:** fatally slow on PHP includes
+  (Gotcha #5 — 30-50 s TTFB even with `validate_timestamps=0`, because
+  static assets still hit SMB).
+- **inotify watcher:** confirmed unreliable on Azure Files CIFS for
+  cross-client writes (2026-05-25: 90 s recursive watch on 4179 dirs
+  caught 0 events while a parallel Storage Explorer upload landed on the
+  share). Polling sidesteps the problem entirely.
+
+Observed performance: file dropped via Storage Explorer to a non-uploads
+path becomes live on the site within ~2–5 min (limited by the time
+rsync takes to walk the share over SMB, not by the 30 s poll interval).
+For uploads/, propagation is instant (symlink, no rsync).
+
+Semantics:
+- **Last-mtime-wins on write.** Same file edited both sides within a
+  poll window → newer mtime wins, older write is silently lost. Rare in
+  practice (single dev on staging).
+- **Deletions don't propagate.** Removing a file via wp-admin doesn't
+  remove it from /persist; on next boot the boot sync brings it back.
+  If you really want it gone: delete on both sides, or rebuild the image
+  without the file and `rm` it from the share.
+
+Excluded from sync (huge / churny / pure noise): `uploads/` (symlinked),
+`cache/`, `litespeed/`, `jetpack-waf/`, `updraft/`, `plugins-old/`,
+`upgrade/`, `upgrade-temp-backup/`, `*.log`, `*.swp`, `*~`, `*.tmp`.
+Reintroducing these into the sync was attempted 2026-05-25 ("fucking
+everything") and made boot rsync exceed the 230 s timeout consistently —
+they stay excluded.
 
 ### 5.2 HTTP Basic Auth (staging only)
 
@@ -1033,7 +1050,7 @@ locally, or the root of `https://github.com/ReliefApplications/jti-wordpress`).
 | **Keep `object-cache.php` + Redis as a tightly-coupled pair** | Removing only the env vars leaves the drop-in trying to connect to `localhost:6379` and the site times out catastrophically (verified 2026-05-12). To genuinely remove Redis, you must also delete the drop-in and set `WP_CACHE = false`. |
 | **wp-cron disabled via env var; needs external scheduler** | Single B1/B2 worker can't absorb wp-cron stampedes (we saw 17-19 s cron requests blocking everything). Disable + external 5-min ping = 0 % timeouts. See `perf-baseline/SCHEDULER_OPTIONS.md`. |
 | **Single `wp-content` share mounted at `/persist`, not over `wp-content` directly** | An SMB mount over `wp-content` itself is fatally slow (§5 / Gotcha #5). Mounting at `/persist` lets the entrypoint do an in-memory rsync into the image-baked `wp-content` at boot; admin-side writes are caught by an inotify watcher and pushed back. Net: local-FS read speed *and* survives a redeploy. |
-| **`.seed-complete` marker + restore-without-`--delete`** | First-boot seed (~700 MB rsync) can be killed by App Service container-start timeout, leaving `/persist` partial. Without the marker, the next boot would take the restore path and `rsync --delete` would wipe everything the image baked that's missing from the partial seed. Marker + no-`--delete` = idempotent + safe (Gotcha #9). |
+| **Polling rsync, not inotify, for `/persist` ↔ wp-content sync** | Tested 2026-05-25: inotify on the Azure Files CIFS mount caught 0 events from a parallel Storage Explorer upload (90 s recursive watch on 4179 dirs). SMB doesn't reliably propagate change notifications cross-client to Linux inotify. A 30 s polling loop with `rsync -au` (no `--delete`) is bulletproof — and the bidirectional ping-pong is naturally suppressed by `-u` because `-a` preserves mtimes. |
 | **Basic Auth User-Agent allowlist, not IP** | App Service's internal proxy makes every request look like `169.254.x.x` to the container; an IP exception would silently bypass auth for *all* traffic. Health checks carry distinctive User-Agents (`HealthCheck/…`, `AlwaysOn/…`) that *only* the platform sends. (§5.2) |
 | **Elementor inline CSS forced via mu-plugin, not admin toggle** | Toggle-in-admin is fragile across reshuffles: the option can drift, and Elementor caches the chosen URLs in `_elementor_css` postmeta so a setting change alone doesn't help. The mu-plugin's two-layer enforcement (always-on filter + one-shot DB write + postmeta wipe) is idempotent and survives any DB restore. (§5.3) |
 | **Hard `stop`+`start` instead of `restart`** | `restart` is "graceful" — App Service reuses the container if it can, and `:latest` is opportunistic. We caught the same image hash running after multiple `restart` calls following an ACR push. The hard cycle forces a fresh pull. (Gotcha #10) |
