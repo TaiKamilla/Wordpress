@@ -26,6 +26,11 @@ docker-compose.yml
 .env.example
 REVERT-PERF-EXPERIMENT.md
 
+# IaC lives in the same repo but isn't needed inside the runtime image.
+# infra/.terraform alone is ~250 MB of provider plugins; including the tree
+# adds minutes to az acr build's upload and risks 'Connection aborted' errors.
+infra/
+
 # Backup/scratch files — must not be baked into the image
 wordpress/**/*.old
 wordpress/**/*.bk

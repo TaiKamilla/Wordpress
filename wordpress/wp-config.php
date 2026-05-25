@@ -138,12 +138,16 @@ if (jti_env('WP_REDIS_HOST', '') !== '') {
     }
 }
 
-// Plugins/themes are baked into the Docker image and read-only at runtime.
-// Block in-admin install/update/delete so the UI doesn't drift away from the
-// image and corrupt the next redeploy. Updates flow through CI: bump the
-// plugin version locally → rebuild image → restart App Service.
-define('DISALLOW_FILE_MODS',         true);
-define('AUTOMATIC_UPDATER_DISABLED', true);
+// Admin-side plugin/theme installs and updates are ALLOWED. Changes are
+// persisted to Azure Files (/persist mount) by docker/persist-watcher.sh and
+// restored on container start by docker/entrypoint-persist.sh — see those
+// files for the conflict rule ("persist always wins") and the runbook for
+// the "roll forward a plugin baseline" procedure.
+//
+// Silent automatic updates remain DISABLED: only admin-initiated updates
+// flow through. Override either via env vars on a per-env basis if needed.
+define('DISALLOW_FILE_MODS',         filter_var(jti_env('WORDPRESS_DISALLOW_FILE_MODS',         'false'), FILTER_VALIDATE_BOOLEAN));
+define('AUTOMATIC_UPDATER_DISABLED', filter_var(jti_env('WORDPRESS_AUTOMATIC_UPDATER_DISABLED', 'true'),  FILTER_VALIDATE_BOOLEAN));
 ini_set('max_execution_time', 0);
 // Was 2048M — far above what App Service B1 (1.75 GB total) can give one PHP
 // worker. Cap at 512M so a runaway request OOMs fast instead of swapping the

@@ -60,10 +60,19 @@ moved {
   to   = azurerm_storage_share.wp_content
 }
 
-# Bake-into-image architecture: themes, plugins, languages, mu-plugins all live
-# in the Docker image. Only user uploads are mounted from this share at
-# /var/www/html/wp-content/uploads. The old wp_content share is kept for now
-# as a rollback path; remove it in a follow-up commit once we're confident.
+# Single canonical share for everything under wp-content. Mounted at /persist
+# in the Web App. Share root mirrors wp-content layout (plugins/, themes/,
+# languages/, mu-plugins/, uploads/) — browsing the share = browsing wp-content.
+#
+# Runtime breakdown (handled by docker/entrypoint-persist.sh):
+#   - uploads/ is symlinked from /var/www/html/wp-content/uploads → /persist/uploads
+#     (direct write to AzFiles, zero data-loss window)
+#   - plugins/ themes/ languages/ mu-plugins/ are rsync-overlaid: local copy in
+#     the image for fast PHP includes, watcher syncs changes to /persist
+#
+# The legacy `wp_uploads_only` resource below is being deprecated — uploads
+# are migrated into wp-content/uploads/ as a one-time server-side copy, then
+# the wp-uploads share is dropped from Terraform after a bake-in period.
 resource "azurerm_storage_share" "wp_uploads_only" {
   name               = "wp-uploads"
   storage_account_id = azurerm_storage_account.wp_files.id
@@ -245,17 +254,17 @@ resource "azurerm_linux_web_app" "wp" {
     } : {},
   )
 
-  # Mount the uploads-only share at /var/www/html/wp-content/uploads.
-  # Themes, plugins, languages, mu-plugins, and the JTI custom plugin all ship
-  # in the Docker image — read-only at runtime, fast (no SMB on PHP includes).
-  # Only user-uploaded media (images, etc.) lives on this share.
+  # Single mount: the wp-content share at /persist. Container's
+  # docker/entrypoint-persist.sh handles the rest (symlink uploads, overlay
+  # plugins/themes/etc., background watcher). See the share resource above
+  # for the full rationale.
   storage_account {
-    name         = "wp-uploads"
+    name         = "wp-content"
     type         = "AzureFiles"
     account_name = azurerm_storage_account.wp_files.name
-    share_name   = azurerm_storage_share.wp_uploads_only.name
+    share_name   = azurerm_storage_share.wp_content.name
     access_key   = azurerm_storage_account.wp_files.primary_access_key
-    mount_path   = "/var/www/html/wp-content/uploads"
+    mount_path   = "/persist"
   }
 
   https_only = true
