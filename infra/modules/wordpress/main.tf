@@ -70,14 +70,8 @@ moved {
 #   - plugins/ themes/ languages/ mu-plugins/ are rsync-overlaid: local copy in
 #     the image for fast PHP includes, watcher syncs changes to /persist
 #
-# The legacy `wp_uploads_only` resource below is being deprecated — uploads
-# are migrated into wp-content/uploads/ as a one-time server-side copy, then
-# the wp-uploads share is dropped from Terraform after a bake-in period.
-resource "azurerm_storage_share" "wp_uploads_only" {
-  name               = "wp-uploads"
-  storage_account_id = azurerm_storage_account.wp_files.id
-  quota              = var.uploads_quota_gb
-}
+# (The legacy wp_uploads_only share was removed after the consolidation —
+# everything lives on wp_content now.)
 
 # ---------------------------------------------------------------------------
 # MySQL Flexible Server

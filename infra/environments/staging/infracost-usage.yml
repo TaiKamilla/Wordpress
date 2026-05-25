@@ -89,7 +89,7 @@ resource_usage:
     blob_index_tags: 0 # Total number of Blob indexes.
     monthly_tier_1_requests: 0
     monthly_tier_2_requests: 0
-  module.wordpress.azurerm_storage_share.wp_uploads:
+  module.wordpress.azurerm_storage_share.wp_content:
     storage_gb: 1.0 # Total size of storage in GB. Overrides any provided `quota`.
     monthly_write_operations: 500 # Monthly number of Write operations.
     monthly_list_operations: 100 # Monthly number of List and Create Container operations.

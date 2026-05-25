@@ -5,13 +5,14 @@
 > from 40 s TTFB to 2 s TTFB, and the gotchas to avoid on a re-deploy.
 >
 > **Repos:**
-> - Infra (Terraform): `/Users/yafar/reliefapplications/JTI/wordpress/infra`
-> - WordPress image: `/Users/yafar/reliefapplications/JTI/wordpress-image`
-> - DB dumps live outside both: `/Users/yafar/reliefapplications/JTI/staging2.sql`
+> - Single repo (infra + WordPress + image): `https://github.com/ReliefApplications/jti-wordpress`
+>   - Local: `/Users/yafar/reliefapplications/JTI/wordpress-image`
+>   - Layout: `infra/` (Terraform), `wordpress/` (full wp-content baked into the image), `docker/` (Dockerfile + apache.conf + entrypoint-persist.sh)
+> - DB dumps live outside the repo: `/Users/yafar/reliefapplications/JTI/staging2.sql`
 
 ---
 
-## 1. Architecture (as of 2026-05-07)
+## 1. Architecture (as of 2026-05-25)
 
 ```
         Cloudflare (proxy + DNS for *.journalismtrustinitiative.org)
@@ -20,36 +21,48 @@
        Azure Front Door (PROD ONLY)  — staging skips this
                   │
                   ▼
-      Azure App Service (Linux Container, B1, France Central)
+      Azure App Service (Linux Container, B2, France Central)
+        ┌─ HTTP Basic Auth on staging (htpasswd in image) ─┐
                   │
         ┌─────────┴────────────────────────┐
         │                                  │
         ▼                                  ▼
-  Image: acrjtistaginghecl.azurecr.io   Azure Files
-   (ALL of wp-content baked in:           (only wp-content/uploads/
-    plugins/themes/languages/etc.)         mounted at runtime)
+  Image: acrjtistaginghecl.azurecr.io   Azure Files (single share)
+   (ALL of wp-content baked in:           share "wp-content" mounted
+    plugins/themes/mu-plugins/             at /persist
+    languages/etc.)                       ┌─ /persist/uploads ← symlink target
+                                          │   (wp-content/uploads → /persist/uploads)
+                                          └─ /persist/{plugins,themes,mu-plugins,…}
+                                              ← rsync overlay (see §5.1)
                   │
                   ▼
-      Azure Database for MySQL Flex Server (B_Standard_B1ms, 8.4)
+      Azure Database for MySQL Flex Server (B_Standard_B2s, 8.4)
+                  │
+                  ▼
+      Azure Cache for Redis (Basic C0)
 ```
 
-**Key principle:** the App Service container is **read-only** at runtime
-(except `/var/www/html/wp-content/uploads`). Plugin/theme updates flow
-through CI: edit code → rebuild image → restart App Service.
-`DISALLOW_FILE_MODS = true` in `wp-config.php` enforces this.
+**Key principle:** the App Service container is **mostly read-only** at runtime
+(except `wp-content/uploads`, which is a direct symlink to `/persist/uploads`).
+Admin-side plugin / theme changes are caught by an `inotify` watcher in the
+entrypoint and rsync'd into `/persist` so they survive a redeploy without a
+slow SMB-mounted `wp-content`. See §5.1 for how the overlay works.
+`DISALLOW_FILE_MODS` is **env-var driven** (default `false`) so updates can
+happen from the admin during staging triage; flip to `true` in production
+where image-rebuild is the only mutation path.
 
 ### What the staging stack contains
 
 | Resource | Name | Purpose |
 |---|---|---|
 | Resource group | `rg-jti-staging` | All staging resources |
-| App Service Plan | `asp-jti-staging` | B1, Linux |
+| App Service Plan | `asp-jti-staging` | B2, Linux |
 | Web App | `app-jti-staging-fuml` | WordPress container, `https_only=true` |
 | ACR | `acrjtistaginghecl` | Private Docker registry. **`admin_enabled=true`** because the operator lacks User Access Administrator to grant AcrPull |
-| MySQL Flex Server | `mysql-jti-staging-fuml` | DB. Burstable B1ms |
-| Storage Account | `stwpjtistagingfuml` | Azure Files for uploads |
-| File share `wp-content` | (legacy, kept for rollback) | Was the old "everything-on-AzFiles" share |
-| File share `wp-uploads` | The new uploads-only share | Mounted at `/var/www/html/wp-content/uploads` |
+| MySQL Flex Server | `mysql-jti-staging-fuml` | DB. Burstable B2s |
+| Redis | `redis-jti-staging-wvca` | Basic C0 (250 MB, ~$16/mo) — object cache |
+| Storage Account | `stwpjtistagingfuml` | Azure Files |
+| File share `wp-content` | **The only share** | Mounted at `/persist` (see §5.1). Holds `uploads/` + the rsync persistence overlay |
 | Blob Storage | `stjtistagingq4pb` | Static website (Swagger UI / OpenAPI / WP media offload target) |
 | APIM | `apim-jti-staging-cfob` | Consumption tier |
 | App Insights | `appi-jti-staging` | (Logs only — no PHP SDK installed; data sits in Log Analytics) |
@@ -59,16 +72,28 @@ through CI: edit code → rebuild image → restart App Service.
 must be set to **DNS-only / grey cloud** during App Service managed-cert
 issuance, can be flipped back to **proxied / orange** afterward).
 
+**Staging is password-protected** via Apache HTTP Basic Auth (see §5.2). The
+password is the GitHub Actions environment secret `PUBLIC_ACCESS_PWD` (env
+`staging`) and is baked into the image at build time as a `.htpasswd` entry.
+
 ### Key Terraform settings
 
 In `modules/wordpress/main.tf`:
 
-- `mount_path = "/var/www/html/wp-content/uploads"` — **mounts the uploads share at the uploads sub-path**, NOT the entire wp-content
-- `share_name = azurerm_storage_share.wp_uploads_only.name` — the new dedicated share
+- `mount_path = "/persist"` — mounts the **single** wp-content share at
+  `/persist`. The entrypoint symlinks `wp-content/uploads → /persist/uploads`
+  and rsyncs the rest of `wp-content` to/from `/persist` (see §5.1).
+- `share_name = azurerm_storage_share.wp_content.name` — only one share now.
+  The legacy `wp_uploads_only` resource was removed on 2026-05-25 after the
+  consolidation.
 - `restrict_to_frontdoor = false` (staging) / `true` (prod)
 - `domain_current_site = var.custom_domain`
 - App Service `WEBSITES_ENABLE_APP_SERVICE_STORAGE = "false"`
 - `health_check_path = "/"` requires `health_check_eviction_time_in_min = 10`
+- WP salts are generated by `random_password.wp_salt` (one per
+  AUTH_KEY/SECURE_AUTH_KEY/LOGGED_IN_KEY/NONCE_KEY/AUTH_SALT/SECURE_AUTH_SALT/LOGGED_IN_SALT/NONCE_SALT)
+  and passed as App Service env vars — `wp-config.php` reads them via `jti_env()`
+  with no hardcoded fallbacks.
 
 In `environments/staging/providers.tf`:
 
@@ -282,6 +307,66 @@ bake-into-image migration, this fix lives in the image** — verify it's
 there by checking
 `wordpress-image/wordpress/wp-content/plugins/jti-custom/jti-custom.php`.
 
+### Gotcha #9 — Partial seed + `--delete` rsync wipes baked code
+
+**Symptom:** after a successful first deploy of the persistence overlay
+(see §5.1), the second container boot starts and the site loads but with
+the wrong themes / missing mu-plugins / "Elementor not found" / random PHP
+fatals about classes that absolutely exist in the image.
+
+**Cause:** the overlay's "first-boot seed" path is a `~700 MB` rsync from
+the image into `/persist`. On a slow / contended SMB share this can run
+past the App Service container-start timeout (~230 s default). If the
+container is killed mid-seed, `/persist` is in a partial state but the
+boot script didn't get to create its `.seed-complete` marker. On the next
+boot the script thinks `/persist` is "previously seeded" and takes the
+**restore** path (rsync `/persist/ → wp-content/`). If that restore uses
+`--delete`, it wipes everything the image baked that's missing from the
+partial seed.
+
+**Fix (already in the entrypoint):**
+- Restore path runs **without `--delete`** so image-baked files survive a
+  partial restore.
+- `.seed-complete` marker is touched *only after* the seed rsync returns 0.
+- Excludes (`uploads`, `cache`, `litespeed`, `jetpack-waf`, `updraft`,
+  `plugins-old`, `upgrade*`) keep the seed under the timeout in steady state.
+
+**If you ever hit this anyway** (e.g. you wiped `.seed-complete` by hand):
+delete everything in the share except `uploads/` and let the entrypoint
+re-seed cleanly on next boot:
+
+```bash
+# Server-side delete every non-uploads top-level dir from the share.
+# Use Storage Explorer or:
+az storage file delete-batch \
+  --account-name stwpjtistagingfuml --account-key "$KEY" \
+  --source wp-content --pattern 'plugins/*'
+# repeat for themes/, mu-plugins/, languages/ as needed
+```
+
+### Gotcha #10 — `az webapp restart` does NOT always pull a new image
+
+**Symptom:** you pushed a fresh image tag (`:latest`) to ACR, ran
+`az webapp restart`, but the running container is still on the old image
+(e.g. mu-plugin code edits don't take effect; `/var/www/html/wp-content/mu-plugins/jti-force-elementor-internal-css.php`
+shows the old hash).
+
+**Cause:** `restart` is "graceful" — App Service reuses the existing
+container if it can. Pulling the `:latest` tag is opportunistic; on a warm
+plan it often skips.
+
+**Fix:** hard-cycle the container.
+
+```bash
+az webapp stop  --name app-jti-staging-fuml --resource-group rg-jti-staging
+az webapp start --name app-jti-staging-fuml --resource-group rg-jti-staging
+# Wait 60-120 s for the cold pull, then curl the home page.
+```
+
+This is the only reliable way to force `:latest` to be re-resolved short of
+pushing a unique tag and updating the App Service container config — which
+is what a proper CI pipeline should do.
+
 ---
 
 ## 3. Initial deployment from scratch
@@ -332,17 +417,31 @@ cd /Users/yafar/reliefapplications/JTI/wordpress-image
 # Sync wp-content from the source environment (or copy from old hosting)
 # THEN ensure wp-config.php has all the fixes from Gotchas #6 #7 #8
 
+# Fetch the Basic Auth password from the GH env secret (it's the only
+# build secret right now). On a developer laptop:
+HTPASSWD_PASSWORD=$(gh secret get PUBLIC_ACCESS_PWD --env staging \
+  --repo ReliefApplications/jti-wordpress)
+# (or paste it from the team password vault)
+
 az acr build \
   --registry $(terraform output -raw acr_name) \
   --image wp-jti:latest \
   --file docker/Dockerfile \
+  --build-arg HTPASSWD_PASSWORD="$HTPASSWD_PASSWORD" \
+  --build-arg HTPASSWD_USER=jti \
   .
 ```
 
+The `HTPASSWD_PASSWORD` build-arg is **required** — the Dockerfile fails the
+build if it's empty. See §5.2 for how Basic Auth is set up.
+
 `.dockerignore` already excludes `uploads/`, `updraft/`, `plugins-old/`,
-`upgrade*/`, `*.zip`, `*.sql`, etc. **Do not remove these exclusions** —
-the build context will balloon to 10 GB+ otherwise (we hit a 13 GB
-`wordpress.zip` once that we then had to move).
+`upgrade*/`, `*.zip`, `*.sql`, `infra/`, `*.old`, `*.bk`, etc. **Do not
+remove these exclusions** — the build context will balloon to 10 GB+
+otherwise (we hit a 13 GB `wordpress.zip` once that we then had to move;
+we also caught a `wp-config.php.old` containing the previous salts + DB
+password mid-push, which is why `*.old` is excluded from both
+`.dockerignore` and `.gitignore`).
 
 ### 3.5 Import the database (CRITICAL — Gotchas #1 #2 #3)
 
@@ -401,44 +500,61 @@ GROUP BY table_name;"
 mysql ... -N -e "USE wordpress; SELECT COUNT(DISTINCT table_name) FROM information_schema.columns WHERE table_schema='wordpress' AND column_name='my_row_id';"
 ```
 
-### 3.7 Migrate uploads to the dedicated share
+### 3.7 Stage uploads + let the persistence overlay seed itself
 
-If uploads come from another host, copy them to the `wp-uploads` share
-(NOT the legacy `wp-content` share):
+There is **one share** now (`wp-content`) mounted at `/persist`. The
+intuitive layout is:
+
+```
+/persist/
+  uploads/           ← the only thing that ALWAYS comes from the share
+  plugins/           ← seeded from the image on first boot; rsync'd back
+  themes/            ← same
+  mu-plugins/        ← same
+  languages/         ← same
+  .seed-complete     ← marker: created after the first-boot seed succeeds
+```
+
+If uploads come from another host, copy them into the share under
+`uploads/`:
 
 ```bash
-# Server-side copy from the old all-in-one share to the new uploads-only share
+KEY=$(az storage account keys list \
+  --account-name $(terraform output -raw wp_files_storage_account_name) \
+  --resource-group rg-jti-staging --query "[0].value" -o tsv)
+
+# Server-side copy if uploads already live on another Azure share:
 az storage file copy start-batch \
-  --account-name <storage-account> \
-  --account-key "$KEY" \
-  --destination-share wp-uploads \
-  --source-share wp-content \
-  --source-path uploads
-# Or: use Azure Storage Explorer to drag-drop the local uploads/ folder
-# directly into the wp-uploads share root.
+  --account-name <storage-account> --account-key "$KEY" \
+  --destination-share wp-content \
+  --destination-path uploads \
+  --source-share <old-share> --source-path uploads
+# Or: Storage Explorer drag-drop of a local uploads/ folder into wp-content/uploads/
 ```
 
-Resulting layout in `wp-uploads`:
+The first container boot will rsync the rest of `wp-content` from the image
+into `/persist` (and create `/persist/.seed-complete`). See §5.1 for the
+mechanics — there is nothing to do by hand for plugins/themes/mu-plugins.
 
-```
-2024/  2025/  2026/  ast-block-templates-json/  astra-docs/  complianz/
-content-views/  edd/  elementor/  ...
-```
-
-(top-level uploads contents, **NOT** wrapped in another `uploads/` folder).
-
-### 3.8 Restart and verify
+### 3.8 Hard-cycle the App Service and verify
 
 ```bash
-az webapp restart --name app-jti-staging-fuml --resource-group rg-jti-staging
-# Wait ~60-90s for cold-pull of the image, then:
+# Hard cycle to force a fresh image pull (see Gotcha #10):
+az webapp stop  --name app-jti-staging-fuml --resource-group rg-jti-staging
+az webapp start --name app-jti-staging-fuml --resource-group rg-jti-staging
+
+# Wait ~60-180 s for the image pull + first-boot seed, then:
 APP_IP=$(dig +short A app-jti-staging-fuml.azurewebsites.net | tail -1)
 curl --resolve "staging.journalismtrustinitiative.org:443:$APP_IP" \
      -o /dev/null -s --max-time 30 \
+     -u "jti:$PUBLIC_ACCESS_PWD" \
      -w "ttfb=%{time_starttransfer}s code=%{http_code}\n" \
      "https://staging.journalismtrustinitiative.org/"
-# Expected: code=200, ttfb=2-4s on first warm hit.
+# Expected: code=200, ttfb=2-4s on first warm hit (anonymous: code=401).
 ```
+
+Without the `-u jti:$PWD` flag, staging returns `401 Unauthorized` —
+that's the Basic Auth gate working as intended (see §5.2).
 
 ### 3.9 DNS + Cloudflare
 
@@ -465,26 +581,53 @@ curl --resolve "staging.journalismtrustinitiative.org:443:$APP_IP" \
 cd /Users/yafar/reliefapplications/JTI/wordpress-image
 
 # Edit files. Rebuild + push.
+HTPASSWD_PASSWORD=$(gh secret get PUBLIC_ACCESS_PWD --env staging \
+  --repo ReliefApplications/jti-wordpress)
 az acr build \
   --registry acrjtistaginghecl \
   --image wp-jti:latest \
   --file docker/Dockerfile \
+  --build-arg HTPASSWD_PASSWORD="$HTPASSWD_PASSWORD" \
+  --build-arg HTPASSWD_USER=jti \
   .
 
-# Restart so the App Service pulls the new :latest tag
-az webapp restart --name app-jti-staging-fuml --resource-group rg-jti-staging
+# Hard cycle the App Service to force a fresh image pull (see Gotcha #10):
+az webapp stop  --name app-jti-staging-fuml --resource-group rg-jti-staging
+az webapp start --name app-jti-staging-fuml --resource-group rg-jti-staging
 ```
 
-`.dockerignore` and `wp-config.php` settings together enforce that only
-`wp-content/uploads` is mounted from Azure Files at runtime; everything
-else lives in the image.
+`.dockerignore` keeps the build context lean (1 GB; ~13 GB if exclusions
+are removed). The entrypoint takes care of seeding/restoring `/persist`
+so plugin/theme changes propagate without manual SMB work.
 
-### Update wp-content via the Azure Files share (legacy, prefer image rebuild)
+### Hot-fix a single file directly on the share (skip the slow rebuild)
 
-If a quick fix needs to land without an image rebuild, you *can* upload
-to the legacy `wp-content` share — but the new architecture mounts
-`wp-uploads` instead, so this only works for files inside `uploads/`.
-For non-uploads files, **rebuild the image**.
+For one-off script changes (e.g. iterating on a mu-plugin), it can save
+10+ minutes to upload the new file to `/persist/<path>` directly and hard
+cycle the App Service — on the next boot the restore rsync will overlay
+it into `/var/www/html/wp-content`. **Remember to also commit + bake the
+change into the image** before the next CI rebuild, otherwise the next
+seed-from-image will revert it.
+
+```bash
+KEY=$(az storage account keys list \
+  --account-name stwpjtistagingfuml --resource-group rg-jti-staging \
+  --query "[0].value" -o tsv)
+
+# Upload the changed file straight into the share under /persist
+az storage file upload \
+  --account-name stwpjtistagingfuml --account-key "$KEY" \
+  --share-name wp-content \
+  --source wordpress/wp-content/mu-plugins/jti-force-elementor-internal-css.php \
+  --path mu-plugins/jti-force-elementor-internal-css.php
+
+az webapp stop  --name app-jti-staging-fuml --resource-group rg-jti-staging
+az webapp start --name app-jti-staging-fuml --resource-group rg-jti-staging
+```
+
+This works because `/persist` is the rsync source-of-truth on every boot
+after the first; whatever lives there wins over what was baked into the
+image (the seed marker prevents a re-seed from clobbering it).
 
 ### Database changes
 
@@ -513,7 +656,7 @@ AppServiceConsoleLogs
 | where ResultDescription has_any ("PHP Fatal", "PHP Warning", "PHP Notice")
 | order by TimeGenerated desc | take 100
 
-// Per-phase WP timing (when the JTI_PERF mu-plugin is enabled — see Section 5)
+// Per-phase WP timing (when the JTI_PERF mu-plugin is enabled — see Section 6)
 AppServiceConsoleLogs
 | where TimeGenerated > ago(15m)
 | where ResultDescription contains "JTI_PERF"
@@ -523,7 +666,148 @@ AppServiceConsoleLogs
 
 ---
 
-## 5. Performance investigation tools
+## 5. Runtime enforcement (persistence, auth, Elementor)
+
+Three pieces of glue run automatically on every boot to keep the cluster
+honest about what's actually in code vs. what's in the live database / file
+share. They're the answer to "I clicked Update Plugin in /wp-admin, will
+that survive the next image rebuild?" (yes — §5.1), "is staging public?"
+(no — §5.2), and "why did Elementor stop emitting `<link rel=stylesheet …
+post-XXX.css>` after a reshuffle?" (because we forced it inline — §5.3).
+
+### 5.1 Persistence overlay (`docker/entrypoint-persist.sh`)
+
+The container's entrypoint is **not** Apache directly. It is a small shell
+script that:
+
+1. Symlinks `wp-content/uploads → /persist/uploads` so file uploads always
+   land on the share (single source of truth, no rsync churn for ~10 GB of
+   media).
+2. Decides between **seed** (first boot) and **restore** (every boot
+   after) based on the presence of `/persist/.seed-complete`:
+   - **Seed**: `rsync -a wp-content/ → /persist/` (excluding uploads, cache,
+     litespeed, jetpack-waf, updraft, plugins-old, upgrade*); on success
+     `touch /persist/.seed-complete`.
+   - **Restore**: `rsync -a /persist/ → wp-content/` **without `--delete`**
+     so image-baked files survive even if the share is missing things (see
+     Gotcha #9).
+3. Starts a backgrounded `inotifywait` watcher on `wp-content` that rsyncs
+   admin-side changes back into `/persist` on a short debounce, so a plugin
+   auto-update or a manual file edit in the admin is captured **without
+   mounting wp-content over SMB**.
+4. `exec`s the upstream `docker-entrypoint.sh apache2-foreground`.
+
+Why this exists: the naive alternative (mount the whole `wp-content` over
+SMB) is fatally slow (~30-50 s TTFB — see Gotcha #5). The overlay gives us
+local-FS read speed *and* persistence-across-redeploy, by paying SMB cost
+only during the (rare) write event.
+
+What's NOT persisted (intentional excludes): `cache/`, `litespeed/`,
+`jetpack-waf/`, `updraft/`, `plugins-old/`, `upgrade*/`. These are
+ephemeral / regenerable / huge.
+
+**To re-seed** (force the next boot to copy image → /persist again, e.g.
+after a major Elementor or WordPress core upgrade): delete the marker.
+
+```bash
+KEY=$(az storage account keys list \
+  --account-name stwpjtistagingfuml --resource-group rg-jti-staging \
+  --query "[0].value" -o tsv)
+az storage file delete \
+  --account-name stwpjtistagingfuml --account-key "$KEY" \
+  --share-name wp-content --path .seed-complete
+az webapp stop  --name app-jti-staging-fuml --resource-group rg-jti-staging
+az webapp start --name app-jti-staging-fuml --resource-group rg-jti-staging
+```
+
+### 5.2 HTTP Basic Auth (staging only)
+
+Staging is fenced behind Apache Basic Auth so it can't be casually browsed
+or indexed. The config lives in `docker/apache.conf`:
+
+```apache
+SetEnvIfNoCase User-Agent "^(HealthCheck|AlwaysOn)/" jti_healthcheck
+<Directory /var/www/html>
+  AuthType Basic
+  AuthName "JTI Staging"
+  AuthUserFile /etc/apache2/.htpasswd
+  <RequireAny>
+    Require env jti_healthcheck
+    Require valid-user
+  </RequireAny>
+</Directory>
+<Location "/wp-cron.php">  AuthType None;  Require all granted  </Location>
+<Location "/robots.txt">   AuthType None;  Require all granted  </Location>
+```
+
+The `.htpasswd` is baked into the image at build time from the
+`HTPASSWD_PASSWORD` Docker build-arg, which is sourced from the GitHub
+Actions environment secret `PUBLIC_ACCESS_PWD` (env `staging`).
+
+**Why User-Agent allowlist, not IP allowlist:** App Service's internal
+proxy makes every request appear as `169.254.x.x` to the container, so an
+IP-based exception (`Require ip 169.254.0.0/16`) would silently bypass auth
+for *all* requests. The platform's health checks and AlwaysOn pings carry
+distinctive `User-Agent: HealthCheck/…` or `AlwaysOn/…` strings, which is
+the only reliable discriminator.
+
+**Why `/wp-cron.php` is open:** WP needs to be poked by the external
+scheduler (see Round 2 in §7) and the scheduler doesn't carry the auth
+header. Limit risk by keeping `DISABLE_WP_CRON = true` — `wp-cron.php`
+only runs the queue when poked.
+
+**Why `/robots.txt` is open:** Cloudflare/Google check it before they go
+fetch anything else; failing it with 401 is louder than letting them read
+"Disallow: /".
+
+**To rotate the password:**
+
+1. Update the secret in `gh secret set PUBLIC_ACCESS_PWD --env staging …`.
+2. Rebuild + push the image (the build-arg flows in).
+3. Hard cycle (`az webapp stop && start`).
+
+### 5.3 Elementor inline-CSS mu-plugin
+
+File: `wordpress/wp-content/mu-plugins/jti-force-elementor-internal-css.php`
+(v1.2 — auto-loaded because it's a mu-plugin).
+
+**Problem it solves:** with `elementor_css_print_method = external`,
+Elementor writes per-post CSS files to `wp-content/uploads/elementor/css/post-NNN.css`
+and emits `<link rel=stylesheet href="…/post-NNN.css?ver=…">`. After any
+wp-content reshuffle (image rebuild, share recreation, uploads rsync), the
+`ver=` query strings drift and the per-post files 404, leaving the page
+visibly unstyled.
+
+**What the mu-plugin does (two layers):**
+
+- **Layer 1 — always-on filter:** hooks `option_elementor_css_print_method`
+  and `default_option_elementor_css_print_method` to return `internal`. Cheap.
+- **Layer 2 — one-shot DB enforcement:** on `plugins_loaded`, if a
+  persistent marker option (`jti_elementor_internal_enforced`) isn't set to
+  the plugin version:
+  - `update_option('elementor_css_print_method', 'internal', 'on')` (filter
+    alone isn't enough — Elementor reads the option in places that bypass
+    `get_option`).
+  - `DELETE FROM wp_postmeta WHERE meta_key = '_elementor_css'` (so
+    Elementor regenerates clean with the new mode; otherwise it re-emits
+    cached URLs).
+  - `glob(uploads/elementor/css/post-*.css) | unlink` for stale on-disk
+    files.
+  - `update_option($marker, '1.2', 'on')` so it never runs again on this DB.
+
+**To re-trigger** (e.g. after upgrading Elementor or restoring an old DB):
+
+```sql
+DELETE FROM wp_options WHERE option_name = 'jti_elementor_internal_enforced';
+```
+
+…then on the next request the mu-plugin re-enforces. Bump the version
+string inside the file (currently `'1.2'`) if you want it to auto-fire on
+every container fleet after a deploy.
+
+---
+
+## 6. Performance investigation tools
 
 ### `wp-content/mu-plugins/jti-perf-trace.php`
 
@@ -592,7 +876,7 @@ SDK in the Dockerfile, or drop in Tideways/SPX. Adds runtime cost.
 
 ---
 
-## 6. Performance journey log
+## 7. Performance journey log
 
 ### Round 1 (2026-05-07): Infra-side fixes
 | Stage | Origin TTFB | Notes |
@@ -612,7 +896,7 @@ Baseline before this round: `/` p50 4.10 s, `/app-jti/` p50 1.54 s, `/countries`
 | 2.1 | Added `azurerm_redis_cache` (Basic C0, ~$16/mo); baked `phpredis` extension + Redis Object Cache plugin v2.5.4 `object-cache.php` drop-in into image; env-var-driven `WP_REDIS_*` in wp-config | 98 % cache hit ratio; ~25-30 % origin TTFB drop on all URLs | `module "redis"` in `infra/modules/redis/` |
 | 1.3 | Env-var-driven `DISABLE_WP_CRON`, set `WORDPRESS_DISABLE_WP_CRON=true` | Failures **15 % → 0 %**; p95 down sharply | **Requires external scheduler** — see `perf-baseline/SCHEDULER_OPTIONS.md` |
 | Tier bump | B1 → B2 App Service (2 vCPU, 3.5 GB); B1ms → B2s MySQL (2 vCPU, 4 GB); `io_scaling_enabled = true` on storage | Homepage p50 **2.21 s**, p90 2.76 s | The remaining 50 % of every page is Elementor PHP rendering — pure CPU |
-| CF cache rule | Anonymous HTML edge cache (4 h edge TTL, 1 h browser TTL) | **< 200 ms** for anonymous repeat visitors | Section 7 below |
+| CF cache rule | Anonymous HTML edge cache (4 h edge TTL, 1 h browser TTL) | **< 200 ms** for anonymous repeat visitors | Section 8 below |
 
 ### Round 2 final numbers (100-sample, cache-busted, 2026-05-12)
 
@@ -648,7 +932,7 @@ Expected impact: origin homepage p50 drifts from **2.21 s → ~2.8-3.2 s** on B2
 
 ---
 
-## 7. Cloudflare Cache Rule (DEPLOYED 2026-05-11)
+## 8. Cloudflare Cache Rule (DEPLOYED 2026-05-11)
 
 **Status:** applied for staging. Anonymous origin traffic drops to ~100-140 ms via CF edge.
 
@@ -677,30 +961,36 @@ Pending: Install the **Cloudflare WordPress plugin** in WP admin so post saves a
 
 ---
 
-## 8. Files to look at
+## 9. Files to look at
+
+All paths below are relative to repo root (`/Users/yafar/reliefapplications/JTI/wordpress-image`
+locally, or the root of `https://github.com/ReliefApplications/jti-wordpress`).
 
 | File | Purpose | Notes |
 |---|---|---|
-| `wordpress-image/Dockerfile` | Image build | Adds php-opcache.ini, copies wordpress/ |
-| `wordpress-image/docker/Dockerfile` | Image build | Phase 2: adds `pecl install redis` + `libssl-dev` for phpredis |
-| `wordpress-image/docker/php-opcache.ini` | OPcache prod tuning | `validate_timestamps=0` requires baked image |
-| `wordpress-image/docker/apache.conf` | Apache vhost | Standard Apache+mod_php |
-| `wordpress-image/.dockerignore` | Build context filter | **Do not remove the `*.zip` and uploads exclusions** |
-| `wordpress-image/wordpress/wp-config.php` | WP config | X-Forwarded-Proto, env-var driven, DISALLOW_FILE_MODS=true, Phase 2 Redis defines, Phase 1.3 `DISABLE_WP_CRON` toggle |
-| `wordpress-image/wordpress/wp-content/object-cache.php` | **Redis object-cache drop-in** (Phase 2) | Redis Object Cache plugin v2.5.4. **Tightly coupled to `WP_REDIS_HOST` being set** — remove both together or site crashes |
-| `wordpress-image/wordpress/wp-content/plugins/redis-cache/` | Companion plugin | Gives `wp redis status` admin command; not strictly required |
-| `wordpress-image/wordpress/wp-content/mu-plugins/jti-perf-trace.php` | Phase tracer | Logs to `error_log`, visible in Log Analytics. `?_jti_perf=1` to force. |
-| `wordpress-image/wordpress/wp-content/plugins/jti-custom/includes/api/class-organisation-endpoints.php` | Custom plugin | Phase 1.1: column swap + EXISTS rewrites on 5 SQL sites. JSON_EXTRACT in JOINs is BANNED here. |
-| `wordpress-image/wordpress/wp-content/plugins/jti-custom/jti-custom.php` | Custom plugin | Cron callback fix at line ~107 (Gotcha #8) |
-| `infra/infra/modules/wordpress/main.tf` | Terraform | Mount path `/wp-content/uploads`, share `wp_uploads_only`, Redis env vars, `io_scaling_enabled=true`, env-var-driven `WORDPRESS_DISABLE_WP_CRON` |
-| `infra/infra/modules/redis/` | **NEW Terraform module** | Azure Cache for Redis Basic C0 (~$16/mo) |
+| `docker/Dockerfile` | Image build | Installs `inotify-tools`, `rsync`, `apache2-utils`; bakes htpasswd from `HTPASSWD_PASSWORD` build-arg; `ENTRYPOINT` is `entrypoint-persist.sh`; adds `pecl install redis` for phpredis |
+| `docker/entrypoint-persist.sh` | **Persistence overlay** | Symlinks uploads, seeds-or-restores `/persist`, starts inotify watcher, execs Apache. See §5.1 |
+| `docker/apache.conf` | Apache vhost | HTTP Basic Auth with User-Agent allowlist for health checks; `wp-cron.php` + `robots.txt` exceptions. See §5.2 |
+| `docker/php-opcache.ini` | OPcache prod tuning | `validate_timestamps=0` requires baked image |
+| `.dockerignore` | Build context filter | Excludes `infra/`, `*.zip`, `*.sql`, `*.old`, `*.bk`, `uploads/`, `cache/`, `updraft/`, `plugins-old/`, `upgrade*/`. **Do not remove these** — context balloons to 10 GB otherwise; `*.old` also prevents `wp-config.php.old` from leaking salts |
+| `wordpress/wp-config.php` | WP config | X-Forwarded-Proto fix at top; **all secrets via `jti_env()` env vars, no hardcoded fallbacks**; env-driven `DISALLOW_FILE_MODS`, `DISABLE_WP_CRON`, `AUTOMATIC_UPDATER_DISABLED`; Redis defines from env |
+| `wordpress/robots.txt` | Staging crawler block | `User-agent: * / Disallow: /` — must stay until prod cutover |
+| `wordpress/wp-content/object-cache.php` | **Redis object-cache drop-in** | Redis Object Cache plugin v2.5.4. **Tightly coupled to `WP_REDIS_HOST`** — remove both together or site crashes |
+| `wordpress/wp-content/plugins/redis-cache/` | Companion plugin | Gives `wp redis status` admin command; not strictly required |
+| `wordpress/wp-content/mu-plugins/jti-perf-trace.php` | Phase tracer | Logs to `error_log`, visible in Log Analytics. `?_jti_perf=1` to force. |
+| `wordpress/wp-content/mu-plugins/jti-force-elementor-internal-css.php` | **Elementor inline-CSS enforcer** | v1.2, two-layer (filter + DB write + postmeta wipe + persistent marker). See §5.3 |
+| `wordpress/wp-content/plugins/jti-custom/includes/api/class-organisation-endpoints.php` | Custom plugin | Phase 1.1: column swap + EXISTS rewrites on 5 SQL sites. JSON_EXTRACT in JOINs is BANNED here. |
+| `wordpress/wp-content/plugins/jti-custom/jti-custom.php` | Custom plugin | Cron callback fix at line ~107 (Gotcha #8) |
+| `infra/modules/wordpress/main.tf` | Terraform | Single `wp_content` share mounted at `/persist`; `random_password.wp_salt` per WP salt; Redis env vars; `io_scaling_enabled=true`; env-driven `WORDPRESS_DISABLE_WP_CRON` and `WORDPRESS_DISALLOW_FILE_MODS` |
+| `infra/modules/redis/` | Terraform module | Azure Cache for Redis Basic C0 (~$16/mo) |
 | `infra/perf-baseline/` | Measurement scripts + history | `measure.sh`, `show-traces.sh`, plans, baselines, scheduler options |
 | `infra/perf-baseline/SCHEDULER_OPTIONS.md` | wp-cron external scheduler | **Required reading** — pick Cloudflare Worker (recommended) or cron-job.org |
 | `infra/RUNBOOK.md` | This file | |
+| `README.md` | Repo overview | Project layout, architecture diagram, deploy summary; points back here for details |
 
 ---
 
-## 9. Glossary of magic strings used in commands
+## 10. Glossary of magic strings used in commands
 
 | Variable | Value (staging) |
 |---|---|
@@ -715,17 +1005,19 @@ Pending: Install the **Cloudflare WordPress plugin** in WP admin so post saves a
 | **Redis hostname** | `redis-jti-staging-wvca.redis.cache.windows.net` (SSL port 6380) |
 | **Redis SKU** | Basic C0 (250 MB, ~$16/mo, no SLA) |
 | Storage account | `stwpjtistagingfuml` |
-| File share (active) | `wp-uploads` (mounted at `/var/www/html/wp-content/uploads`) |
-| File share (legacy) | `wp-content` (kept as rollback; can delete after stable) |
+| File share | `wp-content` (mounted at `/persist`; legacy `wp-uploads` removed 2026-05-25) |
 | Container Registry | `acrjtistaginghecl.azurecr.io` |
-| Image | `acrjtistaginghecl.azurecr.io/wp-jti:latest` (Phase 2 baked in 2026-05-11) |
+| Image | `acrjtistaginghecl.azurecr.io/wp-jti:latest` |
 | Image tags retained | `phase1-1-20260511-1147`, `phase2-20260511-1238` |
 | Log Analytics customerId | `8861ec4f-dabb-4927-ab59-fa84fb48a116` |
 | Subscription | `58124fdc-b590-44dc-a3b9-0c187d7c572e` |
+| Basic Auth user | `jti` |
+| Basic Auth password | GH env secret `PUBLIC_ACCESS_PWD` (env `staging`) |
+| GitHub repo | `https://github.com/ReliefApplications/jti-wordpress` |
 
 ---
 
-## 10. Decision log — why we did each non-obvious thing
+## 11. Decision log — why we did each non-obvious thing
 
 | Decision | Reason |
 |---|---|
@@ -740,26 +1032,37 @@ Pending: Install the **Cloudflare WordPress plugin** in WP admin so post saves a
 | **B1 → B2 + B1ms → B2s (2026-05-12)** | Phase 1.1/2/1.3 traces showed 50 % of every page was Elementor body render on a single shared B1 vCPU. B2 dropped p50 by ~30 % and p90 by ~40 %. ~$28/mo for the bump pays back vs hours of further chasing. |
 | **Keep `object-cache.php` + Redis as a tightly-coupled pair** | Removing only the env vars leaves the drop-in trying to connect to `localhost:6379` and the site times out catastrophically (verified 2026-05-12). To genuinely remove Redis, you must also delete the drop-in and set `WP_CACHE = false`. |
 | **wp-cron disabled via env var; needs external scheduler** | Single B1/B2 worker can't absorb wp-cron stampedes (we saw 17-19 s cron requests blocking everything). Disable + external 5-min ping = 0 % timeouts. See `perf-baseline/SCHEDULER_OPTIONS.md`. |
+| **Single `wp-content` share mounted at `/persist`, not over `wp-content` directly** | An SMB mount over `wp-content` itself is fatally slow (§5 / Gotcha #5). Mounting at `/persist` lets the entrypoint do an in-memory rsync into the image-baked `wp-content` at boot; admin-side writes are caught by an inotify watcher and pushed back. Net: local-FS read speed *and* survives a redeploy. |
+| **`.seed-complete` marker + restore-without-`--delete`** | First-boot seed (~700 MB rsync) can be killed by App Service container-start timeout, leaving `/persist` partial. Without the marker, the next boot would take the restore path and `rsync --delete` would wipe everything the image baked that's missing from the partial seed. Marker + no-`--delete` = idempotent + safe (Gotcha #9). |
+| **Basic Auth User-Agent allowlist, not IP** | App Service's internal proxy makes every request look like `169.254.x.x` to the container; an IP exception would silently bypass auth for *all* traffic. Health checks carry distinctive User-Agents (`HealthCheck/…`, `AlwaysOn/…`) that *only* the platform sends. (§5.2) |
+| **Elementor inline CSS forced via mu-plugin, not admin toggle** | Toggle-in-admin is fragile across reshuffles: the option can drift, and Elementor caches the chosen URLs in `_elementor_css` postmeta so a setting change alone doesn't help. The mu-plugin's two-layer enforcement (always-on filter + one-shot DB write + postmeta wipe) is idempotent and survives any DB restore. (§5.3) |
+| **Hard `stop`+`start` instead of `restart`** | `restart` is "graceful" — App Service reuses the container if it can, and `:latest` is opportunistic. We caught the same image hash running after multiple `restart` calls following an ACR push. The hard cycle forces a fresh pull. (Gotcha #10) |
+| **WP salts via Terraform `random_password`, not pasted strings** | Every salt is regenerated by `terraform apply` and passed as an App Service env var; `wp-config.php` reads via `jti_env()` with no hardcoded fallback. No secrets in git, no chance of dev/staging/prod sharing keys. |
 
 ---
 
-## 11. When things break (quick triage)
+## 12. When things break (quick triage)
 
 | Symptom | Likely cause | Where to look |
 |---|---|---|
-| TTFB >10 s, every request | Bake-into-image not in effect, OR DB indexes missing | Verify mount_path is `/wp-content/uploads`; check index counts with the SQL in 3.6 |
+| TTFB >10 s, every request | Bake-into-image not in effect, OR DB indexes missing | Verify `mount_path = /persist` (NOT over `wp-content` directly); check index counts with the SQL in 3.6 |
 | 301 to same URL, infinite loop | `X-Forwarded-Proto` block missing from wp-config.php | Top of `wordpress/wp-config.php` (Gotcha #6) |
 | **5xx / mass timeouts after redeploy** | `WP_REDIS_*` env vars missing but `object-cache.php` still in image → drop-in defaults to `localhost:6379` and timeouts cascade | `az webapp config appsettings list -g rg-jti-staging -n app-jti-staging-fuml --query "[?starts_with(name,'WP_REDIS')]"` should return 5 entries. Redis hostname: `redis-jti-staging-wvca.redis.cache.windows.net`. |
 | **Long cron events / occasional 17-19 s requests** | wp-cron inline; container worker blocked | Check `WORDPRESS_DISABLE_WP_CRON=true` is set on App Service. If yes, confirm external scheduler is still hitting `/wp-cron.php` (otherwise scheduled tasks accumulate). |
-| `cf-cache-status: DYNAMIC` always | Cache rule not applied or cookies present | Cloudflare dashboard → Cache Rules. Test in Incognito to rule out logged-in cookies. Section 7 has the exact rule. |
+| `cf-cache-status: DYNAMIC` always | Cache rule not applied or cookies present | Cloudflare dashboard → Cache Rules. Test in Incognito to rule out logged-in cookies. Section 8 has the exact rule. |
+| **401 on every request (staging)** | Working as designed — that's the Basic Auth gate. | Pass `-u jti:$PUBLIC_ACCESS_PWD` to curl, or paste the password in the browser prompt. See §5.2 to rotate. |
+| **Health checks failing with 401** | Apache `SetEnvIfNoCase User-Agent` regex doesn't match what App Service is sending | Check live `AppServiceConsoleLogs` for the User-Agent on the failing pings. The current allowlist matches `^(HealthCheck|AlwaysOn)/` — add a new alternation if the platform changed. |
+| **Mu-plugin edits don't take effect after `az webapp restart`** | `restart` is graceful; `:latest` not re-pulled | Hard cycle: `az webapp stop && az webapp start`. (Gotcha #10) |
+| **Themes / mu-plugins go missing after a redeploy** | Partial seed → restore wiped image-baked files | Check `/persist/.seed-complete` exists; if not, see Gotcha #9 "If you ever hit this anyway". |
+| **`<link rel=stylesheet href=…/post-NNN.css>` returning 404** | Elementor enforcement marker missing (mu-plugin didn't run) | `SELECT * FROM wp_options WHERE option_name='jti_elementor_internal_enforced'` — should be `'1.2'`. If missing, hard cycle the App Service to fire the mu-plugin. See §5.3. |
 | App Service won't pull new image | Auth issue or webhook missing | `az webapp config container show -n app-jti-staging-fuml -g rg-jti-staging`; for ACR admin auth, env vars `DOCKER_REGISTRY_SERVER_*` must be set (handled by Terraform) |
 | Storage Explorer / `az storage file upload` returns 403 | Wrong RBAC. Use `--auth-mode key` (or `--account-key "$KEY"`) instead of `--auth-mode login` for File shares; the Blob roles in the error message DON'T apply |
 | Dump import errors out partway | Almost always one of Gotchas #1–#4 | See Section 2 |
-| **Want to see where time is going on a slow request** | JTI_PERF mu-plugin logs phase timings | Add `?_jti_perf=1` to any URL; then `infra/perf-baseline/show-traces.sh` or KQL in §5 |
+| **Want to see where time is going on a slow request** | JTI_PERF mu-plugin logs phase timings | Add `?_jti_perf=1` to any URL; then `infra/perf-baseline/show-traces.sh` or KQL in §6 |
 
 ---
 
-## 12. Hand-off note for AI agents
+## 13. Hand-off note for AI agents
 
 If you're an AI agent picking up this work:
 
