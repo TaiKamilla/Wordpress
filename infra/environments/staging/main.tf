@@ -96,6 +96,16 @@ module "wordpress" {
   # WordPress scheduled tasks never run.
   disable_wp_cron = true
 
+  # Staging is gated by HTTP Basic Auth so it can't be casually browsed or
+  # indexed. The image must be built with --build-arg HTPASSWD_PASSWORD=<pw>
+  # for this to actually engage (Apache fails to load otherwise — fail-closed).
+  enable_basic_auth = true
+
+  # Staging keeps admin updates enabled so we can iterate via wp-admin during
+  # triage; the polling overlay persists changes to /persist anyway. Prod
+  # flips this true (single-source-of-truth via the baked image).
+  disallow_file_mods = false
+
   # Staging is reached directly (no Front Door), so leave the Web App publicly
   # reachable but bind a custom hostname for friendlier URLs.
   custom_domain       = var.custom_domain

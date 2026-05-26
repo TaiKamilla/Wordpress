@@ -131,6 +131,47 @@ variable "disable_wp_cron" {
   EOT
 }
 
+# ---------------- WordPress hardening ----------------
+
+variable "disallow_file_mods" {
+  type        = bool
+  default     = false
+  description = <<-EOT
+    When true, sets WORDPRESS_DISALLOW_FILE_MODS=true. wp-config.php defines
+    DISALLOW_FILE_MODS=true, blocking ALL admin-driven code changes: theme/
+    plugin install + update + edit, WP core auto-updates, plugin/theme file
+    editor. Recommended TRUE for prod (image is single source of truth — all
+    code changes flow through CI). Recommended FALSE for staging (lets you
+    iterate via wp-admin; the polling overlay persists changes to /persist).
+  EOT
+}
+
+variable "automatic_updater_disabled" {
+  type        = bool
+  default     = true
+  description = <<-EOT
+    When true, sets WORDPRESS_AUTOMATIC_UPDATER_DISABLED=true. Blocks WP
+    core's background auto-update path even when disallow_file_mods is false.
+    Almost always you want this true: auto-updates on a baked image get
+    reverted on every redeploy (drift), and on a writable filesystem they
+    can race with your CI deploys.
+  EOT
+}
+
+# ---------------- HTTP Basic Auth (image-level + runtime toggle) ----------------
+
+variable "enable_basic_auth" {
+  type        = bool
+  default     = false
+  description = <<-EOT
+    When true, sets JTI_BASIC_AUTH=true on the App Service so the container
+    entrypoint starts Apache with -DBASIC_AUTH (enforces HTTP Basic Auth on
+    every non-healthcheck request). REQUIRES the image to have been built
+    with --build-arg HTPASSWD_PASSWORD=<pw>; otherwise Apache fails to load
+    (no .htpasswd file). Recommended TRUE for staging, FALSE for prod.
+  EOT
+}
+
 # ---------------- Object cache (Redis) ----------------
 
 variable "redis_host" {

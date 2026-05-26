@@ -2,8 +2,18 @@
 
 variable "wordpress_image" {
   type        = string
-  default     = "wordpress:6.5-apache"
-  description = "WordPress Docker image. Pin to a specific version in production."
+  default     = ""
+  description = <<-EOT
+    Fully-qualified Docker image for the WordPress container, e.g.
+    "acrjtiprodXXXX.azurecr.io/wp-jti:v1.0.0". Pin a specific tag in
+    production (never :latest — you lose rollback safety and risk a
+    redeploy pulling a half-baked image).
+    Bootstrap order:
+      1. First `terraform apply` with this empty: creates the prod ACR.
+      2. `az acr build --registry <prod-acr> --image wp-jti:v1.0.0 .`
+         (omit --build-arg HTPASSWD_PASSWORD — prod runs without Basic Auth.)
+      3. Set this var to the full URL + tag, re-apply.
+  EOT
 }
 
 variable "mysql_admin_username" {

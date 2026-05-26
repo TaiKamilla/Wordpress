@@ -1,6 +1,10 @@
 # wp-content baking strategy:
-# - Bake plugins/, themes/, languages/, mu-plugins/, jti-custom/, litespeed/, jetpack-waf/
+# - Bake plugins/ (except jti-custom — see below), themes/, languages/,
+#   mu-plugins/, litespeed/, jetpack-waf/
 # - Exclude user uploads (mounted from Azure Files at runtime)
+# - Exclude jti-custom — it lives in its own repo and is deployed directly
+#   to /persist/plugins/jti-custom/ by its own GH Actions workflow, then
+#   pulled into wp-content by the polling overlay. See infra/RUNBOOK.md §5.1.
 # - Exclude runtime/cache directories that shouldn't ship in the image
 wordpress/wp-content/uploads
 wordpress/wp-content/uploads2
@@ -8,8 +12,10 @@ wordpress/wp-content/updraft
 wordpress/wp-content/plugins-old
 wordpress/wp-content/upgrade
 wordpress/wp-content/upgrade-temp-backup
-# Dev workspace for jti-custom (the active plugin lives at plugins/jti-custom/)
+# Dev workspace for jti-custom (the active plugin used to live at
+# plugins/jti-custom/, but is now deployed separately — see above).
 wordpress/wp-content/jti-custom
+wordpress/wp-content/plugins/jti-custom
 wordpress/wp-content/debug.log
 wordpress/wp-content/**/*.log
 wordpress/wp-content/**/.DS_Store

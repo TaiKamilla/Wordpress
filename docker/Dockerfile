@@ -61,19 +61,22 @@ RUN a2enmod rewrite
 # Add custom Apache virtual host configuration (includes HTTP Basic Auth)
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
 
-# HTTP Basic Auth for staging — username + password come in via build args.
-# Password is stored as a GitHub Actions ENVIRONMENT secret named
-# `PUBLIC_ACCESS_PWD` under the `staging` environment in
-# ReliefApplications/jti-wordpress. CI injects it as --build-arg.
-# Locally:  az acr build ... --build-arg HTPASSWD_PASSWORD="$pw" .
+# HTTP Basic Auth credentials (OPTIONAL).
+# - Staging: pass --build-arg HTPASSWD_PASSWORD="$PUBLIC_ACCESS_PWD" AND set
+#   JTI_BASIC_AUTH=true on the App Service so the entrypoint engages auth
+#   (`apache2-foreground -DBASIC_AUTH`). Both are needed.
+# - Production: omit the build-arg. No .htpasswd is baked. Even if someone
+#   sets JTI_BASIC_AUTH=true at runtime, Apache fails to load (no htpasswd
+#   file) — fail-closed against misconfiguration.
 ARG HTPASSWD_USER=jti
-ARG HTPASSWD_PASSWORD
-RUN if [ -z "$HTPASSWD_PASSWORD" ]; then \
-      echo "ERROR: build requires --build-arg HTPASSWD_PASSWORD=... (see GitHub secret STAGING_HTPASSWD_PASSWORD)" >&2; \
-      exit 1; \
-    fi && \
-    htpasswd -bBc /etc/apache2/.htpasswd "$HTPASSWD_USER" "$HTPASSWD_PASSWORD" && \
-    chmod 644 /etc/apache2/.htpasswd
+ARG HTPASSWD_PASSWORD=
+RUN if [ -n "$HTPASSWD_PASSWORD" ]; then \
+      htpasswd -bBc /etc/apache2/.htpasswd "$HTPASSWD_USER" "$HTPASSWD_PASSWORD" && \
+      chmod 644 /etc/apache2/.htpasswd && \
+      echo "baked .htpasswd for user '$HTPASSWD_USER'"; \
+    else \
+      echo "no HTPASSWD_PASSWORD provided — image built without Basic Auth credentials"; \
+    fi
 
 # Enable the auth modules (mod_auth_basic + mod_authn_file are usually
 # enabled by default on debian:apache, but make it explicit).

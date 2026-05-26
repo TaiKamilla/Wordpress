@@ -246,6 +246,18 @@ resource "azurerm_linux_web_app" "wp" {
       # See infra/perf-baseline/SCHEDULER_OPTIONS.md.
       WORDPRESS_DISABLE_WP_CRON = "true"
     } : {},
+    var.disallow_file_mods ? {
+      WORDPRESS_DISALLOW_FILE_MODS = "true"
+    } : {},
+    var.automatic_updater_disabled ? {
+      WORDPRESS_AUTOMATIC_UPDATER_DISABLED = "true"
+    } : {},
+    var.enable_basic_auth ? {
+      # Entrypoint reads this and starts Apache with -DBASIC_AUTH, engaging
+      # the <IfDefine BASIC_AUTH> block in docker/apache.conf. REQUIRES the
+      # image to have been built with --build-arg HTPASSWD_PASSWORD=<pw>.
+      JTI_BASIC_AUTH = "true"
+    } : {},
   )
 
   # Single mount: the wp-content share at /persist. Container's

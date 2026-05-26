@@ -94,6 +94,15 @@ module "wordpress" {
   # WordPress scheduled tasks never run.
   disable_wp_cron = true
 
+  # Prod is public — no Basic Auth gate.
+  enable_basic_auth = false
+
+  # Prod: the baked image is the single source of truth for code. Block all
+  # admin-side plugin/theme/core edits via wp-admin so a "click Update" in
+  # the admin can't drift the running container's wp-content vs the next
+  # image build. All code changes flow through CI: edit → rebuild → deploy.
+  disallow_file_mods = true
+
   # Lock the Web App down to Front Door traffic only.
   restrict_to_frontdoor = true
 

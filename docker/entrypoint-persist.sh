@@ -99,4 +99,14 @@ log "boot sync backgrounded (PID $!)"
 ) &
 log "poller backgrounded (PID $!, interval ${POLL_INTERVAL}s)"
 
-exec /usr/local/bin/docker-entrypoint.sh "$@"
+# HTTP Basic Auth toggle. The vhost wraps the auth block in
+# <IfDefine BASIC_AUTH>, which only takes effect when httpd is started with
+# -DBASIC_AUTH. We append that flag when env var JTI_BASIC_AUTH=true.
+# Staging sets JTI_BASIC_AUTH=true; prod leaves it unset.
+if [ "${JTI_BASIC_AUTH:-false}" = "true" ]; then
+  log "JTI_BASIC_AUTH=true — starting Apache with -DBASIC_AUTH"
+  exec /usr/local/bin/docker-entrypoint.sh "$@" -DBASIC_AUTH
+else
+  log "JTI_BASIC_AUTH not set — Apache will NOT enforce Basic Auth"
+  exec /usr/local/bin/docker-entrypoint.sh "$@"
+fi

@@ -611,9 +611,63 @@ az webapp stop  --name app-jti-staging-fuml --resource-group rg-jti-staging
 az webapp start --name app-jti-staging-fuml --resource-group rg-jti-staging
 ```
 
-This works because `/persist` is the rsync source-of-truth on every boot
-after the first; whatever lives there wins over what was baked into the
-image (the seed marker prevents a re-seed from clobbering it).
+This works because `/persist` is the rsync source-of-truth at runtime;
+whatever lives there wins over what was baked into the image (the
+image's mtime=1970 trick guarantees `/persist`'s real-mtime files beat
+the baseline — see §5.1).
+
+### Update jti-custom (separate repo, CI-deployed)
+
+`jti-custom` does **not** travel with the WP image. It lives in its own
+repo (`ReliefApplications/jti-custom`) and is deployed directly to the
+storage share by that repo's GitHub Actions workflow. The polling
+overlay then picks it up within ~2-5 min and serves it to the running
+container. **No WP image rebuild and no App Service restart are needed
+for jti-custom changes.**
+
+The flow:
+
+```
+ReliefApplications/jti-custom@main (push)
+  ↓
+.github/workflows/deploy-azure-staging.yml runs
+  ↓
+azcopy sync → stwpjtistagingfuml/wp-content/plugins/jti-custom/
+  ↓
+WP container's polling overlay (§5.1, 30s interval)
+  ↓
+/var/www/html/wp-content/plugins/jti-custom/  → live
+```
+
+**One-time setup** (after the workflow's first run):
+
+1. Fetch the staging storage account key:
+   ```bash
+   az storage account keys list --account-name stwpjtistagingfuml \
+     --resource-group rg-jti-staging --query "[0].value" -o tsv
+   ```
+2. Add it as repo secret `STORAGE_KEY_STAGING` in `ReliefApplications/jti-custom`.
+3. (For prod, after prod is provisioned) repeat with the prod storage
+   account key, store as `STORAGE_KEY_PROD`, and edit the
+   `STORAGE_ACCOUNT` placeholder in `deploy-azure-prod.yml`.
+
+**Why direct storage key instead of a service principal?** The
+operator running this stack lacks AAD `Microsoft.Authorization/roleAssignments/write`
+(same constraint that forces `admin_enabled=true` on ACR). Without that
+permission, a service principal can't be granted the `Storage Account
+Key Operator Service Role` it would need. Direct-key auth has comparable
+blast radius (both give an attacker write access to the share) and
+unblocks deploys today. If the role-assignment permission is ever
+granted, switch to SP-based auth (`azure/login@v2` with
+`AZURE_CREDENTIALS_STAGING`) — the workflow file's comments cover this.
+
+**The WP image's `.dockerignore` excludes `wordpress/wp-content/plugins/jti-custom/`**
+so the image never bakes a snapshot of jti-custom. The share is the
+single source of truth. Implication: a brand-new container with an
+empty `/persist` would have **no** jti-custom installed until the CI
+workflow runs. In practice the share is already seeded; deletions are
+the only realistic failure mode, and recovery is just triggering the
+workflow manually.
 
 ### Database changes
 

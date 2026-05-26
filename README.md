@@ -8,8 +8,12 @@ operated by **[Relief Applications](https://reliefapplications.org/)**.
 > **Repos in this project:**
 > - `ReliefApplications/jti-wordpress` (this repo) — WordPress + default
 >   plugins + themes + Docker image + IaC
-> - `ReliefApplications/jti-custom` — the JTI custom WordPress plugin
->   (separate repo, mounted into the image at runtime via the persistence overlay)
+> - `ReliefApplications/jti-custom` — the JTI custom WordPress plugin.
+>   **Deployed independently of this repo's image**: its own GH Actions
+>   workflow (`azcopy sync`) uploads the plugin to the staging/prod
+>   Azure Files share on push to main. The WP container's polling overlay
+>   then picks it up within ~2-5 min. No WP image rebuild needed for
+>   jti-custom changes. See `infra/RUNBOOK.md §4` "Update jti-custom".
 
 ---
 
