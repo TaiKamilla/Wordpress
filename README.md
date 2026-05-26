@@ -153,8 +153,15 @@ The image expects:
 ## Status
 
 - **Staging:** ✅ live at `https://staging.journalismtrustinitiative.org/`
-  (password-protected — see `PUBLIC_ACCESS_PWD` GH secret)
-- **Prod:** 🟡 coded, not yet provisioned
+  (password-protected — see `PUBLIC_ACCESS_PWD` GH secret). CI auto-deploy
+  on push to main (paths-filtered to `docker/**` + `wordpress/**`).
+- **Prod:** ✅ provisioned (2026-05-26); reachable internally via Front Door
+  endpoint `fde-jti-prod-dyfrdfhudtcsgyct.z03.azurefd.net` + the
+  `preview.journalismtrustinitiative.org` validation domain. **Live apex
+  DNS still points at the legacy hosting** — flipping it is the final
+  cutover step. See `infra/RUNBOOK.md §10` for the cutover checklist.
+- **CI/CD:** GitHub Actions on both repos; see `infra/RUNBOOK.md §4`
+  "Continuous deployment".
 
 ## License
 

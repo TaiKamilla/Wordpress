@@ -561,6 +561,40 @@ that's the Basic Auth gate working as intended (see §5.2).
 
 ## 4. Day-to-day deployment cycle
 
+### Continuous deployment via GitHub Actions
+
+Two workflows do most of the work automatically.
+
+**`ReliefApplications/jti-wordpress/.github/workflows/deploy-azure-staging.yml`**
+
+- Trigger: push to `main` touching `docker/**` or `wordpress/**` (path-filtered), or manual `workflow_dispatch`.
+- Steps: docker login to ACR (admin creds) → `docker build` with `HTPASSWD_PASSWORD` baked in → push `:latest` and `:gh-<sha7>` → if `AZURE_CREDENTIALS_STAGING` SP secret is set, hard-cycle the App Service so the new image is pulled; otherwise print the manual cycle command as a warning.
+- Required GH secrets (at the `staging` environment scope in the repo):
+  - `ACR_USERNAME` / `ACR_PASSWORD` — ACR admin credentials (fetch with `az acr credential show --name acrjtistaginghecl --query username -o tsv` + `.passwords[0].value`)
+  - `PUBLIC_ACCESS_PWD` — the Basic Auth password baked into the image
+  - `AZURE_CREDENTIALS_STAGING` *(optional)* — JSON output of `az ad sp create-for-rbac --role 'Website Contributor' --scopes <app-service-resource-id> --json-auth`. Requires AAD `User Access Administrator` to create. Without this secret, the workflow stops after `docker push` and you finish with `az webapp stop && start`.
+
+**`ReliefApplications/jti-wordpress/.github/workflows/deploy-azure-prod.yml`** — same shape, with these prod-specific differences:
+- Trigger: GitHub `release` publication or manual dispatch (never on plain push).
+- Uses the `prod` GH environment with required reviewers.
+- Builds **without** `HTPASSWD_PASSWORD` (prod is public; the entrypoint's `JTI_BASIC_AUTH` is also false in prod tfvars).
+- Targets prod resources: ACR `acrjtiprodsfqc`, App Service `app-jti-prod-ujuj`, RG `rg-jti-prod`.
+- Tags as `:latest` and `:prod-<release-tag-or-sha>`.
+
+**`ReliefApplications/jti-custom/.github/workflows/deploy-azure-staging.yml`** (and `deploy-azure-prod.yml`)
+
+- Trigger: push to `main` (staging) / release or dispatch (prod).
+- Steps: checkout → install azcopy → rsync the repo into `_deploy/` with dev-artifact excludes → mint a 30-min SAS for the wp-content share → `azcopy sync _deploy/ → wp-content/plugins/jti-custom/` with `--delete-destination`.
+- Required GH secrets:
+  - `STORAGE_KEY_STAGING` / `STORAGE_KEY_PROD` — Azure Files storage account keys (fetch with `az storage account keys list --account-name <sa> --resource-group <rg> --query "[0].value" -o tsv`)
+
+**Why direct storage / ACR keys instead of a service principal?** The operator deploying this stack lacks AAD `Microsoft.Authorization/roleAssignments/write`, so creating an SP with the right RBAC role isn't possible. Direct credentials have comparable blast radius (both grant read/write to the same resources if leaked) and unblock CI today. Switch to SP-based auth when the role-assignment permission becomes available — the workflow files have comments showing exactly what to change.
+
+**End-to-end behavior on push:**
+
+- wp-image push to main (docker/ or wordpress/) → ~5 min later `:latest` is in ACR. App Service cycle: manual or auto via optional SP.
+- jti-custom push to main → ~2-5 min later the plugin is live (azcopy upload → polling overlay → wp-content).
+
 ### Update WordPress image (plugin/theme bumps, code changes)
 
 ```bash
@@ -1085,6 +1119,50 @@ locally, or the root of `https://github.com/ReliefApplications/jti-wordpress`).
 | Basic Auth user | `jti` |
 | Basic Auth password | GH env secret `PUBLIC_ACCESS_PWD` (env `staging`) |
 | GitHub repo | `https://github.com/ReliefApplications/jti-wordpress` |
+
+### Migration state (as of 2026-05-26)
+
+The public `journalismtrustinitiative.org` apex is **still served by the
+legacy hosting** (pre-Azure setup, formerly deployed via FTP from
+`ReliefApplications/jti-custom` to `jti.humanitarian.tech`-based hosting).
+The Azure infrastructure built in this repo is a **parallel** prod
+environment. Live traffic does NOT touch Azure until the apex DNS is
+flipped at Cloudflare.
+
+The cutover plan: validate the Azure prod via `preview.journalismtrustinitiative.org`
+(temporary FD custom domain — see below), then flip apex DNS, retire the
+legacy hosting.
+
+### Preview subdomain (temporary, for validating prod before cutover)
+
+`preview.journalismtrustinitiative.org` is a Front Door custom domain
+added 2026-05-26 to let operators browse prod before pointing the live
+apex at it. **Not codified in Terraform yet** (created via `az afd
+custom-domain create` directly — see the drift note below).
+
+Setup:
+- FD custom domain: `fdc-jti-preview` under profile `afd-jti-prod`
+- TLS: ManagedCertificate (FD-issued, auto-renewed)
+- Validation token: `_6oufcdn3l93vn9dc93d8mqdbg8kobdd`
+  (TXT record `_dnsauth.preview.journalismtrustinitiative.org`)
+- Routing: CNAME `preview.journalismtrustinitiative.org` →
+  `fde-jti-prod-dyfrdfhudtcsgyct.z03.azurefd.net` (DNS-only / grey cloud)
+
+DB swap (prod MySQL) for multisite to recognize the preview host: TODO
+once domain is validated. Reverted to `journalismtrustinitiative.org`
+when ready for apex cutover.
+
+**Terraform drift note:** the preview custom domain is not in the
+`front-door` module's state. To codify, add a list-typed variable for
+extra domains and a `for_each` resource. For now, manage via az cli:
+
+```bash
+# remove:
+az afd custom-domain delete \
+  --resource-group rg-jti-prod \
+  --profile-name afd-jti-prod \
+  --custom-domain-name fdc-jti-preview --yes
+```
 
 ### Production (provisioned 2026-05-26)
 
