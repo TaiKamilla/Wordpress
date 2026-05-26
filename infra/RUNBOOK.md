@@ -353,6 +353,46 @@ This is the only reliable way to force `:latest` to be re-resolved short of
 pushing a unique tag and updating the App Service container config — which
 is what a proper CI pipeline should do.
 
+### Gotcha #11 — Front Door overrides Host header → WP multisite redirect loop
+
+**Symptom (prod, behind Front Door):** every URL serves a 302 redirect to
+the canonical home, which itself 302s back. Static files under
+`/wp-content/...` work fine (Apache serves them directly), but anything that
+boots WordPress redirects. `<title>` and `<meta generator>` never appear.
+
+**Cause:** FD's default origin host header behavior is to send the App
+Service's own hostname (e.g. `app-jti-prod-ujuj.azurewebsites.net`) in the
+`Host:` header to the origin. WP multisite reads `Host` to look up the
+matching `wp_blogs.domain` row; finding nothing, it falls back to a 302
+toward `DOMAIN_CURRENT_SITE` (= the canonical public hostname). The
+browser follows the 302 back to FD, FD re-sends the same azurewebsites.net
+Host header, → infinite loop.
+
+The original Host is preserved in the `X-Forwarded-Host` request header
+(also `X-Forwarded-For`, `X-Forwarded-Proto`, `X-Azure-FDID` etc.). WP
+doesn't natively consume `X-Forwarded-Host`.
+
+**Fix (in `wordpress/wp-config.php`, right after the X-Forwarded-Proto
+block):**
+
+```php
+if (!empty($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+    $_SERVER['HTTP_HOST']   = $_SERVER['HTTP_X_FORWARDED_HOST'];
+    $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
+}
+```
+
+This runs **before** any WP code, so multisite's pre-boot lookup sees the
+real public hostname. No-op for staging (no FD, no X-Forwarded-Host).
+
+**How we found it:** with the bare site looping on every URL, we dropped a
+throwaway header-dump PHP file (`_jti_debug.php`) onto the share via
+Storage Explorer → polling overlay propagated it → hit it via the live
+URL → saw `HTTP_HOST = 'app-jti-prod-ujuj.azurewebsites.net'`. That
+diagnostic pattern (write to share, polling overlay carries it, web-fetch)
+is the runbook's preferred way to inspect runtime state from outside the
+container.
+
 ---
 
 ## 3. Initial deployment from scratch

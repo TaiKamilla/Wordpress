@@ -19,6 +19,20 @@ if (
     $_SERVER['HTTPS'] = 'on';
 }
 
+// ----------------------------------------------------------------------------
+// Host header rewrite (Front Door + WP multisite)
+// ----------------------------------------------------------------------------
+// Azure Front Door overrides the Host header sent to the origin with the
+// origin's azurewebsites.net hostname (e.g. app-jti-prod-ujuj.azurewebsites.net).
+// WordPress multisite looks up the request host in wp_blogs.domain at boot;
+// the App Service hostname has no matching blog row, so multisite falls back
+// to a 302 toward DOMAIN_CURRENT_SITE — an infinite loop. Restore the original
+// Host from X-Forwarded-Host before WP looks at it. No-op on staging (no FD).
+if (!empty($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+    $_SERVER['HTTP_HOST']   = $_SERVER['HTTP_X_FORWARDED_HOST'];
+    $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
+}
+
 /**
  * Original config docblock follows.
  *
