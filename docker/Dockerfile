@@ -82,6 +82,9 @@ RUN if [ -n "$HTPASSWD_PASSWORD" ]; then \
 # enabled by default on debian:apache, but make it explicit).
 RUN a2enmod auth_basic authn_file
 
+# Production PHP runtime settings baked into the image.
+RUN echo "memory_limit=512M" > /usr/local/etc/php/conf.d/memory_limit.ini
+
 # Production OPcache settings. The base wordpress:apache image already ships
 # the opcache extension; this overrides the default tuning for our setup
 # (plugins baked in image → validate_timestamps=0 is safe, big win for TTFB).
