@@ -1,0 +1,135 @@
+name: Build + deploy wp-image → Azure PROD
+
+# Same shape as deploy-azure-staging.yml but:
+#   - Triggers only on `release` publication OR manual `workflow_dispatch`
+#     (never on plain push to main)
+#   - Uses GitHub environment `prod` with required reviewers (manual approval)
+#   - Does NOT pass HTPASSWD_PASSWORD (prod runs without Basic Auth)
+#   - Tags the image with both :latest and :prod-<release-tag-or-sha>
+#
+# Pre-reqs (one-time, once prod is provisioned):
+#   1. Repo Settings → Environments → prod, with required reviewers.
+#   2. At the `prod` environment scope, set secrets:
+#        - ACR_USERNAME            prod ACR admin username
+#        - ACR_PASSWORD            prod ACR admin password
+#        - AZURE_CREDENTIALS_PROD  (OPTIONAL) SP JSON for auto-cycle
+#   3. Edit ACR_NAME / ACR_LOGIN_SERVER / APP_NAME / RG below to match
+#      the actual prod resources after `terraform apply` in
+#      infra/environments/prod/ has been run.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag suffix to use (e.g. v1.0.0). Defaults to short SHA.'
+        required: false
+
+permissions:
+  contents: read
+
+env:
+  # TODO: replace once prod ACR exists. Fetch with:
+  #   terraform output -raw acr_name        (in infra/environments/prod/)
+  ACR_NAME: REPLACE_ME_AFTER_PROD_PROVISIONED
+  ACR_LOGIN_SERVER: REPLACE_ME.azurecr.io
+  IMAGE_NAME: wp-jti
+  # TODO: replace once prod App Service exists.
+  APP_NAME: REPLACE_ME_AFTER_PROD_PROVISIONED
+  RG: rg-jti-prod
+
+jobs:
+  build-and-deploy:
+    name: Build, push, cycle
+    runs-on: ubuntu-latest
+    environment: prod   # ← required reviewers configured here
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Validate secrets + placeholders
+        env:
+          ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+          ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+        run: |
+          missing=()
+          [ -z "$ACR_USERNAME" ] && missing+=("ACR_USERNAME")
+          [ -z "$ACR_PASSWORD" ] && missing+=("ACR_PASSWORD")
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "::error::Missing env secrets: ${missing[*]}"
+            exit 1
+          fi
+          if echo "$ACR_LOGIN_SERVER" | grep -q REPLACE_ME; then
+            echo "::error::ACR_LOGIN_SERVER placeholder not updated"
+            exit 1
+          fi
+          if echo "$APP_NAME" | grep -q REPLACE_ME; then
+            echo "::error::APP_NAME placeholder not updated"
+            exit 1
+          fi
+
+      - name: Docker login (ACR admin creds)
+        env:
+          ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+          ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+        run: |
+          echo "$ACR_PASSWORD" \
+            | docker login "$ACR_LOGIN_SERVER" -u "$ACR_USERNAME" --password-stdin
+
+      - name: Compute tags
+        id: tags
+        run: |
+          INPUT_TAG="${{ inputs.tag }}"
+          SHA7=$(echo "$GITHUB_SHA" | cut -c1-7)
+          if [ -n "$INPUT_TAG" ]; then
+            TAG="prod-${INPUT_TAG}"
+          elif [ -n "${{ github.event.release.tag_name }}" ]; then
+            TAG="prod-${{ github.event.release.tag_name }}"
+          else
+            TAG="prod-${SHA7}"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "ref=${ACR_LOGIN_SERVER}/${IMAGE_NAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Build image (no HTPASSWD — prod runs without Basic Auth)
+        run: |
+          REF="${{ steps.tags.outputs.ref }}"
+          TAG="${{ steps.tags.outputs.tag }}"
+          docker build \
+            --file docker/Dockerfile \
+            --tag "${REF}:latest" \
+            --tag "${REF}:${TAG}" \
+            .
+
+      - name: Push image
+        run: |
+          REF="${{ steps.tags.outputs.ref }}"
+          TAG="${{ steps.tags.outputs.tag }}"
+          docker push "${REF}:latest"
+          docker push "${REF}:${TAG}"
+          echo "✅ Pushed ${REF}:latest and ${REF}:${TAG}"
+
+      - name: Cycle App Service (if SP credentials present)
+        env:
+          AZURE_CREDS: ${{ secrets.AZURE_CREDENTIALS_PROD }}
+        run: |
+          if [ -z "$AZURE_CREDS" ]; then
+            echo "::warning::AZURE_CREDENTIALS_PROD not set — skipping auto-cycle"
+            echo "Run manually:"
+            echo "  az webapp stop  --name $APP_NAME --resource-group $RG"
+            echo "  az webapp start --name $APP_NAME --resource-group $RG"
+            exit 0
+          fi
+          echo "$AZURE_CREDS" > /tmp/creds.json
+          az login --service-principal \
+            --username "$(jq -r .clientId /tmp/creds.json)" \
+            --password "$(jq -r .clientSecret /tmp/creds.json)" \
+            --tenant   "$(jq -r .tenantId /tmp/creds.json)" \
+            > /dev/null
+          rm -f /tmp/creds.json
+          az webapp stop  --name "$APP_NAME" --resource-group "$RG"
+          az webapp start --name "$APP_NAME" --resource-group "$RG"
+          echo "✅ Prod cycled."
