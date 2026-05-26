@@ -393,6 +393,63 @@ diagnostic pattern (write to share, polling overlay carries it, web-fetch)
 is the runbook's preferred way to inspect runtime state from outside the
 container.
 
+### Gotcha #12 — rsync excludes need to be anchored, not trailing-slash
+
+**Symptom:** in Azure Storage Explorer, `wp-content/uploads/` shows up as
+a broken self-referencing symlink (`uploads -> /persist/uploads`) instead
+of a directory. Storage Explorer can't navigate into it and can't accept
+uploads. PHP requests to `/wp-content/uploads/*` resolve to nothing (the
+symlink dereferences to itself, kernel returns `ELOOP`).
+
+**Cause:** the entrypoint creates a real symlink in the container's
+`wp-content/uploads → /persist/uploads`, which is the standard approach
+to keep media writes direct-to-share with zero sync window. The polling
+overlay excludes `uploads` from rsync, but the original pattern was
+`--exclude=uploads/` (trailing slash). With the trailing slash, rsync
+treats it as a **directory-only** pattern — symlinks named `uploads`
+escape the exclude. rsync then "preserves" the container's symlink to
+`/persist/uploads/` via `-a` (which includes `-l`, preserve-symlinks),
+writing the symlink **on top of** the real `uploads/` directory on the
+share. The result is a self-pointing symlink and a lost directory tree
+(any media files inside the original directory are unreachable on disk).
+
+Staging dodged this by accident — `/persist/uploads/` already had data
+when the polling overlay first ran, and rsync wouldn't overwrite a
+non-empty directory with a symlink. Fresh prod (empty share at first
+boot) got clobbered.
+
+**Fix (shipped 2026-05-26):** anchor the exclude pattern in
+`docker/entrypoint-persist.sh`:
+
+```bash
+EXCLUDES=(
+  --exclude=/uploads     # ← anchored. matches file/dir/symlink at source root
+  --exclude=cache/
+  --exclude=litespeed/
+  ...
+)
+```
+
+The leading `/` anchors the match to the source-relative root and the
+absent trailing slash makes it match any entity type. Other excludes
+(`cache/`, `litespeed/`, etc.) keep the trailing slash because they
+match directories at any depth, not just the root, and they're never
+clobbered by a symlink — only `uploads` has the symlink design.
+
+**Recovery if you find a broken symlink on the share:**
+
+```bash
+KEY=$(az storage account keys list --account-name <storage-account> -g <rg> --query '[0].value' -o tsv)
+# 1. Delete the broken symlink file
+az storage file delete --account-name <storage-account> --account-key "$KEY" \
+  --share-name wp-content --path 'uploads'
+# 2. Recreate as a directory
+az storage directory create --account-name <storage-account> --account-key "$KEY" \
+  --share-name wp-content --name 'uploads'
+# 3. Make sure the running container has the fixed entrypoint (otherwise it'll
+#    re-clobber within ~30 s); rebuild + redeploy if not.
+```
+
 ---
 
 ## 3. Initial deployment from scratch

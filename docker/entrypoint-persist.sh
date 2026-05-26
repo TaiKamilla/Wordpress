@@ -31,13 +31,21 @@ PERSIST=/persist
 WP=/var/www/html/wp-content
 POLL_INTERVAL=30
 
-# Sync excludes. uploads/ is the symlink target (rsync would loop).
+# Sync excludes. uploads is the symlink target (rsync would loop).
+# CRITICAL: uploads is anchored (/uploads, no trailing slash) so the pattern
+# matches regardless of source-side type. With --exclude=uploads/ (trailing
+# slash, no anchor), rsync only excludes DIRECTORIES named uploads — the
+# container-side wp-content/uploads is a SYMLINK, which escapes that pattern,
+# and rsync then writes the symlink onto the share, clobbering the real
+# uploads/ directory there. Symptom: Azure Storage Explorer can't navigate
+# into uploads/ (it sees a broken self-referencing symlink). Fix shipped
+# 2026-05-26 after the prod migration hit this.
 # The rest are excluded because they're either huge (updraft backups can be
 # GBs), churny (cache files), or pure noise (logs, swap files) — syncing them
 # across SMB on every boot makes the boot rsync exceed App Service's 230 s
 # container-start timeout. Reintroduced 2026-05-25 after a boot timeout.
 EXCLUDES=(
-  --exclude=uploads/
+  --exclude=/uploads
   --exclude=cache/
   --exclude=litespeed/
   --exclude=jetpack-waf/
