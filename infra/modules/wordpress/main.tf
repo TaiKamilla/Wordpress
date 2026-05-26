@@ -93,9 +93,11 @@ resource "azurerm_mysql_flexible_server" "wp" {
   storage {
     size_gb           = var.mysql_storage_gb
     auto_grow_enabled = true
-    iops              = 360
     # IOPS auto-scaling — enabled on B2s+ (no-op on B1ms). Free feature; lets
-    # MySQL temporarily exceed the provisioned 360 IOPS during bursts.
+    # MySQL temporarily exceed the default 360 IOPS during bursts. The
+    # azurerm provider now rejects explicit `iops` when io_scaling_enabled is
+    # true (validation added in newer provider versions), so we rely on the
+    # B2s default of 360 IOPS as the floor and let scaling handle the rest.
     io_scaling_enabled = true
   }
 

@@ -30,13 +30,10 @@ permissions:
   contents: read
 
 env:
-  # TODO: replace once prod ACR exists. Fetch with:
-  #   terraform output -raw acr_name        (in infra/environments/prod/)
-  ACR_NAME: REPLACE_ME_AFTER_PROD_PROVISIONED
-  ACR_LOGIN_SERVER: REPLACE_ME.azurecr.io
+  ACR_NAME: acrjtiprodsfqc
+  ACR_LOGIN_SERVER: acrjtiprodsfqc.azurecr.io
   IMAGE_NAME: wp-jti
-  # TODO: replace once prod App Service exists.
-  APP_NAME: REPLACE_ME_AFTER_PROD_PROVISIONED
+  APP_NAME: app-jti-prod-ujuj
   RG: rg-jti-prod
 
 jobs:
@@ -50,7 +47,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Validate secrets + placeholders
+      - name: Validate secrets
         env:
           ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
           ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
@@ -60,14 +57,6 @@ jobs:
           [ -z "$ACR_PASSWORD" ] && missing+=("ACR_PASSWORD")
           if [ ${#missing[@]} -gt 0 ]; then
             echo "::error::Missing env secrets: ${missing[*]}"
-            exit 1
-          fi
-          if echo "$ACR_LOGIN_SERVER" | grep -q REPLACE_ME; then
-            echo "::error::ACR_LOGIN_SERVER placeholder not updated"
-            exit 1
-          fi
-          if echo "$APP_NAME" | grep -q REPLACE_ME; then
-            echo "::error::APP_NAME placeholder not updated"
             exit 1
           fi
 

@@ -1086,6 +1086,42 @@ locally, or the root of `https://github.com/ReliefApplications/jti-wordpress`).
 | Basic Auth password | GH env secret `PUBLIC_ACCESS_PWD` (env `staging`) |
 | GitHub repo | `https://github.com/ReliefApplications/jti-wordpress` |
 
+### Production (provisioned 2026-05-26)
+
+| Variable | Value (prod) |
+|---|---|
+| Resource group | `rg-jti-prod` |
+| Web App name | `app-jti-prod-ujuj` |
+| App Service hostname | `app-jti-prod-ujuj.azurewebsites.net` (restrict_to_frontdoor=true; only reachable via Front Door) |
+| Front Door endpoint | `fde-jti-prod-dyfrdfhudtcsgyct.z03.azurefd.net` |
+| Custom domain | `journalismtrustinitiative.org` (DNS not yet pointed at FD as of provisioning) |
+| Custom domain validation token | `_4om38sjcj760yie150mhp20vjt0lhld` (TXT record `asuid.journalismtrustinitiative.org`) |
+| MySQL hostname | `mysql-jti-prod-ujuj.mysql.database.azure.com` |
+| MySQL DB name | `wordpress` (cloned from staging 2026-05-26) |
+| Storage account | `stwpjtiprodujuj` |
+| Static blob endpoint | `https://stjtiprodvyzp.z28.web.core.windows.net/` |
+| Container Registry | `acrjtiprodsfqc.azurecr.io` |
+| Image | `acrjtiprodsfqc.azurecr.io/wp-jti:latest` (no Basic Auth baked) |
+| APIM | `apim-jti-prod-36p3.azure-api.net` |
+| Basic Auth | **disabled** (prod is public) |
+| Log Analytics retention | 90 days |
+| GitHub repo | same as staging — `ReliefApplications/jti-wordpress` |
+| GH environment (in repo settings) | `prod` (required reviewers configured) |
+
+**Bringing prod live (DNS cutover) requires:**
+1. **DNS / Cloudflare:** add TXT record `asuid.journalismtrustinitiative.org` =
+   `_4om38sjcj760yie150mhp20vjt0lhld`, then CNAME (or A) `journalismtrustinitiative.org`
+   → `fde-jti-prod-dyfrdfhudtcsgyct.z03.azurefd.net`. Keep **DNS-only / grey**
+   for cert issuance, can flip to **proxied / orange** afterward.
+2. **External wp-cron scheduler** pointed at `/wp-cron.php` (see
+   `infra/perf-baseline/SCHEDULER_OPTIONS.md` — Cloudflare Worker recommended).
+3. **Cloudflare cache rule** for the prod hostname (mirror §8 swapping the
+   host).
+4. **GitHub Actions secrets for prod env** (see §4 "Update jti-custom" and
+   `.github/workflows/deploy-azure-prod.yml`): `ACR_USERNAME`, `ACR_PASSWORD`
+   for image builds; `STORAGE_KEY_PROD` (in jti-custom repo) for plugin
+   pushes.
+
 ---
 
 ## 11. Decision log — why we did each non-obvious thing
