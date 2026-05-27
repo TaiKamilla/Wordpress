@@ -1,5 +1,5 @@
 #!/bin/bash
-# JTI WordPress entrypoint: rsync overlay between image-baked wp-content and
+# pipeline-test-1779873148: # JTI WordPress entrypoint: rsync overlay between image-baked wp-content and
 # the AzFiles share mounted at /persist.
 #
 # Mount: AzFiles share `wp-content` → /persist  (share root mirrors wp-content)
