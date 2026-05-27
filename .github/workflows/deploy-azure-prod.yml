@@ -3,12 +3,12 @@ name: Build + deploy wp-image → Azure PROD
 # Same shape as deploy-azure-staging.yml but:
 #   - Triggers only on `release` publication OR manual `workflow_dispatch`
 #     (never on plain push to main)
-#   - Uses GitHub environment `prod` with required reviewers (manual approval)
+#   - Uses GitHub environment `production` with required reviewers (manual approval)
 #   - Does NOT pass HTPASSWD_PASSWORD (prod runs without Basic Auth)
 #   - Tags the image with both :latest and :prod-<release-tag-or-sha>
 #
 # Pre-reqs (one-time, once prod is provisioned):
-#   1. Repo Settings → Environments → prod, with required reviewers.
+#   1. Repo Settings → Environments → production, with required reviewers.
 #   2. At the `prod` environment scope, set secrets:
 #        - ACR_USERNAME            prod ACR admin username
 #        - ACR_PASSWORD            prod ACR admin password
@@ -40,7 +40,7 @@ jobs:
   build-and-deploy:
     name: Build, push, cycle
     runs-on: ubuntu-latest
-    environment: prod   # ← required reviewers configured here
+    environment: production   # ← GH environment in repo settings (required reviewers go here)
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
