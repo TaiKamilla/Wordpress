@@ -479,6 +479,21 @@ visible automatically within 4 h with negligible perf cost — `wp-content`
 is the container's **local** disk now (overlay-rsync target), so `stat()`
 is microseconds, not the SMB round-trip that made Gotcha #5 fatal.
 
+**Restart self-heal (shipped 2026-06-03):** the 4 h revalidate window has a
+nasty interaction with restarts — when the container is cycled, Apache
+compiles `class-jti-custom.php` into OPcache *before* the background
+boot-rsync (§5.1) finishes overlaying the current jti-custom code, and the
+4 h freq then pins that stale compile for up to 4 h (this is exactly what
+took `/docs` down after the 2026-06-03 recovery restart). Fixed in
+`docker/entrypoint-persist.sh`: once the boot-sync rsync completes, the
+entrypoint runs a one-shot `apache2ctl graceful`, spawning fresh workers
+with an empty OPcache that recompile against the now-fully-synced code. It
+fires only at startup (zero steady-state cost, keeps the 4 h freq), and is
+non-disruptive (graceful = drains in-flight requests). After a restart,
+jti-custom routes may 404 for the boot-sync duration (~5-8 min on staging,
+SMB-walk bound) and then **self-heal with no manual step**. The manual
+reset below is now only needed for an *immediate* live-deploy pickup.
+
 **For an IMMEDIATE pickup after a deploy** (don't want to wait up to 4 h):
 reset OPcache. mod_php's OPcache lives in the Apache worker processes —
 **CLI / SCM `php -r 'opcache_reset();'` does NOT touch it** (CLI has its

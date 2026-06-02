@@ -92,6 +92,27 @@ log "symlinked $WP/uploads → $PERSIST/uploads"
     log "WARN: boot sync exited non-zero"
   fi
   chown -R www-data:www-data "$WP" 2>/dev/null || true
+
+  # Opcache refresh after the boot sync (NOT before — that's the whole point).
+  # Apache starts immediately (the exec below) and races this background rsync;
+  # with opcache.validate_timestamps=1 but a long revalidate_freq (4h), any PHP
+  # class opcache compiled from a half-synced wp-content during that race stays
+  # pinned for up to 4h — which is how a restart can leave jti-custom routes
+  # (e.g. /docs) 404'ing. A one-shot `apache2ctl graceful` once the sync is done
+  # spawns fresh workers with an empty opcache, so they recompile against the
+  # now-fully-synced code. Startup-only: zero steady-state cost, keeps the 4h
+  # revalidate_freq intact. (graceful = finish in-flight requests, no downtime.)
+  for _i in $(seq 1 60); do
+    [ -f /var/run/apache2/apache2.pid ] && break
+    sleep 1
+  done
+  if [ -f /var/run/apache2/apache2.pid ]; then
+    apache2ctl graceful 2>/dev/null \
+      && log "graceful Apache reload after boot sync (opcache refreshed)" \
+      || log "WARN: graceful reload failed (routes may need a manual opcache reset)"
+  else
+    log "WARN: apache pidfile not found — skipped post-sync opcache refresh"
+  fi
 ) &
 log "boot sync backgrounded (PID $!)"
 
