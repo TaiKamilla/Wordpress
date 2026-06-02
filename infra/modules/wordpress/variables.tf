@@ -172,6 +172,23 @@ variable "enable_basic_auth" {
   EOT
 }
 
+# ---------------- External API gateway secret ----------------
+
+variable "api_gateway_secret" {
+  type        = string
+  default     = ""
+  sensitive   = true
+  description = <<-EOT
+    Shared secret for the keyed external API. When non-empty, sets the
+    JTI_API_GATEWAY_SECRET app setting; the jti-custom plugin verifies the
+    X-Gateway-Secret header (injected by APIM) against it in its
+    permission_callback. When empty, the app setting is NOT set and the plugin
+    leaves the jti/v1 endpoints open (so local/staging without APIM keep
+    working). Must equal the apim module's gateway_secret. Pass via
+    TF_VAR_gateway_secret — never commit.
+  EOT
+}
+
 # ---------------- Object cache (Redis) ----------------
 
 variable "redis_host" {

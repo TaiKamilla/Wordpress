@@ -50,7 +50,14 @@ variable "apim_sku_name" {
 variable "openapi_spec_url" {
   type        = string
   default     = ""
-  description = "Public URL to the OpenAPI spec in Blob. Leave empty until uploaded."
+  description = "Public URL to the OpenAPI spec in Blob. Leave empty until uploaded. NOTE: setting this also activates the keyed-API stack (product, key enforcement, rate limit, gateway-secret header) — see modules/apim/api-auth.tf."
+}
+
+variable "gateway_secret" {
+  type        = string
+  default     = ""
+  sensitive   = true
+  description = "Shared secret for the keyed external API. Threaded into BOTH the apim named value (X-Gateway-Secret header) and the WordPress JTI_API_GATEWAY_SECRET app setting so they always match. Pass via TF_VAR_gateway_secret — never commit. Empty = X-Gateway-Secret layer off."
 }
 
 # ---------- Custom domain ----------

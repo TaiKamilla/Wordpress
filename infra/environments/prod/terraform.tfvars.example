@@ -11,3 +11,12 @@ wordpress_image = "wordpress:6.5-apache"
 #   export TF_VAR_mysql_admin_password='<strong password>'
 mysql_admin_username = "wpadmin"
 # mysql_admin_password = "..."   # do NOT put real password in this file
+
+# ---------- External keyed API (modules/apim/api-auth.tf) ----------
+# The whole keyed-API stack activates only when openapi_spec_url is set.
+# openapi_spec_url = "https://<storage>.z6.web.core.windows.net/external-api-openapi.json"
+#
+# Shared gateway secret — DO NOT put the real value here. Pass at apply time:
+#   export TF_VAR_gateway_secret='<long-random-string>'
+# Threaded into both the APIM named value and the WP app setting so they match.
+# Prod reaches WP through Front Door (apex domain), so no origin Basic Auth.

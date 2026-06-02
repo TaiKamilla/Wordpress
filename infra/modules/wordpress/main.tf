@@ -260,6 +260,13 @@ resource "azurerm_linux_web_app" "wp" {
       # image to have been built with --build-arg HTPASSWD_PASSWORD=<pw>.
       JTI_BASIC_AUTH = "true"
     } : {},
+    var.api_gateway_secret == "" ? {} : {
+      # Shared secret for the keyed external API. The jti-custom plugin verifies
+      # the APIM-injected X-Gateway-Secret header against this in its
+      # permission_callback. Must match the apim module's gateway_secret. When
+      # unset (this branch absent), the plugin leaves jti/v1 open.
+      JTI_API_GATEWAY_SECRET = var.api_gateway_secret
+    },
   )
 
   # Single mount: the wp-content share at /persist. Container's

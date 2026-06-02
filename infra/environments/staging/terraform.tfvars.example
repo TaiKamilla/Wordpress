@@ -7,3 +7,15 @@ wordpress_image = "wordpress:6.5-apache"
 
 mysql_admin_username = "wpadmin"
 # Set via env var: export TF_VAR_mysql_admin_password='...'
+
+# ---------- External keyed API (modules/apim/api-auth.tf) ----------
+# The whole keyed-API stack activates only when openapi_spec_url is set.
+# openapi_spec_url = "https://<storage>.z6.web.core.windows.net/external-api-openapi.json"
+#
+# Shared gateway secret — DO NOT put the real value here. Pass at apply time:
+#   export TF_VAR_gateway_secret='<long-random-string>'
+# It is threaded into both the APIM named value and the WP app setting.
+#
+# Staging origin is behind Basic Auth; to let APIM reach it for end-to-end key
+# tests, optionally provide base64("jti:<PUBLIC_ACCESS_PWD>"):
+#   export TF_VAR_wp_origin_basic_auth_b64="$(printf 'jti:<pwd>' | base64)"

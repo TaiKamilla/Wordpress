@@ -111,6 +111,10 @@ module "wordpress" {
   custom_domain       = var.custom_domain
   domain_current_site = var.custom_domain
 
+  # Same secret as the apim module's gateway_secret so the WP plugin can verify
+  # the X-Gateway-Secret header APIM injects.
+  api_gateway_secret = var.gateway_secret
+
   tags = local.tags
 }
 
@@ -148,6 +152,24 @@ module "apim" {
   sku_name        = var.apim_sku_name
 
   openapi_spec_url = var.openapi_spec_url
+
+  # Keyed external API (activates only when openapi_spec_url is set).
+  gateway_secret = var.gateway_secret
+  # Per-client rate limit (25 calls/sec, keyed on subscription id) is configured
+  # but DISABLED here: rate-limit-by-key is rejected on the Consumption sku, and
+  # Consumption -> dedicated is a destroy+recreate of the APIM instance (Azure:
+  # "ChangingSkuTypeNotSupported"). To enable: recreate APIM on Developer_1+
+  # (terraform apply -replace=module.apim.azurerm_api_management.main), set
+  # apim_sku_name accordingly, then flip enable_rate_limiting=true.
+  enable_rate_limiting          = false
+  api_rate_limit_calls          = 25
+  api_rate_limit_period_seconds = 1
+  enable_quota                  = false
+  # Staging has no Front Door — APIM reaches the App Service directly.
+  wp_api_base_url = "https://${module.wordpress.app_hostname}/wp-json/jti/v1"
+  # Staging origin is behind Basic Auth; inject creds so APIM can reach it
+  # (only when the operator provides the b64 via TF_VAR; empty otherwise).
+  wp_origin_basic_auth_b64 = var.wp_origin_basic_auth_b64
 
   tags = local.tags
 }

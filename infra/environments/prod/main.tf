@@ -111,6 +111,10 @@ module "wordpress" {
   # But we DO need to tell WP multisite which apex domain it serves on:
   domain_current_site = var.custom_domain
 
+  # Same secret as the apim module's gateway_secret so the WP plugin can verify
+  # the X-Gateway-Secret header APIM injects.
+  api_gateway_secret = var.gateway_secret
+
   tags = local.tags
 }
 
@@ -150,6 +154,15 @@ module "apim" {
   # Set this once the OpenAPI spec is uploaded to Blob Storage.
   # Example: "https://<storage>.z6.web.core.windows.net/openapi.json"
   openapi_spec_url = var.openapi_spec_url
+
+  # Keyed external API (activates only when openapi_spec_url is set).
+  gateway_secret = var.gateway_secret
+  # Prod: reach WP through Front Door (the apex custom domain). FD route "/*"
+  # forwards /wp-json/* to the WP origin with X-Azure-FDID, satisfying the
+  # restrict_to_frontdoor origin lock — no raw App Service exposure. Empty until
+  # the custom domain is configured.
+  wp_api_base_url = var.custom_domain == "" ? "" : "https://${var.custom_domain}/wp-json/jti/v1"
+  # Prod origin is public behind Front Door — no Basic Auth, so no creds needed.
 
   tags = local.tags
 }

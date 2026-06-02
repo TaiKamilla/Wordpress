@@ -1433,3 +1433,95 @@ If you're an AI agent picking up this work:
    `x-cache: HIT` even on lots of pages; the user knew their PHP was
    fast on cache miss. Always cache-bust before drawing conclusions
    about origin speed.
+
+---
+
+## 14. External keyed API (APIM Certification API)
+
+The external "Certification API" (`jti/v1` in the jti-custom plugin) is exposed
+to approved third parties through API Management with **API-key access** and a
+**defense-in-depth shared secret**. Auth lives at APIM, not WordPress.
+
+**Status (2026-06-02):** deployed + tested on **staging** (Consumption tier).
+Prod is coded + dormant (activates when its `openapi_spec_url` is set). Per-key
+**rate limiting is intentionally OFF** — see the tier note below.
+
+### What's deployed (modules/apim/api-auth.tf + docs.tf)
+
+| Resource | Purpose |
+|---|---|
+| `azurerm_api_management_product.jti` (`jti-external-api`) | `subscription_required=true` → **no key = 401 at the gateway** |
+| `azurerm_api_management_product_api.jti` | links the imported `jti-api` to the product |
+| `azurerm_api_management_named_value.gateway_secret` (secret) | holds the shared `X-Gateway-Secret` value |
+| `azurerm_api_management_api_policy.jti` | injects `X-Gateway-Secret`, rewrites backend to `…/wp-json/jti/v1`, (optional Basic-Auth header for the gated staging origin) |
+| `azurerm_api_management_api.jti_docs` (+ 2 ops/policies) | **public** Swagger UI at `/jti-docs` + same-origin spec proxy at `/jti-docs/openapi.json` (`subscription_required=false`) |
+
+**The whole stack is gated on `openapi_spec_url != ""`** — set the spec URL to
+activate, leave empty to keep it dormant (clean 0-change plan).
+
+### The design in one line
+
+Docs are **public** (separate `subscription_required=false` API); data calls
+are **keyed** (the product). No key → 401 at APIM before the origin. With a
+valid key, APIM also injects `X-Gateway-Secret`, which the plugin verifies — so
+a direct hit to the WP origin (bypassing APIM) is still rejected.
+
+### Verified on staging
+
+```
+GET /jti-docs                  -> 200  (public Swagger UI)
+GET /jti-docs/openapi.json     -> 200  (public spec)
+GET /jti/certifications        -> 401  (no key, blocked at gateway)
+GET /jti/certifications + key  -> reaches WordPress
+```
+
+### Adding a third-party consumer (key)
+
+Default mode is **portal-managed** so consumer keys never enter Terraform state:
+
+1. Azure Portal → API Management → `apim-jti-<env>-…` → Subscriptions → **Add subscription**
+   → scope = product **JTI External Certification API** → name it for the consumer → Create.
+2. Copy the primary key → give it to the consumer. They send it as the
+   `Ocp-Apim-Subscription-Key` header.
+
+(Alternative: set `api_consumers = ["name", ...]` on the apim module to manage
+them in Terraform — keys then appear in the sensitive `api_consumer_subscription_keys`
+output AND in state. Default is the portal mode.)
+
+### The shared gateway secret
+
+One value, `TF_VAR_gateway_secret`, threaded into BOTH the APIM named value and
+the WP `JTI_API_GATEWAY_SECRET` app setting (so they always match). Stored only
+in the gitignored `terraform.tfvars` / env var — never committed. To rotate:
+change it, `terraform apply` (updates both sides), done.
+
+### Gotcha #14 — rate limiting requires a non-Consumption APIM tier
+
+`rate-limit-by-key` / `quota-by-key` are **rejected on the Consumption sku**
+("Policy is not allowed in 'Consumption' sku"), and Consumption **cannot be
+upgraded** — Azure refuses the SKU change (`ChangingSkuTypeNotSupported`); the
+only path is **destroy + recreate** of the APIM instance on Developer/Basic+
+(~45 min, rebuilds all child resources, recurring cost: Developer ~€40/mo no
+SLA, Basic ~€140/mo with SLA).
+
+The rate-limit policy is therefore parameterized but **off by default**
+(`enable_rate_limiting=false`, `enable_quota=false`). To enable later:
+
+```
+terraform apply -replace=module.apim.azurerm_api_management.main   # rebuild on the new tier
+# set apim_sku_name=Developer_1 (or Basic_1), enable_rate_limiting=true,
+# api_rate_limit_calls/period as desired (e.g. 25 calls / 1s), then apply again.
+```
+
+Key-based ACCESS (the main protection) does NOT need this — it works on
+Consumption. Rate limiting is only the abuse/throttle layer.
+
+### Plugin half (separate repo `ReliefApplications/jti-custom`)
+
+Two changes keep the names aligned with this infra (a task was flagged for them):
+- `permission_callback` on the 5 `jti/v1` data routes that verifies the
+  `X-Gateway-Secret` header against the `JTI_API_GATEWAY_SECRET` env var
+  (unset → routes stay open, so local/dev keep working). **Docs routes stay
+  public.**
+- `securitySchemes` (apiKey, header `Ocp-Apim-Subscription-Key`) in
+  `docs/external-api-openapi.json` so the Swagger UI shows the Authorize box.
