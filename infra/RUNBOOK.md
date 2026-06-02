@@ -450,6 +450,65 @@ az storage directory create --account-name <storage-account> --account-key "$KEY
 #    re-clobber within ~30 s); rebuild + redeploy if not.
 ```
 
+### Gotcha #13 — OPcache pins stale jti-custom code (deploys look like no-ops)
+
+**Symptom:** you deploy jti-custom (push to main → CI azcopy → share →
+polling overlay → `wp-content`), the files on disk are confirmed correct
+(SHA matches local), but the running site behaves as if nothing changed.
+Classic tell: a newly-added REST route 404s. We hit this with the
+`/jti-custom/v1/docs` and `/openapi.json` routes (2026-06-02) — present in
+the deployed code, never served. A brand-new-named PHP file showed the
+routes registering fine; the live opcached path did not.
+
+**Cause:** the image historically set `opcache.validate_timestamps=0`
+(never re-stat source files — see Gotcha #5's SMB-latency rationale).
+But the architecture changed: jti-custom is excluded from the image
+(`.dockerignore`) and deployed **only** via the share + polling overlay,
+which rsyncs new PHP onto the container's local `wp-content` at runtime.
+With `validate_timestamps=0`, OPcache compiled the class once and pinned
+that bytecode **forever** — new file content on disk was simply never
+recompiled. Worse, an `az webapp restart` doesn't reliably fix it: the
+background boot-rsync (see §5.1) races against Apache's first requests, so
+OPcache can re-cache a mid-sync / image-baseline version of a file and pin
+*that*.
+
+**Fix (shipped 2026-06-02):** `docker/php-opcache.ini` now sets
+`validate_timestamps=1` with `revalidate_freq=14400` (4 h). OPcache
+re-stats each source file at most once per 4 h window, so deploys become
+visible automatically within 4 h with negligible perf cost — `wp-content`
+is the container's **local** disk now (overlay-rsync target), so `stat()`
+is microseconds, not the SMB round-trip that made Gotcha #5 fatal.
+
+**For an IMMEDIATE pickup after a deploy** (don't want to wait up to 4 h):
+reset OPcache. mod_php's OPcache lives in the Apache worker processes —
+**CLI / SCM `php -r 'opcache_reset();'` does NOT touch it** (CLI has its
+own separate cache). The only way is an HTTP request that runs
+`opcache_reset()` inside Apache:
+
+```bash
+KEY=$(az storage account keys list --account-name <sa> -g <rg> --query '[0].value' -o tsv)
+cat > /tmp/opcache-reset.php <<'PHP'
+<?php header('Content-Type: text/plain');
+echo var_export(opcache_reset(), true), "\n";
+PHP
+az storage file upload --account-name <sa> --account-key "$KEY" \
+  --share-name wp-content --source /tmp/opcache-reset.php \
+  --path 'plugins/jti-custom/opcache-reset.php'
+# wait for the polling overlay to sync it (can take a few min — see §5.1 latency)
+curl -u jti:<PUBLIC_ACCESS_PWD> https://staging.journalismtrustinitiative.org/wp-content/plugins/jti-custom/opcache-reset.php
+# then delete it from the share
+az storage file delete --account-name <sa> --account-key "$KEY" \
+  --share-name wp-content --path 'plugins/jti-custom/opcache-reset.php'
+```
+
+(prod is public — drop the `-u jti:...`.) A hard `az webapp stop && start`
+also resets OPcache but re-introduces the boot-sync race above; the
+reset-file method is more deterministic.
+
+**Note:** changing `php-opcache.ini` only takes effect after the **wp-image
+is rebuilt and the App Service cycled** — the ini is baked into the image.
+Until then the running container keeps its old OPcache settings.
+
 ---
 
 ## 3. Initial deployment from scratch
@@ -755,6 +814,14 @@ storage share by that repo's GitHub Actions workflow. The polling
 overlay then picks it up within ~2-5 min and serves it to the running
 container. **No WP image rebuild and no App Service restart are needed
 for jti-custom changes.**
+
+> **OPcache caveat (see Gotcha #13):** static assets and *content* changes
+> show up as soon as the overlay syncs. But changes to **PHP code that
+> alters which routes/hooks register** (e.g. adding a REST endpoint) are
+> subject to OPcache's revalidation window — now 4 h. For an immediate
+> pickup, reset OPcache after the deploy (Gotcha #13 has the one-liner).
+> A plain content/template edit doesn't need this; a new `register_rest_route`
+> does.
 
 The flow:
 
