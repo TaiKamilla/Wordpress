@@ -69,10 +69,12 @@ module "wordpress" {
   location            = local.location
   resource_group_name = azurerm_resource_group.main.name
 
-  # B2 (2 shared vCPU, 3.5 GB) — same tier as staging. B1 was CPU-bound on
-  # Elementor body rendering. B2 dropped staging homepage p50 4.1s → 2.7s
-  # and p90 4.9s → 3.0s. See infra/perf-baseline/.
-  app_service_sku          = "B2"
+  # P1v3 (2 dedicated vCPU, 8 GB) — dedicated tier (no burstable contention) for
+  # the ~2.5s Elementor homepage. Bumped from B2 on 2026-06-03 alongside staging.
+  # Prod also has the Cloudflare anon edge cache (no Basic Auth here), so most
+  # public hits never reach the origin; 2 dedicated cores handle the dynamic /
+  # logged-in traffic. See infra/perf-baseline/.
+  app_service_sku          = "P1v3"
   wordpress_image          = var.wordpress_image
   docker_registry          = module.container_registry.login_server
   docker_registry_username = module.container_registry.admin_username

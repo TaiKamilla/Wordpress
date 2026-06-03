@@ -70,10 +70,13 @@ module "wordpress" {
   location            = local.location
   resource_group_name = azurerm_resource_group.main.name
 
-  # B2 (2 shared vCPU, 3.5 GB) — bumped from B1 after Phase 1/2 perf work showed
-  # homepage TTFB was CPU-bound on B1's single core. B2 dropped homepage p50
-  # 4.1s → 2.7s and p90 4.9s → 3.0s. See infra/perf-baseline/.
-  app_service_sku          = "B2"
+  # P1v3 (2 dedicated vCPU, 8 GB) — bumped from B2 (2 shared vCPU) on 2026-06-03
+  # after recurring CPU-saturation wedges + a 500-user load test: the ~2.5s
+  # Elementor homepage render with no edge cache (Basic Auth bypasses Cloudflare)
+  # saturated the burstable CPU and requests piled up to 20-40s. P1v3 is
+  # dedicated (no platform contention) and keeps 2 cores for concurrency, with a
+  # faster Cascade Lake core (homepage ~1-1.5s). See infra/perf-baseline/.
+  app_service_sku          = "P1v3"
   wordpress_image          = var.wordpress_image
   docker_registry          = module.container_registry.login_server
   docker_registry_username = module.container_registry.admin_username
